@@ -31,3 +31,20 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 ## Itération M0 (2026-10-02) — lancement
 
 L'orchestrateur lance un agent maieutique neuf. Consignes : lire le skill maieutique, le mandat, le fichier d'intention, l'index, le journal, le glossaire et le fichier 17 ; ne jamais commiter, changer de branche, publier ou envoyer quoi que ce soit ; marquer [P] les décisions par procuration. Premier tour demandé : un état des lieux des obstacles juridiques bloquants (en premier lieu l'article 401 de la directive TVA), avec une proposition de plan de travail et des premières pistes d'architecture.
+
+## Itération M1 (2026-10-02) — réponse aux 11 arbitrages de l'état des lieux
+
+Réponse par procuration à l'ébauche de la note 18 :
+1. **La cascade** : accepté [P]. On renonce à toute déduction en chaîne, et l'achat pour revente se fait en suspension sur attestation. Le risque de fraude sur l'attestation doit être traité en M8.
+2. **Le redevable** : accepté [P]. Il faut préciser comment le fournisseur distingue un client professionnel d'un particulier (SIREN, numéro de TVA).
+3. **Le tarif par classe** : accepté sous condition. **Contestation** : un tarif m × P_k, indexé sur un prix de marché, risque de rendre la taxe « proportionnelle au prix », le 2e critère de l'article 401. L'agent doit vérifier que l'indexation sur un prix moyen constaté n'équivaut pas à une proportionnalité au prix de la transaction, et le démontrer avec la jurisprudence. Les classes doivent rester peu nombreuses et objectives.
+4. **Le vote annuel de m entre 1 et 4** : accepté [P] ↺, révision partielle de la décision 26. Vérifier que m ≥ 1 garantit bien l'esprit de « au moins la moitié de la valeur au bien commun ».
+5. **Le plafond à 4P** : on le garde comme borne légale [P], mais il faut une analyse explicite du caractère non confiscatoire (jurisprudence du Conseil constitutionnel sur les impositions comportementales et les accises, et le seuil des deux tiers est-il applicable ?).
+6. **L'affectation** : la piste (a) est acceptée [P], mais **la recette ne doit pas se perdre dans le budget général** : l'intention, c'est le chômage universel. Traiter le risque du plafonnement des taxes affectées (en prévoir l'exclusion), et comparer avec un CAS et avec une voie « sécurité sociale » (LFSS ou fraction de CSG). Garder la solution la plus robuste.
+7. **Le compteur** : accepté [P]. L'obligation porte sur le redevable, et le SDK certifié devient une voie simplifiée. C'est une inflexion des décisions 13 et 28, à marquer ↺.
+8. **L'IA locale** : accepté [P]. Un taux réduit défini par l'exécution sur un équipement terminal, temporaire (cohérent avec « ménager ce qui démarre »), et notifié à titre préventif.
+9. **L'entraînement hors du champ** : accepté [P], par cohérence avec l'assiette d'usage. Mais l'argument du savoir collectif doit rester central dans l'exposé, et la taxation de l'entraînement peut être mentionnée comme une piste ultérieure.
+10. **Le secteur public, les associations et la recherche** : inclus avec l'abattement [P]. Préciser l'effet budgétaire circulaire pour l'État.
+11. **Le plan** : validé, avec deux exigences : les 20 questions non traitées et les 10 prioritaires doivent être explicitement fermées dans la note 18, et il faut regrouper si possible pour finir en moins de 20 itérations.
+
+Demande pour M2 : inscrire ces arbitrages au journal (n° 37 et suivants, [P], ↺ si besoin), mettre à jour les notes 04, 08 et 10, et répondre à la contestation 3 et aux vérifications 4 et 5.

@@ -26,6 +26,7 @@
 | `hypothese` | Une idée à tester, formulée de façon à pouvoir être contredite |
 | `objection` | Un contre-argument et sa discussion |
 | `decision` | Un choix acté (angle, titre, exclusions…) |
+| `faisabilite` | L'examen des obstacles juridiques, fiscaux, techniques ou budgétaires, et des solutions (session metamaieutique) |
 
 On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 
@@ -77,3 +78,4 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 | `15-concept-complementarite-taxe-zucman.md` | concept | stabilisé | Jevons (flux IA) + Zucman (stock) ; Zucman citée dans l’exposé des motifs, hors dispositif |
 | `16-cas-selection-et-faits-verifies.md` | cas | stabilisé | 4 cas sourcés (tisserands, quartz, dockers 1960, TRR Suède) + Keynes ; récit refus → sans mécanisme → ça marche ; Loi Jevons = généralisation |
 | `17-objection-questions-lecteur-critique.md` | objection | en discussion (liste de suivi) | 80 questions d’un agent lecteur critique ; corpus : 10 R / 50 P / 20 N ; top 10 à régler (dir. TVA art. 401…) ; contradictions exposé ↔ notes |
+| `18-faisabilite-obstacles-juridiques-et-architecture.md` | faisabilite | brouillon | Session metamaieutique : 10 obstacles (O1-O10) ; art. 401 non bloquant sans déduction ; bloquants : art. 34, affectation (LOLF), compteur imposé aux éditeurs ; architecture révisée [C] ; plan en 20 itérations |
