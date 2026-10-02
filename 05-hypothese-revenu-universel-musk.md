@@ -2,7 +2,7 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M3)
+- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M4)
 
 
 ## En vigueur
@@ -21,12 +21,17 @@
 - **Droit de l'Union [C]** : au regard du règlement (CE) n° 883/2004, le socle serait **en l'état une prestation de chômage** (art. 3, § 1, h). Sa classification dépend de ses caractéristiques, pas de la branche qui le verse. On peut exiger un **droit au séjour** (CJUE, C-308/14, 2016). Son inscription à l'**annexe X**, qui le rendrait non exportable, est une **étape ultérieure**. Voir la note 18, D6.
 - **RSA et ASS [C]** : le RSA est **recentralisé**, avec une reprise des ressources transférées aux départements, sur le modèle de l'expérimentation de l'art. 43 de la LFI pour 2022. L'ASS est financée par l'État : sa dépense est transférée à la branche par une contribution de l'État. Voir la note 18, D6.
 - **Flux à préciser en M6** : la part « socle » de l'ARE actuelle, que l'Unédic n'aurait plus à verser.
+- **M4 (décisions 55 à 57 [P])** : le RSA et l'ASS passent à la branche, avec une **garantie de non-régression** : une garantie familiale permanente au niveau du RSA majoré, le maintien des droits connexes et des trimestres de retraite, et une clause de sauvegarde individuelle (note 18, D9 [C]). La **condition de séjour** est plus ouverte que celle du RSA, et n'exclut personne d'aujourd'hui éligible (D10 [C]). La part « socle » de l'ARE est reversée à la branche. **Le chiffrage est à refaire en M6.**
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M4 (2026-10-02)
+
+- **[P] Décisions 55 à 57.** **[C]** Une comparaison indicative montre qu'un socle individuel seul ferait perdre les parents isolés avec deux enfants ou plus et les très grandes familles. D'où la garantie familiale permanente (note 18, D9).
 
 ### Session metamaieutique, M3 (2026-10-02)
 

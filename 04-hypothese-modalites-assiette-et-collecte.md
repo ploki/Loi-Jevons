@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-01
-- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M3)
+- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M4)
 
 
 ## En vigueur
@@ -25,12 +25,17 @@
 - **Questions ouvertes** (fichier 17) : le format de référence et l'encodage du texte (Q14), le contexte relu et le cache (Q15), le raisonnement interne et les appels d'outils (Q16), les fournisseurs étrangers (Q32), à traiter en M5 et M7.
 - **Export (décision 52 [P])** : il est **hors du champ, mais déclaré**. Ce n'est qu'une précision de forme de la décision 30.
 - **Usage professionnel par un compte grand public [C, M3]** : la règle anti-échappatoire est proposée dans la note 18 (D7). Le fournisseur a l'obligation de demander l'usage et l'identifiant. Des présomptions s'appliquent (accès par API, paiement par une entreprise, volume). L'entreprise qui fait un usage professionnel par un compte grand public **autoliquide** et s'expose à une sanction. Elle remplace la phrase de M2 « sans identifiant, le client est traité comme un particulier ».
+- **M4 [C]** (note 18, D11) : la taxe est due au titre de l'**utilisation effective en France**, y compris par une entité française d'un groupe qui utilise un contrat signé à l'étranger ; une **table légale de conversion** des unités facturées (token, image, seconde) ; un volume forfaitaire pour les forfaits ; pas de remboursement à l'export.
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M4 (2026-10-02)
+
+- **[C]** La territorialité est précisée en note 18, D11 (Q31 à Q34).
 
 ### Session metamaieutique, M3 (2026-10-02)
 

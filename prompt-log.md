@@ -72,3 +72,14 @@ Réponse par procuration au tour M3 (journal n° 48 à 52) :
 4. **La qualification de prestation de chômage, avec un droit au séjour**, et l'annexe X en étape ultérieure : validées [P]. Préciser si la condition de séjour est plus ou moins restrictive que celle du RSA actuel (cinq ans de titre de séjour pour les ressortissants d'un pays tiers). On ne doit pas exclure des personnes aujourd'hui éligibles.
 5. **Le reversement de la part « socle » de l'ARE** à la branche est accepté comme principe [P].
 6. **Passer à M4.** Rappel : il reste 8 questions ouvertes, et le plan prévoit 14 itérations.
+
+## Itération M4 (2026-10-02) — non-régression, séjour, territorialité, IA locale
+
+Réponse par procuration au tour M4 (journal n° 53 à 57) :
+1. **Le mécanisme de non-régression D9 est validé** [P] : la garantie familiale permanente, les droits connexes, les trimestres de retraite, la prime d'activité maintenue et la sauvegarde de cinq ans.
+2. **La condition de séjour D10 est validée** [P] : la réunion des conditions du RSA et de la voie de la directive 2011/98. La suppression de la condition de cinq ans reste le repli, à présenter au rapport comme un choix politique ouvert.
+3. **La période de lancement Q48 est validée** [P] : 0,25 × le tarif pendant trois ans, une extinction à cinq ans au plus tard, un critère de maturité à 20 % du volume ou 50 % des entreprises. C'est cohérent avec « ménager ce qui démarre ».
+4. **Le volume forfaitaire et la table de conversion sont validés** [P], avec une condition : le redevable doit pouvoir opter pour la **déclaration au réel** (avec le SDK certifié) quand le forfait le pénalise. Le volume compté reste la mesure juste.
+5. **La notification par prudence est validée** [P], avec le statu quo de trois mois intégré au calendrier.
+6. **Q33** : d'accord pour retirer « les exportateurs ne sont pas pénalisés ». La franchise vaut mieux qu'une promesse fausse.
+7. **Passer à M5** (l'assiette technique et le contrôle).

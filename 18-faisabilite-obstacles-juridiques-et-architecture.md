@@ -1,8 +1,8 @@
 # Faisabilité juridique : obstacles, solutions et architecture révisée
 
-- **Statut** : en discussion (M3 de la session metamaieutique)
+- **Statut** : en discussion (M4 de la session metamaieutique)
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02 (M3)
+- **Dernière mise à jour** : 2026-10-02 (M4)
 
 > Note de la session metamaieutique « Rendre la Loi Jevons réalisable » (voir `mandat.md`). Les décisions par procuration sont marquées **[P]** et numérotées comme au journal ; les propositions non validées restent **[C]**. Les textes vérifiés sur le web sont marqués **[S]** ; le reste est **[À vérifier]**.
 
@@ -28,7 +28,9 @@
 - **51 [P]** : une justification renforcée est exigée au-delà de m = 2 ; l'exposé rappelle l'ordre de grandeur du carburant.
 - **52 [P]** : l'export est hors du champ, mais déclaré.
 
-**Propositions de M3 en attente** [C] : la règle contre l'usage professionnel par un compte grand public (**D7**) ; le fonds de réserve et l'ordre d'emploi des recettes (**D8**) ; la recentralisation du RSA et le transfert de l'ASS (**D6**).
+**Décisions prises en M4** (journal, n° 53 à 57) : la règle D7 sur les comptes grand public (53) ; le fonds de réserve et l'ordre d'emploi D8 (54) ; le RSA et l'ASS vers la branche, avec une **exigence de non-régression** (55) ; le socle qualifié de prestation de chômage, sans exclure personne d'aujourd'hui éligible (56) ; la part « socle » de l'ARE reversée à la branche (57).
+
+**Propositions de M4 en attente** [C] : la garantie de non-régression (**D9**) ; la condition de séjour (**D10**) ; la territorialité, l'IA locale, la notification et le SDK (**D11**).
 
 **État des obstacles** : l'article 401 n'est pas bloquant (O1, D1). Les blocages de l'article 34 (O3), du compteur (O9) et de l'affectation (O4) sont **levés** (décisions 40, 43 et 49). Aucun obstacle bloquant connu ne reste sans solution. Restent un risque moyen sur l'égalité (O2), les aides d'État (O6) et la territorialité (O5), et l'inscription du socle à l'annexe X du règlement 883/2004, qui est une **étape ultérieure**.
 
@@ -205,7 +207,7 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 | M1 ✔ | État des lieux juridique | 69, 67, 68, 60, 70, 36 | Note 18 (ébauche) |
 | M2 ✔ | Arbitrages structurants ; l'article 401 et le 2ᵉ critère ; m ≥ 1 ; la confiscation ; la comparaison des voies d'affectation | 69, 26, 27, 35, 22, 40 | Journal 37-47 ; notes 04, 08, 10, 18 |
 | M3 ✔ | **Affectation et Constitution** : le choix de la voie (D4), le fonds de réserve, l'Unédic, les départements, les coefficients dans la loi, la justification du plafond, le lissage | 60, 61, 62, 64, 65, 67, 68, 28, 29, 57 | Notes 05, 11, 18 |
-| M4 | **Territorialité, IA locale, aides d'État, AGCS, compteur** : les fournisseurs étrangers, la conversion des unités, la DAC, la notification | 31 à 34, 36, 37, 38, 45 à 48, 70, 72 | Notes 04, 08, 18 |
+| M4 ✔ | **Territorialité, IA locale, aides d'État, AGCS, compteur** : les fournisseurs étrangers, la conversion des unités, la DAC, la notification | 31 à 34, 36, 37, 38, 45 à 48, 70, 72 | Notes 04, 08, 18 |
 | M5 | **Assiette technique et contrôle** : le contexte et le cache, le raisonnement, les cas limites, la définition du système d'IA, les sanctions, le fractionnement, la fraude à l'attestation | 14 à 21, 15, 39, 41 à 44, 78 à 80 | Notes 04, 08, 18 |
 | M6 | **Chômage universel** : le foyer, l'éligibilité, la résidence, l'Unédic, la formation, la date d'ouverture des droits | 49 à 51, 53, 55, 58 | Notes 05, 18 |
 | M7 | **Simulation v4** (tarif par classe, vote de m, lissage, entrée en vigueur réaliste, formation chiffrée) et **revue des 80 questions** | 13, 59, 62, 63, 74 ; toutes | `outils/sim_v4.py`, notes 17, 18, 19 |
@@ -219,7 +221,7 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 
 ---
 
-## D. Réponses aux contestations et vérifications (M2 et M3)
+## D. Réponses aux contestations et vérifications (M2 à M4)
 
 ### D1. Le tarif m × P_k est-il « proportionnel au prix » au sens de l'article 401 ? (contestation du point 3)
 
@@ -420,6 +422,103 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 
 ---
 
+### D9. La garantie de non-régression pour les bénéficiaires du RSA et de l'ASS (M4, décision 55)
+
+**Le risque est réel.** Le socle est **individuel** (environ 1 200 € par mois par adulte sans emploi, note 05 [À vérifier]), alors que le RSA est **familialisé**. Une comparaison indicative, avec un montant forfaitaire du RSA d'environ 650 € pour une personne seule [À vérifier pour 2026] et les coefficients du barème [À vérifier] :
+
+| Foyer sans autre ressource | RSA (environ, avant le forfait logement) | Socle (adultes sans emploi) | Écart |
+|---|---|---|---|
+| Une personne seule | 650 € | 1 200 € | **+** |
+| Un couple sans enfant | 975 € | 2 400 € | **+** |
+| Un couple avec 2 enfants | 1 365 € | 2 400 € | **+** |
+| Un parent isolé avec 1 enfant (RSA majoré) | 1 110 € | 1 200 € | + (faible) |
+| **Un parent isolé avec 2 enfants (RSA majoré)** | **1 390 €** | 1 200 € | **−** |
+| **Un parent isolé avec 3 enfants (RSA majoré)** | **1 670 €** | 1 200 € | **−** |
+| Un couple avec 6 enfants | environ 2 700 € | 2 400 € | **−** |
+
+**Les autres risques de régression** : les **droits connexes** du RSA (la complémentaire santé solidaire gratuite, les tarifs sociaux, certaines aides locales) [À vérifier] ; la **validation de trimestres de retraite** que procure l'ASS, et que le socle doit reprendre ; le cumul avec la **prime d'activité**, qui doit rester au moins aussi favorable.
+
+**Le mécanisme proposé** [C] :
+1. **Une garantie familiale permanente.** Le foyer reçoit le plus élevé de deux montants : la somme des socles de ses membres, ou le **montant du RSA**, majoration comprise, calculé selon le barème en vigueur à la date de la bascule, puis revalorisé comme le socle. L'écart est versé par la CAF sous la forme d'un **complément familial de garantie**. Il est **permanent** et vaut pour les nouveaux demandeurs, faute de quoi un parent isolé futur serait moins bien traité qu'aujourd'hui.
+2. **Le maintien des droits connexes.** Tout droit aujourd'hui attaché à la qualité d'allocataire du RSA est attaché à celle de bénéficiaire du socle (ou de la garantie familiale). Un article de coordination modifie les codes concernés [À vérifier : l'inventaire de ces droits].
+3. **Les trimestres de retraite.** Les périodes de socle sont des **périodes assimilées**, au moins dans les conditions applicables aujourd'hui à l'ASS.
+4. **La prime d'activité est maintenue.** La sortie progressive du socle (environ 50 centimes perdus par euro gagné, note 05) s'articule avec elle selon une règle qui garantit qu'**aucun travailleur modeste ne perd** par rapport au droit actuel. Le **calcul différentiel** est fait par la CAF.
+5. **Une clause de sauvegarde individuelle**, à la bascule. Chaque bénéficiaire du RSA ou de l'ASS reçoit au moins, pendant cinq ans, le montant qu'il percevait la veille, revalorisé. Elle couvre les cas que la règle générale n'aurait pas prévus.
+6. **Une démonstration chiffrée** par cas types (un parent isolé, une famille nombreuse, un couple avec un actif modeste, un bénéficiaire de l'ASS en fin de carrière), à faire en **M6** et à intégrer au chiffrage. Le coût de la garantie familiale porte surtout sur les parents isolés avec deux enfants ou plus [À vérifier : leur nombre parmi les allocataires du RSA majoré].
+
+### D10. La condition de séjour du socle, comparée à celle du RSA (M4, décision 56)
+
+**Le RSA aujourd'hui** [S] :
+- un ressortissant d'un **pays tiers** doit être titulaire **depuis au moins cinq ans** d'un titre de séjour autorisant à travailler (art. L. 262-4 du CASF) ;
+- cette condition **ne s'applique pas** aux réfugiés, aux bénéficiaires de la protection subsidiaire, aux apatrides, aux titulaires de la carte de résident ou d'un titre équivalent, ni aux **bénéficiaires du RSA majoré**, pour qui la régularité du séjour suffit ;
+- la condition a été jugée conforme aux droits fondamentaux (CE, 10 juillet 2015, n° 375887) [S] ;
+- un **ressortissant de l'Union** doit disposer d'un droit au séjour (art. L. 262-6 du CASF) [À vérifier].
+
+**La contrainte nouvelle du droit de l'Union.** Si le socle est une **prestation de chômage**, il relève des « branches de sécurité sociale » du règlement 883/2004. La **directive 2011/98/UE** (le permis unique), art. 12, § 1, e, impose alors l'égalité de traitement aux travailleurs de pays tiers. Selon l'art. 12, § 2, b, un État peut limiter ces droits, mais il « **ne doit pas restreindre** ces droits pour les travailleurs issus de pays tiers qui occupent un emploi ou qui ont occupé un emploi pendant une période minimale de six mois et qui sont inscrits comme chômeurs » [S]. La directive 2003/109/CE sur les résidents de longue durée va dans le même sens [À vérifier].
+
+**La condition proposée** [C] : **la réunion des conditions actuelles et des exigences du droit de l'Union.** Le socle est ouvert, sous réserve de la résidence stable en France :
+1. aux Français ;
+2. aux ressortissants de l'Union, de l'EEE et de la Suisse qui disposent d'un **droit au séjour** (C-308/14), comme pour le RSA ;
+3. aux ressortissants de pays tiers qui remplissent **l'une** des conditions suivantes :
+   - (a) **la condition actuelle du RSA**, avec toutes ses exceptions (cinq ans de titre ; ou réfugié, protégé subsidiaire, apatride, carte de résident ; ou la situation de parent isolé) ;
+   - (b) **ou** un titre autorisant à travailler, et au moins **six mois d'emploi**, avec une inscription : c'est l'exigence de la directive 2011/98.
+
+**La réponse à la question posée** :
+- La condition de séjour du socle est **moins restrictive** que celle du RSA. Elle reprend toutes les voies d'accès actuelles et en ajoute une (la voie b).
+- **Personne d'aujourd'hui éligible n'est exclu**, ni au titre du RSA ni au titre de l'ASS : l'ASS n'exige pas de durée de titre de séjour [À vérifier], et ses bénéficiaires ont travaillé cinq ans dans les dix dernières années, ce qui leur ouvre la voie (b).
+- **Le surcoût** vient des ressortissants de pays tiers arrivés depuis moins de cinq ans, qui ont travaillé au moins six mois et sont sans emploi. Il est à chiffrer en **M6** [À vérifier].
+- **Le risque constitutionnel** : garder la condition de cinq ans pour les autres ressortissants de pays tiers, dans une prestation qualifiée de sécurité sociale, est moins sûr que pour le RSA. Le Conseil constitutionnel protège les droits sociaux des étrangers en séjour stable et régulier [À vérifier : décision n° 93-325 DC]. **Le repli** consiste à supprimer la condition de cinq ans pour tous les titulaires d'un titre autorisant à travailler. C'est plus simple et plus sûr, mais plus coûteux.
+
+### D11. Territorialité, IA locale, aides d'État, AGCS et compteur (M4)
+
+**Q31, le critère de rattachement** [C] : la taxe est due au titre de l'**utilisation effective en France** par une entité ou un établissement stable établi en France.
+- Quand un service est acheté par une entité étrangère d'un groupe puis mis à la disposition d'une entité française (le contrat irlandais de la question), **l'entité française autoliquide** sur les volumes qu'elle utilise. Les refacturations internes au groupe servent de base. C'est une règle d'« utilisation effective », sur le modèle de celle que permet la directive TVA [À vérifier : art. 59 *bis*].
+- L'abattement s'applique au niveau du **groupe** (M5).
+
+**Q32, la conversion des unités** [C] : la loi fixe une **table de conversion** des unités facturées en octet-équivalent :
+- par **token**, selon le type de contenu (par exemple, pour un texte, environ 4 octets par token [À vérifier]) ;
+- par **image**, par **seconde de son ou de vidéo** ;
+- pour un **forfait sans relevé**, un volume forfaitaire par compte et par mois, rattaché à la classe médiane (comme en D7).
+
+Le fournisseur enregistré déclare le volume réel. Le client qui autoliquide peut retenir le volume réel, s'il est justifié, ou la table.
+
+**Q33, les exportateurs qui utilisent de l'IA** : **pas de remboursement à l'export**. Ce serait une aide à l'exportation, contraire aux articles 107 et 108 du TFUE pour les échanges dans l'Union [À vérifier], et contraire à l'esprit de l'OMC. La réponse est le **double dividende** (la baisse des contributions patronales profite aussi aux exportateurs) et l'**abattement**. L'exposé doit **retirer** la phrase « les exportateurs ne sont pas pénalisés » et dire honnêtement ce qui pèse sur eux.
+
+**Q34, les prestations produites à l'étranger avec de l'IA** : **un risque assumé**. Taxer le contenu en IA d'un service importé, d'après la façon dont il a été produit, serait une taxe sur l'importation de services difficile à justifier au regard de l'AGCS, et impossible à contrôler. L'étude d'impact mesure le risque de délocalisation des tâches, qui est atténué par le double dividende.
+
+**Q36, l'AGCS et les conventions fiscales** : voir O7. Rien de nouveau : la taxe ne dépend pas de l'origine, et le taux réduit dépend du lieu d'exécution technique (un terminal), pas de l'origine du modèle. Le risque de représailles est politique, et il est documenté dans l'étude d'impact.
+
+**Q37 et Q38, le SDK** [C] :
+- il est développé en **logiciel libre** (sous la licence EUPL, À vérifier) par un projet piloté par la **DGFiP** et ouvert aux contributions ;
+- le **référentiel de certification** est établi par un organisme de normalisation, sur le modèle de la norme NF525, et la certification est délivrée par un organisme accrédité ;
+- l'utiliser est **volontaire** (décision 43) ;
+- il transmet, avec la déclaration périodique, des **volumes agrégés** par classe, par type de contenu et par période, **signés et horodatés**. **Aucun contenu**, aucune donnée sur l'utilisateur individuel.
+
+**Q45, la frontière entre terminal, serveur et nuage** [C] : un **équipement terminal** est un matériel placé sous la maîtrise physique de son utilisateur final et qui n'est pas exploité pour fournir un service d'inférence à des tiers par le réseau : un ordinateur, un téléphone, un appareil embarqué dans un produit ou une machine. **Un serveur en colocation, sur site ou dans le nuage, n'est pas un terminal** : il est au taux plein, « dans les mêmes conditions ».
+
+**Q46, l'IA embarquée dans un produit professionnel** : le **redevable** est l'**utilisateur professionnel** qui exploite le produit, et non son fabricant. Pour les **flux continus** de capteurs (le traitement audio, un véhicule, une machine), la loi fixe un **volume forfaitaire annuel par catégorie d'appareil**, au lieu de mesurer des flux continus [C]. Le taux réduit s'applique pendant la période de lancement.
+
+**Q47, « mêmes conditions » et taux réduit** : l'incohérence de l'exposé est levée. L'IA sur **serveur** de l'entreprise est taxée dans les mêmes conditions que l'IA en nuage. Seule l'IA sur **terminal** bénéficie du taux réduit. L'incitation à rapatrier les traitements est limitée aux terminaux, là où l'IA démarre, ce qui est le but recherché.
+
+**Q48, la période de lancement et la maturité** [C, à valider] :
+- **le taux réduit** : un tarif de **0,25 × m × P_k** pendant **trois ans** ;
+- **une clause de rendez-vous** à trois ans, sur rapport ;
+- **l'extinction** au plus tard au bout de **cinq ans**, sauf disposition législative contraire ;
+- **le critère objectif de maturité** : la part de l'inférence sur terminal dans le volume total déclaré dépasse **20 %**, ou la part des entreprises qui l'utilisent dépasse **50 %** (une enquête de l'INSEE ou d'Eurostat). Les seuils sont à discuter.
+
+C'est un écart assumé et temporaire au 50/50, découlant de « ménager ce qui démarre » (D2).
+
+**Q70, la notification et les aides d'État** :
+- l'obligation de comptage, qui pèse sur le redevable, n'est **pas une règle technique** ; le SDK est volontaire ;
+- en revanche, le **taux réduit lié à un mode d'exécution technique** pourrait être une **règle technique de fait** liée à une mesure fiscale, au sens de la directive (UE) 2015/1535 [À vérifier]. **Je recommande de notifier** le projet par prudence, ce qui impose un statu quo d'au moins trois mois ;
+- le taux réduit est **notifié** aussi au titre des aides d'État (décision 44), en le défendant par la logique du système (un critère objectif, temporaire, lié à l'objet) et, à titre subsidiaire, par l'art. 107, § 3, c, du TFUE ;
+- le **règlement sur l'IA** : la taxe et le comptage ne fixent aucune exigence de mise sur le marché des systèmes d'IA. Le risque de conflit est faible [À vérifier].
+
+**Q72, les PME sur les marchés tiers** : leurs coûts augmentent face à des concurrents qui ne sont pas taxés. Ce n'est pas un obstacle juridique, mais un **effet économique** à chiffrer dans l'étude d'impact (M10), avec le double dividende et l'abattement en contrepartie.
+
+
+---
+
 ## E. Suivi des 20 questions non traitées du fichier 17 (dont les 10 prioritaires, marquées ★)
 
 | Q | Objet | Statut | Réponse ou décision | Itération |
@@ -431,23 +530,23 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 | 40 ★ | L'entraînement | **décidée** | Hors du champ ; piste ultérieure (décision 45) | M2 |
 | 15 ★ | Le contexte relu et le cache | ouverte | — | M5 |
 | 35 ★ | La cascade | **décidée** | La suspension, sans déduction (décision 37) | M2 |
-| 32 ★ | Les octets des fournisseurs étrangers | en cours | O5 : l'enregistrement, la conversion légale, l'information sur facture | M4 |
+| 32 ★ | Les octets des fournisseurs étrangers | **répondue** [C] | O5, D11 : l'enregistrement, la table légale de conversion, l'information sur facture, le volume forfaitaire | M4 |
 | 26 ★ | Le tarif unique face à des prix très différents | **décidée** (sous condition) | Le tarif par classe (décision 39, D1) | M2 |
 | 22 ★ | Le secteur public, les associations, la recherche | **décidée** | Dans le champ, avec l'abattement (décision 46, D5) | M2 |
 | 1 | La productivité depuis Keynes | ouverte | — | M8 |
-| 34 | Les prestations produites à l'étranger avec de l'IA | en cours | O5 : un risque assumé, à documenter | M4 |
+| 34 | Les prestations produites à l'étranger avec de l'IA | **répondue** | Un risque assumé (AGCS, contrôle), mesuré dans l'étude d'impact (D11) | M4 |
 | 55 | La formation rémunérée | ouverte | — | M6 |
 | 63 | Si l'IA ne détruit pas d'emplois en net | ouverte | — | M7 |
-| 70 | Le compteur, les aides d'État | en cours | O6, O9 ; décisions 43 et 44 | M4 |
+| 70 | Le compteur, les aides d'État | **répondue** [C] | O6, O9, D11 : pas de règle technique imposée ; une notification par prudence (2015/1535 et aides d'État) | M4 |
 | 71 | L'incidence de la taxe | ouverte | — | M10 |
 | 73 | Les PME, les jeunes entreprises, les centres de données | ouverte | — | M10 |
 | 75 | L'acceptabilité pour les entreprises | ouverte | — | M8, M10 |
 | 78 | Les agents en chaîne, les données synthétiques | ouverte | Probablement réglé par la suspension (décision 37), à confirmer | M5 |
 | 79 | Les erreurs, les réessais, les tests | ouverte | — | M5 |
 
-**Décompte (M3)** : 7 décidées, 2 répondues, 3 en cours, 8 ouvertes.
+**Décompte (M4)** : 7 décidées, 5 répondues (dont 2 en attente de validation), 0 en cours, 8 ouvertes (15, 78, 79 en M5 ; 55 en M6 ; 63 en M7 ; 1, 75 en M8 ; 71, 73 en M10).
 
-**Questions « partielles » du fichier 17 traitées en M3** (hors des 20) : Q57 (D6), Q61, Q62, Q64 et Q65 (D8, en attente de validation), Q28 (D3), Q21 (D7, en attente de validation), Q51 (D6).
+**Questions « partielles » du fichier 17 traitées** (hors des 20) : en M3, Q57 (D6), Q61, Q62, Q64, Q65 (D8, décision 54), Q28 (D3), Q21 (D7, décision 53), Q51 (D6, D10) ; en M4, Q31, Q33, Q36, Q37, Q38, Q45 à Q48, Q72 (D11).
 
 ---
 
@@ -458,9 +557,11 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 3. Tension identifiée avec une décision [G] : la décision 25 (« le montant par unité est égal au prix moyen ») et la décision 9 (le volume) produisent ensemble un **tarif unique** qui viole l'esprit du 50/50 pour les modèles peu chers. Le **tarif par classe** garde les deux décisions et rend le 50/50 vrai. **[C]**
 4. **2026-10-02, M2** : l'orchestrateur valide par procuration les points 1, 2, 4 et 6 à 11 ; il accepte le point 3 sous condition (la démonstration au regard du 2ᵉ critère de l'article 401) et demande deux vérifications (m ≥ 1, la confiscation). Décisions 37 à 47 **[P]**. Recherches complémentaires : le rapport particulier de la Cour des comptes sur la TVA (2023) ; l'article LO 111-3-14 du code de la sécurité sociale ; la doctrine sur la confiscation (commentaire de la décision 2018-755 QPC, *Nouveaux Cahiers*). **Constat nouveau** : le cliquet de l'article LO 111-3-14 fait de la **voie « sécurité sociale »** la plus robuste pour protéger la recette (D4). **[C]**
 5. **2026-10-02, M3** : décisions 48 à 52 **[P]**. L'orchestrateur demandait de vérifier le règlement 883/2004 avant d'arrêter la voie « sécurité sociale ». **Constat** : la classification d'une prestation au regard du règlement est fonctionnelle et indépendante de la voie d'affectation. Le socle serait en l'état une prestation de chômage, pour laquelle un droit au séjour peut être exigé (C-308/14), et l'annexe X est une étape ultérieure. La voie est donc arrêtée. L'orchestrateur a aussi contesté la règle d'identification de M2 : la nouvelle règle est en D7. **[C]**
+6. **2026-10-02, M4** : décisions 53 à 57 **[P]**. Deux exigences nouvelles de l'orchestrateur : la non-régression (D9) et ne rien exclure de ce qui est éligible aujourd'hui (D10). **Constat** : la directive 2011/98 interdit de restreindre le socle aux ressortissants de pays tiers qui ont travaillé six mois et sont inscrits. La condition de séjour du socle est donc nécessairement **plus ouverte** que celle du RSA. **[C]**
 
 ## Questions ouvertes
 
+- **Après M4** : la validation de D9 (le mécanisme de non-régression), de D10 (la condition de séjour et son repli) et de D11 (en particulier Q48 : le niveau du taux réduit, sa durée et le critère de maturité).
 - **Après M3** : la validation de D7 (les comptes grand public), de D8 (le fonds de réserve et l'ordre d'emploi des recettes) et de D6 §4-5 (le RSA et l'ASS) ; le reversement de la part « socle » de l'ARE (M6) ; les frontaliers (étude d'impact).
 
 - La levée de la condition de la décision 39 (D1).
@@ -490,6 +591,8 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 - Alimanovic, C-67/14, et Dano, C-333/13 : https://www.cleiss.fr/docs/jurisprudence/c67-14.html
 - La recentralisation du RSA (art. 43 de la LFI pour 2022, décret n° 2022-322) : https://blog.landot-avocats.net/2022/04/11/recentralisation-du-rsa-mode-demploi/ et https://www.banquedesterritoires.fr/un-decret-organise-lexperimentation-de-la-recentralisation-du-rsa
 - La 5ᵉ branche (LO n° 2020-991, loi n° 2020-992, ordonnance n° 2021-1554) : https://blog.landot-avocats.net/2022/05/13/entree-en-vigueur-de-la-5e-branche-autonomie-de-la-secu/ et https://www.banquedesterritoires.fr/le-cinquieme-risque-officiellement-cree-la-dette-sociale-cantonnee
+- Directive 2011/98/UE, art. 12 : https://www.legislation.gov.uk/eudr/2011/98/article/12
+- Le RSA et la condition de cinq ans (art. L. 262-4 du CASF ; RSA majoré ; CE, 10 juillet 2015, n° 375887) : https://questions.assemblee-nationale.fr/dyn/14/questions/QANR5L14QE59693.pdf et https://blog.landot-avocats.net/2017/12/04/rsa-la-condition-de-5-ans-de-residence-en-france-imposee-aux-etrangers-non-communautaire-nest-pas-contraire-a-la-cedh-selon-le-ta-de-paris/
 - CIBS, ordonnance n° 2021-1843 : https://www.douane.gouv.fr/fiche/code-des-impositions-sur-les-biens-et-services-contributions-indirectes
 
 ## Liens
