@@ -1,8 +1,8 @@
 # Faisabilité juridique : obstacles, solutions et architecture révisée
 
-- **Statut** : en discussion (M4 de la session metamaieutique)
+- **Statut** : en discussion (M5 de la session metamaieutique)
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02 (M4)
+- **Dernière mise à jour** : 2026-10-02 (M5)
 
 > Note de la session metamaieutique « Rendre la Loi Jevons réalisable » (voir `mandat.md`). Les décisions par procuration sont marquées **[P]** et numérotées comme au journal ; les propositions non validées restent **[C]**. Les textes vérifiés sur le web sont marqués **[S]** ; le reste est **[À vérifier]**.
 
@@ -30,7 +30,9 @@
 
 **Décisions prises en M4** (journal, n° 53 à 57) : la règle D7 sur les comptes grand public (53) ; le fonds de réserve et l'ordre d'emploi D8 (54) ; le RSA et l'ASS vers la branche, avec une **exigence de non-régression** (55) ; le socle qualifié de prestation de chômage, sans exclure personne d'aujourd'hui éligible (56) ; la part « socle » de l'ARE reversée à la branche (57).
 
-**Propositions de M4 en attente** [C] : la garantie de non-régression (**D9**) ; la condition de séjour (**D10**) ; la territorialité, l'IA locale, la notification et le SDK (**D11**).
+**Décisions prises en M5** (journal, n° 58 à 63) : la non-régression D9 (58) ; la condition de séjour D10, la suppression des cinq ans restant un choix politique ouvert (59) ; le lancement de l'IA sur terminal à 0,25 pendant trois ans (60) ; les forfaits et la table de conversion, avec une option pour le réel (61) ; la notification par prudence et le statu quo de trois mois (62) ; le retrait de « les exportateurs ne sont pas pénalisés » (63).
+
+**Propositions de M5 en attente** [C] : l'assiette technique et le contrôle (**D12**) : le champ des modèles d'IA à usage général, le format de référence (1 caractère = 1 octet-équivalent), les coefficients par flux (lecture, cache), la règle de transparence pour les intermédiaires, les sanctions, le remboursement automatique de l'abattement, le registre des revendeurs, le lissage aux bornes.
 
 **État des obstacles** : l'article 401 n'est pas bloquant (O1, D1). Les blocages de l'article 34 (O3), du compteur (O9) et de l'affectation (O4) sont **levés** (décisions 40, 43 et 49). Aucun obstacle bloquant connu ne reste sans solution. Restent un risque moyen sur l'égalité (O2), les aides d'État (O6) et la territorialité (O5), et l'inscription du socle à l'annexe X du règlement 883/2004, qui est une **étape ultérieure**.
 
@@ -208,7 +210,7 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 | M2 ✔ | Arbitrages structurants ; l'article 401 et le 2ᵉ critère ; m ≥ 1 ; la confiscation ; la comparaison des voies d'affectation | 69, 26, 27, 35, 22, 40 | Journal 37-47 ; notes 04, 08, 10, 18 |
 | M3 ✔ | **Affectation et Constitution** : le choix de la voie (D4), le fonds de réserve, l'Unédic, les départements, les coefficients dans la loi, la justification du plafond, le lissage | 60, 61, 62, 64, 65, 67, 68, 28, 29, 57 | Notes 05, 11, 18 |
 | M4 ✔ | **Territorialité, IA locale, aides d'État, AGCS, compteur** : les fournisseurs étrangers, la conversion des unités, la DAC, la notification | 31 à 34, 36, 37, 38, 45 à 48, 70, 72 | Notes 04, 08, 18 |
-| M5 | **Assiette technique et contrôle** : le contexte et le cache, le raisonnement, les cas limites, la définition du système d'IA, les sanctions, le fractionnement, la fraude à l'attestation | 14 à 21, 15, 39, 41 à 44, 78 à 80 | Notes 04, 08, 18 |
+| M5 ✔ | **Assiette technique et contrôle** : le contexte et le cache, le raisonnement, les cas limites, la définition du système d'IA, les sanctions, le fractionnement, la fraude à l'attestation | 14 à 21, 15, 39, 41 à 44, 78 à 80 | Notes 04, 08, 18 |
 | M6 | **Chômage universel** : le foyer, l'éligibilité, la résidence, l'Unédic, la formation, la date d'ouverture des droits | 49 à 51, 53, 55, 58 | Notes 05, 18 |
 | M7 | **Simulation v4** (tarif par classe, vote de m, lissage, entrée en vigueur réaliste, formation chiffrée) et **revue des 80 questions** | 13, 59, 62, 63, 74 ; toutes | `outils/sim_v4.py`, notes 17, 18, 19 |
 | M8 | **Exposé des motifs v0.2** | 1, 75, contradictions | Livrable |
@@ -221,7 +223,7 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 
 ---
 
-## D. Réponses aux contestations et vérifications (M2 à M4)
+## D. Réponses aux contestations et vérifications (M2 à M5)
 
 ### D1. Le tarif m × P_k est-il « proportionnel au prix » au sens de l'article 401 ? (contestation du point 3)
 
@@ -519,6 +521,99 @@ C'est un écart assumé et temporaire au 50/50, découlant de « ménager ce qui
 
 ---
 
+### D12. Assiette technique et contrôle (M5)
+
+#### D12.1 Le champ : quels systèmes d'IA ? (Q20, Q80)
+
+- **Le problème.** La définition du **système d'IA** du règlement (UE) 2024/1689 (art. 3, point 1) est très large. Elle couvrirait l'apprentissage automatique classique : le scoring, l'OCR, l'anti-spam, la réduction de bruit.
+- **La proposition** [C] : le champ est l'**inférence d'un modèle d'IA à usage général**, au sens de l'art. 3, point 63, du règlement sur l'IA : « un modèle d'IA, y compris lorsqu'il est entraîné à l'aide d'une grande quantité de données au moyen de l'auto-supervision à grande échelle, qui fait preuve d'une généralité significative et est capable d'exécuter de manière compétente un large éventail de tâches distinctes » [S]. Le champ couvre aussi les modèles **dérivés** d'un tel modèle (affinés, distillés).
+- **Pourquoi** :
+  - ce critère est **objectif**, et il repose sur une définition du droit de l'Union déjà appliquée ;
+  - il coïncide avec la **justification du savoir collectif** : ce sont les modèles entraînés sur une grande quantité de données ;
+  - il exclut l'IA spécialisée, ce qui répond à la critique « qu'est-ce qu'un robot ? » (fichier 11).
+- **Q80, les fonctions marginales intégrées à un logiciel** :
+  - une autocomplétion, un résumé ou un assistant fondés sur un modèle à usage général sont **dans le champ**. L'**éditeur du logiciel** est le fournisseur qui collecte la taxe ; il achète l'inférence en suspension. Le volume est réel, ou forfaitaire par poste, avec l'option pour le réel (décision 61) ;
+  - une **réduction de bruit** ou une **correction orthographique** fondées sur un modèle spécialisé sont **hors du champ**.
+- **Le risque** : un éditeur qui requalifie un modèle général en modèle « spécialisé ». La parade : une **présomption** fondée sur la liste des modèles à usage général notifiés au Bureau de l'IA [À vérifier], et la clause anti-abus.
+
+#### D12.2 L'unité de mesure et le format de référence (Q14, Q17)
+
+L'**octet-équivalent** (décisions 9 et 30) est conservé. Le format de référence est précisé ainsi [C] :
+
+| Type de contenu | Mesure de référence | Pourquoi |
+|---|---|---|
+| **Texte**, y compris le code et les données tabulaires sérialisées | **1 caractère Unicode = 1 octet-équivalent**, quel que soit l'encodage | La langue française n'est pas pénalisée : en UTF-8, un caractère accentué compte deux octets (Q14) |
+| **Image** | Un nombre d'octets-équivalents par **mégapixel** de sortie, dans une résolution de référence | C'est indépendant de la compression (JPEG ou PNG) |
+| **Son** | Par **seconde** | C'est indépendant de l'échantillonnage |
+| **Vidéo** | Par **seconde**, selon une **classe de résolution** | C'est indépendant du codec |
+| **Autres sorties** (vecteurs d'embeddings, structures moléculaires, modèles 3D, signaux) | Les **entrées** sont comptées ; les sorties non textuelles sont comptées sous leur forme textuelle sérialisée de référence, ou au forfait | Elles sont rattachées à une règle unique (Q17) |
+
+- **Les coefficients** par type de contenu et par flux sont **fixés par la loi** (ils relèvent de l'assiette, au titre de l'article 34). Ils sont **révisés en LFSS**, sur l'avis d'une **commission indépendante** (l'INSEE, l'Arcom ou l'ARCEP, et des personnalités qualifiées [C]), qui les calibre sur les prix relatifs de chaque type (fichier 04).
+
+#### D12.3 Lecture, cache, raisonnement, outils, agents (Q15, Q16, Q78)
+
+- **Q15, la lecture et le cache** [C] : chaque lecture est **comptée** (c'est un calcul réel, et c'est facturé), avec un **coefficient par flux** calé sur les prix relatifs observés :
+  - les données **générées** : un coefficient de **1** ;
+  - les données **lues** : un coefficient de **0,25** environ [À vérifier : le rapport usuel entre le prix d'entrée et le prix de sortie] ;
+  - les données lues **depuis le cache** : un coefficient de **0,025** environ.
+
+  Le même contexte relu dix fois paie donc dix fois, mais au **tarif du cache**. C'est cohérent avec la valeur et avec la sobriété (décision 24, 2ᵉ enseignement).
+- **Q16, le raisonnement interne** : il est compté comme des données **générées**. Les fournisseurs le facturent déjà comme une sortie, et le SDK le compte en local. **Les appels d'outils** : ce que le modèle lit et produit est compté selon les flux ci-dessus. Les outils eux-mêmes (une recherche, un calcul) ne sont pas de l'IA à usage général : ils sont hors du champ.
+- **Q78, les agents en chaîne** :
+  - chaque inférence d'un modèle à usage général est une **utilisation** : un agent qui appelle dix modèles consomme dix inférences. Ce n'est **pas une cascade**, mais une consommation réelle, comme dix machines qui consomment de l'électricité ;
+  - quand un **intermédiaire** orchestre les agents pour un client, il achète en suspension (décision 37) et **collecte la taxe sur les volumes d'inférence consommés pour ce client** (une règle de transparence), et non sur sa propre facture. Sans cette règle, un résumé d'une page tiré de cent pages lues échapperait presque entièrement à la taxe ;
+  - **les données synthétiques** destinées à entraîner un autre modèle : leur **génération** est une inférence, donc **taxée**. L'**entraînement** qui les utilise est hors du champ (décision 45).
+
+#### D12.4 Les cas limites (Q19, Q79)
+
+- **Q19, la compression des sorties** : la mesure porte sur la sortie **dans le format de référence**. Une sortie encodée ou compressée pour réduire le volume taxable (en base64, en abrégé codé, puis décodée hors du système) est **réintégrée** par une **clause anti-abus** spécifique, en plus de l'abus de droit (art. L. 64 du LPF) [À vérifier]. **Une sortie simplement plus concise n'est pas un abus** : c'est la sobriété recherchée.
+- **Q79, les erreurs, les réessais et les tests** :
+  - le volume taxable est le volume **facturé** par le fournisseur ou, en usage propre, le volume **effectivement traité**. Une requête en erreur non facturée n'est pas comptée ;
+  - un **réessai** facturé est compté ;
+  - les **tests et évaluations** sont un usage professionnel et sont **taxés**. L'abattement couvre les petits volumes.
+
+#### D12.5 Contrôle, sanctions et moyens (Q39, Q41, Q42, Q43)
+
+- **Q39, les indicateurs indirects.** La consommation électrique et les heures de GPU servent au **ciblage des contrôles**, jamais d'assiette. Pour distinguer l'inférence de l'entraînement, une entreprise qui entraîne des modèles tient un **registre d'entraînement** (le matériel, la durée, l'objet). Il est déclaré, mais non taxé. Une capacité de calcul importante, sans inférence déclarée ni entraînement enregistré, déclenche une demande d'information.
+- **Q41, les sanctions et la procédure** [C, sur le modèle des taxes sur le chiffre d'affaires, À vérifier] :
+  - **le défaut ou le retard de déclaration** : l'intérêt de retard (art. 1727 du CGI), et une majoration de 10 %, portée à 40 % après une mise en demeure et à 80 % en cas d'activité occulte (art. 1728) ;
+  - **l'insuffisance** : 40 % en cas de manquement délibéré, 80 % en cas de manœuvres frauduleuses (art. 1729) ;
+  - **le défaut de comptabilité-matière** : une **amende spécifique**, proportionnée au volume, avec un minimum forfaitaire ;
+  - **le délai de reprise** : **trois ans**, comme pour les taxes sur le chiffre d'affaires, et dix ans en cas d'activité occulte ;
+  - **la charge de la preuve** : le redevable doit justifier ses volumes par sa comptabilité-matière ou par le SDK, qui vaut présomption de bonne foi. À défaut, l'administration procède à une **évaluation d'office** à partir d'indices (les factures, les heures de GPU, la table de conversion).
+- **Les moyens de l'administration.** L'architecture **concentre** le recouvrement. Les **fournisseurs enregistrés**, de quelques dizaines à quelques centaines, collectent la majeure partie de la recette. Les autoliquidants et les déclarants pour usage propre sont des milliers, pas des centaines de milliers. Les contrôles s'appuient sur le **rapprochement automatique** avec la facturation électronique. Le nombre d'emplois nécessaires est à chiffrer dans l'étude d'impact (M10).
+- **Q42, le fractionnement** :
+  - **l'abattement** s'apprécie au niveau du **groupe**, défini comme dans la taxe sur les services numériques, dont les seuils s'apprécient au niveau du groupe [À vérifier : art. 299 du CGI] ;
+  - **le passage par des comptes de particuliers** est traité par la décision 53 ;
+  - **le basculement vers un usage local non déclaré** : le terminal est compté et taxé à 0,25 (décision 60), et le serveur au taux plein. Une omission est une fraude, repérée par les factures de matériel (la facturation électronique) et la consommation électrique.
+- **Q43, le coût de conformité d'une TPE** [C] :
+  - une TPE qui n'utilise que des services de **fournisseurs enregistrés** n'a **aucune déclaration à faire**. Elle donne son SIREN, et le fournisseur collecte ;
+  - **l'abattement** lui est restitué par un **remboursement automatique** : les fournisseurs déclarent les volumes par SIREN, et l'administration calcule et rembourse chaque année, sur un relevé prérempli ;
+  - seule une TPE qui recourt à un fournisseur **non enregistré** fait une **déclaration annuelle simplifiée**, avec la table de conversion.
+
+#### D12.6 La fraude à l'attestation de suspension (décision 37)
+
+[C] :
+- **Le statut de revendeur agréé.** Seul un redevable **inscrit sur un registre public** de revendeurs peut acheter en suspension. Le fournisseur vérifie le numéro en ligne, comme dans VIES.
+- **La bonne foi du fournisseur.** S'il a vérifié un numéro valide, il n'est pas responsable.
+- **La comptabilité-matière du revendeur** retrace les **entrées** (les volumes acquis en suspension) et les **sorties** (les volumes consommés pour ses clients, selon la règle de transparence de D12.3). **Un écart non justifié est taxé.**
+- **Les sanctions** : une fausse attestation entraîne la taxe, les intérêts et une **majoration de 80 %** (pour manœuvres). Le revendeur radié perd le bénéfice de la suspension.
+- **La solidarité** du client qui s'est fait passer pour un revendeur.
+
+#### D12.7 Le contournement aux bornes des tranches (décision 48)
+
+- **Le risque.** Un fournisseur fixe son prix catalogue juste sous une borne, pour que son modèle tombe dans la classe inférieure, dont le P_k est plus bas.
+- **Les parades** [C] :
+  1. **Le classement est fondé sur le plus élevé de deux prix** : le prix catalogue, et le **prix moyen réellement facturé** pour le modèle sur l'année précédente (constaté par l'INSEE à partir des déclarations).
+  2. **Le classement porte sur la famille de modèles** : on ne peut pas scinder un modèle en variantes artificielles.
+  3. **Un lissage aux bornes.** Dans une zone de **± 10 %** autour de chaque borne, le tarif est **interpolé linéairement** entre les deux classes. Le gain d'un prix « juste sous la borne » devient nul.
+
+     Cette interpolation reste fondée sur un **prix catalogue de référence**, et non sur le prix de chaque transaction. Elle ne change pas l'analyse de l'article 401 (D1).
+  4. **La clause anti-abus générale.**
+
+
+---
+
 ## E. Suivi des 20 questions non traitées du fichier 17 (dont les 10 prioritaires, marquées ★)
 
 | Q | Objet | Statut | Réponse ou décision | Itération |
@@ -528,7 +623,7 @@ C'est un écart assumé et temporaire au 50/50, découlant de « ménager ce qui
 | 68 ★ | La justification des différences de traitement | **répondue** | Les particuliers hors du champ (critère de l'activité économique, D7) ; l'équipement terminal, temporaire (44) ; le secteur public inclus (46). Les critères seront rédigés dans le dispositif (M9) | M3 |
 | 60 ★ | La nature juridique et l'affectation | **décidée** | Une imposition de toutes natures, du type accise ; une branche de sécurité sociale (décisions 42 et 49 ; D4, D6) | M3 |
 | 40 ★ | L'entraînement | **décidée** | Hors du champ ; piste ultérieure (décision 45) | M2 |
-| 15 ★ | Le contexte relu et le cache | ouverte | — | M5 |
+| 15 ★ | Le contexte relu et le cache | **répondue** [C] | Chaque lecture est comptée, avec des coefficients par flux (lecture 0,25 ; cache 0,025) (D12.3) | M5 |
 | 35 ★ | La cascade | **décidée** | La suspension, sans déduction (décision 37) | M2 |
 | 32 ★ | Les octets des fournisseurs étrangers | **répondue** [C] | O5, D11 : l'enregistrement, la table légale de conversion, l'information sur facture, le volume forfaitaire | M4 |
 | 26 ★ | Le tarif unique face à des prix très différents | **décidée** (sous condition) | Le tarif par classe (décision 39, D1) | M2 |
@@ -541,12 +636,12 @@ C'est un écart assumé et temporaire au 50/50, découlant de « ménager ce qui
 | 71 | L'incidence de la taxe | ouverte | — | M10 |
 | 73 | Les PME, les jeunes entreprises, les centres de données | ouverte | — | M10 |
 | 75 | L'acceptabilité pour les entreprises | ouverte | — | M8, M10 |
-| 78 | Les agents en chaîne, les données synthétiques | ouverte | Probablement réglé par la suspension (décision 37), à confirmer | M5 |
-| 79 | Les erreurs, les réessais, les tests | ouverte | — | M5 |
+| 78 | Les agents en chaîne, les données synthétiques | **répondue** [C] | Chaque inférence est un usage ; la règle de transparence pour l'intermédiaire ; la génération synthétique est taxée, l'entraînement non (D12.3) | M5 |
+| 79 | Les erreurs, les réessais, les tests | **répondue** [C] | Le volume facturé ou traité ; les erreurs non facturées sont exclues ; les tests sont taxés (D12.4) | M5 |
 
-**Décompte (M4)** : 7 décidées, 5 répondues (dont 2 en attente de validation), 0 en cours, 8 ouvertes (15, 78, 79 en M5 ; 55 en M6 ; 63 en M7 ; 1, 75 en M8 ; 71, 73 en M10).
+**Décompte (M5)** : 7 décidées, 8 répondues (dont 5 en attente de validation : 15, 32, 70, 78, 79), 5 ouvertes (55 en M6 ; 63 en M7 ; 1, 75 en M8 ; 71 et 73 en M10).
 
-**Questions « partielles » du fichier 17 traitées** (hors des 20) : en M3, Q57 (D6), Q61, Q62, Q64, Q65 (D8, décision 54), Q28 (D3), Q21 (D7, décision 53), Q51 (D6, D10) ; en M4, Q31, Q33, Q36, Q37, Q38, Q45 à Q48, Q72 (D11).
+**Questions « partielles » du fichier 17 traitées** (hors des 20) : en M3, Q57 (D6), Q61, Q62, Q64, Q65 (D8, décision 54), Q28 (D3), Q21 (D7, décision 53), Q51 (D6, D10) ; en M4, Q31, Q33, Q36, Q37, Q38, Q45 à Q48, Q72 (D11) ; en M5, Q14, Q16, Q17, Q19, Q20, Q39, Q41, Q42, Q43, Q80 (D12).
 
 ---
 
@@ -558,9 +653,11 @@ C'est un écart assumé et temporaire au 50/50, découlant de « ménager ce qui
 4. **2026-10-02, M2** : l'orchestrateur valide par procuration les points 1, 2, 4 et 6 à 11 ; il accepte le point 3 sous condition (la démonstration au regard du 2ᵉ critère de l'article 401) et demande deux vérifications (m ≥ 1, la confiscation). Décisions 37 à 47 **[P]**. Recherches complémentaires : le rapport particulier de la Cour des comptes sur la TVA (2023) ; l'article LO 111-3-14 du code de la sécurité sociale ; la doctrine sur la confiscation (commentaire de la décision 2018-755 QPC, *Nouveaux Cahiers*). **Constat nouveau** : le cliquet de l'article LO 111-3-14 fait de la **voie « sécurité sociale »** la plus robuste pour protéger la recette (D4). **[C]**
 5. **2026-10-02, M3** : décisions 48 à 52 **[P]**. L'orchestrateur demandait de vérifier le règlement 883/2004 avant d'arrêter la voie « sécurité sociale ». **Constat** : la classification d'une prestation au regard du règlement est fonctionnelle et indépendante de la voie d'affectation. Le socle serait en l'état une prestation de chômage, pour laquelle un droit au séjour peut être exigé (C-308/14), et l'annexe X est une étape ultérieure. La voie est donc arrêtée. L'orchestrateur a aussi contesté la règle d'identification de M2 : la nouvelle règle est en D7. **[C]**
 6. **2026-10-02, M4** : décisions 53 à 57 **[P]**. Deux exigences nouvelles de l'orchestrateur : la non-régression (D9) et ne rien exclure de ce qui est éligible aujourd'hui (D10). **Constat** : la directive 2011/98 interdit de restreindre le socle aux ressortissants de pays tiers qui ont travaillé six mois et sont inscrits. La condition de séjour du socle est donc nécessairement **plus ouverte** que celle du RSA. **[C]**
+7. **2026-10-02, M5** : décisions 58 à 63 **[P]**. Rédaction de D12 (l'assiette technique et le contrôle). **Choix structurant** : le champ est limité aux **modèles d'IA à usage général**, au sens de l'art. 3, point 63, du règlement sur l'IA. Cela relie le champ à la justification du savoir collectif, et règle les questions 20 et 80. **[C]**
 
 ## Questions ouvertes
 
+- **Après M5** : la validation de D12.
 - **Après M4** : la validation de D9 (le mécanisme de non-régression), de D10 (la condition de séjour et son repli) et de D11 (en particulier Q48 : le niveau du taux réduit, sa durée et le critère de maturité).
 - **Après M3** : la validation de D7 (les comptes grand public), de D8 (le fonds de réserve et l'ordre d'emploi des recettes) et de D6 §4-5 (le RSA et l'ASS) ; le reversement de la part « socle » de l'ARE (M6) ; les frontaliers (étude d'impact).
 
@@ -593,6 +690,7 @@ C'est un écart assumé et temporaire au 50/50, découlant de « ménager ce qui
 - La 5ᵉ branche (LO n° 2020-991, loi n° 2020-992, ordonnance n° 2021-1554) : https://blog.landot-avocats.net/2022/05/13/entree-en-vigueur-de-la-5e-branche-autonomie-de-la-secu/ et https://www.banquedesterritoires.fr/le-cinquieme-risque-officiellement-cree-la-dette-sociale-cantonnee
 - Directive 2011/98/UE, art. 12 : https://www.legislation.gov.uk/eudr/2011/98/article/12
 - Le RSA et la condition de cinq ans (art. L. 262-4 du CASF ; RSA majoré ; CE, 10 juillet 2015, n° 375887) : https://questions.assemblee-nationale.fr/dyn/14/questions/QANR5L14QE59693.pdf et https://blog.landot-avocats.net/2017/12/04/rsa-la-condition-de-5-ans-de-residence-en-france-imposee-aux-etrangers-non-communautaire-nest-pas-contraire-a-la-cedh-selon-le-ta-de-paris/
+- Règlement (UE) 2024/1689, art. 3, points 1 et 63 : https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/fra et https://www.regulation-ai.eu/fr/articles/article-3/
 - CIBS, ordonnance n° 2021-1843 : https://www.douane.gouv.fr/fiche/code-des-impositions-sur-les-biens-et-services-contributions-indirectes
 
 ## Liens

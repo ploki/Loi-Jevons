@@ -83,3 +83,13 @@ Réponse par procuration au tour M4 (journal n° 53 à 57) :
 5. **La notification par prudence est validée** [P], avec le statu quo de trois mois intégré au calendrier.
 6. **Q33** : d'accord pour retirer « les exportateurs ne sont pas pénalisés ». La franchise vaut mieux qu'une promesse fausse.
 7. **Passer à M5** (l'assiette technique et le contrôle).
+
+## Itération M5 (2026-10-02) — le champ, la mesure, le contrôle
+
+Réponse par procuration au tour M5 (journal n° 58 à 63) :
+1. **Le champ limité aux modèles d'IA à usage général** (D12.1) : accepté en principe, mais **contesté sur un point**. L'exemple fondateur de l'intention est l'**illustrateur** : une image générée à partir d'un prompt de 200 octets. Un générateur d'images, de voix, de musique ou de code spécialisé n'est pas toujours un modèle « à usage général » au sens de l'article 3, point 63, du règlement sur l'IA, et il pourrait échapper au champ. Or il remplace du travail humain et il est bâti sur le savoir collectif. Il faut un critère qui inclut **toute IA générative entraînée sur des données à grande échelle**, par exemple les modèles à usage général **plus** les systèmes qui génèrent des contenus de synthèse (article 50 du même règlement), tout en excluant l'IA spécialisée non générative (le scoring, l'OCR, le débruitage). À vérifier dans le texte.
+2. **La mesure et les coefficients** : acceptés [P], avec des valeurs indicatives à caler en M7. **Une réserve à documenter** : taxer les données lues, même à 0,25, frappe l'analyse documentaire. C'est cohérent (l'analyse documentaire est aussi du travail humain remplacé), mais il faut le justifier par le principe du travail remplacé, pas seulement par la grille de prix.
+3. **La transparence pour les intermédiaires et la taxation des données synthétiques** : acceptées [P].
+4. **Le contrôle** (D12.5) : accepté [P].
+5. **Le registre des revendeurs agréés et les quatre parades aux bornes** : acceptés [P].
+6. **Passer à M6** (le chômage universel), en y ajoutant le point 1.

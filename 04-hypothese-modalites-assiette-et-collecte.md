@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-01
-- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M4)
+- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M5)
 
 
 ## En vigueur
@@ -26,12 +26,17 @@
 - **Export (décision 52 [P])** : il est **hors du champ, mais déclaré**. Ce n'est qu'une précision de forme de la décision 30.
 - **Usage professionnel par un compte grand public [C, M3]** : la règle anti-échappatoire est proposée dans la note 18 (D7). Le fournisseur a l'obligation de demander l'usage et l'identifiant. Des présomptions s'appliquent (accès par API, paiement par une entreprise, volume). L'entreprise qui fait un usage professionnel par un compte grand public **autoliquide** et s'expose à une sanction. Elle remplace la phrase de M2 « sans identifiant, le client est traité comme un particulier ».
 - **M4 [C]** (note 18, D11) : la taxe est due au titre de l'**utilisation effective en France**, y compris par une entité française d'un groupe qui utilise un contrat signé à l'étranger ; une **table légale de conversion** des unités facturées (token, image, seconde) ; un volume forfaitaire pour les forfaits ; pas de remboursement à l'export.
+- **M5** : les forfaits et la table de conversion, avec une **option pour le réel** (décision 61 [P]). **[C]** (note 18, D12) : le champ est l'inférence des **modèles d'IA à usage général** (règlement sur l'IA, art. 3, point 63) ; un texte se mesure à **1 caractère Unicode = 1 octet-équivalent**, et les images, le son et la vidéo dans des unités normalisées ; des coefficients par flux (générées 1 ; lues 0,25 ; cache 0,025) ; une règle de transparence pour les intermédiaires ; le raisonnement interne compte comme des données générées ; les erreurs non facturées sont exclues.
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M5 (2026-10-02)
+
+- **[P] Décision 61.** **[C]** Les questions 14 à 20, 78 à 80 sont traitées en note 18, D12. Le format de référence par caractère est une **précision** des décisions 9 et 30 (l'octet dans un format de référence), et non un revirement.
 
 ### Session metamaieutique, M4 (2026-10-02)
 

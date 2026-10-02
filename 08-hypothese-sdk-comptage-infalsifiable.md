@@ -2,7 +2,7 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M4)
+- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M5)
 
 
 ## En vigueur
@@ -19,12 +19,17 @@
 - **Contrôle** : une falsification est **détectable, pas impossible**. On recoupe avec la facturation électronique, les heures de GPU louées et l'électricité consommée.
 - **Questions ouvertes** (fichier 17) : les sanctions, les moyens de l'administration, le fractionnement, le coût de conformité (M8) ; la durée de la période de lancement et le niveau du taux réduit (M6).
 - **M4 [C]** (note 18, D11) : l'**équipement terminal** est défini (sous la maîtrise physique de l'utilisateur, non exploité pour servir des tiers) ; un serveur en colocation n'en est pas un. Le taux réduit est proposé à 0,25 × le tarif plein pendant trois ans, avec une extinction au plus tard à cinq ans et un critère objectif de maturité. L'IA embarquée est taxée sur un volume forfaitaire par catégorie d'appareil. Le SDK libre est piloté par la DGFiP, avec un référentiel de type NF525. Le projet est notifié par prudence (directive 2015/1535 et aides d'État).
+- **M5** : le lancement à 0,25 × le tarif pendant trois ans, avec une extinction à cinq ans (décision 60 [P]) ; l'option pour le réel avec le SDK (décision 61 [P]) ; la notification par prudence (décision 62 [P]). **[C]** (note 18, D12.5 à D12.7) : un registre d'entraînement, les sanctions, l'abattement au niveau du groupe et restitué automatiquement, le registre des revendeurs agréés, le lissage aux bornes des tranches.
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M5 (2026-10-02)
+
+- **[P] Décisions 60 à 62.** **[C]** Le contrôle et les sanctions sont en note 18, D12.5 à D12.7.
 
 ### Session metamaieutique, M4 (2026-10-02)
 

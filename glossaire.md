@@ -9,7 +9,9 @@
 | **Chômage universel** | Un revenu versé par le système de chômage aux personnes **sans emploi** : sans limite de durée, sans obligation de recherche, un socle plus un complément (fichier 05) | Un revenu universel versé à **tous** (au sens du réseau BIEN) |
 | **Revenu universel** | Employé par Guillaume au départ pour désigner le chômage universel. Le sens strict n'est gardé que pour mémoire | — |
 | **Usage professionnel** | Le seul usage taxé. Les **particuliers sont exonérés** (hors taxe) | « TTC pour les particuliers », un contresens corrigé |
-| **Octet-équivalent** | L'unité taxable : l'octet mesuré dans un format de référence, multiplié par un **coefficient par type de contenu** | Le token |
+| **Octet-équivalent** | L'unité taxable : l'octet mesuré dans un format de référence, multiplié par un **coefficient par type de contenu** et par flux. Pour le texte, depuis M5 [C] : 1 caractère Unicode = 1 octet-équivalent | Le token |
+| **Modèle d'IA à usage général** | Le champ de la taxe [C, M5] : au sens de l'art. 3, point 63, du règlement (UE) 2024/1689, et ses modèles dérivés | Un système d'IA spécialisé (hors du champ) |
+| **Revendeur agréé** | Un redevable inscrit sur un registre public, seul autorisé à acheter en suspension [C, M5] | — |
 | **Plancher, moteur, plafond** | ↺ Depuis M2 (décisions 39 et 40 [P]) : le tarif de la classe k vaut **m × P_k**, où m est voté chaque année par le Parlement entre 1 (le plancher) et 4 (le plafond). L'ancien « moteur » automatique B/A n'est plus qu'une information du rapport annexé (fichier 10) | — |
 | **Classe de modèles** | L'une des trois tranches de prix catalogue par unité, dont les bornes sont fixées par la loi ; chaque classe a son prix moyen P_k (note 18, D1) | La taille du modèle (critère écarté) |
 | **m (le multiple)** | Le coefficient voté chaque année, entre 1 et 4, qui multiplie P_k. À m = 1, la moitié du coût total hors TVA revient au bien commun (note 18, D2) | — |
