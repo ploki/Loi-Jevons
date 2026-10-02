@@ -1,6 +1,6 @@
 # Méthode, conventions et index
 
-> **Projet maieutique** (voir le skill `maieutique`). À lire en premier, avec `journal-des-decisions.md` et `glossaire.md`.
+> **Projet maieutique** (voir le skill `maieutique`). À lire en premier, avec `intention-de-l-auteur.md`, `journal-des-decisions.md` et `glossaire.md`.
 
 > Fichier de référence : à relire en premier à chaque reprise de contexte.
 
@@ -45,6 +45,8 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 
 ## Fichiers hors numérotation
 
+- `intention-de-l-auteur.md` : l'intention, les convictions et les états d'âme de Guillaume, liés au projet. C'est la boussole, et elle est **à lire en premier**.
+- `prompt-log.md` : le journal des prompts du mode (c).
 - `CLAUDE.md` : déclare le dossier comme projet maieutique.
 - `glossaire.md` : les termes du projet et leur sens exact.
 - `journal-des-decisions.md` : le journal des décisions structurantes et des changements d'avis, **à tenir à jour à chaque décision**.

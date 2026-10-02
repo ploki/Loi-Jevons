@@ -40,6 +40,7 @@
 | 33 | 10-02 | **Sélection des cas historiques** : les tisserands, le quartz, les dockers de 1960, le TRR suédois, avec Keynes en fil rouge | Remplace l'inventaire de 12 cas | 16 |
 | 34 | 10-02 | **Fin des sauvegardes** (archive et transcript) ; création de **ce journal** | ↺ Les archives et le transcript s'arrêtent | — |
 | 35 | 10-02 | **Dossier versionné avec git** (branche `main`) et **mis en conformité avec les skills maieutique et metamaieutique** : une section « En vigueur » puis un historique dans chaque note, un glossaire, un CLAUDE.md, le fichier 17 transformé en liste de suivi, le script mis à jour (objectif de 16 Md€) | ↺ Le format « En bref » et l'empilement des sections sont abandonnés | 00, 17, CLAUDE.md, glossaire |
+| 36 | 10-02 | **Versionnement en mode (c)** (un commit par itération et `prompt-log.md`) ; création de **`intention-de-l-auteur.md`**, qui consigne l'intention, les convictions et les états d'âme liés au projet, géré comme les autres notes | ↺ La pause des commits annoncée au début du message précédent est levée | intention-de-l-auteur, prompt-log |
 
 ## Points en suspens signalés par la confrontation (fichier 17)
 
