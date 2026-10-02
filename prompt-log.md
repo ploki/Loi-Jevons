@@ -48,3 +48,17 @@ Réponse par procuration à l'ébauche de la note 18 :
 11. **Le plan** : validé, avec deux exigences : les 20 questions non traitées et les 10 prioritaires doivent être explicitement fermées dans la note 18, et il faut regrouper si possible pour finir en moins de 20 itérations.
 
 Demande pour M2 : inscrire ces arbitrages au journal (n° 37 et suivants, [P], ↺ si besoin), mettre à jour les notes 04, 08 et 10, et répondre à la contestation 3 et aux vérifications 4 et 5.
+
+## Itération M2 (2026-10-02) — tarif, affectation, plafond
+
+Réponse par procuration au tour M2 (journal n° 37 à 47) :
+1. **La condition de la décision 39 est levée** [P] : le tarif m × P_k, trois classes par tranches de prix catalogue, un indice calculé par l'INSEE, et en repli le tarif en € par unité avec sa clause de réduction automatique. Traiter en M8 le contournement aux bornes des tranches (prix catalogue fixé juste sous une borne).
+2. **La branche de sécurité sociale est acceptée en principe** [P], avec le cliquet de l'article LO 111-3-14 et une fraction pour l'Unédic. Le double dividende (la baisse des cotisations) vient bien de la décision 30 [G] : c'est cohérent. **Mais il faut vérifier un point** : une prestation de sécurité sociale entre dans le champ du règlement (CE) 883/2004 (exportabilité, totalisation, égalité de traitement des ressortissants de l'Union). Le socle est-il une « prestation de chômage » ou une « prestation spéciale en espèces à caractère non contributif » (annexe X) ? Quelles conséquences sur la condition de résidence et le coût ? Et le transfert du RSA et de l'ASS vers cette branche (article 72-2, compensation aux départements) ? Si ce point fait tomber la voie sécurité sociale, on retombe sur l'établissement public.
+3. **m est voté en LFSS** [P], par cohérence avec le point 2.
+4. **Une justification renforcée au-delà de m = 2** [P]. Rappeler dans l'exposé que l'ordre de grandeur reste celui du carburant (l'intention de l'auteur).
+5. **L'export est « hors du champ, mais déclaré »** [P] : une précision de forme de la décision 30, sans changement d'effet.
+6. **La réserve sur la confiscation est notée pour le juriste.** On passe à M3.
+
+**Contestation** (point 2 de M2) : « sans identifiant, le client est traité comme un particulier » ouvre une échappatoire massive, puisque les entreprises n'auraient qu'à utiliser des comptes grand public. Il faut une règle qui ferme la faille. Par exemple : le fournisseur doit demander l'identifiant ; l'usage professionnel est présumé au-delà d'un volume ou en cas d'accès par API ; l'entreprise qui fait un usage professionnel par un compte grand public autoliquide et s'expose à une sanction. Et cela sans taxer les particuliers.
+
+Demande pour M3 : traiter le point 2 (règlement 883/2004, RSA et ASS, loi organique de création de la branche) et la contestation, puis arrêter l'affectation. Continuer la fermeture des questions du fichier 17.

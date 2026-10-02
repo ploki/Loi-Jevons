@@ -2,32 +2,40 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-01
-- **Dernière mise à jour** : 2026-10-02
+- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M2)
 
 
 ## En vigueur
 
-- **Champ** : l'usage **professionnel** uniquement. Les **particuliers sont exonérés**.
-- **Unité** : l'**octet-équivalent**, c'est-à-dire l'octet mesuré dans un format de référence, multiplié par un **coefficient par type de contenu** calibré sur le prix moyen de ce type.
-- **Les quatre flux sont comptés** : la génération, la lecture, l'import et l'export.
-- **Territorialité** : le critère est le **lieu d'établissement du client** professionnel.
-  - **Import** : autoliquidé par le client.
-  - **Export** (GPU en France, client à l'étranger) : **déclaré, au taux nul**.
-  - Une clause anti-abus s'applique.
-- **Frontière entre usage professionnel et personnel** : au-delà d'un seuil de volume, le compte est présumé professionnel ; un accès par API est présumé professionnel.
+> Mis à jour en M2 de la session metamaieutique (décisions [P] 37, 38, 45 et 46). La faisabilité juridique est dans la note 18.
+
+- **Nature** : une imposition de toutes natures du type **accise sur un service**, perçue **une seule fois**, au stade de l'**utilisation professionnelle finale** ; **aucune déduction en chaîne** (décision 37 [P]).
+- **Champ** : l'**usage professionnel**, c'est-à-dire l'utilisation par une personne qui agit dans le cadre d'une activité économique ou d'une mission de service public. Les **particuliers sont hors du champ**. Le **secteur public, les associations et la recherche sont dans le champ**, avec l'abattement (décision 46 [P]).
+- **Hors du champ** : l'**entraînement et l'affinage** des modèles (décision 45 [P]). C'est une piste ultérieure.
+- **Unité** : l'**octet-équivalent** (décision 9 [G]), l'octet mesuré dans un format de référence et multiplié par un **coefficient par type de contenu**. Les coefficients sont **fixés par la loi** (ils relèvent de l'assiette, article 34).
+- **Tarif** : par **classe de modèles** (note 10).
+- **Redevable** (décision 38 [P]) :
+  - le **fournisseur enregistré** en France, établi ou non, collecte la taxe auprès de ses clients professionnels ;
+  - **à défaut**, le client professionnel **autoliquide** ;
+  - l'**inférence pour usage propre** (sur ses serveurs ou des capacités louées) est déclarée par l'entreprise.
+- **Identification du client professionnel** : le **SIREN** ou le **numéro de TVA intracommunautaire** (vérifié par VIES), ou un identifiant fiscal équivalent pour un client étranger. Un client sans identifiant est traité comme un particulier. Un accès par API, ou un volume au-delà d'un seuil, fait présumer l'usage professionnel.
+- **Revente** : l'achat en vue de la revente se fait **en suspension**, sur attestation (décision 37 [P]). Il n'y a donc pas de cascade.
+- **Territorialité** : le critère est l'**établissement du client** professionnel. L'export vers un client établi à l'étranger est **déclaré** et non taxé (décision 30 [G]) ; la note 18 propose de le qualifier juridiquement de « hors du champ » [C].
 - **Le tarif douanier** n'est qu'une boutade, réservée à la campagne.
-- **Questions ouvertes** (fichier 17) :
-  - le format de référence et l'encodage du texte ;
-  - le raisonnement interne et les appels d'outils ;
-  - le contexte relu et le cache ;
-  - la cascade entre intermédiaires ;
-  - les octets que doivent déclarer les fournisseurs étrangers.
+- **Questions ouvertes** (fichier 17) : le format de référence et l'encodage du texte (Q14), le contexte relu et le cache (Q15), le raisonnement interne et les appels d'outils (Q16), les fournisseurs étrangers (Q32), à traiter en M5 et M7.
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M2 (2026-10-02) : décisions par procuration
+
+- **[P] Décision 37** : pas de déduction en chaîne, la revente se fait en suspension. Raison : la déduction est la 4ᵉ caractéristique essentielle de la TVA (article 401 de la directive, note 18).
+- **[P] Décision 38** : le fournisseur enregistré collecte ; à défaut, le client autoliquide. Ce modèle s'inspire de l'accise sur l'électricité, où le fournisseur collecte auprès du consommateur final. Il réduit le nombre de redevables et sécurise le recouvrement.
+- **[P] Décision 45** : l'entraînement est hors du champ, par cohérence avec une assiette d'usage.
+- **[P] Décision 46** : le secteur public, les associations et la recherche sont dans le champ. Exclure de grands utilisateurs affaiblirait la cohérence du critère, au vu de la décision 2009-599 DC sur la contribution carbone (note 18).
 
 ### En bref
 

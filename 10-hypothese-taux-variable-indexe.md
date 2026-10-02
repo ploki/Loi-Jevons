@@ -2,27 +2,35 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02
+- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M2)
 
 
 ## En vigueur
 
-- **Règle du taux** : le montant par unité au trimestre T vaut **min(4P, max(P, B/A))**, avec un lissage.
-  - P = le prix moyen ;
-  - B = le besoin de financement ;
-  - A = l'assiette.
+> Mis à jour en M2 de la session metamaieutique (décisions [P] 39, 40 et 41). La faisabilité juridique est dans la note 18 (O2, O3, D1 à D3).
 
-  Le **plancher, égal à P, correspond au 50/50**, et le **plafond est de 4P**.
-- **Révision tous les trois mois** par arrêté, d'après un indice de prix tiré des déclarations. Les **déclarations suivent le calendrier de la TVA**.
+- **Règle du tarif** : pour la classe de modèles k, tarif par octet-équivalent = **m × P_k**.
+  - **P_k** est le prix moyen hors taxe de la classe k, constaté par un **indice publié par un organisme indépendant** (l'INSEE, à confirmer) selon une **formule fixée par la loi**. Un **arrêté trimestriel** se borne à le **constater** (décision 40 [P]).
+  - **Trois classes**, objectives et peu nombreuses (décision 39 [P], **sous condition**, à confirmer).
+  - **m** est **voté chaque année par le Parlement**, entre **1** et **4** (décision 40 [P]).
+- **Le plancher m = 1 correspond au 50/50** : au moins la moitié du prix payé hors TVA revient au bien commun (vérification en note 18, section D2).
+- **Le plafond 4P est une borne légale** (décision 41 [P]). L'analyse du caractère non confiscatoire est dans la note 18 (section D3).
+- **↺ Le relèvement automatique « selon les besoins » par arrêté est abandonné** : il exposait à l'incompétence négative (article 34). Le besoin de financement (B/A) devient un **élément d'information** du rapport annexé au projet de loi qui fixe m.
+- **Déclarations** : le calendrier de la TVA est conservé, comme un simple circuit pratique (décision 26 [G]) ; il ne crée aucun risque au regard de l'article 401.
 - **Justification** : le **savoir collectif** sur lequel les modèles ont été entraînés. Au moins la moitié de la valeur revient au bien commun.
-- **Le surplus** va au fonds de réserve et à la baisse des cotisations.
-- ⚠ **Parmi les trois enseignements**, le premier (« la part de la taxe augmente quand le prix baisse ») est **neutralisé par l'indexation sur le prix**. Les formules de l'exposé sont à revoir (fichier 17).
+- **Le lissage** : il est désormais assuré par le vote annuel de m. La simulation v4 (M10) le modélisera.
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M2 (2026-10-02) : décisions par procuration
+
+- **[P] ↺ Décision 39 (sous condition)** : un tarif par classe de modèles, m × P_k. Elle revient en partie sur les décisions **25** et **30**, qui prévoyaient un prix moyen P unique. **Pourquoi l'ancienne règle bloquait** : avec un tarif unique par octet, alors que les prix varient d'un facteur 100 d'un modèle à l'autre, un modèle sobre aurait été taxé à plusieurs dizaines de fois son prix (Q26). C'était contraire au 50/50 et fragile au regard de l'égalité devant les charges publiques. **Pourquoi la nouvelle respecte l'intention** : le 50/50 devient vrai dans chaque classe.
+- **[P] ↺ Décision 40** : m est voté chaque année par le Parlement. Elle revient en partie sur la décision **26** (le relèvement par arrêté) et sur le « moteur » de la décision **30**. **Pourquoi l'ancienne règle bloquait** : l'article 34 réserve à la loi la fixation du taux, et un critère comme « les besoins » est trop indéterminé pour être laissé au pouvoir réglementaire. **Pourquoi la nouvelle respecte l'intention** : le taux monte « si la solidarité l'exige », mais c'est le Parlement qui en décide. La révision trimestrielle de l'indice demeure.
+- **[P] Décision 41** : le plafond 4P est conservé.
 
 ### En bref
 

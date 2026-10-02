@@ -64,13 +64,13 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 | `01-cadrage-intention-initiale.md` | cadrage | en discussion | But : chômage universel ; livrables : projet de loi Loi Jevons + campagne ; « drastique mais juste » ; Gouvernement porteur |
 | `02-cas-inventaire-candidats.md` | cas | brouillon | 12 cas candidats en 3 familles (amorti / refusé / fausse bonne idée), non sourcés |
 | `03-cadrage-simulation-tokens-france-vs-masse-salariale.md` | cadrage | brouillon | ~2,5×10¹⁵ tokens FR 2026 vs ~87 M€ (Atos+Capgemini) → ~0,035 €/Mtok |
-| `04-hypothese-modalites-assiette-et-collecte.md` | hypothese | en discussion | Taxe génération/lecture/import/export ; compta + déclaration ; particuliers exonérés, usage pro taxé ; ≈ TVA + accises |
+| `04-hypothese-modalites-assiette-et-collecte.md` | hypothese | en discussion | Accise sur un service, un seul stade, sans déduction ; fournisseur enregistré collecteur, sinon autoliquidation ; revente en suspension ; particuliers hors du champ ; entraînement hors du champ ; secteur public inclus (M2 [P]) |
 | `05-hypothese-revenu-universel-musk.md` | hypothese | brouillon | « Musk a raison » ; chômage universel (pas revenu pour tous) ~50 Md€ ; paramètres à trancher |
 | `06-decision-titre.md` | decision | stabilisé | « Loi Jevons : financement du chômage universel par la taxe sur l’intelligence artificielle » |
 | `07-decision-fin-disclaimer-et-chute.md` | decision | stabilisé | Pour la campagne : disclaimer (tokens au lieu d'un juriste), chute « OH LES GARS! », conversation à 0,2 $ |
-| `08-hypothese-sdk-comptage-infalsifiable.md` | hypothese | brouillon | SDK partout (portables inclus), IA locale/embarquée à taux réduit au lancement ; journal chaîné, recoupements ; NF525 |
+| `08-hypothese-sdk-comptage-infalsifiable.md` | hypothese | brouillon | ↺ Obligation de comptage sur le redevable, SDK certifié = voie simplifiée (M2 [P]) ; taux réduit pour l'exécution sur équipement terminal, temporaire, notifié ; recoupements |
 | `09-objection-paresse.md` | objection | brouillon | Faits contre l'objection de la paresse (Finlande, Alaska, Mincome…) |
-| `10-hypothese-taux-variable-indexe.md` | hypothese | en discussion | 50/50, bien commun, révision trimestrielle, déclaration type TVA ; règle de taux à unifier |
+| `10-hypothese-taux-variable-indexe.md` | hypothese | en discussion | Tarif m × P_k par classe (3 classes) ; P_k constaté chaque trimestre ; ↺ m voté chaque année par le Parlement entre 1 et 4 ; plafond 4P (M2 [P]) |
 | `11-cadrage-impact-economique.md` | cadrage | brouillon | 10 questions d’impact éco : incidence, adoption, coût du travail (double dividende), compétitivité, PME, macro, UE |
 | `12-concept-analogie-carburant.md` | concept | en discussion | IA aussi stratégique que le carburant → accise par unité, taxes ~100 % du prix HT ; limites : externalités, Gilets jaunes, frontière |
 | `13-simulation-v2-recettes-50-50.md` | cadrage | brouillon | Taxe 50/50 ≈ CA IA pro France : ~1,3 Md€ 2026 (0,5–3) ; 10 Md€ vers 2029, 50 Md€ vers 2031 (central) |
@@ -78,4 +78,4 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 | `15-concept-complementarite-taxe-zucman.md` | concept | stabilisé | Jevons (flux IA) + Zucman (stock) ; Zucman citée dans l’exposé des motifs, hors dispositif |
 | `16-cas-selection-et-faits-verifies.md` | cas | stabilisé | 4 cas sourcés (tisserands, quartz, dockers 1960, TRR Suède) + Keynes ; récit refus → sans mécanisme → ça marche ; Loi Jevons = généralisation |
 | `17-objection-questions-lecteur-critique.md` | objection | en discussion (liste de suivi) | 80 questions d’un agent lecteur critique ; corpus : 10 R / 50 P / 20 N ; top 10 à régler (dir. TVA art. 401…) ; contradictions exposé ↔ notes |
-| `18-faisabilite-obstacles-juridiques-et-architecture.md` | faisabilite | brouillon | Session metamaieutique : 10 obstacles (O1-O10) ; art. 401 non bloquant sans déduction ; bloquants : art. 34, affectation (LOLF), compteur imposé aux éditeurs ; architecture révisée [C] ; plan en 20 itérations |
+| `18-faisabilite-obstacles-juridiques-et-architecture.md` | faisabilite | en discussion | Session metamaieutique : 10 obstacles (O1-O10) ; art. 401 non bloquant sans déduction (D1) ; art. 34 et compteur levés (décisions 40, 43) ; affectation : voie « sécurité sociale » recommandée (D4) ; m ≥ 1 = 50/50 (D2) ; plafond 4P non confiscatoire (D3) ; suivi des 20 questions (E) ; plan en 14 itérations |
