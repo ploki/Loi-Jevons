@@ -2,13 +2,13 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02 (M5)
+- **Dernière mise à jour** : 2026-10-02 (M6)
 
 
 ## En vigueur
 
 - **Liste de suivi** des 80 questions. Chaque question a un **statut** : ouverte, répondue ou décidée. Quand une question est tranchée, on note dans « Renvoi » le numéro de la décision du journal.
-- Situation au 2026-10-02 (M5 de la session metamaieutique) : **18 répondues**, **10 décidées** (21, 22, 26, 27, 33, 35, 40, 48, 60, 69, par procuration [P]), **52 ouvertes**, dont la plupart sont traitées dans la note 18 (sections D11 et D12), en attente de validation. Le suivi des 20 questions non traitées est dans la **note 18, section E**.
+- Situation au 2026-10-02 (M6 de la session metamaieutique) : **23 répondues**, **12 décidées** (par procuration [P]), **45 ouvertes**. Le suivi des 20 questions non traitées est dans la **note 18, section E** ; la revue complète des 80 questions est prévue en M7.
 - **Priorités avant de rédiger le dispositif** : 69 (l'article 401 de la directive TVA), 67, 68, 60, 40, 15, 35, 32, 26, 22.
 
 | n° | Thème | Statut | Corpus (R/P/N) | Priorité | Renvoi |
@@ -32,7 +32,7 @@
 | 17 | B | ouverte | P |  | — |
 | 18 | B | ouverte | P |  | — |
 | 19 | B | ouverte | P |  | — |
-| 20 | B | ouverte | P |  | — |
+| 20 | B | décidée | P |  | 64 [P] ; note 18, D13.1 |
 | 21 | B | décidée | P |  | 53 [P] |
 | 22 | B | décidée | N | **top 10** | 46 [P] |
 | 23 | C | ouverte | P |  | — |
@@ -61,16 +61,16 @@
 | 46 | F | ouverte | P |  | — |
 | 47 | F | ouverte | P |  | — |
 | 48 | F | décidée | P |  | 60 [P] |
-| 49 | G | ouverte | P |  | — |
-| 50 | G | ouverte | P |  | — |
+| 49 | G | répondue | P |  | note 18, D13.2 |
+| 50 | G | répondue | P |  | note 18, D13.3 |
 | 51 | G | ouverte | P |  | — |
 | 52 | G | répondue | R |  | — |
-| 53 | G | ouverte | P |  | — |
+| 53 | G | répondue | P |  | note 18, D13.4 |
 | 54 | G | ouverte | P |  | — |
-| 55 | G | ouverte | N |  | — |
+| 55 | G | répondue | N |  | note 18, D13.5 |
 | 56 | G | répondue | R |  | — |
 | 57 | G | ouverte | P |  | — |
-| 58 | H | ouverte | P |  | — |
+| 58 | H | répondue | P |  | note 18, D13.6 |
 | 59 | H | répondue | R |  | — |
 | 60 | H | décidée | N | **top 4** | 42, 49 [P] |
 | 61 | H | ouverte | P |  | — |
@@ -92,7 +92,7 @@
 | 77 | L | ouverte | P |  | — |
 | 78 | M | répondue | N |  | note 18, D12.3 |
 | 79 | M | répondue | N |  | note 18, D12.4 |
-| 80 | M | ouverte | P |  | — |
+| 80 | M | décidée | P |  | 64 [P] ; note 18, D13.1 |
 
 ---
 

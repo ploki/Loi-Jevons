@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-01
-- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M5)
+- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M6)
 
 
 ## En vigueur
@@ -27,12 +27,17 @@
 - **Usage professionnel par un compte grand public [C, M3]** : la règle anti-échappatoire est proposée dans la note 18 (D7). Le fournisseur a l'obligation de demander l'usage et l'identifiant. Des présomptions s'appliquent (accès par API, paiement par une entreprise, volume). L'entreprise qui fait un usage professionnel par un compte grand public **autoliquide** et s'expose à une sanction. Elle remplace la phrase de M2 « sans identifiant, le client est traité comme un particulier ».
 - **M4 [C]** (note 18, D11) : la taxe est due au titre de l'**utilisation effective en France**, y compris par une entité française d'un groupe qui utilise un contrat signé à l'étranger ; une **table légale de conversion** des unités facturées (token, image, seconde) ; un volume forfaitaire pour les forfaits ; pas de remboursement à l'export.
 - **M5** : les forfaits et la table de conversion, avec une **option pour le réel** (décision 61 [P]). **[C]** (note 18, D12) : le champ est l'inférence des **modèles d'IA à usage général** (règlement sur l'IA, art. 3, point 63) ; un texte se mesure à **1 caractère Unicode = 1 octet-équivalent**, et les images, le son et la vidéo dans des unités normalisées ; des coefficients par flux (générées 1 ; lues 0,25 ; cache 0,025) ; une règle de transparence pour les intermédiaires ; le raisonnement interne compte comme des données générées ; les erreurs non facturées sont exclues.
+- **M6** : **le champ** couvre les modèles d'IA à usage général **et** les systèmes qui génèrent des contenus de synthèse (art. 50, § 2, du règlement sur l'IA) ; l'IA non générative est exclue (décision 64 [P] ; formulation en note 18, D13.1). **La taxation des données lues** se justifie par le **travail remplacé** : l'analyse documentaire remplace des heures de lecture humaine (décision 65 [P]). La règle de transparence et la taxation des données synthétiques sont retenues (décision 66 [P]).
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M6 (2026-10-02)
+
+- **[P] Décisions 64 à 66.** L'élargissement du champ à l'art. 50 couvre l'exemple fondateur de l'illustrateur (un générateur d'images spécialisé).
 
 ### Session metamaieutique, M5 (2026-10-02)
 

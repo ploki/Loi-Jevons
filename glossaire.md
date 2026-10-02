@@ -10,7 +10,7 @@
 | **Revenu universel** | Employé par Guillaume au départ pour désigner le chômage universel. Le sens strict n'est gardé que pour mémoire | — |
 | **Usage professionnel** | Le seul usage taxé. Les **particuliers sont exonérés** (hors taxe) | « TTC pour les particuliers », un contresens corrigé |
 | **Octet-équivalent** | L'unité taxable : l'octet mesuré dans un format de référence, multiplié par un **coefficient par type de contenu** et par flux. Pour le texte, depuis M5 [C] : 1 caractère Unicode = 1 octet-équivalent | Le token |
-| **Modèle d'IA à usage général** | Le champ de la taxe [C, M5] : au sens de l'art. 3, point 63, du règlement (UE) 2024/1689, et ses modèles dérivés | Un système d'IA spécialisé (hors du champ) |
+| **Champ de la taxe** | Depuis M6 (décision 64 [P]) : l'inférence des **modèles d'IA à usage général** (art. 3, point 63, du règlement (UE) 2024/1689) et des **systèmes d'IA qui génèrent des contenus de synthèse** (art. 50, § 2) ; l'IA non générative est exclue | Le « système d'IA » au sens large (art. 3, point 1) |
 | **Revendeur agréé** | Un redevable inscrit sur un registre public, seul autorisé à acheter en suspension [C, M5] | — |
 | **Plancher, moteur, plafond** | ↺ Depuis M2 (décisions 39 et 40 [P]) : le tarif de la classe k vaut **m × P_k**, où m est voté chaque année par le Parlement entre 1 (le plancher) et 4 (le plafond). L'ancien « moteur » automatique B/A n'est plus qu'une information du rapport annexé (fichier 10) | — |
 | **Classe de modèles** | L'une des trois tranches de prix catalogue par unité, dont les bornes sont fixées par la loi ; chaque classe a son prix moyen P_k (note 18, D1) | La taille du modèle (critère écarté) |

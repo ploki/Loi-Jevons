@@ -2,7 +2,7 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M4)
+- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M6)
 
 
 ## En vigueur
@@ -22,12 +22,17 @@
 - **RSA et ASS [C]** : le RSA est **recentralisé**, avec une reprise des ressources transférées aux départements, sur le modèle de l'expérimentation de l'art. 43 de la LFI pour 2022. L'ASS est financée par l'État : sa dépense est transférée à la branche par une contribution de l'État. Voir la note 18, D6.
 - **Flux à préciser en M6** : la part « socle » de l'ARE actuelle, que l'Unédic n'aurait plus à verser.
 - **M4 (décisions 55 à 57 [P])** : le RSA et l'ASS passent à la branche, avec une **garantie de non-régression** : une garantie familiale permanente au niveau du RSA majoré, le maintien des droits connexes et des trimestres de retraite, et une clause de sauvegarde individuelle (note 18, D9 [C]). La **condition de séjour** est plus ouverte que celle du RSA, et n'exclut personne d'aujourd'hui éligible (D10 [C]). La part « socle » de l'ARE est reversée à la branche. **Le chiffrage est à refaire en M6.**
+- **M6 [C]** (note 18, D13.2 à D13.7) : un socle individuel au seuil de 60 %, avec la garantie familiale ; les étudiants en formation initiale non éligibles et un socle réduit pour les revenus élevés du patrimoine (**deux points d'intention à confirmer**) ; une sortie progressive de 12 mois, puis la prime d'activité ; le complément égal à l'écart entre l'ARE et le socle ; la formation rémunérée (le socle, RNCP/Qualiopi, l'abondement du CPF) ; une ouverture en phases, le **montant du socle étant la variable d'ajustement** voté en LFSS ; un **besoin net révisé d'environ 18 à 23 Md€**.
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M6 (2026-10-02)
+
+- **[C]** Les questions 49, 50, 53, 55 et 58 sont traitées en note 18, D13. Point d'alerte : la part « socle » de l'ARE représenterait une grande partie des prestations de l'Unédic, qui se recentrerait sur le complément.
 
 ### Session metamaieutique, M4 (2026-10-02)
 

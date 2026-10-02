@@ -68,6 +68,11 @@
 | 61 | 10-02 | **[P] Volumes forfaitaires et table légale de conversion** (D7, D11) : ils sont retenus, avec une **option pour le réel** (avec le SDK certifié) quand le forfait pénalise le redevable. Le volume compté reste la mesure juste | — | 04, 08, 18 |
 | 62 | 10-02 | **[P] Notification par prudence** à la Commission (directive 2015/1535 et aides d'État) ; le **statu quo de trois mois** est intégré au calendrier | — | 18 |
 | 63 | 10-02 | **[P] L'exposé retire « les exportateurs ne sont pas pénalisés »** et dit franchement ce qui pèse sur eux (Q33) | Corrige l'exposé v0.1 | livrable (v0.2), 18 |
+| 64 | 10-02 | **[P] Le champ** : les **modèles d'IA à usage général** (règlement 2024/1689, art. 3, point 63) **et** les **systèmes d'IA qui génèrent des contenus de synthèse** (art. 50, § 2), y compris spécialisés (images, voix, musique, code). L'IA spécialisée **non générative** est exclue (scoring, OCR, débruitage). Motif : l'exemple fondateur de l'illustrateur doit être couvert. La formulation légistique est proposée en note 18, D13.1 [C] | Précise la proposition D12.1 (modèles à usage général seuls) | 04, 18 |
+| 65 | 10-02 | **[P] Mesure et coefficients** (D12.2, D12.3) : 1 caractère = 1 octet-équivalent ; des coefficients par flux (générées 1 ; lues 0,25 ; cache 0,025), à caler en M7. **La taxation des données lues est justifiée par le principe du travail remplacé** (l'analyse documentaire remplace des heures de lecture humaine), et non par la seule grille de prix | Précise les décisions 5, 9 et 30 | 04, 18 |
+| 66 | 10-02 | **[P] Règle de transparence** pour les intermédiaires ; **la génération de données synthétiques est taxée** (D12.3) | — | 04, 18 |
+| 67 | 10-02 | **[P] Contrôle** (D12.5) : les sanctions sur le modèle des art. 1727 à 1729 du CGI ; un délai de reprise de trois ans ; l'abattement au niveau du groupe, restitué automatiquement ; un registre d'entraînement ; les indicateurs indirects servent seulement au ciblage | — | 08, 18 |
+| 68 | 10-02 | **[P] Registre des revendeurs agréés** (D12.6) et **quatre parades aux bornes des tranches**, dont un lissage de ± 10 % (D12.7) | — | 08, 10, 18 |
 
 ## Points en suspens signalés par la confrontation (fichier 17)
 

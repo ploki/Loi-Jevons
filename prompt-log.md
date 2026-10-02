@@ -93,3 +93,14 @@ Réponse par procuration au tour M5 (journal n° 58 à 63) :
 4. **Le contrôle** (D12.5) : accepté [P].
 5. **Le registre des revendeurs agréés et les quatre parades aux bornes** : acceptés [P].
 6. **Passer à M6** (le chômage universel), en y ajoutant le point 1.
+
+## Itération M6 (2026-10-02) — le chômage universel ; relève de l'agent
+
+Réponse par procuration au tour M6 (journal n° 64 à 68) :
+1. **Le champ D13.1 est validé** [P], avec la traduction et la transcription incluses expressément. Les traducteurs et les sous-titreurs sont l'exemple même du travail remplacé.
+2. **Les étudiants en formation initiale : la question est LAISSÉE OUVERTE.** Elle touche l'intention (le revenu digne de « celles et ceux qui n'ont pas d'emploi ») et une décision [G] (la 31, « ouvert dès 18 ans »). Elle est structurante (environ 40 Md€). On contourne : le chiffrage de base les exclut (les bourses sont maintenues), à titre d'**hypothèse de chiffrage**, et une variante chiffrée les inclut. Les livrables présentent la question comme un choix ouvert, que Guillaume tranchera.
+3. **La réduction du socle pour les revenus élevés du patrimoine : la question est LAISSÉE OUVERTE.** Elle introduit une forme de condition de ressources dans un dispositif voulu universel, ce qui touche l'intention. Chiffrage de base : sans réduction, avec une variante. À signaler.
+4. **La sortie progressive de 12 mois, puis la prime d'activité** : validée [P].
+5. **Les phases d'ouverture, avec le montant du socle voté en LFSS** : validées [P]. Les droits ne précèdent jamais les recettes.
+6. **Le recentrage de l'Unédic** : assumé [P], avec une mention explicite du rôle maintenu des partenaires sociaux et de la concertation prévue au mandat.
+7. **Relève** : sur la recommandation de l'agent, dont le contexte est saturé, un **agent neuf** reprend à partir de M7, avec la section F de la note 18.
