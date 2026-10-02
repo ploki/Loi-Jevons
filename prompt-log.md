@@ -21,3 +21,7 @@ Guillaume demande d'expliquer la clause d'adaptation des décisions juridiquemen
 ## Itération 5 (2026-10-02)
 
 Guillaume recadre : la clause est trop étroite. Le **but du mandat est justement de rendre l'idée réalisable et légale**, en réglant ou en rendant possibles toutes les difficultés techniques, avec le **plein soutien du Gouvernement**. Il n'arrive pas à rendre son idée réalisable, et c'est pour cela qu'il veut faire de la metamaieutique. → Le mandat est réécrit : **l'intention est le seul invariant**, toutes les modalités peuvent être revues, et le résultat doit être légal.
+
+## Itération 6 (2026-10-02)
+
+Guillaume valide le mandat (« je crois que c'est bon »), sans répondre explicitement aux deux points ouverts. Par défaut, le droit de référence est celui du point 4 du mandat, et le soutien du Parlement n'est pas précisé. → Branche `metamaieutique/loi-jevons-faisabilite-2026-10-02` créée dans le worktree `~/Documents/Jevons-meta`, où le mandat est commité. Mémoire du projet recopiée pour ce dossier. Skill metamaieutique mis à jour : reprise d'un mandat déjà validé, worktree.
