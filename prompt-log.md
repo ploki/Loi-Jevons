@@ -25,3 +25,7 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 ## Itération 6 (2026-10-02)
 
 Guillaume valide le mandat (« je crois que c'est bon »), sans répondre explicitement aux deux points ouverts. Par défaut, le droit de référence est celui du point 4 du mandat, et le soutien du Parlement n'est pas précisé. → Branche `metamaieutique/loi-jevons-faisabilite-2026-10-02` créée dans le worktree `~/Documents/Jevons-meta`, où le mandat est commité. Mémoire du projet recopiée pour ce dossier. Skill metamaieutique mis à jour : reprise d'un mandat déjà validé, worktree.
+
+## Itération 7 (2026-10-02)
+
+Guillaume lance la session metamaieutique dans `~/Documents/Jevons-meta`.
