@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-01
-- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M2)
+- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M3)
 
 
 ## En vigueur
@@ -18,17 +18,24 @@
   - le **fournisseur enregistré** en France, établi ou non, collecte la taxe auprès de ses clients professionnels ;
   - **à défaut**, le client professionnel **autoliquide** ;
   - l'**inférence pour usage propre** (sur ses serveurs ou des capacités louées) est déclarée par l'entreprise.
-- **Identification du client professionnel** : le **SIREN** ou le **numéro de TVA intracommunautaire** (vérifié par VIES), ou un identifiant fiscal équivalent pour un client étranger. Un client sans identifiant est traité comme un particulier. Un accès par API, ou un volume au-delà d'un seuil, fait présumer l'usage professionnel.
+- **Identification du client professionnel** : le **SIREN** ou le **numéro de TVA intracommunautaire** (vérifié par VIES), ou un identifiant fiscal équivalent pour un client étranger. ~~Un client sans identifiant est traité comme un particulier.~~ Remplacé en M3 par la règle anti-échappatoire de la note 18, D7 (voir plus bas).
 - **Revente** : l'achat en vue de la revente se fait **en suspension**, sur attestation (décision 37 [P]). Il n'y a donc pas de cascade.
-- **Territorialité** : le critère est l'**établissement du client** professionnel. L'export vers un client établi à l'étranger est **déclaré** et non taxé (décision 30 [G]) ; la note 18 propose de le qualifier juridiquement de « hors du champ » [C].
+- **Territorialité** : le critère est l'**établissement du client** professionnel. L'export vers un client établi à l'étranger est **hors du champ, mais déclaré** (décisions 30 [G] et 52 [P]).
 - **Le tarif douanier** n'est qu'une boutade, réservée à la campagne.
 - **Questions ouvertes** (fichier 17) : le format de référence et l'encodage du texte (Q14), le contexte relu et le cache (Q15), le raisonnement interne et les appels d'outils (Q16), les fournisseurs étrangers (Q32), à traiter en M5 et M7.
+- **Export (décision 52 [P])** : il est **hors du champ, mais déclaré**. Ce n'est qu'une précision de forme de la décision 30.
+- **Usage professionnel par un compte grand public [C, M3]** : la règle anti-échappatoire est proposée dans la note 18 (D7). Le fournisseur a l'obligation de demander l'usage et l'identifiant. Des présomptions s'appliquent (accès par API, paiement par une entreprise, volume). L'entreprise qui fait un usage professionnel par un compte grand public **autoliquide** et s'expose à une sanction. Elle remplace la phrase de M2 « sans identifiant, le client est traité comme un particulier ».
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M3 (2026-10-02)
+
+- **[P] Décision 52** : l'export est hors du champ, mais déclaré.
+- **[C] Contestation de l'orchestrateur** : la règle de M2 ouvrait une échappatoire (les entreprises n'auraient qu'à utiliser des comptes grand public). La nouvelle règle est en note 18, D7.
 
 ### Session metamaieutique, M2 (2026-10-02) : décisions par procuration
 

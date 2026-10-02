@@ -2,13 +2,13 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02 (M2)
+- **Dernière mise à jour** : 2026-10-02 (M3)
 
 
 ## En vigueur
 
 - **Liste de suivi** des 80 questions. Chaque question a un **statut** : ouverte, répondue ou décidée. Quand une question est tranchée, on note dans « Renvoi » le numéro de la décision du journal.
-- Situation au 2026-10-02 (M2 de la session metamaieutique) : **11 répondues** (dont la 69, à confirmer), **5 décidées** (22, 26, 27, 35, 40, par procuration [P]), **64 ouvertes**. Le suivi détaillé des 20 questions non traitées est dans la **note 18, section E**.
+- Situation au 2026-10-02 (M3 de la session metamaieutique) : **12 répondues** (dont 67 et 68), **7 décidées** (22, 26, 27, 35, 40, 60, 69, par procuration [P]), **61 ouvertes**. Le suivi détaillé des 20 questions non traitées est dans la **note 18, section E**.
 - **Priorités avant de rédiger le dispositif** : 69 (l'article 401 de la directive TVA), 67, 68, 60, 40, 15, 35, 32, 26, 22.
 
 | n° | Thème | Statut | Corpus (R/P/N) | Priorité | Renvoi |
@@ -72,16 +72,16 @@
 | 57 | G | ouverte | P |  | — |
 | 58 | H | ouverte | P |  | — |
 | 59 | H | répondue | R |  | — |
-| 60 | H | ouverte | N | **top 4** | — |
+| 60 | H | décidée | N | **top 4** | 42, 49 [P] |
 | 61 | H | ouverte | P |  | — |
 | 62 | H | ouverte | P |  | — |
 | 63 | H | ouverte | N |  | — |
 | 64 | I | répondue | R |  | — |
 | 65 | I | ouverte | P |  | — |
 | 66 | I | ouverte | P |  | — |
-| 67 | J | ouverte | N | **top 2** | — |
-| 68 | J | ouverte | N | **top 3** | — |
-| 69 | J | répondue (à confirmer) | N | **top 1** | note 18, D1 ; 37, 39 [P] |
+| 67 | J | répondue | N | **top 2** | note 18, O2, D3 ; 41, 51 [P] |
+| 68 | J | répondue | N | **top 3** | note 18, O2, D7 ; 44, 46 [P] |
+| 69 | J | décidée | N | **top 1** | 37, 39, 48 [P] |
 | 70 | J | ouverte | N |  | — |
 | 71 | K | ouverte | N |  | — |
 | 72 | K | ouverte | P |  | — |

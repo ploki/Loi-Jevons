@@ -1,8 +1,8 @@
 # Faisabilité juridique : obstacles, solutions et architecture révisée
 
-- **Statut** : en discussion (M2 de la session metamaieutique)
+- **Statut** : en discussion (M3 de la session metamaieutique)
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02 (M2)
+- **Dernière mise à jour** : 2026-10-02 (M3)
 
 > Note de la session metamaieutique « Rendre la Loi Jevons réalisable » (voir `mandat.md`). Les décisions par procuration sont marquées **[P]** et numérotées comme au journal ; les propositions non validées restent **[C]**. Les textes vérifiés sur le web sont marqués **[S]** ; le reste est **[À vérifier]**.
 
@@ -21,20 +21,29 @@
 - **46 [P]** : le secteur public, les associations et la recherche sont dans le champ, avec l'abattement (effet circulaire en **D5**).
 - **47 [P]** : le plan est validé ; les 20 questions sont suivies une par une en **section E** ; le plan est resserré (**section C**).
 
-**État des obstacles** : l'article 401 n'est pas bloquant (O1, D1). Les blocages de l'article 34 (O3) et du compteur (O9) sont levés par les décisions 40 et 43. Le blocage de l'affectation (O4) le sera par le choix de la voie en M3.
+**Décisions prises en M3** (journal, n° 48 à 52) :
+- **48 [P]** : la condition de la décision 39 est levée ; le repli est un tarif en euros par unité avec une clause de réduction automatique.
+- **49 [P]** : **l'affectation est arrêtée** sur la voie « sécurité sociale » : une branche propre, une recette exclusive protégée par l'art. LO 111-3-14, un fonds de réserve et une fraction pour l'Unédic, créés par une loi organique et une loi ordinaire. Le règlement 883/2004 ne la fait pas tomber (**D6**).
+- **50 [P]** : m est voté en LFSS.
+- **51 [P]** : une justification renforcée est exigée au-delà de m = 2 ; l'exposé rappelle l'ordre de grandeur du carburant.
+- **52 [P]** : l'export est hors du champ, mais déclaré.
+
+**Propositions de M3 en attente** [C] : la règle contre l'usage professionnel par un compte grand public (**D7**) ; le fonds de réserve et l'ordre d'emploi des recettes (**D8**) ; la recentralisation du RSA et le transfert de l'ASS (**D6**).
+
+**État des obstacles** : l'article 401 n'est pas bloquant (O1, D1). Les blocages de l'article 34 (O3), du compteur (O9) et de l'affectation (O4) sont **levés** (décisions 40, 43 et 49). Aucun obstacle bloquant connu ne reste sans solution. Restent un risque moyen sur l'égalité (O2), les aides d'État (O6) et la territorialité (O5), et l'inscription du socle à l'annexe X du règlement 883/2004, qui est une **étape ultérieure**.
 
 | Obstacle | Bloquant en l'état ? | Piste recommandée [C] | Risque résiduel |
 |---|---|---|---|
 | O1. Art. 401 de la directive TVA | Non, sous conditions | Taxe spéciale, à un stade unique, sans déduction ; la revente est en suspension | Faible |
 | O2. Égalité, capacité contributive, confiscation | Risque sérieux sur deux points | Un tarif par classe de modèles ; des critères de champ objectifs ; un plafond justifié | Moyen |
 | O3. Article 34 (taux par arrêté selon les « besoins ») | **Levé** (décision 40) | La formule d'indexation dans la loi ; le multiple m voté chaque année par le Parlement, entre 1 et 4 | Faible |
-| O4. Affectation (LOLF, LFSS, Unédic) | **Oui**, en cours (décision 42) | Recommandé : une **branche de sécurité sociale** financée par la taxe, affectée en LFSS (D4) ; une fraction à l'Unédic | Faible |
+| O4. Affectation (LOLF, LFSS, Unédic) | **Levé** (décision 49) | Une **branche de sécurité sociale** financée par la taxe, affectée en LFSS (D4, D6) ; une fraction à l'Unédic | Faible |
 | O5. Territorialité, fournisseurs étrangers, cascade | Difficulté pratique | Le fournisseur enregistré collecte ; sinon le client autoliquide ; la revente est en suspension ; directive DAC | Moyen |
 | O6. Aides d'État (IA locale, abattement) | Risque sérieux | Un champ défini objectivement ; une notification préventive ; l'abattement est une mesure générale | Moyen |
 | O7. OMC, AGCS, conventions fiscales | Non | Une taxe neutre quant à l'origine | Faible en droit ; risque de représailles politique |
-| O8. Départements (RSA), article 72-2 | Non, mais à organiser | Recentralisation du RSA avec compensation | Faible |
+| O8. Départements (RSA), article 72-2 | Non, mais à organiser | Recentralisation du RSA avec reprise des ressources, sur le modèle de la LFI pour 2022 (D6) | Faible |
 | O9. Compteur obligatoire (directive 2015/1535, AI Act, RGPD) | **Levé** (décision 43) | Obligation pesant sur le **redevable** (tenir une comptabilité-matière), le SDK n'étant qu'une **voie simplifiée** ; notification | Faible à moyen |
-| O10. Chômage universel et droit de l'UE (résidence, coordination) | Non | Le socle est une prestation de solidarité non contributive, sous condition de résidence | Faible |
+| O10. Chômage universel et droit de l'UE (résidence, coordination) | Non | En l'état, une prestation de chômage, avec un droit au séjour exigé (C-308/14) ; l'annexe X est une étape ultérieure (D6) | Faible à moyen (les frontaliers) |
 
 ---
 
@@ -195,7 +204,7 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 |---|---|---|---|
 | M1 ✔ | État des lieux juridique | 69, 67, 68, 60, 70, 36 | Note 18 (ébauche) |
 | M2 ✔ | Arbitrages structurants ; l'article 401 et le 2ᵉ critère ; m ≥ 1 ; la confiscation ; la comparaison des voies d'affectation | 69, 26, 27, 35, 22, 40 | Journal 37-47 ; notes 04, 08, 10, 18 |
-| M3 | **Affectation et Constitution** : le choix de la voie (D4), le fonds de réserve, l'Unédic, les départements, les coefficients dans la loi, la justification du plafond, le lissage | 60, 61, 62, 64, 65, 67, 68, 28, 29, 57 | Notes 05, 11, 18 |
+| M3 ✔ | **Affectation et Constitution** : le choix de la voie (D4), le fonds de réserve, l'Unédic, les départements, les coefficients dans la loi, la justification du plafond, le lissage | 60, 61, 62, 64, 65, 67, 68, 28, 29, 57 | Notes 05, 11, 18 |
 | M4 | **Territorialité, IA locale, aides d'État, AGCS, compteur** : les fournisseurs étrangers, la conversion des unités, la DAC, la notification | 31 à 34, 36, 37, 38, 45 à 48, 70, 72 | Notes 04, 08, 18 |
 | M5 | **Assiette technique et contrôle** : le contexte et le cache, le raisonnement, les cas limites, la définition du système d'IA, les sanctions, le fractionnement, la fraude à l'attestation | 14 à 21, 15, 39, 41 à 44, 78 à 80 | Notes 04, 08, 18 |
 | M6 | **Chômage universel** : le foyer, l'éligibilité, la résidence, l'Unédic, la formation, la date d'ouverture des droits | 49 à 51, 53, 55, 58 | Notes 05, 18 |
@@ -210,7 +219,7 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 
 ---
 
-## D. Réponses de M2 aux contestations et vérifications
+## D. Réponses aux contestations et vérifications (M2 et M3)
 
 ### D1. Le tarif m × P_k est-il « proportionnel au prix » au sens de l'article 401 ? (contestation du point 3)
 
@@ -239,7 +248,7 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 - **un critère écarté** : la taille du modèle (le nombre de paramètres), qui n'est pas vérifiable pour les modèles fermés.
 - **Contre la manipulation (Q24)** : P_k est calculé par l'**INSEE** [À confirmer] à partir des prix catalogue et d'un échantillon de transactions, et **non** à partir des seules déclarations des redevables.
 
-**Proposition** : lever la condition de la décision 39.
+**Proposition** : lever la condition de la décision 39. → **Levée en M3 (décision 48 [P]).**
 
 ### D2. Le plancher m ≥ 1 respecte-t-il « au moins la moitié de la valeur au bien commun » ? (vérification du point 4)
 
@@ -313,7 +322,7 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 
 **Le CAS (b) est déconseillé** : la recette resterait dans le budget de l'État, ce qui va contre l'exigence posée par la décision 42.
 
-À arrêter en M3.
+→ **Arrêtée en M3 (décision 49 [P])**, après la vérification de D6.
 
 ### D5. Le secteur public : l'effet budgétaire circulaire (point 10)
 
@@ -326,14 +335,99 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 
 ---
 
+### D6. La branche de sécurité sociale face au règlement 883/2004, au RSA et à l'ASS (M3, point 2)
+
+**1. La classification du socle ne dépend pas de la voie d'affectation.**
+- La Cour de justice qualifie une prestation d'après ses **caractéristiques** (ses conditions d'octroi, son objet, son financement), et non d'après son rattachement en droit national [À vérifier : Hoeckx, C-249/83 ; Molenaar, C-160/96]. Le RSA, versé par les CAF, est par exemple regardé comme de l'assistance sociale [À vérifier].
+- **La question se pose donc à l'identique avec l'établissement public de repli.** Elle ne fait pas tomber la voie « sécurité sociale », qui est arrêtée (décision 49 [P]).
+
+**2. Les trois qualifications possibles du socle** [C] :
+
+| Qualification | Conditions | Conséquences | Accessible en droit actuel ? |
+|---|---|---|---|
+| **Assistance sociale** (exclue du règlement, art. 3, § 5) | Un octroi largement discrétionnaire, sous condition de besoin apprécié au cas par cas | Le règlement ne s'applique pas ; seule la directive 2004/38 joue (Dano, C-333/13) | **Non** : le socle est un **droit subjectif**, ouvert sur simple inscription |
+| **Prestation spéciale en espèces à caractère non contributif** (art. 70, annexe X) | Un caractère mixte (sécurité sociale et assistance), un financement exclusif par l'impôt, un revenu minimal de subsistance lié à l'environnement social, **et une inscription à l'annexe X** | Elle est servie **uniquement dans l'État de résidence**, **sans exportation** [S, Cleiss]. Précédents : l'ASPA française [S, CE, 16 avril 2019, n° 423586] et le minimum allemand pour les demandeurs d'emploi (Alimanovic, C-67/14) | **Non** : l'inscription à l'annexe X exige de **modifier le règlement** (procédure législative de l'Union). C'est une **étape ultérieure** |
+| **Prestation de chômage** (art. 3, § 1, h) | Un droit lié à l'absence d'emploi, accordé selon des critères légaux | Le régime de droit commun du chapitre 6 (voir ci-dessous) | **Oui** : c'est la **qualification par défaut** |
+
+**3. Les conséquences de la qualification « prestation de chômage »** [C, À vérifier par un spécialiste de la coordination] :
+- **La condition de résidence.** Pour une personne sans activité, la législation applicable est celle de l'**État de résidence** (art. 11, § 3, e). La France peut subordonner le socle à un **droit au séjour**, au sens de la directive 2004/38. Cette discrimination indirecte est justifiée par la protection des finances de l'État d'accueil : la Cour l'a admis pour des prestations de **sécurité sociale** (Commission c/ Royaume-Uni, **C-308/14**, 14 juin 2016) [S]. Le coût reste donc comparable à celui du RSA actuel, qui exige déjà un droit au séjour pour les ressortissants de l'Union [À vérifier].
+- **L'exportation.** Elle est limitée à **3 mois**, prolongeables jusqu'à 6, pour un chômeur **inscrit** qui part chercher un emploi dans un autre État membre (art. 64). Le socle n'impose pas de recherche ; mais celui qui veut l'exporter doit s'inscrire dans l'État d'arrivée. Le coût est faible.
+- **La totalisation des périodes** est **sans objet pour le socle**, qui n'exige aucune période d'assurance. Pour le **complément**, rien ne change : l'ARE y est déjà soumise.
+- **Les frontaliers.** Un frontalier résidant en France et totalement privé d'emploi est indemnisé par l'**État de résidence** (art. 65). La France leur verse déjà l'ARE, avec un remboursement partiel par l'État d'emploi [À vérifier : le montant et la révision du règlement en cours depuis 2016]. Le socle s'ajouterait pour ceux qui n'ont pas droit à l'ARE. **C'est le principal surcoût**, à chiffrer dans l'étude d'impact.
+- **Un levier de conception**, à trancher en M6 avec la question 50 : une **condition de ressources** rapprocherait le socle du caractère mixte de l'article 70. Elle préparerait son inscription à l'annexe X, mais elle **changerait l'intention** (le socle pour toute personne sans emploi). **Je ne la recommande pas** à ce stade.
+- **L'égalité de traitement** (art. 4) : un ressortissant de l'Union qui réside légalement en France a les mêmes droits qu'un Français. C'est conforme à l'intention.
+
+**4. Le transfert du RSA vers la branche.**
+- **Le précédent** [S] : l'art. 43 de la **loi de finances pour 2022** autorise, pour cinq ans, la **recentralisation** de l'instruction, de l'attribution et du financement du RSA dans les départements volontaires (la Seine-Saint-Denis et les Pyrénées-Orientales depuis 2022, par le décret n° 2022-322 du 4 mars 2022). La gestion est confiée aux **CAF** et aux caisses de MSA. L'État **reprend** les compensations versées au titre de la décentralisation du RSA (des fractions de TICPE), puis, si elles ne suffisent pas, une partie des droits de mutation. La décision n° 2021-833 DC n'a pas censuré ce dispositif [À vérifier].
+- **La piste** [C] : une **recentralisation générale** du RSA, au profit de la branche, avec la **reprise des ressources** de chaque département, calculée sur la dépense d'une période de référence. La reprise de ressources fiscales relève d'un **article de loi de finances**.
+- **L'article 72-2** : il impose de compenser un **transfert** de compétences vers une collectivité. Pour une **reprise** par l'État, la question est l'inverse : il faut reprendre les ressources sans aller au-delà de ce qui avait été transféré. Le modèle de 2022 y répond [À vérifier : la jurisprudence sur les reprises de compétences].
+- **Ce que gardent les départements** : l'**accompagnement social et l'insertion**, qui sont volontaires pour le bénéficiaire, puisque le socle n'impose aucune obligation. Il faut modifier la loi « plein emploi » de 2023, qui conditionne le RSA à des heures d'activité [À vérifier].
+
+**5. Le transfert de l'ASS.** L'ASS est financée par le **budget de l'État** [À vérifier]. Sa dépense est transférée à la branche par une **contribution de l'État**, fixée en LFSS sur le coût de la dernière année, puis indexée.
+
+**6. Le véhicule de création de la branche.**
+- **Le précédent** [S] : la **5ᵉ branche** (l'autonomie) a été créée par la **loi organique n° 2020-991** et la **loi n° 2020-992** du 7 août 2020, puis organisée par la **LFSS pour 2021** (art. 32, une habilitation) et par l'**ordonnance n° 2021-1554** du 1ᵉʳ décembre 2021. La CNSA est devenue la caisse nationale de la branche.
+- **La piste** [C] : un **projet de loi organique**, qui adapte la LOLFSS si la liste des branches doit y figurer [À vérifier : l'apport exact de la LO n° 2020-991], et un **projet de loi ordinaire**, la loi Jevons, qui crée la branche « chômage universel », sa caisse nationale (un établissement public) et la taxe. Une **LFSS** affecte ensuite les recettes et fixe m, et un **article de loi de finances** organise la reprise des ressources du RSA.
+- **Le calendrier** : la loi organique et la loi ordinaire sont examinées ensemble, comme en 2020. La branche entre en vigueur au 1ᵉʳ janvier suivant la première LFSS qui l'intègre.
+
+**7. Un flux à préciser en M6.** Quand le socle est versé à tous les chômeurs, l'ARE devient un **complément** au-dessus du socle. L'Unédic **économise** la part « socle » de l'ARE actuelle. Cette économie doit être **reversée à la branche**, ou s'imputer sur la fraction versée à l'Unédic. Sinon, le besoin net de 16 à 20 Md€ (note 05) serait faux.
+
+### D7. L'usage professionnel par un compte grand public : une règle qui ferme la faille (contestation de M3)
+
+**La faille** : la règle de M2 (« sans identifiant, le client est traité comme un particulier ») permettait à une entreprise d'échapper à la taxe en utilisant des comptes grand public.
+
+**La règle proposée** [C] :
+1. **Le fournisseur doit demander**, à la souscription et à chaque renouvellement, si l'usage est professionnel et, si c'est le cas, l'identifiant (le SIREN, ou le numéro de TVA intracommunautaire vérifié par VIES). La réponse est une **déclaration** du client, que le fournisseur conserve. Un fournisseur de bonne foi n'est pas responsable d'une fausse déclaration.
+2. **L'usage professionnel est présumé**, sauf preuve contraire du client, dans quatre cas :
+   - (a) un accès par **API** ;
+   - (b) un **paiement par une entreprise** (un moyen de paiement ou une facture au nom d'une entreprise) ;
+   - (c) une offre destinée aux **équipes ou aux entreprises** ;
+   - (d) un **volume** au-delà d'un seuil élevé, fixé par la loi (par exemple dix fois l'usage médian d'un abonnement grand public).
+
+   Dans ces cas, le fournisseur applique la taxe, ou demande l'identifiant.
+3. **Le redevable de dernier ressort est l'entreprise.** Une entreprise qui fait un usage professionnel par un compte grand public (le sien, ou celui de ses salariés, remboursé en note de frais) **autoliquide** la taxe. Faute de relevé de volume, elle la calcule sur un **volume forfaitaire par compte**, fixé par la loi et rattaché à la classe médiane.
+4. **Les sanctions** : l'entreprise qui n'a pas autoliquidé paie la taxe éludée, avec les intérêts de retard et une **majoration**, plus forte en cas de manquement délibéré (sur le modèle de l'art. 1729 du CGI, À vérifier). Une **fausse déclaration** d'usage personnel est passible d'une amende fixe. **Le salarié n'est jamais redevable.**
+5. **La protection des particuliers** : un particulier qui dépasse le seuil de volume peut renverser la présomption par une simple déclaration d'usage personnel. Il ne paie rien. Les fausses déclarations relèvent du contrôle a posteriori.
+6. **La diligence de l'employeur** : une entreprise qui met des comptes professionnels à la disposition de ses salariés et qui interdit l'usage de comptes personnels pour le travail n'est pas sanctionnée pour un usage isolé qu'elle ignorait. Elle doit la taxe seulement sur l'usage qu'elle connaît ou qu'elle rembourse.
+
+**La compatibilité avec le RGPD** [C, À vérifier par un DPO] :
+- **La base légale** est une **obligation légale** (art. 6, § 1, c) du RGPD.
+- **La minimisation** (art. 5, § 1, c) :
+  - le fournisseur ne collecte qu'une **déclaration** (professionnel ou personnel) et, pour un professionnel, un **identifiant d'entreprise**. Le SIREN d'une personne morale n'est pas une donnée personnelle ; celui d'un entrepreneur individuel l'est, mais il est strictement nécessaire ;
+  - le **seuil de volume** est calculé à partir des données de **facturation** que le fournisseur traite déjà. Aucune donnée nouvelle n'est collectée, et **le contenu des requêtes n'est jamais traité** à des fins fiscales ;
+  - **aucune liste de particuliers n'est transmise** à l'administration. Seules les déclarations agrégées par client professionnel le sont. L'accès aux déclarations conservées se fait **au cas par cas**, lors d'un contrôle, par le droit de communication [À vérifier : art. L. 81 du LPF].
+- **Une variante plus intrusive**, que je ne recommande pas à ce stade : une transmission automatique des comptes grand public au-delà d'un seuil très élevé, sur le modèle des déclarations des plateformes (DAC7) [À vérifier].
+- **Les garanties** : une analyse d'impact (AIPD), et la **consultation de la CNIL** sur le projet de loi (art. 36, § 4, du RGPD).
+
+### D8. Le fonds de réserve et l'ordre d'emploi des recettes (Q61, Q62, Q64, Q65)
+
+- **Le fonds de réserve** [C] : un organisme de **mise en réserve** au profit de la branche, sur le modèle du FRR, protégé par l'art. LO 111-3-14.
+  - **Sa cible** : **six mois de prestations du socle**. Une fois la cible atteinte, l'excédent est employé selon l'ordre ci-dessous.
+  - **Sa gestion** : un conseil de surveillance (l'État, des parlementaires, les partenaires sociaux) et des **règles de placement prudentes** fixées par décret.
+  - **Son usage** : il est mobilisable par la LFSS en cas de retournement.
+- **L'ordre d'emploi des recettes** [C], qui interprète la décision 30 [G] comme le fait le script `sim_v3.py` :
+  1. le **financement des droits déjà ouverts** ;
+  2. la **reconstitution du fonds de réserve**, jusqu'à sa cible ;
+  3. le **surplus**, partagé **moitié-moitié** entre l'extension des droits et la baisse des contributions patronales.
+- **En cas de retournement (Q62)** :
+  1. le fonds de réserve est mobilisé ;
+  2. la LFSS **relève m**, dans la limite de 4 ;
+  3. la **baisse des cotisations** est suspendue avant toute réduction des droits ;
+  4. en dernier ressort, une **contribution d'équilibre de l'État**, votée en LFSS, intervient, comme pour les autres branches.
+- **Cela règle la tension de Q65** : relever m pour financer les droits ne déclenche plus mécaniquement une baisse des cotisations, puisque le partage ne porte que sur le surplus.
+- **Quand la contribution patronale atteint zéro (Q64)** : le surplus va au fonds de réserve, puis la LFSS **abaisse m**, sans descendre sous le plancher m = 1.
+
+
+---
+
 ## E. Suivi des 20 questions non traitées du fichier 17 (dont les 10 prioritaires, marquées ★)
 
 | Q | Objet | Statut | Réponse ou décision | Itération |
 |---|---|---|---|---|
-| 69 ★ | L'article 401 de la directive TVA | **répondue**, à confirmer | O1 et D1 ; décisions 37 et 39 | M2 |
-| 67 ★ | L'égalité, la confiscation | en cours | O2 et D3 ; décision 41 ; à compléter avec la justification du plafond | M3 |
-| 68 ★ | La justification des différences de traitement | en cours | O2 ; décisions 44 et 46 ; les critères à rédiger | M3 |
-| 60 ★ | La nature juridique et l'affectation | en cours | A1, O4, D4 ; décision 42 | M3 |
+| 69 ★ | L'article 401 de la directive TVA | **décidée** | O1 et D1 ; décisions 37, 39 et 48 | M2-M3 |
+| 67 ★ | L'égalité, la confiscation | **répondue** | O2, D3 ; décisions 41 et 51. La réserve sur les impositions comportementales est notée pour le juriste | M3 |
+| 68 ★ | La justification des différences de traitement | **répondue** | Les particuliers hors du champ (critère de l'activité économique, D7) ; l'équipement terminal, temporaire (44) ; le secteur public inclus (46). Les critères seront rédigés dans le dispositif (M9) | M3 |
+| 60 ★ | La nature juridique et l'affectation | **décidée** | Une imposition de toutes natures, du type accise ; une branche de sécurité sociale (décisions 42 et 49 ; D4, D6) | M3 |
 | 40 ★ | L'entraînement | **décidée** | Hors du champ ; piste ultérieure (décision 45) | M2 |
 | 15 ★ | Le contexte relu et le cache | ouverte | — | M5 |
 | 35 ★ | La cascade | **décidée** | La suspension, sans déduction (décision 37) | M2 |
@@ -351,7 +445,9 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 | 78 | Les agents en chaîne, les données synthétiques | ouverte | Probablement réglé par la suspension (décision 37), à confirmer | M5 |
 | 79 | Les erreurs, les réessais, les tests | ouverte | — | M5 |
 
-**Décompte** : 4 décidées et 1 répondue (à confirmer), 6 en cours, 9 ouvertes.
+**Décompte (M3)** : 7 décidées, 2 répondues, 3 en cours, 8 ouvertes.
+
+**Questions « partielles » du fichier 17 traitées en M3** (hors des 20) : Q57 (D6), Q61, Q62, Q64 et Q65 (D8, en attente de validation), Q28 (D3), Q21 (D7, en attente de validation), Q51 (D6).
 
 ---
 
@@ -361,8 +457,11 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 2. Constat principal : **l'article 401, que le fichier 17 plaçait en tête des risques, n'est pas bloquant** si l'on évite la déduction en chaîne. Les vrais blocages sont **l'article 34** (le taux fixé par arrêté selon les « besoins »), **l'affectation** à un fonds sans base organique et **le compteur imposé aux éditeurs**. **[C]**
 3. Tension identifiée avec une décision [G] : la décision 25 (« le montant par unité est égal au prix moyen ») et la décision 9 (le volume) produisent ensemble un **tarif unique** qui viole l'esprit du 50/50 pour les modèles peu chers. Le **tarif par classe** garde les deux décisions et rend le 50/50 vrai. **[C]**
 4. **2026-10-02, M2** : l'orchestrateur valide par procuration les points 1, 2, 4 et 6 à 11 ; il accepte le point 3 sous condition (la démonstration au regard du 2ᵉ critère de l'article 401) et demande deux vérifications (m ≥ 1, la confiscation). Décisions 37 à 47 **[P]**. Recherches complémentaires : le rapport particulier de la Cour des comptes sur la TVA (2023) ; l'article LO 111-3-14 du code de la sécurité sociale ; la doctrine sur la confiscation (commentaire de la décision 2018-755 QPC, *Nouveaux Cahiers*). **Constat nouveau** : le cliquet de l'article LO 111-3-14 fait de la **voie « sécurité sociale »** la plus robuste pour protéger la recette (D4). **[C]**
+5. **2026-10-02, M3** : décisions 48 à 52 **[P]**. L'orchestrateur demandait de vérifier le règlement 883/2004 avant d'arrêter la voie « sécurité sociale ». **Constat** : la classification d'une prestation au regard du règlement est fonctionnelle et indépendante de la voie d'affectation. Le socle serait en l'état une prestation de chômage, pour laquelle un droit au séjour peut être exigé (C-308/14), et l'annexe X est une étape ultérieure. La voie est donc arrêtée. L'orchestrateur a aussi contesté la règle d'identification de M2 : la nouvelle règle est en D7. **[C]**
 
 ## Questions ouvertes
+
+- **Après M3** : la validation de D7 (les comptes grand public), de D8 (le fonds de réserve et l'ordre d'emploi des recettes) et de D6 §4-5 (le RSA et l'ASS) ; le reversement de la part « socle » de l'ARE (M6) ; les frontaliers (étude d'impact).
 
 - La levée de la condition de la décision 39 (D1).
 - Le choix de la voie d'affectation (D4), à arrêter en M3.
@@ -385,6 +484,12 @@ Le plan initial comptait 20 itérations. Il est resserré à **14**, en regroupa
 - Code de la sécurité sociale, art. LO 111-3-14 et LO 111-3-16 : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045354454
 - Commentaire de la décision 2018-755 QPC (la confiscation, la décision 2005-530 DC) : https://qpc360.conseil-constitutionnel.fr/commentaire-decision-2018-755-qpc
 - *Nouveaux Cahiers du Conseil constitutionnel*, « Le Conseil constitutionnel mobilise-t-il d'autres principes constitutionnels que l'égalité en matière fiscale ? » : https://www.conseil-constitutionnel.fr/nouveaux-cahiers-du-conseil-constitutionnel/le-conseil-constitutionnel-mobilise-t-il-d-autres-principes-constitutionnels-que-l-egalite-en
+- CJUE, 14 juin 2016, Commission c/ Royaume-Uni, C-308/14 : https://curia.europa.eu/jcms/upload/docs/application/pdf/2015-10/cp150114en.pdf et https://asil.org/print/blogs/court-justice-european-union-holds-uk-can-require-child-benefit-and-tax-credit-recipients-have
+- Cleiss, les prestations spéciales à caractère non contributif (art. 70 et annexe X du règlement 883/2004) : https://www.cleiss.fr/reglements/883_prestations_acnc.html
+- CE, 16 avril 2019, n° 423586 (l'ASPA à l'annexe X) : https://www.conseil-etat.fr/fr/arianeweb/CE/analyse/2019-04-16/423586
+- Alimanovic, C-67/14, et Dano, C-333/13 : https://www.cleiss.fr/docs/jurisprudence/c67-14.html
+- La recentralisation du RSA (art. 43 de la LFI pour 2022, décret n° 2022-322) : https://blog.landot-avocats.net/2022/04/11/recentralisation-du-rsa-mode-demploi/ et https://www.banquedesterritoires.fr/un-decret-organise-lexperimentation-de-la-recentralisation-du-rsa
+- La 5ᵉ branche (LO n° 2020-991, loi n° 2020-992, ordonnance n° 2021-1554) : https://blog.landot-avocats.net/2022/05/13/entree-en-vigueur-de-la-5e-branche-autonomie-de-la-secu/ et https://www.banquedesterritoires.fr/le-cinquieme-risque-officiellement-cree-la-dette-sociale-cantonnee
 - CIBS, ordonnance n° 2021-1843 : https://www.douane.gouv.fr/fiche/code-des-impositions-sur-les-biens-et-services-contributions-indirectes
 
 ## Liens

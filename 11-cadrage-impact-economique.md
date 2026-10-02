@@ -2,7 +2,7 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02
+- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M3)
 
 
 ## En vigueur
@@ -12,12 +12,18 @@
 - **Ordre de grandeur** : 1 point de cotisation ≈ 11 à 12 Md€ [Déduit, à vérifier].
 - **L'objection de Summers** et les réponses : on taxe l'IA, on assume. L'adoption est mûre dans le cloud ; l'IA locale démarre.
 - **Questions ouvertes** (fichier 17) : qui paie réellement la taxe, la compétitivité, l'effet sur les PME et sur l'industrie française.
+- **Affectation (M3, décision 49 [P])** : le double dividende passe par une **fraction de la taxe versée à l'Unédic en LFSS**, en compensation de la baisse des contributions patronales, sur le modèle de la CSG versée à l'Unédic.
+- **Ordre d'emploi des recettes [C, à valider]** : une interprétation de la décision 30 [G], conforme au script `sim_v3.py`. Les recettes financent d'abord les **droits déjà ouverts** ; le **surplus** est ensuite partagé moitié-moitié entre l'extension des droits et la baisse des cotisations. En cas de retournement, les droits passent avant la baisse des cotisations (Q62, Q65). Quand la contribution patronale atteint zéro (Q64), le surplus va au fonds de réserve, et m peut être abaissé.
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M3 (2026-10-02)
+
+- **[P] Décision 49** : une fraction de la taxe va à l'Unédic pour la baisse des cotisations. **[C]** L'ordre d'emploi des recettes est proposé (note 18, D8).
 
 ### En bref
 

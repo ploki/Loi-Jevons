@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M2)
+- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M3)
 
 
 ## En vigueur
@@ -11,7 +11,7 @@
 
 - **Règle du tarif** : pour la classe de modèles k, tarif par octet-équivalent = **m × P_k**.
   - **P_k** est le prix moyen hors taxe de la classe k, constaté par un **indice publié par un organisme indépendant** (l'INSEE, à confirmer) selon une **formule fixée par la loi**. Un **arrêté trimestriel** se borne à le **constater** (décision 40 [P]).
-  - **Trois classes**, objectives et peu nombreuses (décision 39 [P], **sous condition**, à confirmer).
+  - **Trois classes**, par tranches de prix catalogue public par unité, dont les bornes sont fixées par la loi (décisions 39 et 48 [P]).
   - **m** est **voté chaque année par le Parlement**, entre **1** et **4** (décision 40 [P]).
 - **Le plancher m = 1 correspond au 50/50** : au moins la moitié du prix payé hors TVA revient au bien commun (vérification en note 18, section D2).
 - **Le plafond 4P est une borne légale** (décision 41 [P]). L'analyse du caractère non confiscatoire est dans la note 18 (section D3).
@@ -19,12 +19,18 @@
 - **Déclarations** : le calendrier de la TVA est conservé, comme un simple circuit pratique (décision 26 [G]) ; il ne crée aucun risque au regard de l'article 401.
 - **Justification** : le **savoir collectif** sur lequel les modèles ont été entraînés. Au moins la moitié de la valeur revient au bien commun.
 - **Le lissage** : il est désormais assuré par le vote annuel de m. La simulation v4 (M10) le modélisera.
+- **M3** : la condition de la décision 39 est levée (décision 48 [P]) ; **m est voté en LFSS** (décision 50 [P]) ; **au-delà de m = 2**, une justification renforcée est exigée dans le rapport annexé au PLFSS (décision 51 [P]). L'exposé rappelle que l'ordre de grandeur reste **celui du carburant**.
+- **Repli** : un tarif en euros par unité, voté chaque année, avec une clause de réduction automatique si l'indice franchit 4P (décision 48 [P]).
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M3 (2026-10-02)
+
+- **[P] Décisions 48, 50 et 51** : les classes et l'indice INSEE sont confirmés ; m est voté en LFSS ; une justification renforcée est exigée au-delà de m = 2. **Le seuil m = 2 correspond aux deux tiers du coût total** (note 18, D2 et D3).
 
 ### Session metamaieutique, M2 (2026-10-02) : décisions par procuration
 

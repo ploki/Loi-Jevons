@@ -22,6 +22,8 @@
 | **Double dividende** | La taxe finance le chômage universel **et** permet de baisser les cotisations sur le travail | — |
 | **Abattement** | Un volume annuel non taxé par entreprise. Tout est quand même déclaré | Une franchise, qui exonère de déclaration (écartée) |
 | **Autoliquidation** | Depuis M2 (décision 38 [P]), une règle **subsidiaire** : le client professionnel en France déclare et paie la taxe quand son fournisseur n'est pas enregistré | — |
-| **Export** | Une inférence faite **sur des GPU en France pour un client établi à l'étranger**. Elle est déclarée au taux nul | — |
+| **Export** | Une inférence faite **sur des GPU en France pour un client établi à l'étranger**. Elle est **hors du champ, mais déclarée** (décision 52 [P] ; auparavant « déclarée au taux nul », sans changement d'effet) | — |
+| **Branche « chômage universel »** | La branche de sécurité sociale qui verse le socle. La taxe Jevons en est une recette exclusive, protégée par l'art. LO 111-3-14 du code de la sécurité sociale (décision 49 [P]) | L'Unédic, qui garde le complément |
+| **Cliquet organique** | La règle de l'art. LO 111-3-14 : seule une LFSS peut affecter une recette exclusive de la sécurité sociale à une autre personne | — |
 | **Point de départ** | Le statut du livrable : formel et étayé, à expertiser ensuite | Un texte définitif |
 | **[P]** | Une décision prise par **procuration**, lors d'une session `metamaieutique` | [G], une décision de Guillaume |

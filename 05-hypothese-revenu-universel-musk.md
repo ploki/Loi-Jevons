@@ -2,7 +2,7 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02
+- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M3)
 
 
 ## En vigueur
@@ -17,12 +17,20 @@
   - il remplace le RSA et l'ASS.
 - **Coût** [À vérifier] : environ 68 à 72 Md€ brut. Il remplace environ 52 Md€ de dépenses existantes, d'où un **besoin net d'environ 16 à 20 Md€**.
 - **Questions ouvertes** (fichier 17) : le calcul individuel ou par foyer, les étudiants et le temps partiel, la résidence et le droit de l'UE, la gouvernance de l'Unédic, les départements (article 72-2).
+- **Architecture juridique (M3 de la session metamaieutique, décision 49 [P])** : le **socle** est une prestation d'une **branche de sécurité sociale** propre, financée par la taxe Jevons et protégée par l'art. LO 111-3-14 du code de la sécurité sociale. Son versement est confié aux CAF. Le **complément** reste une prestation d'assurance de l'**Unédic**. Le détail est dans la note 18 (D4 et D6).
+- **Droit de l'Union [C]** : au regard du règlement (CE) n° 883/2004, le socle serait **en l'état une prestation de chômage** (art. 3, § 1, h). Sa classification dépend de ses caractéristiques, pas de la branche qui le verse. On peut exiger un **droit au séjour** (CJUE, C-308/14, 2016). Son inscription à l'**annexe X**, qui le rendrait non exportable, est une **étape ultérieure**. Voir la note 18, D6.
+- **RSA et ASS [C]** : le RSA est **recentralisé**, avec une reprise des ressources transférées aux départements, sur le modèle de l'expérimentation de l'art. 43 de la LFI pour 2022. L'ASS est financée par l'État : sa dépense est transférée à la branche par une contribution de l'État. Voir la note 18, D6.
+- **Flux à préciser en M6** : la part « socle » de l'ARE actuelle, que l'Unédic n'aurait plus à verser.
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M3 (2026-10-02)
+
+- **[P] Décision 49** : le socle est une prestation de sécurité sociale, dans une branche propre. **[C]** La vérification au regard du règlement 883/2004, la recentralisation du RSA et le véhicule de création de la branche sont dans la note 18 (D6).
 
 ### En bref
 

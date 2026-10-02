@@ -62,3 +62,13 @@ Réponse par procuration au tour M2 (journal n° 37 à 47) :
 **Contestation** (point 2 de M2) : « sans identifiant, le client est traité comme un particulier » ouvre une échappatoire massive, puisque les entreprises n'auraient qu'à utiliser des comptes grand public. Il faut une règle qui ferme la faille. Par exemple : le fournisseur doit demander l'identifiant ; l'usage professionnel est présumé au-delà d'un volume ou en cas d'accès par API ; l'entreprise qui fait un usage professionnel par un compte grand public autoliquide et s'expose à une sanction. Et cela sans taxer les particuliers.
 
 Demande pour M3 : traiter le point 2 (règlement 883/2004, RSA et ASS, loi organique de création de la branche) et la contestation, puis arrêter l'affectation. Continuer la fermeture des questions du fichier 17.
+
+## Itération M3 (2026-10-02) — règlement 883/2004, RSA et ASS, comptes grand public, fonds de réserve
+
+Réponse par procuration au tour M3 (journal n° 48 à 52) :
+1. **La règle D7 sur les comptes grand public est validée** [P].
+2. **D8 est validé** [P] : un fonds de six mois, l'ordre d'emploi (les droits, le fonds, puis le surplus partagé moitié-moitié) et, en cas de retournement, la priorité aux droits sur la baisse des cotisations. C'est fidèle à l'intention : le chômage universel prime.
+3. **Le RSA et l'ASS sont validés** [P], avec l'accompagnement volontaire, cohérent avec la décision 31 [G]. **Exigence nouvelle** : une **garantie de non-régression**. Aucun bénéficiaire actuel du RSA (y compris le RSA majoré des parents isolés, la composition familiale et le cumul avec la prime d'activité) ni de l'ASS ne doit y perdre. Le montrer, avec un mécanisme (différentiel ou maintien des droits acquis), et en tenir compte dans le chiffrage.
+4. **La qualification de prestation de chômage, avec un droit au séjour**, et l'annexe X en étape ultérieure : validées [P]. Préciser si la condition de séjour est plus ou moins restrictive que celle du RSA actuel (cinq ans de titre de séjour pour les ressortissants d'un pays tiers). On ne doit pas exclure des personnes aujourd'hui éligibles.
+5. **Le reversement de la part « socle » de l'ARE** à la branche est accepté comme principe [P].
+6. **Passer à M4.** Rappel : il reste 8 questions ouvertes, et le plan prévoit 14 itérations.
