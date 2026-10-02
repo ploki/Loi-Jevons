@@ -4,11 +4,31 @@
 - **Créé le** : 2026-10-02
 - **Dernière mise à jour** : 2026-10-02
 
-## En bref
+
+## En vigueur
+
+- **Chômage universel**, et non un revenu versé à tous. Le revenu universel au sens strict n'est conservé que pour mémoire.
+- **Paramètres validés** :
+  - sans limite de durée ;
+  - aucune obligation de recherche d'emploi : une simple inscription suffit, et la formation rémunérée est un droit ;
+  - un socle proche du seuil de pauvreté (environ 1 200 € par mois [À vérifier]), plus un complément proportionnel à l'ancien salaire pendant une durée limitée ;
+  - le socle est ouvert dès 18 ans ;
+  - une sortie progressive (environ 50 centimes d'allocation perdus par euro gagné) ;
+  - il remplace le RSA et l'ASS.
+- **Coût** [À vérifier] : environ 68 à 72 Md€ brut. Il remplace environ 52 Md€ de dépenses existantes, d'où un **besoin net d'environ 16 à 20 Md€**.
+- **Questions ouvertes** (fichier 17) : le calcul individuel ou par foyer, les étudiants et le temps partiel, la résidence et le droit de l'UE, la gouvernance de l'Unédic, les départements (article 72-2).
+
+---
+
+## Historique du raisonnement
+
+> Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### En bref
 
 Guillaume rejoint Musk sur un point : un revenu garanti, c'est-à-dire **le chômage tel qu'il devrait être** (le « chômage universel », et non un revenu versé à tous), est la solution. Ils n'ont ni la même vision de la mise en œuvre ni les mêmes raisons. L'argument : rares sont les gens qui n'ont pas envie d'occuper leur journée de façon épanouissante.
 
-## Ce qui a été posé
+### Ce qui a été posé
 
 - **[G]** Citation mot pour mot :
   > « Musk is right on this point. We may not have the same implementation view or reason but a "universal revenue" notre chomage comme il devrait être et la solution. Sont peux nombreux les gents qui n'ont pas envie d'occuper leur journée de façon épanouissante »
@@ -16,11 +36,11 @@ Guillaume rejoint Musk sur un point : un revenu garanti, c'est-à-dire **le chô
 - **[G]** Le désaccord avec Musk porte sur la mise en œuvre et sur les raisons, pas sur le principe.
 - **[G]** Réponse à l'objection de la paresse : peu de gens n'ont pas envie d'occuper leurs journées de façon épanouissante.
 
-## Décision
+### Décision
 
 - **[G]** Le revenu universel est **l'horizon**, et la taxe sur les tokens en est le **premier étage**. **Précision apportée ensuite par Guillaume : cet horizon est le chômage universel** (voir ci-dessous et le fichier 01).
 
-## Ce que Guillaume entend par « revenu universel »
+### Ce que Guillaume entend par « revenu universel »
 
 - **[G]** Il ne s'agit **pas** d'un revenu versé à tout le monde. C'est le **système de chômage** qui verse ce revenu aux personnes sans emploi ; celles qui travaillent ont leur salaire.
 - **[C]** On est donc plus proche d'une **assurance chômage universelle et sans limite de durée**, ou d'un **revenu garanti**, que du revenu universel au sens strict ci-dessous. Il faudra choisir le terme de l'article en conséquence, sinon le lecteur comprendra « revenu universel » au sens de BIEN.
@@ -34,7 +54,7 @@ Guillaume rejoint Musk sur un point : un revenu garanti, c'est-à-dire **le chô
   - Ceux qui n'ont jamais cotisé, comme les jeunes, y ont-ils droit ?
   - Comment éviter qu'un emploi peu payé rapporte à peine plus que l'allocation ?
 
-## Paramètres du chômage universel (validés par Guillaume)
+### Paramètres du chômage universel (validés par Guillaume)
 
 | Paramètre | Décision [G] |
 |---|---|
@@ -79,7 +99,7 @@ Guillaume rejoint Musk sur un point : un revenu garanti, c'est-à-dire **le chô
   - les minima sociaux, comme le RSA.
 - **[C]** Le « universal high income » de Musk décrit plutôt un état d'abondance qu'un dispositif précis. **[À vérifier]**
 
-## Bénéficiaires possibles
+### Bénéficiaires possibles
 
 | Question | Options |
 |---|---|
@@ -99,14 +119,14 @@ Guillaume rejoint Musk sur un point : un revenu garanti, c'est-à-dire **le chô
   - 2018-2019 : une proposition d'expérimentation portée par 13 départements a été rejetée par l'Assemblée nationale ;
   - les programmes de GiveDirectly au Kenya.
 
-## Points à creuser
+### Points à creuser
 
 - **[À vérifier]** Ce que Musk a dit exactement :
   - à partir de 2016-2017, il dit qu'un revenu universel deviendra probablement nécessaire à cause de l'automatisation ;
   - plus tard, il parle d'un « universal high income » (VivaTech 2024 ?).
 - **[C]** Les ordres de grandeur : avec la précision de Guillaume (un revenu versé aux personnes sans emploi), on parle d'environ 50 Md€ et non plus de 300 Md€. Avec la règle 50/50, la taxe rapporterait environ 1,3 Md€ en 2026 (simulation v2, fichier 13). C'est la croissance de l'assiette, l'effet Jevons, qui doit combler l'écart. **[À vérifier]**
 
-## Liens
+### Liens
 
 - [01-cadrage-intention-initiale.md](01-cadrage-intention-initiale.md)
 - [03-cadrage-simulation-tokens-france-vs-masse-salariale.md](03-cadrage-simulation-tokens-france-vs-masse-salariale.md)

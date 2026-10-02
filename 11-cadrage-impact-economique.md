@@ -4,15 +4,30 @@
 - **Créé le** : 2026-10-02
 - **Dernière mise à jour** : 2026-10-02
 
-## En bref
+
+## En vigueur
+
+- **Le double dividende est un argument central** : la taxe finance le chômage universel et permet de baisser les cotisations chômage sur les salaires.
+- **Utilisation des recettes** : de 2026 à 2028, le fonds de réserve et la formation rémunérée ; ensuite, un **partage moitié-moitié** entre l'extension des droits et la baisse des cotisations.
+- **Ordre de grandeur** : 1 point de cotisation ≈ 11 à 12 Md€ [Déduit, à vérifier].
+- **L'objection de Summers** et les réponses : on taxe l'IA, on assume. L'adoption est mûre dans le cloud ; l'IA locale démarre.
+- **Questions ouvertes** (fichier 17) : qui paie réellement la taxe, la compétitivité, l'effet sur les PME et sur l'industrie française.
+
+---
+
+## Historique du raisonnement
+
+> Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### En bref
 
 Ce volet de l'étude d'impact analyse les effets économiques de la taxe et du chômage universel. Pour l'instant, ce n'est qu'une liste de questions : rien n'est encore documenté.
 
-## Ce qui a été posé
+### Ce qui a été posé
 
 - **[G]** Il faut traiter un volet sur l'impact économique.
 
-## Le double dividende : un argument central
+### Le double dividende : un argument central
 
 - **[G]** Le double dividende est **important**. C'est un argument central de l'exposé des motifs.
 - **[C] Le principe** :
@@ -33,7 +48,7 @@ Ce volet de l'étude d'impact analyse les effets économiques de la taxe et du c
   - Cette décision remplace l'ancienne proposition d'arbitrage, qui hésitait entre plusieurs ordres de priorité.
 - **[C] Une critique à anticiper** : la notion vient de la fiscalité environnementale (Pearce, 1991). La version forte du double dividende a été contestée (Goulder, 1995), car la nouvelle taxe crée elle-même des distorsions qui peuvent annuler le gain. Pour y répondre, on peut montrer qu'une taxe par unité, sur une assiette qui croît, distord peu. **[À vérifier]**
 
-## L'objection de Summers
+### L'objection de Summers
 
 - **[S]** Contexte : Bill Gates propose en février 2017 de taxer le robot qui remplace un salarié au même niveau que le salaire remplacé. Larry Summers lui répond dans le *Washington Post* le 5 mars 2017 : l'idée est « profondément malavisée ».
 - **[S]** Ses arguments :
@@ -58,7 +73,7 @@ Ce volet de l'étude d'impact analyse les effets économiques de la taxe et du c
   - Route Fifty : https://www.route-fifty.com/finance/2017/03/bill-gates-idea-robot-tax-called-extremely-misguided/135933
   - Bruegel : https://www.bruegel.org/blog-post/taxing-robots
 
-## Questions à traiter **[C]**
+### Questions à traiter **[C]**
 
 1. **Incidence : qui paie réellement ?** Les fournisseurs d'IA, les entreprises clientes, ou leurs propres clients, par la hausse des prix ? Cela dépend de l'élasticité de la demande.
 2. **Adoption de l'IA et productivité.** La taxe freine-t-elle la diffusion de l'IA en France ? C'est l'objection de Summers à la « taxe robots » : taxer l'innovation revient à taxer la productivité.
@@ -77,12 +92,12 @@ Ce volet de l'étude d'impact analyse les effets économiques de la taxe et du c
    - Ce que l'on économise ailleurs : le RSA, les dépenses de santé (voir Mincome, fichier 09).
 10. **Cadre européen.** La compatibilité avec le marché unique, l'AI Act, les règles d'aides d'État, et le précédent de la taxe GAFA. **[À vérifier]**
 
-## Sources
+### Sources
 
 - Unédic, paramètres utiles (juillet 2026) : https://s3.eusc-de-east-1.amazonaws.eu/unedic-eks-prod-cms/2026/07/15/unedic_parametres_utiles_juillet2026-vf_uid_6a5757953d941.pdf
 - Éditions Tissot, la baisse de la contribution et le bonus-malus : https://www.editions-tissot.fr/actualite/droit-du-travail/assurance-chomage-la-baisse-de-la-contribution-et-son-impact-sur-le-bonus-malus
 
-## Liens
+### Liens
 
 - [03-cadrage-simulation-tokens-france-vs-masse-salariale.md](03-cadrage-simulation-tokens-france-vs-masse-salariale.md)
 - [04-hypothese-modalites-assiette-et-collecte.md](04-hypothese-modalites-assiette-et-collecte.md)

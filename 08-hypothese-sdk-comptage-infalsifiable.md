@@ -4,18 +4,34 @@
 - **Créé le** : 2026-10-02
 - **Dernière mise à jour** : 2026-10-02
 
-## En bref
+
+## En vigueur
+
+- **Le SDK est installé partout où l'IA sert un usage professionnel**, portables compris. Il est intégré aux logiciels qui font tourner les modèles, et les éditeurs sont certifiés sur le modèle de la norme NF525.
+- **Pas de forfait ni de franchise.** Chaque entreprise bénéficie d'un **abattement**, dont le montant est à fixer.
+- **IA embarquée** : exonérée pour les particuliers.
+- **IA locale et embarquée professionnelle** : un **taux réduit, voire nul**, pendant une période de lancement de 3 à 5 ans, avec une clause de rendez-vous. On compte partout, mais on ne taxe que ce qui est mûr.
+- **Contrôle** : une falsification est **détectable, pas impossible**. On recoupe avec la facturation électronique, les heures de GPU louées et l'électricité consommée. Le prix de référence est l'indice tiré des déclarations.
+- **Questions ouvertes** (fichier 17) : les appareils professionnels, le RGPD et le secret des affaires, les sanctions, le fractionnement entre sociétés d'un groupe, l'entraînement des modèles.
+
+---
+
+## Historique du raisonnement
+
+> Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### En bref
 
 > Unité retenue : l'**octet-équivalent** (octet × coefficient par type de contenu, fichier 04). Quand ce fichier parle de « token », il faut lire « unité taxable ».
 
 Un algorithme, diffusé sous forme de SDK open source, permet au Trésor public de collecter les compteurs (tokens ou données) de façon infalsifiable. Il offre une voie simple aux acteurs de bonne foi et s'accompagne de moyens de contrôle.
 
-## Ce qui a été posé
+### Ce qui a été posé
 
 - **[G]** Développer un algorithme et un SDK open source qui permettent au Trésor public de collecter les compteurs de façon infalsifiable.
 - **[G]** Il s'adresse aux acteurs de bonne foi et s'accompagne de moyens de contrôle.
 
-## Qui doit installer le SDK
+### Qui doit installer le SDK
 
 - **[G] Décision (point 4 de la relecture du corpus)** :
   - **Pas de régime forfaitaire, pas de franchise.** Le SDK est installé **partout** où l'IA sert un usage professionnel, y compris sur les portables. La seule exonération est celle des **particuliers**.
@@ -46,7 +62,7 @@ Un algorithme, diffusé sous forme de SDK open source, permet au Trésor public 
   - **la location de GPU dans le cloud** : le fournisseur déclare les heures de GPU louées par client, ce qui permet de recouper les déclarations sans que le fournisseur ne collecte la taxe ;
   - **la consommation électrique** des salles de serveurs.
 - **[C] Le prix de référence** : l'inférence sur ses propres serveurs n'a pas de prix de marché. On applique l'**indice du prix moyen** issu des déclarations.
-## L'IA embarquée
+### L'IA embarquée
 
 - **[G] Décision** : l'IA embarquée est **exonérée pour les particuliers**.
 - **[G] Pour les appareils professionnels, l'impact reste à étudier.**
@@ -59,7 +75,7 @@ Un algorithme, diffusé sous forme de SDK open source, permet au Trésor public 
   - Le taux plein s'applique quand les volumes mesurés montrent que l'usage est arrivé à maturité.
   - **Avantage** : l'État dispose dès le départ des données d'usage, sans freiner l'IA locale. On peut aussi y voir une préférence assumée pour une IA **frugale, proche du besoin et souveraine**, par rapport à la grande inférence dans le cloud.
 
-## Pistes techniques
+### Pistes techniques
 
 - **[C] Où placer le compteur** : dans le serveur d'inférence ou dans la passerelle d'API. Il compte les données lues et générées, dans un format de référence (voir le fichier 04).
 - **[C] Comment rendre la falsification visible** :
@@ -69,19 +85,19 @@ Un algorithme, diffusé sous forme de SDK open source, permet au Trésor public 
 - **[C] Comment déclarer** : un relevé périodique signé, transmis à la DGFiP en même temps que la déclaration fiscale.
 - **[C] Limite honnête** : sur une machine contrôlée par le contribuable, aucun logiciel n'est strictement infalsifiable. On obtient une falsification **détectable**, pas impossible. D'où la logique de la bonne foi accompagnée de contrôles.
 
-## Moyens de contrôle
+### Moyens de contrôle
 
 - **[C] Le recoupement** :
   - les volumes déclarés par les fournisseurs d'API, comparés à ceux déclarés par leurs clients, comme le rapprochement des factures en TVA ;
   - la consommation électrique des GPU comparée aux volumes déclarés : une machine qui consomme beaucoup mais déclare peu attire l'attention.
 - **[C] Les audits** : des contrôles aléatoires, et la publication du code pour que tout le monde puisse vérifier le compteur.
 
-## Précédents français à citer **[À vérifier]**
+### Précédents français à citer **[À vérifier]**
 
 - **Les logiciels de caisse certifiés** (loi anti-fraude à la TVA, 2018, norme NF525). Ils doivent garantir quatre propriétés : inaltérabilité, sécurisation, conservation et archivage des données.
 - **La facturation électronique obligatoire**, déployée à partir de septembre 2026, avec des plateformes agréées qui transmettent les données au fisc.
 - **D'autres compteurs certifiés** : le chronotachygraphe des poids lourds, le compteur électrique Linky.
 
-## Liens
+### Liens
 
 - [04-hypothese-modalites-assiette-et-collecte.md](04-hypothese-modalites-assiette-et-collecte.md)

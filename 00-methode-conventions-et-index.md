@@ -1,5 +1,7 @@
 # Méthode, conventions et index
 
+> **Projet maieutique** (voir le skill `maieutique`). À lire en premier, avec `journal-des-decisions.md` et `glossaire.md`.
+
 > Fichier de référence : à relire en premier à chaque reprise de contexte.
 
 ## Méthode
@@ -30,19 +32,24 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 ## Structure de chaque fichier
 
 1. **En-tête** : statut (`brouillon` / `en discussion` / `stabilisé`), date de création, date de dernière mise à jour.
-2. **En bref** : trois lignes au maximum, pour qu'on puisse reprendre le contexte sans lire le reste.
-3. **Contenu**, avec la provenance marquée :
+2. **En vigueur** : ce qui vaut aujourd'hui. C'est la section qui prévaut.
+3. **Historique du raisonnement** : le cheminement, dont l'ancien « En bref », avec la provenance marquée :
    - **[G]** : dit ou décidé par Guillaume
    - **[C]** : proposé par Claude, pas encore validé
    - **[S]** : appuyé sur une source citée
+   - **[C → validé]** : proposé par Claude, validé par Guillaume
    - **[À vérifier]** : un fait ou un chiffre pas encore sourcé
+   - **[P]** : une décision prise par procuration (session `metamaieutique`)
 4. **Questions ouvertes**
 5. **Liens** vers les autres fichiers de notes.
 
 ## Fichiers hors numérotation
 
+- `CLAUDE.md` : déclare le dossier comme projet maieutique.
+- `glossaire.md` : les termes du projet et leur sens exact.
 - `journal-des-decisions.md` : le journal des décisions structurantes et des changements d'avis, **à tenir à jour à chaque décision**.
-- `transcript-session-2026-10-01.md` : le transcript, arrêté le 2026-10-02 (fin des sauvegardes).
+- `transcript-session-2026-10-01.md` : le transcript, arrêté le 2026-10-02 (fin des sauvegardes). Il est conservé comme archive.
+- Le dossier est versionné avec **git** depuis le 2026-10-02.
 - `livrable/` : les livrables.
 - `outils/` : les scripts de simulation.
 
@@ -67,4 +74,4 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 | `14-simulation-v3-trajectoire-partage.md` | cadrage | brouillon | Central : plancher seul insuffisant (16 Md€ en 2035) ; avec moteur jusqu’à 4P, chômage universel complet ≈ 2031, −2,8 pts de cotisation en 2035 ; script `outils/sim_v3.py` |
 | `15-concept-complementarite-taxe-zucman.md` | concept | stabilisé | Jevons (flux IA) + Zucman (stock) ; Zucman citée dans l’exposé des motifs, hors dispositif |
 | `16-cas-selection-et-faits-verifies.md` | cas | stabilisé | 4 cas sourcés (tisserands, quartz, dockers 1960, TRR Suède) + Keynes ; récit refus → sans mécanisme → ça marche ; Loi Jevons = généralisation |
-| `17-objection-questions-lecteur-critique.md` | objection | en discussion | 80 questions d’un agent lecteur critique ; corpus : 10 R / 50 P / 20 N ; top 10 à régler (dir. TVA art. 401…) ; contradictions exposé ↔ notes |
+| `17-objection-questions-lecteur-critique.md` | objection | en discussion (liste de suivi) | 80 questions d’un agent lecteur critique ; corpus : 10 R / 50 P / 20 N ; top 10 à régler (dir. TVA art. 401…) ; contradictions exposé ↔ notes |

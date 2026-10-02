@@ -2,20 +2,45 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-01
-- **Dernière mise à jour** : 2026-10-01
+- **Dernière mise à jour** : 2026-10-02
 
-## En bref
+
+## En vigueur
+
+- **Champ** : l'usage **professionnel** uniquement. Les **particuliers sont exonérés**.
+- **Unité** : l'**octet-équivalent**, c'est-à-dire l'octet mesuré dans un format de référence, multiplié par un **coefficient par type de contenu** calibré sur le prix moyen de ce type.
+- **Les quatre flux sont comptés** : la génération, la lecture, l'import et l'export.
+- **Territorialité** : le critère est le **lieu d'établissement du client** professionnel.
+  - **Import** : autoliquidé par le client.
+  - **Export** (GPU en France, client à l'étranger) : **déclaré, au taux nul**.
+  - Une clause anti-abus s'applique.
+- **Frontière entre usage professionnel et personnel** : au-delà d'un seuil de volume, le compte est présumé professionnel ; un accès par API est présumé professionnel.
+- **Le tarif douanier** n'est qu'une boutade, réservée à la campagne.
+- **Questions ouvertes** (fichier 17) :
+  - le format de référence et l'encodage du texte ;
+  - le raisonnement interne et les appels d'outils ;
+  - le contexte relu et le cache ;
+  - la cascade entre intermédiaires ;
+  - les octets que doivent déclarer les fournisseurs étrangers.
+
+---
+
+## Historique du raisonnement
+
+> Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### En bref
 
 Unité : l'octet, avec un coefficient par type de contenu. On taxe quatre flux de tokens : la génération, la lecture, l'import et l'export. L'entreprise comptabilise les tokens consommés sur place et les déclare au fisc. Seul l'usage professionnel est taxé : **les particuliers sont exonérés** (hors taxe). La taxe peut servir de levier pour l'industrie française de l'IA. Le schéma ressemble beaucoup à la TVA et aux accises.
 
-## Ce qui a été posé
+### Ce qui a été posé
 
 - **[G]** L'assiette : les tokens **générés, lus, importés et exportés**.
 - **[G]** Une entreprise qui fait tourner une IA chez elle enregistre en comptabilité les tokens lus et générés sur place, puis les reporte dans sa déclaration fiscale.
 - **[G]** Les appels d'API sont **hors taxe pour les particuliers** : la taxe ne vise que l'usage professionnel. (Correction de Guillaume : Claude avait d'abord compris l'inverse.)
 - **[G]** La taxe peut devenir un levier tarifaire pour l'industrie française de l'IA.
 
-## Analogies et points à creuser
+### Analogies et points à creuser
 
 - **[C] Le modèle de la TVA**
   - Contrairement à la TVA, la taxe ne pèse pas sur le consommateur final particulier. Elle vise l'usage productif, c'est-à-dire là où la substitution du travail a lieu.
@@ -37,7 +62,7 @@ Unité : l'octet, avec un coefficient par type de contenu. On taxe quatre flux d
   - Taxer davantage les tokens étrangers que les tokens français serait contraire au droit de l'UE (marché unique, compétence douanière exclusive de l'UE) et aux règles de l'OMC. **[À vérifier]**
   - La taxe GAFA de 2019 en est le précédent, avec la menace de représailles américaines. **[À vérifier]**
 
-## Unité de mesure : la quantité de données
+### Unité de mesure : la quantité de données
 
 - **[G] Décision (point 2 de la relecture du corpus)** : l'unité est l'**octet**, mesuré dans un format de référence, avec un **coefficient par type de contenu** (texte, image, audio, vidéo, code…).
 - **[C] Interprétation retenue** : chaque coefficient convertit les octets d'un type de contenu en une unité commune, l'« octet-équivalent ». Il est calibré sur le prix moyen de ce type de contenu, de sorte que le plancher 50/50 et le plafond de 4 fois le prix moyen s'appliquent de façon cohérente à chaque type. Les coefficients sont révisés avec l'indice trimestriel (fichier 10).
@@ -56,12 +81,12 @@ Unité : l'octet, avec un coefficient par type de contenu. On taxe quatre flux d
 - **[C]** Limite qui demeure :
   - le raisonnement interne des modèles, qui génère des tokens jamais transmis, échappe à la mesure.
 
-## Frontière entre usage pro et perso
+### Frontière entre usage pro et perso
 
 - **[G]** C'est le miroir de la fraude classique à la TVA : ici, ce sont des professionnels qui achèteraient au tarif des particuliers. L'accès serait plus facile, mais pourrait être soumis à contrôle.
 - **[C]** Un outil simple : au-delà d'un seuil de volume, un compte de particulier serait présumé professionnel. L'accès par API serait présumé professionnel.
 
-## Les quatre flux et le lieu d'imposition (point 5 de la relecture du corpus)
+### Les quatre flux et le lieu d'imposition (point 5 de la relecture du corpus)
 
 - **[G] Décision** : l'**export est déclaré, avec un taux nul**. Les quatre flux (génération, lecture, import, export) sont tous comptés par le SDK.
 - **[G] Définition de l'export** : l'inférence a lieu **sur des GPU en France**, pour un **client établi à l'étranger**.
@@ -81,11 +106,11 @@ Unité : l'octet, avec un coefficient par type de contenu. On taxe quatre flux d
 
 - **[G]** On garde l'aspect tarif douanier, mais **comme une boutade**, réservée à la campagne de promotion, pas comme une proposition sérieuse. La proposition sérieuse reste la taxation au lieu de consommation, avec exonération à l'export.
 
-## Questions ouvertes
+### Questions ouvertes
 
 - ~~Quel est le taux sur l'export ?~~ Réglé : export déclaré, taux nul.
 - ~~Comment traiter les particuliers qui font tourner des modèles en local ?~~ Réglé : ils sont exonérés (fichier 08).
 
-## Liens
+### Liens
 
 - [03-cadrage-simulation-tokens-france-vs-masse-salariale.md](03-cadrage-simulation-tokens-france-vs-masse-salariale.md)

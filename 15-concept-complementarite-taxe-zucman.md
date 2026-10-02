@@ -4,15 +4,27 @@
 - **Créé le** : 2026-10-02
 - **Dernière mise à jour** : 2026-10-02
 
-## En bref
+
+## En vigueur
+
+- **La taxe Zucman est citée dans l'exposé des motifs** comme texte complémentaire, hors du dispositif.
+- Elle repose sur le stock des patrimoines, la taxe Jevons sur le flux de l'IA. Elle pourrait accélérer la montée en charge.
+
+---
+
+## Historique du raisonnement
+
+> Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### En bref
 
 Pour Guillaume, la taxe Jevons doit aller de pair avec la taxe Zucman. L'une taxe le **flux** de valeur de l'IA, l'autre le **stock** de très grandes fortunes, qui sont souvent valorisées grâce à l'IA. Elles sont complémentaires.
 
-## Ce qui a été posé
+### Ce qui a été posé
 
 - **[G]** « La taxe Jevons devrait aller de pair avec la taxe Zucman. »
 
-## Points d'appui **[C, À vérifier]**
+### Points d'appui **[C, À vérifier]**
 
 - **La taxe Zucman** : un impôt plancher de 2 % sur les patrimoines de plus de 100 M€, proposé par l'économiste Gabriel Zucman. En France, il a été adopté à l'Assemblée nationale en février 2025 dans une proposition de loi, puis rejeté par le Sénat. Le rendement annoncé est de l'ordre de 15 à 25 Md€ par an.
 - **Ce qui les rend complémentaires** :
@@ -21,7 +33,7 @@ Pour Guillaume, la taxe Jevons doit aller de pair avec la taxe Zucman. L'une tax
   - **La justice** : on taxe à la fois ceux qui utilisent l'IA à la place du travail, et ceux qui accumulent la richesse qu'elle crée.
 - **[G] Décision** : la taxe Zucman est **citée dans l'exposé des motifs** comme un texte complémentaire. Elle **ne fait pas partie du dispositif** du projet de loi Jevons.
 
-## Liens
+### Liens
 
 - [14-simulation-v3-trajectoire-partage.md](14-simulation-v3-trajectoire-partage.md)
 - [11-cadrage-impact-economique.md](11-cadrage-impact-economique.md)

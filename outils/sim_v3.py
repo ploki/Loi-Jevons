@@ -1,6 +1,6 @@
 # Simulation v3 : trajectoire avec partage 50/50 et règle de taux (plancher P, moteur, plafond 4P)
 EPS=0.5            # élasticité de la demande au prix
-A_TARGET=10.0      # Md€ : extension des droits (chômage universel complet ≈ 50, dont ≈ 40 déjà financés)
+A_TARGET=16.0      # Md€ : extension des droits. Mis à jour le 2026-10-02 (avant : 10), d'après les paramètres du fichier 05 (besoin net de 16 à 20)
 PT=11.0            # Md€ par point de cotisation
 B_TARGET=44.0      # Md€ : 4 points de cotisation remplacés
 years=list(range(2026,2036))

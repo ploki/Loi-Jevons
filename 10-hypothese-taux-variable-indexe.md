@@ -4,13 +4,33 @@
 - **Créé le** : 2026-10-02
 - **Dernière mise à jour** : 2026-10-02
 
-## En bref
+
+## En vigueur
+
+- **Règle du taux** : le montant par unité au trimestre T vaut **min(4P, max(P, B/A))**, avec un lissage.
+  - P = le prix moyen ;
+  - B = le besoin de financement ;
+  - A = l'assiette.
+
+  Le **plancher, égal à P, correspond au 50/50**, et le **plafond est de 4P**.
+- **Révision tous les trois mois** par arrêté, d'après un indice de prix tiré des déclarations. Les **déclarations suivent le calendrier de la TVA**.
+- **Justification** : le **savoir collectif** sur lequel les modèles ont été entraînés. Au moins la moitié de la valeur revient au bien commun.
+- **Le surplus** va au fonds de réserve et à la baisse des cotisations.
+- ⚠ **Parmi les trois enseignements**, le premier (« la part de la taxe augmente quand le prix baisse ») est **neutralisé par l'indexation sur le prix**. Les formules de l'exposé sont à revoir (fichier 17).
+
+---
+
+## Historique du raisonnement
+
+> Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### En bref
 
 > Unité retenue : l'**octet-équivalent** (octet × coefficient par type de contenu, fichier 04). Quand ce fichier parle de « token », il faut lire « unité taxable ».
 
 **Règle du taux retenue** : un montant par unité, **au minimum égal au prix moyen** (le plancher 50/50), relevé si le besoin de financement l'exige (besoin ÷ assiette), et **plafonné à 4 fois le prix moyen**. Le montant est révisé tous les trois mois par arrêté, d'après l'indice des prix, avec un lissage. Le surplus éventuel alimente le fonds de réserve et la baisse des cotisations.
 
-## Règle du taux retenue (point 1 de la relecture du corpus)
+### Règle du taux retenue (point 1 de la relecture du corpus)
 
 - **[G] Validé** : une combinaison de trois règles qui se contredisaient jusque-là.
   - **Plancher = le prix moyen** : la taxe vaut au moins 100 % du prix hors taxe, soit le **50/50**. Le bien commun touche toujours au moins la moitié de la valeur.
@@ -25,11 +45,11 @@
 - **Formule pour l'exposé des motifs** : *« la moitié de la valeur au minimum, et davantage si la solidarité l'exige »*.
 - Les sections ci-dessous, « Principe directeur : 50/50 », « Indicateurs possibles » et « Proposition de synthèse », gardent la trace du raisonnement. **Cette section-ci prévaut.**
 
-## Ce qui a été posé
+### Ce qui a été posé
 
 - **[G]** L'idée : un taux qui fluctue selon des indicateurs extérieurs, par exemple les besoins de financement du programme de chômage universel.
 
-## Principe directeur : 50/50
+### Principe directeur : 50/50
 
 - **[G]** Une taxe de **100 %**, autrement dit **50 % pour l'exploitant et 50 % pour le bien commun**, dont l'exploitant profite lui-même.
 - **[C]** Une taxe de 100 % du prix hors taxe représente la **moitié du prix payé**. La formule « moitié-moitié » est simple et lisible pour l'exposé des motifs.
@@ -44,7 +64,7 @@
 - **[G] Décision** : un **montant par token égal au prix moyen**, **révisé régulièrement**. Le principe 50/50 est donc maintenu dans la durée.
 - **[C]** Conséquence à assumer : si le montant suit le prix moyen, les recettes valent environ **volume × prix moyen**, c'est-à-dire la **valeur du marché de l'IA en France**, et non plus le seul volume. Les recettes augmentent si la valeur du marché augmente : la baisse du prix doit être plus que compensée par la hausse du volume (effet Jevons). **[À vérifier]**
 
-## Période de révision et de déclaration
+### Période de révision et de déclaration
 
 - **Le problème** : le prix du token chute très vite. Avec une révision annuelle, le montant de la taxe pourrait valoir plusieurs fois le prix en fin d'année.
 - **Le précédent du Livret A** : la loi fixe une formule, le taux est recalculé **chaque semestre** (1ᵉʳ février et 1ᵉʳ août) et publié par arrêté. C'est le modèle le plus proche : la formule est dans la loi, le chiffre dans l'arrêté. Cela respecte l'article 34. **[À vérifier]**
@@ -61,17 +81,17 @@
 - **[G] Validé** : une révision **trimestrielle** par arrêté, d'après l'indice du trimestre précédent, avec le lissage et les garde-fous (plancher, plafond, fonds de réserve). On pourra passer au semestriel quand la baisse des prix ralentira.
 - **[G] Validé** : une période de déclaration **calquée sur la TVA** (mensuelle pour les grandes entreprises, trimestrielle pour les petites, annuelle pour les très petites). On reprend ainsi un circuit que les entreprises connaissent déjà. **[À vérifier]**
 
-## Contrainte juridique **[À vérifier]**
+### Contrainte juridique **[À vérifier]**
 
 - **[C]** L'article 34 de la Constitution réserve à la loi la fixation de « l'assiette, le taux et les modalités de recouvrement » des impôts. Le taux ne peut donc pas être laissé libre à l'administration.
 - **[C]** Ce qui est admis : la loi fixe une **formule**, ou une **fourchette** avec un plancher et un plafond, et un décret ou la loi de finances de chaque année fixe le taux à l'intérieur de ce cadre.
 
-## Choix préalable : taxe par unité ou taxe sur le prix
+### Choix préalable : taxe par unité ou taxe sur le prix
 
 - **[C] Taxe sur le prix** (un pourcentage, comme la TVA) : si le prix du token s'effondre, les recettes s'effondrent avec lui. C'est le contraire de l'effet recherché.
 - **[C] Taxe par unité** (un montant par octet ou par token, comme une accise) : les recettes suivent le **volume**, donc l'effet Jevons. **C'est le bon choix** pour ce projet.
 
-## Le prix du token tend vers zéro
+### Le prix du token tend vers zéro
 
 - **[G]** Le prix du token va tendre vers 0, et ce qu'on fait déjà avec le débit actuel est remarquable. Une conversation comme celle-ci coûtera peut-être 0,2 $ un jour.
 - **[G]** Une taxe qui **double le prix du token** forcera quand même à optimiser.
@@ -81,7 +101,7 @@
   3. **La taxe accompagne l'effet Jevons, elle ne le casse pas.** L'optimisation qu'elle provoque rend chaque usage moins cher, ce qui fait augmenter le volume total, donc les recettes.
 - Exemple concret : cette conversation à environ 0,2 $, face à des heures de travail de juriste et d'économiste (fichier 07).
 
-## Indicateurs possibles
+### Indicateurs possibles
 
 | Indicateur | Logique | Limite |
 |---|---|---|
@@ -90,7 +110,7 @@
 | **Part des salaires dans la valeur ajoutée** | Si la machine remplace le travail, la part des salaires baisse et le taux monte. C'est **la mesure la plus directe de la substitution** | L'indicateur est lent, publié avec retard, et ses variations ont plusieurs causes |
 | Prix moyen du token ou de l'octet | Garde une taxe proportionnée au prix | Annule l'avantage de la taxe par unité |
 
-## Proposition de synthèse
+### Proposition de synthèse
 
 - **[C]** Le taux de l'année N vaut le besoin de financement de l'année N divisé par l'assiette déclarée en N-1.
   - Il est encadré par un **plancher et un plafond** inscrits dans la loi.
@@ -98,13 +118,13 @@
   - En cas de récession, un **fonds de réserve** alimenté les bonnes années absorbe les pics.
 - **[C]** Variante : une modulation selon la part des salaires dans la valeur ajoutée. Elle relierait le taux à la substitution du travail, et pas seulement aux besoins de la caisse.
 
-## Précédents **[À vérifier]**
+### Précédents **[À vérifier]**
 
 - Les **taux de cotisation chômage**, fixés par la convention Unédic puis agréés par l'État.
 - Le **bonus-malus sur les contributions chômage** (depuis 2022), modulé selon le taux de séparation de chaque entreprise.
 - Les **impôts locaux**, dont les collectivités votent le taux dans les limites fixées par la loi.
 
-## Liens
+### Liens
 
 - [04-hypothese-modalites-assiette-et-collecte.md](04-hypothese-modalites-assiette-et-collecte.md)
 - [05-hypothese-revenu-universel-musk.md](05-hypothese-revenu-universel-musk.md)

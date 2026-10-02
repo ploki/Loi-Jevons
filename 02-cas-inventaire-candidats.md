@@ -2,15 +2,28 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-01
-- **Dernière mise à jour** : 2026-10-01
+- **Dernière mise à jour** : 2026-10-02
 
-## En bref
+
+## En vigueur
+
+- La **sélection retenue** et les faits vérifiés se trouvent dans le **fichier 16**.
+- La famille C (« fausses bonnes idées ») reste disponible pour répondre aux objections.
+- Le reste de ce fichier est l'inventaire de départ.
+
+---
+
+## Historique du raisonnement
+
+> Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### En bref
 
 > Sélection retenue et faits vérifiés : voir le fichier 16.
 
 Une première liste de cas, de mémoire. Rien n'est encore sourcé. Il faut en retenir quelques-uns et les vérifier. Les cas sont rangés en trois familles : des interventions qui ont amorti le choc, des interventions proposées puis refusées, et des fausses bonnes idées (protéger le métier plutôt que les personnes).
 
-## A. Une intervention a amorti le choc
+### A. Une intervention a amorti le choc
 
 | Cas | Mécanisme | Intérêt pour l'article |
 |---|---|---|
@@ -20,7 +33,7 @@ Une première liste de cas, de mémoire. Rien n'est encore sourcé. Il faut en r
 | **Charbon de la Ruhr** (jusqu'en 2018) | Fermeture lente, sans licenciements secs, financée en partie par une taxe sur l'électricité (*Kohlepfennig*) | Un prélèvement sur les consommateurs, mais qui a servi à maintenir le charbon autant qu'à la transition [À vérifier] |
 | **Sidérurgie lorraine** (conventions sociales de 1979 et 1984) | Préretraites massives, primes de reconversion | Les personnes ont été protégées, le territoire beaucoup moins [À vérifier] |
 
-## B. Une intervention a été proposée puis refusée
+### B. Une intervention a été proposée puis refusée
 
 | Cas | Ce qui a été refusé | Intérêt |
 |---|---|---|
@@ -29,7 +42,7 @@ Une première liste de cas, de mémoire. Rien n'est encore sourcé. Il faut en r
 | **Crise du quartz en Suisse** (1970-1985) | Pas de mécanisme collectif dédié. Une restructuration pilotée par les banques (SMH, Swatch). L'assurance chômage n'est devenue obligatoire qu'à ce moment-là | L'industrie est sauvée, une grande partie des emplois est perdue [À vérifier] |
 | **Le « China shock »** aux États-Unis (années 2000) | Le dispositif *Trade Adjustment Assistance* existait mais était sous-dimensionné | Un gain diffus pour le pays et des territoires dévastés : le cas moderne de référence [À vérifier] |
 
-## C. Fausses bonnes idées : protéger le métier plutôt que les personnes
+### C. Fausses bonnes idées : protéger le métier plutôt que les personnes
 
 | Cas | Ce qui s'est passé | Intérêt |
 |---|---|---|
@@ -37,11 +50,11 @@ Une première liste de cas, de mémoire. Rien n'est encore sourcé. Il faut en r
 | **Statut horloger suisse** (1934-1971) | Un cartel protégé par l'État | Il a probablement retardé l'adaptation au quartz [À vérifier] |
 | **Speenhamland** (1795) | Un complément de salaire versé par les paroisses | Il a pu tirer les salaires vers le bas : une compensation mal conçue [À vérifier] |
 
-## Questions ouvertes
+### Questions ouvertes
 
 - Quels cas retenir ? Pour un petit article, sans doute 2 ou 3 au maximum.
 - Est-ce qu'on garde la famille C comme réponse aux objections ?
 
-## Liens
+### Liens
 
 - [01-cadrage-intention-initiale.md](01-cadrage-intention-initiale.md)
