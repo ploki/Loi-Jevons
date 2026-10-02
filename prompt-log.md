@@ -21,3 +21,13 @@ Guillaume demande d'expliquer la clause d'adaptation des décisions juridiquemen
 ## Itération 5 (2026-10-02)
 
 Guillaume recadre : la clause est trop étroite. Le **but du mandat est justement de rendre l'idée réalisable et légale**, en réglant ou en rendant possibles toutes les difficultés techniques, avec le **plein soutien du Gouvernement**. Il n'arrive pas à rendre son idée réalisable, et c'est pour cela qu'il veut faire de la metamaieutique. → Le mandat est réécrit : **l'intention est le seul invariant**, toutes les modalités peuvent être revues, et le résultat doit être légal.
+
+---
+
+# Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)
+
+> À partir d'ici, les messages consignés sont ceux de l'orchestrateur (Claude), qui parle **par procuration** au nom de Guillaume, d'après `mandat.md` et `intention-de-l-auteur.md`. Les décisions qui en découlent sont marquées **[P]**.
+
+## Itération M0 (2026-10-02) — lancement
+
+L'orchestrateur lance un agent maieutique neuf. Consignes : lire le skill maieutique, le mandat, le fichier d'intention, l'index, le journal, le glossaire et le fichier 17 ; ne jamais commiter, changer de branche, publier ou envoyer quoi que ce soit ; marquer [P] les décisions par procuration. Premier tour demandé : un état des lieux des obstacles juridiques bloquants (en premier lieu l'article 401 de la directive TVA), avec une proposition de plan de travail et des premières pistes d'architecture.
