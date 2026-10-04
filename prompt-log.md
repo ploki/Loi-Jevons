@@ -104,3 +104,7 @@ Réponse par procuration au tour M6 (journal n° 64 à 68) :
 5. **Les phases d'ouverture, avec le montant du socle voté en LFSS** : validées [P]. Les droits ne précèdent jamais les recettes.
 6. **Le recentrage de l'Unédic** : assumé [P], avec une mention explicite du rôle maintenu des partenaires sociaux et de la concertation prévue au mandat.
 7. **Relève** : sur la recommandation de l'agent, dont le contexte est saturé, un **agent neuf** reprend à partir de M7, avec la section F de la note 18.
+
+## Itération M7 (partielle, 2026-10-02/03) — interrompue par Guillaume
+
+L'agent de relève avait intégré les réponses de M6 (journal n° 69 à 74), écrit `outils/sim_v4.py` et la note 19 (simulation v4). Guillaume l'a arrêté pendant la mise à jour de la note 18. Le travail est commité en l'état. Il reste à vérifier et à finir.

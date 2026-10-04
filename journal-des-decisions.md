@@ -73,6 +73,12 @@
 | 66 | 10-02 | **[P] Règle de transparence** pour les intermédiaires ; **la génération de données synthétiques est taxée** (D12.3) | — | 04, 18 |
 | 67 | 10-02 | **[P] Contrôle** (D12.5) : les sanctions sur le modèle des art. 1727 à 1729 du CGI ; un délai de reprise de trois ans ; l'abattement au niveau du groupe, restitué automatiquement ; un registre d'entraînement ; les indicateurs indirects servent seulement au ciblage | — | 08, 18 |
 | 68 | 10-02 | **[P] Registre des revendeurs agréés** (D12.6) et **quatre parades aux bornes des tranches**, dont un lissage de ± 10 % (D12.7) | — | 08, 10, 18 |
+| 69 | 10-02 | **[P] Le champ D13.1 est validé**, avec la **traduction et la transcription incluses expressément** au 2° (« y compris la traduction et la transcription »), au titre du travail remplacé | Précise la décision 64 | 04, 18, glossaire |
+| 70 | 10-02 | **[P] Les étudiants en formation initiale : question LAISSÉE OUVERTE**, réservée à Guillaume (elle touche l'intention et la décision 31 [G], « ouvert dès 18 ans »). **Hypothèse de chiffrage** : la base les exclut, bourses maintenues ; une **variante chiffrée** les inclut (note 19). Les livrables présentent la question comme un **choix ouvert** | — (aucune décision [G] n'est modifiée) | 05, 18, 19 |
+| 71 | 10-02 | **[P] La réduction du socle pour les revenus élevés du patrimoine : question LAISSÉE OUVERTE**, réservée à Guillaume (elle introduirait une condition de ressources dans un dispositif voulu universel). La base ne la retient pas ; une **variante est chiffrée** (note 19) | — | 05, 18, 19 |
+| 72 | 10-02 | **[P] La sortie progressive dure 12 mois**, puis la **prime d'activité** prend le relais | Précise la décision 31 (« une sortie progressive ») | 05, 18 |
+| 73 | 10-02 | **[P] L'ouverture des droits se fait par phases** (D13.6) : phase 0 de trois ans (fonds, formation, reprise à l'identique du RSA et de l'ASS), puis l'ouverture du socle au niveau du RSA, puis sa hausse vers la cible. **Le montant du socle, voté en LFSS, est la variable d'ajustement**. Les droits ne précèdent jamais les recettes | Précise les décisions 30 et 54 | 05, 18, 19 |
+| 74 | 10-02 | **[P] Le recentrage de l'Unédic sur le complément est assumé** (D13.4), avec une **mention explicite**, dans l'exposé, du rôle maintenu des partenaires sociaux (la gestion paritaire du complément et de la convention d'assurance chômage) et de la **concertation** prévue au mandat | Précise les décisions 49 et 57 | 05, 11, 18, livrable (v0.2) |
 
 ## Points en suspens signalés par la confrontation (fichier 17)
 
