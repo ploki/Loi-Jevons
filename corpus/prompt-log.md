@@ -58,6 +58,10 @@ Guillaume dit regretter le terme « Loi Jevons » : ce devrait plutôt être « 
 
 Guillaume donne la raison pour laquelle on garde « Loi Jevons » : « ce qu'on fait couvre et la taxe et la redistribution ».
 
+## Itération 15 (2026-10-05)
+
+Guillaume veut régler les quatre points avant de pousser le dépôt. (1) Son e-mail est déjà public : on le garde. (2) Il demande de **réécrire l'historique** pour retirer ce qui concerne directement la personne nommée et les remarques négatives, mais pas la campagne de promotion (« ne fais que les trucs qui concernent directement [cette personne] et les trucs négatifs »), sur une nouvelle branche, puis de placer `main` dessus.
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)
