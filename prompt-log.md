@@ -30,6 +30,23 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
 
+## Itération M9 (2026-10-04) — fin de M7 : v4 vérifiée, « les droits d'abord » ; passage à l'exposé
+
+Réponse par procuration au tour de l'agent (décisions 75 et 76, revue des 80 questions : 42 décidées, 26 répondues, 12 ouvertes) :
+1. **La formulation du scénario bas est validée** [opus-5.5 as ggim]. Une précision : l'exposé ne doit chiffrer **aucun** rendement de la taxe Zucman.
+2. **La règle d'ouverture du socle sur trois ans (D13.6) est validée** pour le dispositif. Pourquoi : on ne perçoit pas une taxe pendant des années sans ouvrir de droits.
+3. **m ramené à 2 au plus une fois la cible atteinte** : validé, mais comme une **règle par défaut**. La LFSS peut aller au-delà sur un vote motivé (la justification renforcée de la décision 51), notamment en cas de retournement. Pourquoi : « drastique mais juste ». Le double dividende ne justifie pas à lui seul de dépasser les deux tiers, mais on ne lie pas les mains du législateur.
+4. **La moitié « droits » après la cible** : validée (l'indexation sur le seuil de pauvreté et les extensions votées, à défaut la baisse des cotisations). **Exigence** : modéliser l'indexation dans `sim_v4.py`, pour ne pas surestimer le double dividende. L'exposé doit dire honnêtement que la baisse des cotisations sera **modeste et tardive** (environ 0,3 point en 2035) : c'est un bénéfice second, pas une promesse.
+5. **Le fonds de réserve à six mois du besoin net** : validé.
+6. **Les réponses à Q63 et Q75** : validées pour l'argumentaire. Q63 est fidèle à l'intention (« c'est pas tant pour absorber la vague »).
+7. **La décision 76** est gardée : c'est bien une décision de Guillaume.
+8. **Passer à M9 : l'exposé des motifs v0.2** (un nouveau fichier, la v0.1 étant conservée). Contraintes :
+   - un ton formel ;
+   - toutes les corrections de la section F, et les contradictions du fichier 17 levées ;
+   - le savoir collectif au centre ;
+   - les étudiants et le patrimoine présentés comme des choix ouverts ;
+   - pas de mise en avant de l'auteur.
+
 ## Itération M8 (2026-10-04) — Guillaume : reprise, sans migration de structure
 
 **Message de Guillaume (et non par procuration).** Il a mis à jour les skills (`maieutics` et `metamaieutics`) et demande de reprendre la boucle. La migration du corpus vers la nouvelle structure en anglais (`corpus/`, `partus/`, `instrumenta/`) a été refusée par le contrôle des permissions. Il choisit l'option 2 : **ne pas migrer la structure** sur cette branche (ce sera fait plus tard, sur `main`), et appliquer seulement les nouvelles conventions à partir de maintenant :

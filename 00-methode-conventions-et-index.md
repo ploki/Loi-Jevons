@@ -44,6 +44,35 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 4. **Questions ouvertes**
 5. **Liens** vers les autres fichiers de notes.
 
+## Identités et marqueurs
+
+> Depuis le 2026-10-04 (décision 76 [ggim]). Les écrits antérieurs gardent leurs anciens marqueurs, qui ne sont pas réécrits : ils sont datés, pas faux.
+
+**Les identités** :
+- **`ggim`** : Guillaume Gimenez, l'auteur du projet ;
+- **`opus-5.5`** : le modèle `claude-opus-5-5` (Anthropic), qui a tenu la session metamaieutique.
+
+**Les marqueurs des nouveaux écrits** :
+
+| Marqueur | Sens |
+|---|---|
+| **[ggim]** | Dit ou décidé par Guillaume |
+| **[opus-5.5]** | Proposé par l'agent, pas encore validé |
+| **[opus-5.5 → ggim]** | Proposé par l'agent, validé par Guillaume |
+| **[opus-5.5 as ggim]** | Décidé par procuration au nom de Guillaume (session metamaieutique) |
+| **[S]** | Appuyé sur une source citée |
+| **[Unverified]** | Un fait ou un chiffre pas encore sourcé |
+
+**La correspondance avec les anciens marqueurs** :
+
+| Ancien | Nouveau |
+|---|---|
+| [G] | [ggim] |
+| [P] | [opus-5.5 as ggim] |
+| [C] | un modèle Claude ; pour tout ce qui relève de la session metamaieutique, opus-5.5 |
+| [C → validé] | [opus-5.5 → ggim] (pour la session metamaieutique) |
+| [À vérifier] | [Unverified] |
+
 ## Fichiers hors numérotation
 
 - `intention-de-l-auteur.md` : l'intention, les convictions et les états d'âme de Guillaume, liés au projet. C'est la boussole, et elle est **à lire en premier**.
@@ -54,7 +83,7 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 - `transcript-session-2026-10-01.md` : le transcript, arrêté le 2026-10-02 (fin des sauvegardes). Il est conservé comme archive.
 - Le dossier est versionné avec **git** depuis le 2026-10-02.
 - `livrable/` : les livrables.
-- `outils/` : les scripts de simulation.
+- `outils/` : les scripts de simulation. `sim_v4.py` est la référence depuis M7.
 
 ## Index
 
@@ -71,11 +100,12 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 | `08-hypothese-sdk-comptage-infalsifiable.md` | hypothese | brouillon | ↺ Obligation de comptage sur le redevable, SDK certifié = voie simplifiée (M2 [P]) ; taux réduit pour l'exécution sur équipement terminal, temporaire, notifié ; recoupements |
 | `09-objection-paresse.md` | objection | brouillon | Faits contre l'objection de la paresse (Finlande, Alaska, Mincome…) |
 | `10-hypothese-taux-variable-indexe.md` | hypothese | en discussion | Tarif m × P_k par classe (3 classes) ; P_k constaté chaque trimestre ; ↺ m voté chaque année par le Parlement entre 1 et 4 ; plafond 4P (M2 [P]) |
-| `11-cadrage-impact-economique.md` | cadrage | brouillon | 10 questions d’impact éco ; double dividende par une fraction versée à l'Unédic en LFSS (M3) ; ordre d'emploi des recettes proposé |
+| `11-cadrage-impact-economique.md` | cadrage | brouillon | 10 questions d’impact éco ; double dividende par une fraction versée à l'Unédic en LFSS (M3) ; ↺ **les droits d'abord**, puis le partage moitié-moitié une fois le socle cible atteint : double dividende différé (décision 75, M7) |
 | `12-concept-analogie-carburant.md` | concept | en discussion | IA aussi stratégique que le carburant → accise par unité, taxes ~100 % du prix HT ; limites : externalités, Gilets jaunes, frontière |
-| `13-simulation-v2-recettes-50-50.md` | cadrage | brouillon | Taxe 50/50 ≈ CA IA pro France : ~1,3 Md€ 2026 (0,5–3) ; 10 Md€ vers 2029, 50 Md€ vers 2031 (central) |
-| `14-simulation-v3-trajectoire-partage.md` | cadrage | brouillon | Central : plancher seul insuffisant (16 Md€ en 2035) ; avec moteur jusqu’à 4P, chômage universel complet ≈ 2031, −2,8 pts de cotisation en 2035 ; script `outils/sim_v3.py` |
+| `13-simulation-v2-recettes-50-50.md` | cadrage | brouillon | Taxe 50/50 ≈ CA IA pro France : ~1,3 Md€ 2026 (0,5–3) ; 10 Md€ vers 2029, 50 Md€ vers 2031 (central) ; trajectoire de référence : note 19 |
+| `14-simulation-v3-trajectoire-partage.md` | cadrage | brouillon | ↺ Remplacée par la v4 (note 19). Central : plancher seul insuffisant (16 Md€ en 2035) ; avec moteur jusqu’à 4P, chômage universel complet ≈ 2033 (objectif 16 Md€) ; script `outils/sim_v3.py` |
 | `15-concept-complementarite-taxe-zucman.md` | concept | stabilisé | Jevons (flux IA) + Zucman (stock) ; Zucman citée dans l’exposé des motifs, hors dispositif |
 | `16-cas-selection-et-faits-verifies.md` | cas | stabilisé | 4 cas sourcés (tisserands, quartz, dockers 1960, TRR Suède) + Keynes ; récit refus → sans mécanisme → ça marche ; Loi Jevons = généralisation |
-| `17-objection-questions-lecteur-critique.md` | objection | en discussion (liste de suivi) | 80 questions d’un agent lecteur critique ; corpus : 10 R / 50 P / 20 N ; top 10 à régler (dir. TVA art. 401…) ; contradictions exposé ↔ notes |
-| `18-faisabilite-obstacles-juridiques-et-architecture.md` | faisabilite | en discussion | Session metamaieutique : 10 obstacles (O1-O10), aucun bloquant restant ; art. 401 (D1) ; m ≥ 1 = 50/50 (D2) ; 4P non confiscatoire (D3) ; affectation arrêtée : branche de sécurité sociale, cliquet LO 111-3-14 (D4, D6) ; règlement 883/2004, RSA, ASS (D6) ; comptes grand public (D7) ; fonds de réserve (D8) ; non-régression RSA/ASS (D9) ; condition de séjour (D10) ; territorialité, IA locale, notification (D11) ; assiette technique et contrôle (D12) ; champ révisé et chômage universel (D13) ; **guide de reprise (F)** ; suivi des 20 questions (E) ; plan en 14 itérations |
+| `17-objection-questions-lecteur-critique.md` | objection | en discussion (liste de suivi) | 80 questions d’un agent lecteur critique ; revue de M7 : 42 décidées, 26 répondues, 12 ouvertes, toutes rattachées (M9, M10, M11 ou réservée à Guillaume) ; les 10 prioritaires sont fermées ; contradictions exposé v0.1 ↔ notes |
+| `18-faisabilite-obstacles-juridiques-et-architecture.md` | faisabilite | en discussion | Session metamaieutique : 10 obstacles (O1-O10), aucun bloquant restant ; art. 401 (D1) ; m ≥ 1 = 50/50 (D2) ; 4P non confiscatoire (D3) ; affectation arrêtée : branche de sécurité sociale, cliquet LO 111-3-14 (D4, D6) ; règlement 883/2004, RSA, ASS (D6) ; comptes grand public (D7) ; fonds de réserve (D8) ; non-régression RSA/ASS (D9) ; condition de séjour (D10) ; territorialité, IA locale, notification (D11) ; assiette technique et contrôle (D12) ; champ révisé et chômage universel (D13) ; **guide de reprise (F)** ; suivi des 20 questions (E) ; plan renuméroté (M9 à M15) ; règle d'emploi et scénario bas (D13.8) ; état à la fin de M7 |
+| `19-simulation-v4-architecture-revisee.md` | cadrage | en discussion | Simulation v4 (`outils/sim_v4.py`) : 2,6 Md€ en 2028 ; socle ouvert en 2031 ; règle des droits d'abord (décision 75) : cible de 1 200 € en 2034 avec m ≤ 2 (central) ; scénario bas non financé par la taxe seule (contribution d'équilibre) ; variantes étudiants (+40 Md€) et patrimoine |

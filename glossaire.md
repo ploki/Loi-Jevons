@@ -19,7 +19,10 @@
 | **Fournisseur enregistré** | Un fournisseur de services d'IA, établi en France ou non, qui s'enregistre pour collecter la taxe auprès de ses clients professionnels (décision 38 [P]) | — |
 | **Équipement terminal** | Un poste de travail ou un appareil embarqué, par opposition à un serveur. L'inférence qui y est exécutée bénéficie du taux réduit temporaire (décision 44 [P]) | Un serveur loué ou en colocation |
 | **50/50** | Le plancher, une taxe égale au prix hors taxe : la moitié du prix payé revient au bien commun | Le partage moitié-moitié des recettes |
-| **Partage moitié-moitié** | Après le rodage, les recettes sont réparties à parts égales entre l'extension des droits et la baisse des cotisations (fichier 11) | Le 50/50 du taux |
+| **Partage moitié-moitié** | ↺ Depuis la décision 75 [opus-5.5 as ggim] : **une fois le socle cible atteint**, le surplus des recettes est réparti à parts égales entre les droits et la baisse des cotisations. Pendant la montée en charge, il va d'abord aux droits. (Avant : « après le rodage », décision 30 [G], fichier 11) | Le 50/50 du taux |
+| **Les droits d'abord** | La règle d'emploi des recettes pendant la montée en charge : après les droits ouverts et le fonds de réserve, tout le surplus sert à hausser le socle jusqu'au socle cible (décision 75 ; note 18, D8) | L'ancien ordre D8 (décision 54), qui partageait dès l'ouverture |
+| **Socle cible** | Le montant visé du socle, le seuil de pauvreté à 60 % du revenu médian, environ 1 200 € par mois [Unverified] (note 18, D13.2) | Le niveau d'ouverture, celui du RSA |
+| **Contribution d'équilibre** | La dotation de l'État votée en LFSS quand une branche est en déficit ; c'est le recours du scénario bas (note 18, D8 ; note 19) | Une recette affectée |
 | **Savoir collectif** | La justification morale : les modèles ont été entraînés sur le bien commun | — |
 | **Double dividende** | La taxe finance le chômage universel **et** permet de baisser les cotisations sur le travail | — |
 | **Abattement** | Un volume annuel non taxé par entreprise. Tout est quand même déclaré | Une franchise, qui exonère de déclaration (écartée) |
@@ -29,3 +32,4 @@
 | **Cliquet organique** | La règle de l'art. LO 111-3-14 : seule une LFSS peut affecter une recette exclusive de la sécurité sociale à une autre personne | — |
 | **Point de départ** | Le statut du livrable : formel et étayé, à expertiser ensuite | Un texte définitif |
 | **[P]** | Une décision prise par **procuration**, lors d'une session `metamaieutique` | [G], une décision de Guillaume |
+| **[opus-5.5 as ggim]** | Depuis le 2026-10-04 (décision 76), le marqueur nominatif d'une décision par procuration ; il remplace [P] pour les nouveaux écrits (voir le fichier 00, « Identités et marqueurs ») | [ggim], une décision de Guillaume |

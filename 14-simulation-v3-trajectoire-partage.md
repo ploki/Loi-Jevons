@@ -2,7 +2,7 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02
+- **Dernière mise à jour** : 2026-10-04 (renvoi à la v4 et à la décision 75)
 
 
 ## En vigueur
@@ -11,6 +11,7 @@
 - **Deux hypothèses clés** : la croissance du marché et l'élasticité de la demande.
 - **Le lissage n'est pas modélisé**, ce qui ajouterait environ 2 ans. L'entrée en vigueur en 2026 est théorique.
 - Le script `outils/sim_v3.py` a été mis à jour avec un objectif de 16 Md€ (le 2026-10-02).
+- **↺ Remplacée par la v4 (note 19)** [opus-5.5] : la v4 intègre l'architecture révisée (entrée en vigueur en 2028, lissage de m, abattement, terminal, besoin de 20 Md€). **Le partage moitié-moitié pendant la montée en charge, qui structure cette v3, est abandonné** (décision 75 [opus-5.5 as ggim], ↺ de la décision 30 [G]) : les droits d'abord jusqu'au socle cible, puis le partage. Avec cette règle, le chômage universel est complet en **2034 avec m ≤ 2** (scénario central). Les chiffres ci-dessous restent ceux de la v3.
 
 ---
 

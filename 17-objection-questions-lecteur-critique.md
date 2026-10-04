@@ -2,97 +2,98 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02 (M6)
+- **Dernière mise à jour** : 2026-10-04 (fin de M7 : revue des 80 questions)
 
 
 ## En vigueur
 
 - **Liste de suivi** des 80 questions. Chaque question a un **statut** : ouverte, répondue ou décidée. Quand une question est tranchée, on note dans « Renvoi » le numéro de la décision du journal.
-- Situation au 2026-10-02 (M6 de la session metamaieutique) : **23 répondues**, **12 décidées** (par procuration [P]), **45 ouvertes**. Le suivi des 20 questions non traitées est dans la **note 18, section E** ; la revue complète des 80 questions est prévue en M7.
-- **Priorités avant de rédiger le dispositif** : 69 (l'article 401 de la directive TVA), 67, 68, 60, 40, 15, 35, 32, 26, 22.
+- Situation au 2026-10-04 (**fin de M7, revue complète des 80 questions** [opus-5.5]) : **42 décidées**, **26 répondues**, **12 ouvertes**. Les 12 ouvertes sont toutes **rattachées** à une étape : l'exposé v0.2 (**M9** : 1, 2, 5, 6, et en partie 54 et 66), le dispositif v0.1 (**M10** : 44), l'étude d'impact v0.1 (**M11** : 8, 71, 73, 74, et en partie 54 et 66), ou **réservée à Guillaume** (50 : les étudiants et le patrimoine, décisions 70 et 71). Le suivi des 20 questions non traitées est dans la **note 18, section E** (10 décidées, 7 répondues, 3 ouvertes rattachées).
+- *Méthode de la revue* : « décidée » = tranchée par une décision du journal ; « répondue » = traitée dans une note, sans décision propre (une réponse [C] ou [opus-5.5] reste à valider) ; « ouverte » = à traiter, avec son rattachement. La colonne « Corpus (R/P/N) » garde le classement d'origine de l'agent lecteur. Avant la revue (M6) : 23 répondues, 12 décidées, 45 ouvertes.
+- **Priorités avant de rédiger le dispositif** : 69 (l'article 401 de la directive TVA), 67, 68, 60, 40, 15, 35, 32, 26, 22. **Toutes fermées en M7** : 8 décidées (69, 60, 40, 15, 35, 32, 26, 22), 2 répondues (67, 68).
 
 | n° | Thème | Statut | Corpus (R/P/N) | Priorité | Renvoi |
 |---|---|---|---|---|---|
-| 1 | A | ouverte | N |  | — |
-| 2 | A | ouverte | P |  | — |
-| 3 | A | ouverte | P |  | — |
-| 4 | A | répondue | R |  | — |
-| 5 | A | ouverte | P |  | — |
-| 6 | A | ouverte | P |  | — |
-| 7 | A | répondue | R |  | — |
-| 8 | A | ouverte | P |  | — |
-| 9 | A | ouverte | P |  | — |
-| 10 | A | répondue | R |  | — |
-| 11 | A | ouverte | P |  | — |
-| 12 | A | répondue | R |  | — |
-| 13 | A | répondue | R |  | — |
-| 14 | B | ouverte | P |  | — |
-| 15 | B | répondue | N | **top 6** | note 18, D12.3 |
-| 16 | B | ouverte | P |  | — |
-| 17 | B | ouverte | P |  | — |
-| 18 | B | ouverte | P |  | — |
-| 19 | B | ouverte | P |  | — |
-| 20 | B | décidée | P |  | 64 [P] ; note 18, D13.1 |
-| 21 | B | décidée | P |  | 53 [P] |
-| 22 | B | décidée | N | **top 10** | 46 [P] |
-| 23 | C | ouverte | P |  | — |
-| 24 | C | ouverte | P |  | — |
-| 25 | C | ouverte | P |  | — |
-| 26 | C | décidée | N | **top 9** | 39 [P] |
-| 27 | C | décidée | P |  | 40 [P] |
-| 28 | C | ouverte | P |  | — |
-| 29 | C | ouverte | P |  | — |
-| 30 | C | ouverte | P |  | — |
-| 31 | D | répondue | R |  | — |
-| 32 | D | répondue | N | **top 8** | note 18, D11 ; 61 [P] |
-| 33 | D | décidée | P |  | note 18, D11 ; 63 [P] |
-| 34 | D | répondue | N |  | note 18, D11 |
-| 35 | D | décidée | N | **top 7** | 37 [P] |
-| 36 | D | ouverte | P |  | — |
-| 37 | E | ouverte | P |  | — |
-| 38 | E | ouverte | P |  | — |
-| 39 | E | ouverte | P |  | — |
-| 40 | E | décidée | N | **top 5** | 45 [P] |
-| 41 | E | ouverte | P |  | — |
-| 42 | E | ouverte | P |  | — |
-| 43 | E | ouverte | P |  | — |
-| 44 | F | ouverte | P |  | — |
-| 45 | F | ouverte | P |  | — |
-| 46 | F | ouverte | P |  | — |
-| 47 | F | ouverte | P |  | — |
-| 48 | F | décidée | P |  | 60 [P] |
-| 49 | G | répondue | P |  | note 18, D13.2 |
-| 50 | G | répondue | P |  | note 18, D13.3 |
-| 51 | G | ouverte | P |  | — |
-| 52 | G | répondue | R |  | — |
-| 53 | G | répondue | P |  | note 18, D13.4 |
-| 54 | G | ouverte | P |  | — |
-| 55 | G | répondue | N |  | note 18, D13.5 |
-| 56 | G | répondue | R |  | — |
-| 57 | G | ouverte | P |  | — |
-| 58 | H | répondue | P |  | note 18, D13.6 |
-| 59 | H | répondue | R |  | — |
-| 60 | H | décidée | N | **top 4** | 42, 49 [P] |
-| 61 | H | ouverte | P |  | — |
-| 62 | H | ouverte | P |  | — |
-| 63 | H | ouverte | N |  | — |
-| 64 | I | répondue | R |  | — |
-| 65 | I | ouverte | P |  | — |
-| 66 | I | ouverte | P |  | — |
-| 67 | J | répondue | N | **top 2** | note 18, O2, D3 ; 41, 51 [P] |
-| 68 | J | répondue | N | **top 3** | note 18, O2, D7 ; 44, 46 [P] |
-| 69 | J | décidée | N | **top 1** | 37, 39, 48 [P] |
-| 70 | J | répondue | N |  | note 18, D11 ; 43, 44, 62 [P] |
-| 71 | K | ouverte | N |  | — |
-| 72 | K | ouverte | P |  | — |
-| 73 | K | ouverte | N |  | — |
-| 74 | K | ouverte | P |  | — |
-| 75 | L | ouverte | N |  | — |
-| 76 | L | ouverte | P |  | — |
-| 77 | L | ouverte | P |  | — |
-| 78 | M | répondue | N |  | note 18, D12.3 |
-| 79 | M | répondue | N |  | note 18, D12.4 |
-| 80 | M | décidée | P |  | 64 [P] ; note 18, D13.1 |
+| 1 | A | ouverte | N | | **→ M9** (exposé : sourcer ou reformuler) |
+| 2 | A | ouverte | P | | **→ M9** (exposé : sourcer ou retirer le « multiplié par sept ») |
+| 3 | A | **répondue** | P | | note 19, § 2.4 (sensibilité à l'élasticité) [opus-5.5] |
+| 4 | A | **répondue** | R | | — |
+| 5 | A | ouverte | P | | **→ M9** (exposé ; fait [À vérifier], note 16) |
+| 6 | A | ouverte | P | | **→ M9** (exposé ; note 16) |
+| 7 | A | **répondue** | R | | — |
+| 8 | A | ouverte | P | | **→ M11** (étude d'impact) |
+| 9 | A | **décidée** | P | | 38, 45 [P] ; note 18, D13.1 |
+| 10 | A | **répondue** | R | | note 18, D2 |
+| 11 | A | **répondue** | P | | 51 [P] ; note 18, D3 ; chiffres du carburant à vérifier en M9 |
+| 12 | A | **répondue** | R | | — |
+| 13 | A | **répondue** | R | | note 19 (2,6 Md€ en 2028) ; correction en M9 |
+| 14 | B | **décidée** | P | | 65 [P] ; note 18, D12.2 |
+| 15 | B | **décidée** | N | **top 6** | 65 [P] ; note 18, D12.3 |
+| 16 | B | **décidée** | P | | 65 [P] ; note 18, D12.3 |
+| 17 | B | **décidée** | P | | 65 [P] ; note 18, D12.2 |
+| 18 | B | **répondue** | P | | 9 [G], 65 [P] : un principe de justice, pas une mesure ; à présenter ainsi en M9 |
+| 19 | B | **répondue** | P | | note 18, D12.4 [C] ; rédaction en M10 |
+| 20 | B | **décidée** | P | | 64, 69 [P] ; note 18, D13.1 |
+| 21 | B | **décidée** | P | | 53 [P] |
+| 22 | B | **décidée** | N | **top 10** | 46 [P] |
+| 23 | C | **décidée** | P | | 48, 61 [P] ; note 18, D1, D11 |
+| 24 | C | **décidée** | P | | 48 [P] ; note 18, D1 |
+| 25 | C | **répondue** | P | | 25 [G] ; fichier 10 ; correction en M9 |
+| 26 | C | **décidée** | N | **top 9** | 39, 48 [P] |
+| 27 | C | **décidée** | P | | 40, 50 [P] |
+| 28 | C | **décidée** | P | | 41, 51 [P] ; note 18, D3 |
+| 29 | C | **répondue** | P | | 40 [P] ; note 18, D1 (indexation trimestrielle) ; note 19 (m lissé à ± 0,5) |
+| 30 | C | **décidée** | P | | 40, 54 [P] ; note 18, D8 (Q64) ; correction en M9 |
+| 31 | D | **répondue** | R | | note 18, D11 |
+| 32 | D | **décidée** | N | **top 8** | 61 [P] ; note 18, D11 |
+| 33 | D | **décidée** | P | | 63 [P] ; note 18, D11 |
+| 34 | D | **répondue** | N | | note 18, D11 ; mesure en M11 |
+| 35 | D | **décidée** | N | **top 7** | 37 [P] |
+| 36 | D | **répondue** | P | | note 18, O7, D11 |
+| 37 | E | **décidée** | P | | 43 [P] ; note 18, D11 |
+| 38 | E | **répondue** | P | | note 18, D11, D7 [C] ; RGPD à expertiser |
+| 39 | E | **décidée** | P | | 67 [P] ; note 18, D12.5 |
+| 40 | E | **décidée** | N | **top 5** | 45 [P] |
+| 41 | E | **décidée** | P | | 67 [P] ; note 18, D12.5 |
+| 42 | E | **décidée** | P | | 53, 67 [P] ; note 18, D12.5 |
+| 43 | E | **décidée** | P | | 67 [P] ; note 18, D12.5 ; chiffrage en M11 |
+| 44 | F | ouverte | P | | **→ M10** (montant dans le dispositif) ; au niveau du groupe (67 [P]) |
+| 45 | F | **décidée** | P | | 44 [P] ; note 18, D11 |
+| 46 | F | **décidée** | P | | 61 [P] ; note 18, D11 |
+| 47 | F | **décidée** | P | | 44 [P] ; note 18, D11 |
+| 48 | F | **décidée** | P | | 60 [P] |
+| 49 | G | **répondue** | P | | note 18, D13.2 [C] ; arrêtée en M10 |
+| 50 | G | ouverte | P | | **réservée à ggim** : étudiants (70) et patrimoine (71) ; le reste décidé (72, 73) |
+| 51 | G | **décidée** | P | | 56, 59 [P] ; note 18, D6, D10 |
+| 52 | G | **répondue** | R | | note 19 (besoin net de 20 Md€) ; note 05 |
+| 53 | G | **décidée** | P | | 57, 74 [P] ; note 18, D13.4 |
+| 54 | G | ouverte | P | | **→ M9** (exposé, note 09) et **M11** (étude d'impact) |
+| 55 | G | **répondue** | N | | note 18, D13.5 [C] ; note 19 (1 Md€) ; arrêtée en M10 |
+| 56 | G | **décidée** | R | | 72 [P] ; taux de dégressivité à fixer en M10 |
+| 57 | G | **décidée** | P | | 55, 58 [P] ; note 18, D6, D9 |
+| 58 | H | **décidée** | P | | 73 [P] ; note 18, D13.6 |
+| 59 | H | **répondue** | R | | note 19 (trajectoire v4) ; correction en M9 |
+| 60 | H | **décidée** | N | **top 4** | 42, 49 [P] |
+| 61 | H | **décidée** | P | | 54, 75 ; note 18, D8 |
+| 62 | H | **décidée** | P | | 54 [P] ; note 18, D8, D13.8 |
+| 63 | H | **répondue** | N | | note 18, E [opus-5.5, à valider] ; argumentaire en M9 |
+| 64 | I | **décidée** | R | | 54 [P] ; note 18, D8 |
+| 65 | I | **décidée** | P | | **75** [opus-5.5 as ggim] (les droits d'abord) |
+| 66 | I | ouverte | P | | **→ M9** (vocabulaire de l'exposé) et **M11** (étude d'impact) ; note 11 |
+| 67 | J | **répondue** | N | **top 2** | note 18, O2, D3 ; 41, 51 [P] |
+| 68 | J | **répondue** | N | **top 3** | note 18, O2, D7 ; 44, 46 [P] |
+| 69 | J | **décidée** | N | **top 1** | 37, 39, 48 [P] |
+| 70 | J | **décidée** | N | | 43, 44, 62 [P] ; note 18, D11 |
+| 71 | K | ouverte | N | | **→ M11** (étude d'impact) ; éléments : note 18, D3 ; 38 [P] |
+| 72 | K | **répondue** | P | | note 18, D11 ; chiffrage en M11 |
+| 73 | K | ouverte | N | | **→ M11** (étude d'impact) ; éléments : 60, 75 |
+| 74 | K | ouverte | P | | **→ M11** (étude d'impact) ; élasticité : note 19, § 2.4 |
+| 75 | L | **répondue** | N | | note 18, E [opus-5.5] ; 43, 67 [P] ; argumentaire en M9 |
+| 76 | L | **décidée** | P | | 32 [G] ; note 18, D13.8 ; note 19, § 3 |
+| 77 | L | **répondue** | P | | 74 [P] ; note 09 ; argumentaire en M9 |
+| 78 | M | **décidée** | N | | 66 [P] ; note 18, D12.3 |
+| 79 | M | **répondue** | N | | note 18, D12.4 [C] ; rédaction en M10 |
+| 80 | M | **décidée** | P | | 64, 69 [P] ; note 18, D12.1, D13.1 |
 
 ---
 
@@ -211,6 +212,10 @@ Les questions sont reproduites telles que l'agent les a posées. Elles sont tout
 78. Un agent d'IA qui appelle d'autres modèles en chaîne, ou produit des données synthétiques destinées à entraîner un autre modèle, génère-t-il plusieurs faits générateurs ? Comment éviter la taxation répétée d'un même travail ?
 79. Les requêtes en erreur, les réessais automatiques, les tests de développement et les évaluations de modèles sont-ils taxés ?
 80. Comment traiter une fonction d'IA marginale intégrée à un logiciel métier (correction, autocomplétion, suppression de bruit dans une visioconférence) dont l'utilisateur ignore même l'existence ?
+
+### Revue de M7 (2026-10-04)
+
+[opus-5.5] Revue des 80 statuts d'après les sections D de la note 18, la note 19 et le journal (n° 37 à 76). Changements principaux : les questions traitées en M3 à M6 mais restées « ouvertes » dans la liste (14, 16, 17, 23, 24, 28, 37, 39, 41, 42, 43, 45, 46, 47, 51, 57, 61, 62, 64, 65…) passent à « décidée » quand une décision les couvre ; Q65 est réglée par la décision 75 ; Q63 et Q75 reçoivent une réponse proposée (note 18, E) ; chaque question encore ouverte est rattachée à une étape (M9, M10, M11) ou réservée à Guillaume (Q50). Les statuts « décidée » qui renvoient à une décision [P] sont des décisions par procuration.
 
 ### Confrontation avec le corpus
 

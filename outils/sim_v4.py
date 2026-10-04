@@ -1,5 +1,8 @@
 # Simulation v4 : architecture révisée (session metamaieutique, M7). Voir la note 19.
 # Garde sim_v3.py pour comparaison. Tous les paramètres sont [C] ; les montants non sourcés sont [À vérifier].
+# 2026-10-04 [opus-5.5] : la règle d'emploi par défaut devient « les droits d'abord » (décision 75) ; l'ancienne
+# règle D8 (décision 54) reste calculable avec alloc='D8'. Ajout de la variante d'ouverture sur trois ans (D13.6)
+# et du détail du scénario bas.
 import sys
 
 # ---------------------------------------------------------------- calendrier
@@ -58,6 +61,8 @@ C = dict(
     FUND_MONTHS=6,    # cible du fonds : six mois (décision 54), appliqués au besoin net financé par la taxe [C]
     FUND_GROSS=False, # variante : six mois des prestations brutes du socle (environ 29 Md€ au socle cible)
     ETU=False, PATR=False, INACT=False,
+    OPEN_RULE='annuel',  # ouverture du socle si la recette de l'année couvre le niveau du RSA ;
+                         # 'trois_ans' : si la recette plus un tiers du fonds le couvre (équilibre sur trois ans, D13.6)
 )
 
 def need(s, c):
@@ -83,7 +88,9 @@ def s_for(target_need, c):
     return lo
 
 # ---------------------------------------------------------------- simulation
-def run(name, mcap=1.0, alloc='D8', p=None, c=None):
+def run(name, mcap=1.0, alloc='droits', p=None, c=None):
+    """alloc='droits' : décision 75 (les droits d'abord jusqu'au socle cible, puis le surplus va au partage ;
+    les droits étant alors au plafond, il va à la baisse des cotisations). alloc='D8' : l'ordre de la décision 54."""
     p = dict(P, **(p or {})); c = dict(C, **(c or {}))
     V = market(name)
     m = 1.0; s = None; B = 0.0; fund = 0.0; rows = []
@@ -91,7 +98,8 @@ def run(name, mcap=1.0, alloc='D8', p=None, c=None):
         R, spend = revenue(V[y], y, m, p)
         form = min(R, c['FORM']); avail = R - form
         note = ''
-        if s is None and y >= OPEN1 and avail >= need(S_RSA, c):
+        reserve = fund / 3 if c['OPEN_RULE'] == 'trois_ans' else 0.0
+        if s is None and y >= OPEN1 and avail + reserve >= need(S_RSA, c):
             s = S_RSA; note = 'ouverture'
         if s is None:
             fund += avail          # phase 0 : RSA et ASS repris à l'identique (neutre), tout va au fonds
@@ -115,7 +123,7 @@ def run(name, mcap=1.0, alloc='D8', p=None, c=None):
                         rest = surplus - usedA - usedB
                         if rest > 0:   # ce que B ne peut absorber revient aux droits
                             newA2 = min(need(S_CIBLE, c), newA + rest); rest -= newA2 - newA; newA = newA2
-                    else:              # variante [C] : droits d'abord, puis cotisations
+                    else:              # décision 75 : droits d'abord, puis cotisations
                         newA = min(need(S_CIBLE, c), need(s, c) + surplus); rest = surplus - (newA - need(s, c))
                         usedB = min(c['B_MAX'] - B, rest); rest -= usedB
                     s = s_for(newA, c); B += usedB; fund += max(0.0, rest)
@@ -156,18 +164,29 @@ def grid(alloc='D8', c=None, p=None, label=''):
                 at[2035]['pts'], at[2040]['pts'], max(r['m'] for r in rows)))
 
 if __name__ == '__main__':
-    for cap in (1.0, 2.0, 4.0):
-        print('\n## Central, m plafonné à %.0f, allocation D8' % cap); table(run('Central', cap))
-    grid('D8', label='base')
+    print('\n## Central, règle retenue (droits d\'abord, décision 75), m plafonné à 2'); table(run('Central', 2.0))
+    print('\n## Central, règle retenue (droits d\'abord, décision 75), m plafonné à 4'); table(run('Central', 4.0))
+    print('\n## Central, ancienne règle D8 (décision 54), m plafonné à 4, pour comparaison'); table(run('Central', 4.0, 'D8'))
     grid('droits', label='base')
-    print('\n## Variantes (Central, D8)')
-    print('variante | plafond | socle cible atteint | socle 2035 | socle 2040 | pts 2040')
+    grid('D8', label='base')
+    print('\n## Scénario bas : recette, fonds et ouverture (règle retenue)')
+    print('règle d\'ouverture | plafond | ouverture | recette 2035 | recette 2040 | fonds 2040 | socle 2040')
+    for rule in ('annuel', 'trois_ans'):
+        for cap in (1.0, 2.0, 4.0):
+            rows = run('Bas', cap, 'droits', None, {'OPEN_RULE': rule}); o, f, at = summary(rows)
+            print('%s | %.0f | %s | %.1f | %.1f | %.1f | %s' % (rule, cap, o or 'jamais', at[2035]['R'], at[2040]['R'],
+                  at[2040]['fund'], fmt_s(at[2040]['s'])))
+    print('\n## Variantes et sensibilités (Central)')
+    print('variante | règle | plafond | socle cible atteint | socle 2035 | socle 2040 | pts 2040')
     VAR = [('base', {}, {}), ('étudiants inclus', {'ETU': True}, {}), ('réduction patrimoine', {'PATR': True}, {}),
            ('inscription de 0,5 M inactifs', {'INACT': True}, {}), ('fonds = 6 mois bruts', {'FUND_GROSS': True}, {}),
+           ('ouverture sur trois ans', {'OPEN_RULE': 'trois_ans'}, {}),
            ('élasticité 0,3', {}, {'EPS': 0.3}), ('élasticité 1,0', {}, {'EPS': 1.0}),
            ('décalage de P_k (x1,09)', {}, {'LAG': 1.09}), ('sans serveurs propres ni recouvrement', {}, {'F_INTERNE': 1.0, 'CIVISME': 1.0})]
-    for lab, cc, pp in VAR:
-        for cap in (2.0, 4.0):
-            rows = run('Central', cap, 'D8', pp, cc); o, f, at = summary(rows)
-            print('%s | %.0f | %s | %s | %s | %.2f' % (lab, cap, f or 'non', fmt_s(at[2035]['s']), fmt_s(at[2040]['s']), at[2040]['pts']))
-    print('\n## Étudiants inclus, Haut, m <= 4'); table(run('Haut', 4.0, 'D8', None, {'ETU': True}))
+    for alloc in ('droits', 'D8'):
+        for lab, cc, pp in VAR:
+            for cap in (2.0, 4.0):
+                rows = run('Central', cap, alloc, pp, cc); o, f, at = summary(rows)
+                print('%s | %s | %.0f | %s | %s | %s | %.2f' % (lab, alloc, cap, f or 'non', fmt_s(at[2035]['s']), fmt_s(at[2040]['s']), at[2040]['pts']))
+    print('\n## Étudiants inclus, Haut, m <= 4 (règle retenue)'); table(run('Haut', 4.0, 'droits', None, {'ETU': True}))
+    print('\n## Étudiants inclus, Haut, m <= 4 (D8)'); table(run('Haut', 4.0, 'D8', None, {'ETU': True}))
