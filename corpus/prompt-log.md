@@ -70,6 +70,10 @@ Point 3 (messages bruts du transcript et du prompt-log) : Guillaume demande de *
 
 Guillaume demande de **retirer le familier** de ses messages cités, mais d'abord un **nom de dépôt** et une **description en une ligne**, du type « Loi bidule — Projet de loi de financement… ». Proposé : `loi-jevons`, et « Loi Jevons — Projet de loi relatif au financement du chômage universel par une taxe sur l'intelligence artificielle » (« relatif au » et non « de financement », pour éviter la confusion avec la LFSS). Il demande ensuite un **README** sur le modèle de celui de son dépôt Substrat, qui décrit le projet et explique au début que c'est un projet maieutique.
 
+## Itération 18 (2026-10-05)
+
+Guillaume précise : le dépôt est `git@github.com:ploki/Loi-Jevons.git` ; les deux skills sont publiés ensemble ; laisser `ggim`, son alias dans ce projet (« mais je suis effectivement ploki ») ; **on arrête de réécrire**.
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)

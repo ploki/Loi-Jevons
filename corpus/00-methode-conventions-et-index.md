@@ -52,7 +52,7 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 > Depuis le 2026-10-04 (décision 76 [ggim]). Les écrits antérieurs gardent leurs anciens marqueurs, qui ne sont pas réécrits : ils sont datés, pas faux.
 
 **Les identités** :
-- **`ggim`** : Guillaume Gimenez, l'auteur du projet ;
+- **`ggim`** : Guillaume Gimenez, l'auteur du projet ; c'est son alias dans ce projet, il est `ploki` sur GitHub (dépôt `ploki/Loi-Jevons`) ;
 - **`opus-5.5`** : le modèle `claude-opus-5-5` (Anthropic), qui a tenu la session metamaieutique.
 - **`sonnet-5.5`** : le modèle `claude-sonnet-5-5` (Anthropic), qui a pris la suite de l'orchestration à partir de l'itération M15 (changement de modèle demandé par Guillaume pour économiser des tokens), et qui a rédigé l'extension du skill de `CLAUDE.md`.
 
