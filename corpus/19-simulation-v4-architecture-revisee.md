@@ -4,7 +4,7 @@
 - **Créé le** : 2026-10-02
 - **Dernière mise à jour** : 2026-10-04 (M14 : raccord du besoin, garantie familiale, tarif réduit ; avant : M12)
 
-> Script : `outils/sim_v4.py` (la v3 est conservée dans `outils/sim_v3.py` et la note 14). Tous les paramètres sont **[C]** ; les montants non sourcés sont **[À vérifier]**. Les décisions citées sont celles du journal. Depuis le 2026-10-04, les ajouts portent les marqueurs nominatifs (voir `00-methode-conventions-et-index.md`, « Identités et marqueurs ») : **[opus-5.5]** pour une proposition de l'agent, **[opus-5.5 as ggim]** pour une décision par procuration.
+> Script : `outils/sim_v4.py` (la v3 est archivée : `archive/sim_v3.py` et `archive/14-simulation-v3-trajectoire-partage.md`). Tous les paramètres sont **[C]** ; les montants non sourcés sont **[À vérifier]**. Les décisions citées sont celles du journal. Depuis le 2026-10-04, les ajouts portent les marqueurs nominatifs (voir `00-methode-conventions-et-index.md`, « Identités et marqueurs ») : **[opus-5.5]** pour une proposition de l'agent, **[opus-5.5 as ggim]** pour une décision par procuration.
 
 ## En vigueur
 
@@ -16,33 +16,7 @@
 - **Trajectoire de référence (Central, m ≤ 3 puis 2)** : socle ouvert en 2031 à 839 € ; la cible en **2033** ; m à 2,5 en 2033 et 2034, ramené à 2 en **2035** (en **2036** sans l'excédent du fonds : la décision 94 a un effet) ; la baisse des cotisations commence en **2036** et atteint **0,16 point en 2040** ; fonds de 14,5 Md€ en 2040 (cible 13,4). **Avec m ≤ 2** : la cible en **2037**, 0,16 point, fonds de 13,7 Md€. Au plancher (m = 1), socle de 939 € en 2040. Scénario haut : 2,20 à 3,61 points en 2040.
 - **Scénario bas** : ouverture en 2035 (m ≤ 3 ou 4) ou 2037 (m ≤ 2) ; contribution d'équilibre de 0,8 Md€ (2039) et 1,7 Md€ (2040) avec m ≤ 3, 0,1 Md€ (2040) avec m ≤ 2, aucune avec m ≤ 4 ; atteindre la cible demanderait environ 18 à 21 Md€ par an hors taxe.
 - **Variantes** (Central, m ≤ 2 / m ≤ 3) : tarif réduit sur terminal prolongé à cinq ans (C2, `TERM_RED_END=2032`) : 2037 / 2033, sans effet sur la baisse des cotisations ; garantie familiale revalorisée comme le socle : jamais / 2035, aucune baisse des cotisations ; douze mois pleins puis six mois dégressifs : 2040 / 2034 ; étudiants inclus : jamais (socle de 650, 688, 789 € en 2040 avec m ≤ 2, 3, 4) ; patrimoine : 2036 / 2033 ; sensibilités : indexation à 1 %, 2034 / 2033 ; à 3 %, jamais / 2034 ; élasticité 0,3, 2033 ; élasticité 1,0, jamais.
-- **Les chiffres des mises à jour M12, M11 et M10 et de la section 2.0 ci-dessous sont historiques** (avec 0,21 point, cible 2036 avec m ≤ 2 pour M12).
-
-**Mise à jour M12 (2026-10-04)** [opus-5.5] — historique ; la mise à jour M14 prévaut :
-- **Trois règles nouvelles, par défaut dans le script** : l'excédent du fonds compté pour ramener m à 2 (décision 94, `M79_FONDS=True`) ; le retournement défini sur l'assiette, à multiple constant (décision 95, `RETOURNEMENT='assiette'`) ; la sortie progressive au plus favorable, avec une dégressivité linéaire sur les six derniers des douze mois (décision 96, `SORTIE='degressif'` ; fonctions `legacy`, `sp_pay`, `sp_cost` ; le surcoût par rapport à l'hypothèse d'origine est ajouté au besoin net). La modalité « six derniers mois » est une proposition [opus-5.5], non arrêtée ; la variante `prolonge` (douze mois pleins, puis six mois dégressifs) est chiffrée.
-- **Non-régression** : le réglage `M11` (`M79_FONDS=False`, `RETOURNEMENT='produit'`, `SORTIE='M11'`) reproduit **à l'identique** toute la sortie de M11 (contrôle par `diff`) ; la grille « règles de M11 » est imprimée par le script.
-- **La sortie progressive** (hypothèses [Unverified] : 600 000 reprises par an, salaires du quart de SMIC au SMIC, droit actuel simplifié à max(0 ; 640 − 0,39 × salaire)) : coût net par rapport au droit actuel, au niveau du RSA, de − 0,52 Md€ dans la version de M11 (la régression « économisait ») à 0 ; à la cible, 3,32 Md€ (M11 et plancher seul), **2,14 Md€ avec la dégressivité dans les douze mois**, 3,80 Md€ avec la variante prolongée.
-- **Trajectoire de référence (Central, m ≤ 3 puis 2)** : la cible en **2033** ; m à 2,5 en 2033 et 2034, **ramené à 2 en 2035** ; la baisse des cotisations commence en 2035 et atteint **0,21 point en 2040**, sans recul ; fonds de 15,8 Md€ en 2040 (cible 13,1). **Décomposition** (étude d'impact, § 5.1.1) : la décision 94 seule ramène m à 2 en 2036 (fonds 15,9 Md€) ; la décision 95 et le plancher de la décision 96 ne changent rien dans le scénario central ; **le gain restant (2035, 0,21 point) tient à la dégressivité dans les douze mois**. Avec la variante prolongée : cible en 2034, m à 2 en 2036, 0,05 point.
-- **Avec m ≤ 2** : la cible en **2036** (au lieu de 2038), 0,21 point en 2040. **Scénario bas** : ouverture en 2036 (m ≤ 3 ou 4) ou 2038 (m ≤ 2) ; contribution d'équilibre de 1,3 Md€ (2039) et 3,7 Md€ (2040) avec m ≤ 3, aucune d'ici 2040 avec m ≤ 4 ; le plancher de la sortie progressive pèse surtout ici (+ 0,52 Md€ au niveau du RSA).
-- **Sensibilités** (m ≤ 2 / m ≤ 3) : indexation à 1 %, 2034 / 2033 ; à 3 %, jamais / 2034 ; élasticité 0,3, 2032 ; élasticité 1,0, jamais (socle à 861 / 934 € en 2040).
-
-**Mise à jour M11 (2026-10-04)** [opus-5.5] — historique ; la mise à jour M12 prévaut :
-- **Décision 89** [opus-5.5 as ggim] : une baisse des cotisations n'est **engagée** que si elle est **soutenable avec m ≤ 2** (la recette à min(m, 2), l'année en cours et la suivante, couvre la formation, les droits et toute la baisse engagée) ; le reste va au fonds. Le « cliquet » de M10 est refusé. Script : `B_SOUTENABLE=True` par défaut (fonction `capB`).
-- **Non-régression** : avec `B_SOUTENABLE=False`, le script reproduit **à l'identique** toute la sortie de M10 (contrôle fait par `diff` de la sortie complète ; la grille « règles de M10 » est imprimée par le script). Les grilles « sans indexation » ne changent que par le fonds ; les grilles « hypothèses de M7 » et « D8 » sont inchangées.
-- **Ce qui change, trajectoire de référence (Central, m ≤ 3 puis 2)** : la cible est toujours atteinte en **2033**, m culminant à **2,5** de 2033 à 2036, puis ramené à 2 en 2037 ; **la baisse des cotisations ne commence qu'en 2037** et **ne recule plus** : 0,02 point (2037), 0,06 (2038), **0,10 point en 2039 et 2040** (au lieu de 0,26 point en 2036 retombant à 0,05). Pendant les quatre années à m = 2,5, le surplus va au fonds, qui monte à **19,4 Md€ en 2036 et 20,0 Md€ en 2040** (cible : 12,8 puis 13,9 Md€).
-- **Avec m ≤ 2** : la cible en 2038 ; 0,10 point en 2040 (au lieu de 0,12) ; fonds de 14,1 Md€. **Scénario haut** : 3,55 points en 2040 (au lieu de 3,59), sans recul. **Scénario bas** : inchangé (aucune baisse des cotisations).
-- **Sensibilités** (règles retenues) : indexation à 3 %, aucune baisse des cotisations d'ici 2040, même avec m ≤ 3 (au lieu de 0,11 point) ; élasticité 0,3, 0,61 point ; réduction pour le patrimoine, 0,15 point.
-- **Un excédent du fonds sans emploi** [opus-5.5] : la variante `M79_FONDS` (compter un tiers de l'excédent du fonds sur sa cible pour ramener m à 2, selon l'équilibre sur trois ans de l'article 10) ramène m à 2 **un an plus tôt (2036)** et laisse un fonds de 15,9 Md€ en 2040 ; la cible et le double dividende sont inchangés. **Proposition, non retenue** (voir les questions ouvertes).
-- **Les chiffres de l'étude d'impact v0.1** sont produits par `outils/etude_impact_v01.py`, qui appelle ce script.
-
-**Mise à jour M10 (2026-10-04)** [opus-5.5] — elle prévaut sur les chiffres ci-dessous quand ils diffèrent (sauf la mise à jour M11) :
-- **Les unités sont cohérentes** (décision 85) : le marché du script est le chiffre d'affaires HT de l'IA professionnelle en France, en euros courants (note 13) ; c'est un volume × un prix, donc la baisse de P_k y est incluse, et la recette (m × dépense) est en euros courants, comme les montants indexés. Rien n'est corrigé.
-- **Deux changements de modèle** : la décision 86 (hors retournement, la baisse des cotisations est suspendue avant de puiser dans le fonds) ; l'**abattement exprimé en taxe**, 1 000 € de taxe par groupe et par an, soit 0,5 Md€ pour environ 500 000 groupes [Unverified] (proposition Q44, à valider ; avant : 0,5 Md€ de dépense, dont le coût croissait avec m).
-- **La trajectoire de référence du Gouvernement** (décision 84 : m ≤ 3 pendant la montée en charge, puis 2), scénario central : 2,6 Md€ en 2028 ; un fonds de 10,1 Md€ en 2030 ; le socle ouvert en 2031 (782 € de 2026) ; **la cible atteinte en 2033, m culminant à 2,5** (2033-2036) ; m ramené à 2 en 2037 ; la baisse des cotisations monte à 0,26 point en 2036, puis retombe à **0,05 point** en 2038-2040, car le retour de m à 2 ne couvre plus que les droits indexés.
-- **Avec m ≤ 2** : la cible en 2038, 0,12 point en 2040. **Sensibilité à l'indexation** (m ≤ 3 / m ≤ 2) : à 1 %, cible en 2033 / 2035 ; à 2 %, 2033 / 2038 ; à 3 %, 2034 (m = 3) / jamais.
-- **Scénario bas, m ≤ 4** : le socle s'ouvre au niveau du RSA en 2035 ; le fonds est épuisé en 2039 ; la contribution d'équilibre atteint 1,5 Md€ en 2040.
-- **Variantes** (m ≤ 3) : étudiants, socle à 667 € de 2026 en 2040 (non finançable) ; patrimoine, cible en 2033 ; 500 000 inactifs, cible en 2039 ; élasticité 1,0, socle à 917 € en 2040 ; élasticité 0,3, cible en 2033.
-- **Écarts avec l'exposé v0.2** (accepté en l'état, décision 87), à reprendre en relecture de cohérence (M12) : « dès 2034 s'il le porte temporairement à trois » → 2033, m culminant à 2,5 ; « 0,1 à 0,2 point en 2040 » → environ 0,05 à 0,1 point. Les chiffres de l'exposé restent des ordres de grandeur.
+- **Les chiffres des mises à jour M12, M11 et M10 (dans l'historique) et de la section 2.0 ci-dessous sont historiques** (avec 0,21 point, cible 2036 avec m ≤ 2 pour M12).
 
 **La réponse franche** [opus-5.5] (état à la fin de M14 ; la section 2.0 garde les chiffres de M9) :
 
@@ -265,26 +239,48 @@
 
 9. **2026-10-04, M14** : relecture de cohérence ; **constat** [opus-5.5] : le besoin comptait deux fois la sortie progressive d'origine et omettait la garantie familiale ; raccord du modèle (`SP_RACCORD`, `GF`), variante du terminal à cinq ans ; trajectoire révisée (cible 2033 avec m ≤ 3, 2037 avec m ≤ 2 ; 0,16 point en 2040). Non-régression par `diff` avec `--avant-m14`. **[opus-5.5]**
 
+### Mises à jour M12, M11 et M10 (déplacées de « En vigueur » lors de l'élagage du 2026-10-04, décision 115)
+
+**Mise à jour M12 (2026-10-04)** [opus-5.5] — historique ; la mise à jour M14 prévaut :
+- **Trois règles nouvelles, par défaut dans le script** : l'excédent du fonds compté pour ramener m à 2 (décision 94, `M79_FONDS=True`) ; le retournement défini sur l'assiette, à multiple constant (décision 95, `RETOURNEMENT='assiette'`) ; la sortie progressive au plus favorable, avec une dégressivité linéaire sur les six derniers des douze mois (décision 96, `SORTIE='degressif'` ; fonctions `legacy`, `sp_pay`, `sp_cost` ; le surcoût par rapport à l'hypothèse d'origine est ajouté au besoin net). La modalité « six derniers mois » est une proposition [opus-5.5], non arrêtée ; la variante `prolonge` (douze mois pleins, puis six mois dégressifs) est chiffrée.
+- **Non-régression** : le réglage `M11` (`M79_FONDS=False`, `RETOURNEMENT='produit'`, `SORTIE='M11'`) reproduit **à l'identique** toute la sortie de M11 (contrôle par `diff`) ; la grille « règles de M11 » est imprimée par le script.
+- **La sortie progressive** (hypothèses [Unverified] : 600 000 reprises par an, salaires du quart de SMIC au SMIC, droit actuel simplifié à max(0 ; 640 − 0,39 × salaire)) : coût net par rapport au droit actuel, au niveau du RSA, de − 0,52 Md€ dans la version de M11 (la régression « économisait ») à 0 ; à la cible, 3,32 Md€ (M11 et plancher seul), **2,14 Md€ avec la dégressivité dans les douze mois**, 3,80 Md€ avec la variante prolongée.
+- **Trajectoire de référence (Central, m ≤ 3 puis 2)** : la cible en **2033** ; m à 2,5 en 2033 et 2034, **ramené à 2 en 2035** ; la baisse des cotisations commence en 2035 et atteint **0,21 point en 2040**, sans recul ; fonds de 15,8 Md€ en 2040 (cible 13,1). **Décomposition** (étude d'impact, § 5.1.1) : la décision 94 seule ramène m à 2 en 2036 (fonds 15,9 Md€) ; la décision 95 et le plancher de la décision 96 ne changent rien dans le scénario central ; **le gain restant (2035, 0,21 point) tient à la dégressivité dans les douze mois**. Avec la variante prolongée : cible en 2034, m à 2 en 2036, 0,05 point.
+- **Avec m ≤ 2** : la cible en **2036** (au lieu de 2038), 0,21 point en 2040. **Scénario bas** : ouverture en 2036 (m ≤ 3 ou 4) ou 2038 (m ≤ 2) ; contribution d'équilibre de 1,3 Md€ (2039) et 3,7 Md€ (2040) avec m ≤ 3, aucune d'ici 2040 avec m ≤ 4 ; le plancher de la sortie progressive pèse surtout ici (+ 0,52 Md€ au niveau du RSA).
+- **Sensibilités** (m ≤ 2 / m ≤ 3) : indexation à 1 %, 2034 / 2033 ; à 3 %, jamais / 2034 ; élasticité 0,3, 2032 ; élasticité 1,0, jamais (socle à 861 / 934 € en 2040).
+
+**Mise à jour M11 (2026-10-04)** [opus-5.5] — historique ; la mise à jour M12 prévaut :
+- **Décision 89** [opus-5.5 as ggim] : une baisse des cotisations n'est **engagée** que si elle est **soutenable avec m ≤ 2** (la recette à min(m, 2), l'année en cours et la suivante, couvre la formation, les droits et toute la baisse engagée) ; le reste va au fonds. Le « cliquet » de M10 est refusé. Script : `B_SOUTENABLE=True` par défaut (fonction `capB`).
+- **Non-régression** : avec `B_SOUTENABLE=False`, le script reproduit **à l'identique** toute la sortie de M10 (contrôle fait par `diff` de la sortie complète ; la grille « règles de M10 » est imprimée par le script). Les grilles « sans indexation » ne changent que par le fonds ; les grilles « hypothèses de M7 » et « D8 » sont inchangées.
+- **Ce qui change, trajectoire de référence (Central, m ≤ 3 puis 2)** : la cible est toujours atteinte en **2033**, m culminant à **2,5** de 2033 à 2036, puis ramené à 2 en 2037 ; **la baisse des cotisations ne commence qu'en 2037** et **ne recule plus** : 0,02 point (2037), 0,06 (2038), **0,10 point en 2039 et 2040** (au lieu de 0,26 point en 2036 retombant à 0,05). Pendant les quatre années à m = 2,5, le surplus va au fonds, qui monte à **19,4 Md€ en 2036 et 20,0 Md€ en 2040** (cible : 12,8 puis 13,9 Md€).
+- **Avec m ≤ 2** : la cible en 2038 ; 0,10 point en 2040 (au lieu de 0,12) ; fonds de 14,1 Md€. **Scénario haut** : 3,55 points en 2040 (au lieu de 3,59), sans recul. **Scénario bas** : inchangé (aucune baisse des cotisations).
+- **Sensibilités** (règles retenues) : indexation à 3 %, aucune baisse des cotisations d'ici 2040, même avec m ≤ 3 (au lieu de 0,11 point) ; élasticité 0,3, 0,61 point ; réduction pour le patrimoine, 0,15 point.
+- **Un excédent du fonds sans emploi** [opus-5.5] : la variante `M79_FONDS` (compter un tiers de l'excédent du fonds sur sa cible pour ramener m à 2, selon l'équilibre sur trois ans de l'article 10) ramène m à 2 **un an plus tôt (2036)** et laisse un fonds de 15,9 Md€ en 2040 ; la cible et le double dividende sont inchangés. **Proposition, non retenue** (voir les questions ouvertes).
+- **Les chiffres de l'étude d'impact v0.1** sont produits par `outils/etude_impact_v01.py`, qui appelle ce script.
+
+**Mise à jour M10 (2026-10-04)** [opus-5.5] — elle prévaut sur les chiffres ci-dessous quand ils diffèrent (sauf la mise à jour M11) :
+- **Les unités sont cohérentes** (décision 85) : le marché du script est le chiffre d'affaires HT de l'IA professionnelle en France, en euros courants (note 13) ; c'est un volume × un prix, donc la baisse de P_k y est incluse, et la recette (m × dépense) est en euros courants, comme les montants indexés. Rien n'est corrigé.
+- **Deux changements de modèle** : la décision 86 (hors retournement, la baisse des cotisations est suspendue avant de puiser dans le fonds) ; l'**abattement exprimé en taxe**, 1 000 € de taxe par groupe et par an, soit 0,5 Md€ pour environ 500 000 groupes [Unverified] (proposition Q44, à valider ; avant : 0,5 Md€ de dépense, dont le coût croissait avec m).
+- **La trajectoire de référence du Gouvernement** (décision 84 : m ≤ 3 pendant la montée en charge, puis 2), scénario central : 2,6 Md€ en 2028 ; un fonds de 10,1 Md€ en 2030 ; le socle ouvert en 2031 (782 € de 2026) ; **la cible atteinte en 2033, m culminant à 2,5** (2033-2036) ; m ramené à 2 en 2037 ; la baisse des cotisations monte à 0,26 point en 2036, puis retombe à **0,05 point** en 2038-2040, car le retour de m à 2 ne couvre plus que les droits indexés.
+- **Avec m ≤ 2** : la cible en 2038, 0,12 point en 2040. **Sensibilité à l'indexation** (m ≤ 3 / m ≤ 2) : à 1 %, cible en 2033 / 2035 ; à 2 %, 2033 / 2038 ; à 3 %, 2034 (m = 3) / jamais.
+- **Scénario bas, m ≤ 4** : le socle s'ouvre au niveau du RSA en 2035 ; le fonds est épuisé en 2039 ; la contribution d'équilibre atteint 1,5 Md€ en 2040.
+- **Variantes** (m ≤ 3) : étudiants, socle à 667 € de 2026 en 2040 (non finançable) ; patrimoine, cible en 2033 ; 500 000 inactifs, cible en 2039 ; élasticité 1,0, socle à 917 € en 2040 ; élasticité 0,3, cible en 2033.
+- **Écarts avec l'exposé v0.2** (accepté en l'état, décision 87), à reprendre en relecture de cohérence (M12) : « dès 2034 s'il le porte temporairement à trois » → 2033, m culminant à 2,5 ; « 0,1 à 0,2 point en 2040 » → environ 0,05 à 0,1 point. Les chiffres de l'exposé restent des ordres de grandeur.
+
+---
+
 ## Questions ouvertes
 
 - **Une application en Rust, à un moment** [ggim, décision 111] : simuler la mesure sur tous les différents indicateurs. Ni calendrier ni périmètre ; les scripts Python restent la référence en attendant.
 - **Exigence de cette application** [ggim, décision 113] : pouvoir changer les paramètres et les conditions en temps réel. Lecture confirmée par Guillaume le 10-04 [ggim] : les paramètres sont les valeurs, les conditions sont les règles et les variantes. **Cette application aura besoin de données** [ggim] ; elles restent à identifier.
-- ~~La règle d'emploi pendant la montée en charge : D8 tel quel, ou les droits d'abord~~ : **les droits d'abord** (décision 75).
-- ~~La cible du fonds : nette ou brute~~ : **nette** (décision 81).
-- ~~La règle d'ouverture~~ : **sur trois ans** (décision 78).
-- ~~m au-delà de 2 après la cible~~ : **ramené à 2 au plus par défaut**, la LFSS pouvant aller au-delà par un vote motivé (décision 79).
-- ~~L'objet de la moitié « droits » après la cible~~ : l'indexation et les extensions votées, à défaut la baisse des cotisations (décision 80).
-- ~~Le multiple pendant la montée en charge~~ : le dispositif garde la fourchette de 1 à 4 ; la trajectoire de référence est m ≤ 3 (décision 84, maintenue, hésitation à signaler : 107). Le taux d'indexation (2 %) est à confirmer par l'économiste (85).
-- ~~Le montant de l'abattement (Q44)~~ : **1 000 € de taxe par groupe et par an** (décision 88).
-- ~~Le « cliquet » sur la baisse de m~~ : **refusé** ; la baisse des cotisations n'est engagée que si elle est soutenable avec m ≤ 2 (décision 89).
-- ~~[opus-5.5] **L'excédent du fonds** au-delà de sa cible : le compter pour ramener m à 2 un an plus tôt (variante `M79_FONDS`) ?~~ → **adopté** (décision 94).
-- ~~[opus-5.5] **La définition du retournement** : sur l'assiette plutôt que sur le produit ?~~ → **adopté** (décision 95).
-- ~~La modalité de la dégressivité~~ : **dans les douze mois** (décision 98 ; hésitation à signaler : 104). Le nombre de mois (6) et le paramètre des reprises d'emploi (600 000 par an) sont [Unverified], à faire confirmer par l'économiste (100).
+- Le taux d'indexation (2 %) est à confirmer par l'économiste (85). Le nombre de mois de dégressivité (6) et le paramètre des reprises d'emploi (600 000 par an) de la sortie progressive sont [Unverified], à faire confirmer par l'économiste (100). La dégressivité dans les douze mois (98) et la trajectoire de référence m ≤ 3 (84) sont des **hésitations** signalées au rapport de retour (104, 107).
 - Les étudiants et le patrimoine : des choix ouverts, réservés à Guillaume (décisions 70 et 71).
+
+> Les questions réglées (règle d'emploi, cible du fonds, ouverture, m après la cible, moitié « droits », multiple, abattement, cliquet, excédent du fonds, retournement, dégressivité) ont été retirées lors de l'élagage (décision 115) ; le journal les garde (décisions 75 à 98).
 
 ## Liens
 
-- [14-simulation-v3-trajectoire-partage.md](14-simulation-v3-trajectoire-partage.md)
+- [archive/14-simulation-v3-trajectoire-partage.md](../archive/14-simulation-v3-trajectoire-partage.md)
 - [18-faisabilite-obstacles-juridiques-et-architecture.md](18-faisabilite-obstacles-juridiques-et-architecture.md) (sections D8, D13, F)
 - [05-hypothese-revenu-universel-musk.md](05-hypothese-revenu-universel-musk.md)
 - [11-cadrage-impact-economique.md](11-cadrage-impact-economique.md)

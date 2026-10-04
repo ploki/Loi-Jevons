@@ -8,7 +8,7 @@
 ## En vigueur
 
 - **Liste de suivi** des 80 questions. Chaque question a un **statut** : ouverte, répondue ou décidée. Quand une question est tranchée, on note dans « Renvoi » le numéro de la décision du journal.
-- Situation au 2026-10-04 (**M12**) [opus-5.5] : **49 décidées**, **30 répondues**, **1 ouverte** : la question **réservée à Guillaume** (50 : les étudiants et le patrimoine, décisions 70 et 71). En M12, les réponses de l'étude d'impact à Q8, Q71, Q73 et Q74 sont validées (97). *Historique : M7, 42 / 26 / 12 ; M9, 44 / 30 / 6 ; M10, 44 / 31 / 5 ; M11, 45 / 34 / 1.* Le suivi des 20 questions non traitées est dans la **note 18, section E**.
+- Situation au 2026-10-04 (**M14**, inchangée depuis M12) [opus-5.5] : **49 décidées**, **30 répondues**, **1 ouverte** : la question **réservée à Guillaume** (50 : les étudiants et le patrimoine, décisions 70 et 71). En M12, les réponses de l'étude d'impact à Q8, Q71, Q73 et Q74 sont validées (97). *Historique : M7, 42 / 26 / 12 ; M9, 44 / 30 / 6 ; M10, 44 / 31 / 5 ; M11, 45 / 34 / 1.* Le suivi des 20 questions non traitées (toutes fermées) était dans la note 18, section E, recopiée dans `../archive/18-faisabilite-sections-C-E-F-et-decisions-par-iteration.md` lors de l'élagage (décision 115).
 - *Méthode de la revue* : « décidée » = tranchée par une décision du journal ; « répondue » = traitée dans une note, sans décision propre (une réponse [C] ou [opus-5.5] reste à valider) ; « ouverte » = à traiter, avec son rattachement. La colonne « Corpus (R/P/N) » garde le classement d'origine de l'agent lecteur. Avant la revue (M6) : 23 répondues, 12 décidées, 45 ouvertes.
 - **Priorités avant de rédiger le dispositif** : 69 (l'article 401 de la directive TVA), 67, 68, 60, 40, 15, 35, 32, 26, 22. **Toutes fermées en M7** : 8 décidées (69, 60, 40, 15, 35, 32, 26, 22), 2 répondues (67, 68).
 
@@ -272,5 +272,5 @@ Bilan de l'agent après lecture des fichiers 00 à 16 et de `outils/sim_v3.py`. 
 
 ### Liens
 
-- [livrable/loi-jevons-financement-du-chomage-universel-par-la-taxe-sur-l-intelligence-artificielle.md](../livrable/loi-jevons-financement-du-chomage-universel-par-la-taxe-sur-l-intelligence-artificielle.md)
+- [archive/loi-jevons-financement-du-chomage-universel-par-la-taxe-sur-l-intelligence-artificielle.md](../archive/loi-jevons-financement-du-chomage-universel-par-la-taxe-sur-l-intelligence-artificielle.md)
 - [00-methode-conventions-et-index.md](00-methode-conventions-et-index.md)

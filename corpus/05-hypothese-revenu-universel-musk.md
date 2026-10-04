@@ -7,6 +7,34 @@
 
 ## En vigueur
 
+> Consolidée lors de l'élagage du 2026-10-04 (décision 115) [opus-5.5 → ggim], sans changement de fond : les mises à jour successives de la session metamaieutique (M3 à M14) sont fondues ici, et l'ancienne version est gardée dans l'historique. Le détail juridique est dans la note 18 (D4, D6, D9, D10, D13).
+
+- **Chômage universel**, et non un revenu versé à tous. Le revenu universel au sens strict n'est conservé que pour mémoire.
+- **Paramètres validés** [G] :
+  - sans limite de durée ;
+  - aucune obligation de recherche d'emploi : une simple inscription suffit, et la formation rémunérée est un droit ;
+  - un socle proche du seuil de pauvreté (environ 1 200 € par mois [À vérifier]), plus un complément proportionnel à l'ancien salaire pendant une durée limitée ;
+  - le socle est ouvert dès 18 ans ;
+  - une sortie progressive (environ 50 centimes d'allocation perdus par euro gagné) ;
+  - il remplace le RSA et l'ASS.
+- **Ce que la session metamaieutique en a fait** :
+  - **Architecture juridique** (décision 49 [P]) : le **socle** est une prestation d'une **branche de sécurité sociale** propre, financée par la taxe Jevons et protégée par l'art. LO 111-3-14 du code de la sécurité sociale. Son versement est confié aux CAF. Le **complément**, égal à l'écart entre l'ARE et le socle, reste une prestation d'assurance de l'**Unédic**, recentrée sur lui (décisions 57 et 74 [P]). La part « socle » de l'ARE est reversée à la branche (57).
+  - **Le socle** [C] (D13.2) : individuel, ciblé sur le seuil de 60 % ; ouvert en phases au niveau du RSA, **son montant étant la variable d'ajustement** votée en LFSS (décision 73 [P]) ; les droits ne précèdent jamais les recettes (D13.6). Son indexation est un droit prioritaire (décision 106 [opus-5.5 as ggim]).
+  - **Droit de l'Union** [C] : au regard du règlement (CE) n° 883/2004, le socle serait **en l'état une prestation de chômage** (art. 3, § 1, h). Sa classification dépend de ses caractéristiques, pas de la branche qui le verse. On peut exiger un **droit au séjour** (CJUE, C-308/14, 2016). Son inscription à l'**annexe X**, qui le rendrait non exportable, est une **étape ultérieure** (D6). La **condition de séjour** est plus ouverte que celle du RSA, et n'exclut personne d'aujourd'hui éligible (décision 56 [P], D10).
+  - **Le RSA et l'ASS passent à la branche** (décisions 55 et 58 [P]), avec une **garantie de non-régression** : une garantie familiale permanente au niveau du RSA majoré, revalorisée comme le RSA et non comme le socle (décision 108 [opus-5.5 as ggim]) ; le maintien des droits connexes et des trimestres de retraite ; une clause de sauvegarde individuelle (D9). Le RSA des personnes en activité à faible revenu est servi par la branche en complément différentiel (décision 99 [opus-5.5 as ggim]). [C] Le RSA est **recentralisé**, avec une reprise des ressources transférées aux départements, sur le modèle de l'expérimentation de l'art. 43 de la LFI pour 2022 ; l'ASS, financée par l'État, est transférée par une contribution de l'État (D6).
+  - **La sortie progressive** : 12 mois, au plus 50 % des revenus d'activité (décisions 72 [P] et 91), puis la prime d'activité ; elle ne fait **jamais moins bien que le droit actuel** (le RSA et la prime d'activité), la marche de fin de période étant supprimée par une **dégressivité linéaire** inscrite dans la loi (décision 96 [opus-5.5 as ggim]), sur les derniers des douze mois (décision 98 [opus-5.5 as ggim], hésitation signalée au rapport de retour). Chiffrage : étude d'impact v0.1, § 5.3.4.
+  - **La formation rémunérée** [C] (D13.5) : le socle maintenu, les certifications RNCP et Qualiopi, l'abondement du CPF.
+- **Questions réservées à Guillaume** (décisions 70 et 71, laissées ouvertes ; options ouvertes au débat dans les livrables, décision 102) : les **étudiants en formation initiale** (non éligibles dans la proposition de D13.3) et un **socle réduit pour les revenus élevés du patrimoine** (non retenu, chiffré en variante).
+- **Coût** : le **besoin net de 2026** est de **6,0 Md€ au niveau du RSA** et de **19,4 Md€ au socle cible** (note 19, M14) [Unverified]. *(Avant : 16 à 20 Md€, puis 18 à 23 Md€ en M6.)*
+
+---
+
+## Historique du raisonnement
+
+> Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### « En vigueur » avant l'élagage du 2026-10-04 (décision 115)
+
 - **Chômage universel**, et non un revenu versé à tous. Le revenu universel au sens strict n'est conservé que pour mémoire.
 - **Paramètres validés** :
   - sans limite de durée ;
@@ -25,12 +53,6 @@
 - **M6 [C]** (note 18, D13.2 à D13.7) : un socle individuel au seuil de 60 %, avec la garantie familiale ; les étudiants en formation initiale non éligibles ; un socle réduit pour les revenus élevés du patrimoine **n'est pas retenu** (variante chiffrée, décision 71) ; **ces deux points restent des questions réservées à Guillaume** (décisions 70 et 71) ; une sortie progressive de 12 mois, puis la prime d'activité ; le complément égal à l'écart entre l'ARE et le socle ; la formation rémunérée (le socle, RNCP/Qualiopi, l'abondement du CPF) ; une ouverture en phases, le **montant du socle étant la variable d'ajustement** voté en LFSS ; un **besoin net révisé d'environ 18 à 23 Md€**.
 - **M14 (décisions 98, 99, 108 [opus-5.5 as ggim])** : la dégressivité de la sortie progressive porte sur les derniers des douze mois ; le RSA des personnes en activité à faible revenu est servi par la branche en complément différentiel ; la garantie familiale suit la revalorisation du RSA, non la hausse du socle (coût : 0,55 Md€ au socle cible). Besoin net de 2026 : 6,0 Md€ au niveau du RSA, 19,4 Md€ au socle cible (note 19).
 - **M12 (décision 96 [opus-5.5 as ggim])** : la sortie progressive (12 mois, au plus 50 % des revenus d'activité, décision 91) ne fait **jamais moins bien que le droit actuel** (le RSA et la prime d'activité) : le bénéficiaire perçoit le plus favorable ; la marche de fin de période est supprimée par une **dégressivité linéaire** inscrite dans la loi. Chiffrage : étude d'impact v0.1, § 5.3.4.
-
----
-
-## Historique du raisonnement
-
-> Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
 
 ### Session metamaieutique, M6 (2026-10-02)
 

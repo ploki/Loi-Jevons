@@ -12,7 +12,7 @@
   - le quartz, ou **l'absence de mécanisme** ;
   - les dockers de 1960 et le TRR suédois, ou **le financement par ceux qui profitent de l'automatisation**.
 - La Loi Jevons **généralise** ces mécanismes, qui n'ont existé que secteur par secteur.
-- À préciser (fichier 17) : le TRR repose sur un accord collectif, pas sur une loi ; l'assurance chômage suisse est devenue obligatoire en 1977.
+- Le TRR repose sur un accord collectif, pas sur une loi (fichier 17).
 - **[S] Vérifié en M9** [opus-5.5] : l'assurance chômage suisse est obligatoire depuis le 1ᵉʳ avril 1977 (base constitutionnelle votée en juin 1976) ; la loi fédérale du 25 juin 1982 (LACI) est entrée en vigueur le 1ᵉʳ janvier 1984 (IRES, *Chronique internationale* n° 129, https://ires.fr/wp-content/uploads/2023/01/c129-3.pdf). Keynes (1930) annonce un niveau de vie de quatre à huit fois celui de 1930, et une semaine de quinze heures (https://www.barcelona.cat/metropolis/en/contents/keyness-unfulfilled-promise). L'exposé v0.2 reprend ces deux faits.
 
 ---

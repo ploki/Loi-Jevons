@@ -9,7 +9,7 @@
 
 - Avec la règle du 50/50, les recettes ≈ le **chiffre d'affaires de l'IA vendue aux professionnels en France**, soit **environ 1,3 Md€ en 2026** (fourchette de 0,5 à 3 Md€).
 - C'est un **minimum**, puisque l'IA qui tourne sur les serveurs des entreprises n'est pas comptée.
-- **La trajectoire de référence est dans la note 19** (simulation v4, architecture révisée) ; le fichier 14 (v3) est gardé pour mémoire. [opus-5.5]
+- **La trajectoire de référence est dans la note 19** (simulation v4, architecture révisée) ; le fichier 14 (v3) est archivé (`archive/`). [opus-5.5]
 - Le partage moitié-moitié décrit plus bas (décision 30 [G]) ne s'applique plus pendant la montée en charge : **les droits d'abord**, puis le partage une fois le socle cible atteint (décision 75 [opus-5.5 as ggim]).
 
 ---

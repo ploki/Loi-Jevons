@@ -50,11 +50,6 @@ Une première liste de cas, de mémoire. Rien n'est encore sourcé. Il faut en r
 | **Statut horloger suisse** (1934-1971) | Un cartel protégé par l'État | Il a probablement retardé l'adaptation au quartz [À vérifier] |
 | **Speenhamland** (1795) | Un complément de salaire versé par les paroisses | Il a pu tirer les salaires vers le bas : une compensation mal conçue [À vérifier] |
 
-### Questions ouvertes
-
-- Quels cas retenir ? Pour un petit article, sans doute 2 ou 3 au maximum.
-- Est-ce qu'on garde la famille C comme réponse aux objections ?
-
 ### Liens
 
 - [01-cadrage-intention-initiale.md](01-cadrage-intention-initiale.md)

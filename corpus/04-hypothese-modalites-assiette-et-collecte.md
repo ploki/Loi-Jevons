@@ -7,6 +7,35 @@
 
 ## En vigueur
 
+> Consolidée lors de l'élagage du 2026-10-04 (décision 115) [opus-5.5 → ggim], sans changement de fond : les mises à jour successives de la session metamaieutique (M2 à M6) sont fondues ici, et l'ancienne version est gardée dans l'historique. La faisabilité juridique est dans la note 18.
+
+- **Nature** : une imposition de toutes natures du type **accise sur un service**, perçue **une seule fois**, au stade de l'**utilisation professionnelle finale** ; **aucune déduction en chaîne** (décision 37 [P]).
+- **Champ** : l'**usage professionnel**, c'est-à-dire l'utilisation par une personne qui agit dans le cadre d'une activité économique ou d'une mission de service public. Il porte sur l'inférence des **modèles d'IA à usage général** (règlement sur l'IA, art. 3, point 63) **et** des systèmes qui génèrent des contenus de synthèse (art. 50, § 2), traduction et transcription comprises ; l'IA non générative est exclue (décisions 64 et 69 [P] ; formulation en note 18, D13.1).
+  - Les **particuliers sont hors du champ**. Le **secteur public, les associations et la recherche sont dans le champ**, avec l'abattement (décision 46 [P]).
+  - L'**entraînement et l'affinage** des modèles sont hors du champ (décision 45 [P]). C'est une piste ultérieure. La génération de données synthétiques est taxée (décision 66 [P]).
+- **Unité** : l'**octet-équivalent** (décision 9 [G]), l'octet mesuré dans un format de référence et multiplié par un **coefficient par type de contenu**. Les coefficients sont **fixés par la loi** (ils relèvent de l'assiette, article 34). **[C]** (note 18, D12) : un texte se mesure à **1 caractère Unicode = 1 octet-équivalent**, et les images, le son et la vidéo dans des unités normalisées ; des coefficients par flux (générées 1 ; lues 0,25 ; cache 0,025) ; le raisonnement interne compte comme des données générées ; les erreurs non facturées sont exclues.
+  - **La taxation des données lues** se justifie par le **travail remplacé** : l'analyse documentaire remplace des heures de lecture humaine (décision 65 [P]).
+- **Tarif** : par **classe de modèles** (note 10).
+- **Redevable** (décision 38 [P]) :
+  - le **fournisseur enregistré** en France, établi ou non, collecte la taxe auprès de ses clients professionnels ;
+  - **à défaut**, le client professionnel **autoliquide** ;
+  - l'**inférence pour usage propre** (sur ses serveurs ou des capacités louées) est déclarée par l'entreprise ;
+  - une **règle de transparence** s'applique aux intermédiaires (décision 66 [P]).
+- **Identification du client professionnel** : le **SIREN** ou le **numéro de TVA intracommunautaire** (vérifié par VIES), ou un identifiant fiscal équivalent pour un client étranger.
+- **Usage professionnel par un compte grand public** (décision 53 [P] ; règle de la note 18, D7) : le fournisseur a l'obligation de demander l'usage et l'identifiant. Des présomptions s'appliquent (accès par API, paiement par une entreprise, volume). L'entreprise qui fait un usage professionnel par un compte grand public **autoliquide** et s'expose à une sanction.
+- **Revente** : l'achat en vue de la revente se fait **en suspension**, sur attestation (décision 37 [P]), par un revendeur agréé inscrit sur un registre (décision 68 [P]). Il n'y a donc pas de cascade.
+- **Territorialité** : le critère est l'**établissement du client** professionnel. **[C]** (note 18, D11) : la taxe est due au titre de l'**utilisation effective en France**, y compris par une entité française d'un groupe qui utilise un contrat signé à l'étranger ; une **table légale de conversion** des unités facturées (token, image, seconde) ; un volume forfaitaire pour les forfaits, avec une **option pour le réel** (décision 61 [P]).
+- **Export** : il est **hors du champ, mais déclaré** (décisions 30 [G] et 52 [P]) ; pas de remboursement à l'export **[C]** (note 18, D11).
+- **Le tarif douanier** n'est qu'une boutade, réservée à la campagne.
+
+---
+
+## Historique du raisonnement
+
+> Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### « En vigueur » avant l'élagage du 2026-10-04 (décision 115)
+
 > Mis à jour en M2 de la session metamaieutique (décisions [P] 37, 38, 45 et 46). La faisabilité juridique est dans la note 18.
 
 - **Nature** : une imposition de toutes natures du type **accise sur un service**, perçue **une seule fois**, au stade de l'**utilisation professionnelle finale** ; **aucune déduction en chaîne** (décision 37 [P]).
@@ -28,12 +57,6 @@
 - **M4 [C]** (note 18, D11) : la taxe est due au titre de l'**utilisation effective en France**, y compris par une entité française d'un groupe qui utilise un contrat signé à l'étranger ; une **table légale de conversion** des unités facturées (token, image, seconde) ; un volume forfaitaire pour les forfaits ; pas de remboursement à l'export.
 - **M5** : les forfaits et la table de conversion, avec une **option pour le réel** (décision 61 [P]). **[C]** (note 18, D12) : le champ est l'inférence des **modèles d'IA à usage général** (règlement sur l'IA, art. 3, point 63) ; un texte se mesure à **1 caractère Unicode = 1 octet-équivalent**, et les images, le son et la vidéo dans des unités normalisées ; des coefficients par flux (générées 1 ; lues 0,25 ; cache 0,025) ; une règle de transparence pour les intermédiaires ; le raisonnement interne compte comme des données générées ; les erreurs non facturées sont exclues.
 - **M6** : **le champ** couvre les modèles d'IA à usage général **et** les systèmes qui génèrent des contenus de synthèse (art. 50, § 2, du règlement sur l'IA) ; l'IA non générative est exclue (décision 64 [P] ; formulation en note 18, D13.1). **La taxation des données lues** se justifie par le **travail remplacé** : l'analyse documentaire remplace des heures de lecture humaine (décision 65 [P]). La règle de transparence et la taxation des données synthétiques sont retenues (décision 66 [P]).
-
----
-
-## Historique du raisonnement
-
-> Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
 
 ### Session metamaieutique, M6 (2026-10-02)
 
@@ -135,11 +158,6 @@ Unité : l'octet, avec un coefficient par type de contenu. On taxe quatre flux d
 
 
 - **[G]** On garde l'aspect tarif douanier, mais **comme une boutade**, réservée à la campagne de promotion, pas comme une proposition sérieuse. La proposition sérieuse reste la taxation au lieu de consommation, avec exonération à l'export.
-
-### Questions ouvertes
-
-- ~~Quel est le taux sur l'export ?~~ Réglé : export déclaré, taux nul.
-- ~~Comment traiter les particuliers qui font tourner des modèles en local ?~~ Réglé : ils sont exonérés (fichier 08).
 
 ### Liens
 

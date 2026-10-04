@@ -7,7 +7,7 @@
 
 ## En vigueur
 
-- **Rôle** : une illustration pour l'étude d'impact. Pour les **recettes, les fichiers 13 et 14 font foi**.
+- **Rôle** : une illustration pour l'étude d'impact. Pour les **recettes, les fichiers 13 et 19 font foi**.
 - **Ordres de grandeur toujours utiles** [À vérifier] :
   - environ 1 × 10¹⁷ tokens par an dans le monde en 2026 ;
   - environ 2,5 × 10¹⁵ pour la France (fourchette de 1,5 à 4 %), dont environ 90 % de données lues ;

@@ -83,10 +83,6 @@ Le but est le **chômage universel**, financé par une taxe sur l'IA. Les livrab
 - **[C]** Ce que cela implique : un texte porté par le Gouvernement est un **projet de loi**, et non plus une proposition de loi. Il doit être accompagné d'une **étude d'impact** (loi organique de 2009) et soumis à l'avis du Conseil d'État. La simulation (fichier 03) et les modalités (fichier 04) en forment le point de départ. **[À vérifier]**
 - ~~Seuls un député ou un sénateur peuvent déposer une proposition de loi.~~ Ce point est sans objet : le Gouvernement porte le texte.
 
-### Questions ouvertes
-
-- (Sans objet : le livrable est un projet de loi.)
-
 ### Liens
 
 - [00-methode-conventions-et-index.md](00-methode-conventions-et-index.md)

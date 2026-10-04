@@ -38,6 +38,10 @@ Guillaume fait fusionner la branche metamaieutique dans `main` (commit `0712000`
 
 Guillaume charge le skill `maieutics` et demande de **commencer par la migration au nouveau format**. Il précise : **tous les noms restent en français** (« c'est pas grave »), et il faut **indiquer aux skills que l'intendance de ce dépôt est en français**. Il accepte que le mandat, le rapport de retour, les audits et le transcript soient déplacés sans être réécrits, le transcript allant dans `archive/`. La migration est **mécanique** ; **l'élagage viendra après**. La branche metamaieutique, déjà fusionnée, peut être supprimée, ainsi que son worktree s'il n'a pas de modifications.
 
+## Itération 10 (2026-10-04)
+
+Guillaume demande de lancer l'**élagage** (« vas-y pour l'élagage »), proposé après la migration.
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)
