@@ -63,7 +63,7 @@
 | 47 | F | **décidée** | P | | 44 [P] ; note 18, D11 |
 | 48 | F | **décidée** | P | | 60 [P] |
 | 49 | G | **répondue** | P | | note 18, D13.2 [C] ; rédigée dans le dispositif (art. 4, V et VI) [opus-5.5], **aucune décision ne l'arrête** |
-| 50 | G | ouverte | P | | **réservée à ggim** : étudiants (70) et patrimoine (71) ; le reste décidé (72, 73) |
+| 50 | G | ouverte | P | | **réservée à ggim** : étudiants (70) et patrimoine (71) ; le reste décidé (72, 73) ; 10-04 : ggim demande d'étudier l'effet de consommation par tranche d'âge, dont les étudiants chez leurs parents (110) |
 | 51 | G | **décidée** | P | | 56, 59 [P] ; note 18, D6, D10 |
 | 52 | G | **répondue** | R | | note 19 (besoin net de 20 Md€) ; note 05 |
 | 53 | G | **décidée** | P | | 57, 74 [P] ; note 18, D13.4 |

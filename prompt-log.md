@@ -30,6 +30,10 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
 
+## Itération M16 (2026-10-04) — Guillaume : un chantier d'étude sur l'effet de consommation
+
+**Message de Guillaume** (et non par procuration), pendant la pause qu'il a demandée : il faut noter qu'il faut **étudier l'impact économique lié au surplus de consommation** que génère la mesure, **par tranche d'âge**. Il cite les **jeunes adultes en formation initiale qui vivent chez leurs parents** : pour lui, c'est un **coup de pouce pour les jeunes les plus défavorisés**, et un **surplus de TVA et d'achats de biens et services**. L'orchestrateur a reformulé (étude à faire, pas de décision d'inclure les étudiants) avant de consigner : journal n° 110, note 18 (questions ouvertes), fichier 17 (Q50). Rien d'autre n'est lancé : la session est en pause, à la demande de Guillaume.
+
 ## Itération M15 (2026-10-04) — passe de corrections terminée ; lancement de la confrontation à l'aveugle (Sonnet)
 
 **Message de Guillaume** (et non par procuration) : il consomme ses tokens très vite et demande s'il peut changer de modèle ou réduire l'effort. Après discussion, il approuve ce plan : l'agent de corrections termine avec Opus ; la confrontation à l'aveugle et le rapport de retour sont confiés à des agents **Sonnet** ; les corrections après la confrontation se limitent à ce qui est juridiquement bloquant. L'orchestrateur est passé à Sonnet 5.5 (`/model`).
