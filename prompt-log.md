@@ -30,6 +30,13 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
 
+## Itération M18 (2026-10-04) — Guillaume : corrections des chiffres et des phrases fausses ; une application Rust à venir
+
+**Message de Guillaume** (et non par procuration), après avoir lu le résumé des questions du lecteur aveugle :
+1. **Corriger les deux erreurs de chiffres et les phrases fausses** (la somme 5,9 et non 6,0 ; le produit 3 × 0,7⁵ ; les importations ; le rapport « entre une et quatre fois »). Fait (journal n° 112). Les trois autres contradictions du lecteur ne sont pas corrigées : il n'a pas demandé de les traiter.
+2. **Pour les questions du lecteur aveugle, il ne sait pas** : rien n'est décidé. Elles restent consignées, non classées.
+3. **Noter qu'on fera « à un moment » une application en Rust pour simuler la mesure sur tous les différents indicateurs.** Noté (journal n° 111, note 19). Rien n'est lancé.
+
 ## Itération M17 (2026-10-04) — questions de la confrontation à l'aveugle consignées ; session en pause
 
 Le lecteur aveugle (Sonnet 5.5, qui n'a lu que les trois livrables) a rendu **97 questions et 20 contradictions**. Elles sont consignées telles quelles dans la note `21-confrontation-aveugle-M15-questions.md`. **Le classement face au corpus (phase 2) n'est pas lancé** : Guillaume a demandé une pause pour interroger le corpus avec lui. Aucun agent ne tourne.

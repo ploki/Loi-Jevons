@@ -35,7 +35,7 @@ L'assiette, le taux et les modalités de recouvrement d'une imposition de toutes
 ## 2. Objectifs
 
 1. **Instituer un chômage universel** : un socle individuel versé à toute personne de dix-huit ans ou plus, sans emploi et inscrite, sans obligation de recherche d'emploi, du niveau du revenu de solidarité active vers le seuil de pauvreté.
-2. **Le financer par la valeur de l'intelligence artificielle** : une taxe sur l'utilisation professionnelle de l'inférence, dont le tarif est au moins égal au prix moyen du marché (au moins la moitié de la valeur payée revient au bien commun).
+2. **Le financer par la valeur de l'intelligence artificielle** : une taxe sur l'utilisation professionnelle de l'inférence, dont le tarif est au moins égal au prix moyen de la classe de modèles (en moyenne, au moins la moitié de la valeur payée revient au bien commun).
 3. **Épargner les particuliers et ménager ce qui démarre** : l'usage personnel hors du champ ; un abattement de 1 000 € de taxe par groupe ; un tarif réduit et temporaire pour l'inférence sur équipement terminal.
 4. **Protéger la recette** : une branche de sécurité sociale, une recette exclusive, un fonds de réserve, la règle « les droits d'abord ».
 5. **À terme, alléger le coût du travail** : une baisse des contributions patronales d'assurance chômage, seconde et différée.
@@ -194,7 +194,7 @@ Le tarif s'ajoute au prix : un multiple de 1 double le prix acquitté, un multip
 | **0,5 (centrale)** | **− 29 %** | **− 42 %** | **− 50 %** | **− 55 %** |
 | 1,0 | − 50 % | − 67 % | − 75 % | − 80 % |
 
-Aucune estimation publiée de l'élasticité de la demande professionnelle d'intelligence artificielle n'a été trouvée [Unverified]. La baisse des prix unitaires, de l'ordre de plusieurs dizaines de pour cent par an [Unverified], est d'un ordre de grandeur comparable à l'effet de la taxe : si les prix baissent de 30 % par an, le prix acquitté taxe comprise à m = 2 en 2033 reste inférieur à la moitié du prix hors taxe de 2028 [opus-5.5 : calcul hors script, 3 × 0,7⁵ ≈ 0,5]. L'effet sur la productivité et la croissance potentielle **n'est pas modélisé** ; il le sera avec les outils de la direction générale du Trésor. La présente étude ne prétend pas qu'il est nul.
+Aucune estimation publiée de l'élasticité de la demande professionnelle d'intelligence artificielle n'a été trouvée [Unverified]. La baisse des prix unitaires, de l'ordre de plusieurs dizaines de pour cent par an [Unverified], est d'un ordre de grandeur comparable à l'effet de la taxe : si les prix baissent de 30 % par an, le prix acquitté taxe comprise à m = 2 en 2033 est de l'ordre de la moitié du prix hors taxe de 2028 [opus-5.5 : calcul hors script, 3 × 0,7⁵ ≈ 0,504]. L'effet sur la productivité et la croissance potentielle **n'est pas modélisé** ; il le sera avec les outils de la direction générale du Trésor. La présente étude ne prétend pas qu'il est nul.
 
 #### 5.2.3 Les PME, les jeunes entreprises et les centres de données (question 73)
 
@@ -212,7 +212,7 @@ La baisse des contributions patronales d'assurance chômage est **modeste et tar
 
 #### 5.3.1 Les bénéficiaires
 
-Le socle s'ouvre en 2031 aux personnes sans emploi qui n'ont aujourd'hui aucun droit, en premier lieu les jeunes de dix-huit à vingt-quatre ans (3,9 Md€ du besoin net à l'ouverture), aux membres de couples qui n'ont pas de droit propre (1,2 Md€), aux ressortissants de pays tiers qui ont travaillé au moins six mois (0,5 Md€) et aux frontaliers (0,3 Md€), soit 6,0 Md€ de 2026 au niveau du RSA [Unverified]. La sortie progressive et la garantie familiale ne coûtent rien de plus, à ce niveau, que le droit actuel (§ 5.3.2 et 5.3.4). Le socle atteint le seuil de pauvreté en 2033 dans la trajectoire de référence.
+Le socle s'ouvre en 2031 aux personnes sans emploi qui n'ont aujourd'hui aucun droit, en premier lieu les jeunes de dix-huit à vingt-quatre ans (3,9 Md€ du besoin net à l'ouverture), aux membres de couples qui n'ont pas de droit propre (1,2 Md€), aux ressortissants de pays tiers qui ont travaillé au moins six mois (0,5 Md€) et aux frontaliers (0,3 Md€), soit 5,9 Md€ de 2026 au niveau du RSA pour ces quatre composantes [Unverified]. Le modèle retient 6,0 Md€ : son besoin d'ouverture est arrondi à 7,0 Md€ (la somme des composantes d'origine, sortie progressive comprise, est de 6,9) avant d'en retirer 1,0 Md€ de sortie progressive d'origine. La sortie progressive et la garantie familiale ne coûtent rien de plus, à ce niveau, que le droit actuel (§ 5.3.2 et 5.3.4). Le socle atteint le seuil de pauvreté en 2033 dans la trajectoire de référence.
 
 #### 5.3.2 La garantie de non-régression
 

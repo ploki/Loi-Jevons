@@ -267,6 +267,7 @@
 
 ## Questions ouvertes
 
+- **Une application en Rust, à un moment** [ggim, décision 111] : simuler la mesure sur tous les différents indicateurs. Ni calendrier ni périmètre ; les scripts Python restent la référence en attendant.
 - ~~La règle d'emploi pendant la montée en charge : D8 tel quel, ou les droits d'abord~~ : **les droits d'abord** (décision 75).
 - ~~La cible du fonds : nette ou brute~~ : **nette** (décision 81).
 - ~~La règle d'ouverture~~ : **sur trois ans** (décision 78).
