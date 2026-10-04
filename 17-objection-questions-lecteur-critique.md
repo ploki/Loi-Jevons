@@ -2,97 +2,98 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02
+- **Dernière mise à jour** : 2026-10-04 (M14 : renvois corrigés, point B5 du rapport de relecture)
 
 
 ## En vigueur
 
 - **Liste de suivi** des 80 questions. Chaque question a un **statut** : ouverte, répondue ou décidée. Quand une question est tranchée, on note dans « Renvoi » le numéro de la décision du journal.
-- Situation au 2026-10-02 : **10 répondues, 70 ouvertes** (50 partiellement traitées et 20 non traitées dans le corpus). 0 décidée.
-- **Priorités avant de rédiger le dispositif** : 69 (l'article 401 de la directive TVA), 67, 68, 60, 40, 15, 35, 32, 26, 22.
+- Situation au 2026-10-04 (**M12**) [opus-5.5] : **49 décidées**, **30 répondues**, **1 ouverte** : la question **réservée à Guillaume** (50 : les étudiants et le patrimoine, décisions 70 et 71). En M12, les réponses de l'étude d'impact à Q8, Q71, Q73 et Q74 sont validées (97). *Historique : M7, 42 / 26 / 12 ; M9, 44 / 30 / 6 ; M10, 44 / 31 / 5 ; M11, 45 / 34 / 1.* Le suivi des 20 questions non traitées est dans la **note 18, section E**.
+- *Méthode de la revue* : « décidée » = tranchée par une décision du journal ; « répondue » = traitée dans une note, sans décision propre (une réponse [C] ou [opus-5.5] reste à valider) ; « ouverte » = à traiter, avec son rattachement. La colonne « Corpus (R/P/N) » garde le classement d'origine de l'agent lecteur. Avant la revue (M6) : 23 répondues, 12 décidées, 45 ouvertes.
+- **Priorités avant de rédiger le dispositif** : 69 (l'article 401 de la directive TVA), 67, 68, 60, 40, 15, 35, 32, 26, 22. **Toutes fermées en M7** : 8 décidées (69, 60, 40, 15, 35, 32, 26, 22), 2 répondues (67, 68).
 
 | n° | Thème | Statut | Corpus (R/P/N) | Priorité | Renvoi |
 |---|---|---|---|---|---|
-| 1 | A | ouverte | N |  | — |
-| 2 | A | ouverte | P |  | — |
-| 3 | A | ouverte | P |  | — |
-| 4 | A | répondue | R |  | — |
-| 5 | A | ouverte | P |  | — |
-| 6 | A | ouverte | P |  | — |
-| 7 | A | répondue | R |  | — |
-| 8 | A | ouverte | P |  | — |
-| 9 | A | ouverte | P |  | — |
-| 10 | A | répondue | R |  | — |
-| 11 | A | ouverte | P |  | — |
-| 12 | A | répondue | R |  | — |
-| 13 | A | répondue | R |  | — |
-| 14 | B | ouverte | P |  | — |
-| 15 | B | ouverte | N | **top 6** | — |
-| 16 | B | ouverte | P |  | — |
-| 17 | B | ouverte | P |  | — |
-| 18 | B | ouverte | P |  | — |
-| 19 | B | ouverte | P |  | — |
-| 20 | B | ouverte | P |  | — |
-| 21 | B | ouverte | P |  | — |
-| 22 | B | ouverte | N | **top 10** | — |
-| 23 | C | ouverte | P |  | — |
-| 24 | C | ouverte | P |  | — |
-| 25 | C | ouverte | P |  | — |
-| 26 | C | ouverte | N | **top 9** | — |
-| 27 | C | ouverte | P |  | — |
-| 28 | C | ouverte | P |  | — |
-| 29 | C | ouverte | P |  | — |
-| 30 | C | ouverte | P |  | — |
-| 31 | D | répondue | R |  | — |
-| 32 | D | ouverte | N | **top 8** | — |
-| 33 | D | ouverte | P |  | — |
-| 34 | D | ouverte | N |  | — |
-| 35 | D | ouverte | N | **top 7** | — |
-| 36 | D | ouverte | P |  | — |
-| 37 | E | ouverte | P |  | — |
-| 38 | E | ouverte | P |  | — |
-| 39 | E | ouverte | P |  | — |
-| 40 | E | ouverte | N | **top 5** | — |
-| 41 | E | ouverte | P |  | — |
-| 42 | E | ouverte | P |  | — |
-| 43 | E | ouverte | P |  | — |
-| 44 | F | ouverte | P |  | — |
-| 45 | F | ouverte | P |  | — |
-| 46 | F | ouverte | P |  | — |
-| 47 | F | ouverte | P |  | — |
-| 48 | F | ouverte | P |  | — |
-| 49 | G | ouverte | P |  | — |
-| 50 | G | ouverte | P |  | — |
-| 51 | G | ouverte | P |  | — |
-| 52 | G | répondue | R |  | — |
-| 53 | G | ouverte | P |  | — |
-| 54 | G | ouverte | P |  | — |
-| 55 | G | ouverte | N |  | — |
-| 56 | G | répondue | R |  | — |
-| 57 | G | ouverte | P |  | — |
-| 58 | H | ouverte | P |  | — |
-| 59 | H | répondue | R |  | — |
-| 60 | H | ouverte | N | **top 4** | — |
-| 61 | H | ouverte | P |  | — |
-| 62 | H | ouverte | P |  | — |
-| 63 | H | ouverte | N |  | — |
-| 64 | I | répondue | R |  | — |
-| 65 | I | ouverte | P |  | — |
-| 66 | I | ouverte | P |  | — |
-| 67 | J | ouverte | N | **top 2** | — |
-| 68 | J | ouverte | N | **top 3** | — |
-| 69 | J | ouverte | N | **top 1** | — |
-| 70 | J | ouverte | N |  | — |
-| 71 | K | ouverte | N |  | — |
-| 72 | K | ouverte | P |  | — |
-| 73 | K | ouverte | N |  | — |
-| 74 | K | ouverte | P |  | — |
-| 75 | L | ouverte | N |  | — |
-| 76 | L | ouverte | P |  | — |
-| 77 | L | ouverte | P |  | — |
-| 78 | M | ouverte | N |  | — |
-| 79 | M | ouverte | N |  | — |
-| 80 | M | ouverte | P |  | — |
+| 1 | A | **répondue** | N | | exposé v0.2 (introduction) : niveau de vie × 4 à 8 selon Keynes [S] ; ralentissement de la productivité reconnu |
+| 2 | A | **répondue** | P | | exposé v0.2 : le chiffre « multiplié par sept », non sourcé, est retiré |
+| 3 | A | **répondue** | P | | note 19, § 2.4 (sensibilité à l'élasticité) [opus-5.5] |
+| 4 | A | **répondue** | R | | — |
+| 5 | A | **répondue** | P | | exposé v0.2 (§ I) : causes multiples ; assurance chômage obligatoire en 1977, loi entrée en vigueur en 1984 [S] ; note 16 |
+| 6 | A | **répondue** | P | | exposé v0.2 (§ I) : une convention, que la loi généralise ; 15 000 dockers ; montant en euros actuels : **non traité** (ni l'exposé ni l'étude d'impact ne le donnent ; renvoyé à l'expertise, rapport de retour) |
+| 7 | A | **répondue** | R | | — |
+| 8 | A | **décidée** | P | | 97 ; étude d'impact v0.1, § 1.3 : pas de série française probante ; le projet n'en dépend pas (82) ; un dispositif d'observation [opus-5.5] |
+| 9 | A | **décidée** | P | | 38, 45 [P] ; note 18, D13.1 |
+| 10 | A | **répondue** | R | | note 18, D2 |
+| 11 | A | **répondue** | P | | 51 [P] ; note 18, D3 ; chiffres du carburant à vérifier en M9 |
+| 12 | A | **répondue** | R | | — |
+| 13 | A | **répondue** | R | | note 19 (2,6 Md€ en 2028) ; correction en M9 |
+| 14 | B | **décidée** | P | | 65 [P] ; note 18, D12.2 |
+| 15 | B | **décidée** | N | **top 6** | 65 [P] ; note 18, D12.3 |
+| 16 | B | **décidée** | P | | 65 [P] ; note 18, D12.3 |
+| 17 | B | **décidée** | P | | 65 [P] ; note 18, D12.2 |
+| 18 | B | **répondue** | P | | 9 [G], 65 [P] : un principe de justice, pas une mesure ; à présenter ainsi en M9 |
+| 19 | B | **répondue** | P | | note 18, D12.4 [C] ; rédigée dans le dispositif (L.-1, II ; L.-9, IV) [opus-5.5], sans décision propre |
+| 20 | B | **décidée** | P | | 64, 69 [P] ; note 18, D13.1 |
+| 21 | B | **décidée** | P | | 53 [P] |
+| 22 | B | **décidée** | N | **top 10** | 46 [P] |
+| 23 | C | **décidée** | P | | 48, 61 [P] ; note 18, D1, D11 |
+| 24 | C | **décidée** | P | | 48 [P] ; note 18, D1 |
+| 25 | C | **répondue** | P | | 25 [G] ; fichier 10 ; correction en M9 |
+| 26 | C | **décidée** | N | **top 9** | 39, 48 [P] |
+| 27 | C | **décidée** | P | | 40, 50 [P] |
+| 28 | C | **décidée** | P | | 41, 51 [P] ; note 18, D3 |
+| 29 | C | **répondue** | P | | 40 [P] ; note 18, D1 (indexation trimestrielle) ; note 19 (m lissé à ± 0,5) |
+| 30 | C | **décidée** | P | | 40, 54 [P] ; note 18, D8 (Q64) ; correction en M9 |
+| 31 | D | **répondue** | R | | note 18, D11 |
+| 32 | D | **décidée** | N | **top 8** | 61 [P] ; note 18, D11 |
+| 33 | D | **décidée** | P | | 63 [P] ; note 18, D11 |
+| 34 | D | **répondue** | N | | note 18, D11 ; étude d'impact v0.1, § 5.2.3 (risque assumé, suivi par l'évaluation) |
+| 35 | D | **décidée** | N | **top 7** | 37 [P] |
+| 36 | D | **répondue** | P | | note 18, O7, D11 |
+| 37 | E | **décidée** | P | | 43 [P] ; note 18, D11 |
+| 38 | E | **répondue** | P | | note 18, D11, D7 [C] ; RGPD à expertiser |
+| 39 | E | **décidée** | P | | 67 [P] ; note 18, D12.5 |
+| 40 | E | **décidée** | N | **top 5** | 45 [P] |
+| 41 | E | **décidée** | P | | 67 [P] ; note 18, D12.5 |
+| 42 | E | **décidée** | P | | 53, 67 [P] ; note 18, D12.5 |
+| 43 | E | **décidée** | P | | 67 [P] ; note 18, D12.5 ; chiffrage : étude d'impact v0.1, § 5.4 |
+| 44 | F | **décidée** | P | | 88 [opus-5.5 as ggim] ; dispositif v0.1, art. L. [À vérifier]-16 : 1 000 € de taxe par groupe et par an, restitué automatiquement |
+| 45 | F | **décidée** | P | | 44 [P] ; note 18, D11 |
+| 46 | F | **décidée** | P | | 61 [P] ; note 18, D11 |
+| 47 | F | **décidée** | P | | 44 [P] ; note 18, D11 |
+| 48 | F | **décidée** | P | | 60 [P] |
+| 49 | G | **répondue** | P | | note 18, D13.2 [C] ; rédigée dans le dispositif (art. 4, V et VI) [opus-5.5], **aucune décision ne l'arrête** |
+| 50 | G | ouverte | P | | **réservée à ggim** : étudiants (70) et patrimoine (71) ; le reste décidé (72, 73) ; 10-04 : ggim demande d'étudier l'effet de consommation par tranche d'âge, dont les étudiants chez leurs parents (110) |
+| 51 | G | **décidée** | P | | 56, 59 [P] ; note 18, D6, D10 |
+| 52 | G | **répondue** | R | | note 19 (besoin net de 20 Md€) ; note 05 |
+| 53 | G | **décidée** | P | | 57, 74 [P] ; note 18, D13.4 |
+| 54 | G | **répondue** | P | | exposé v0.2 (§ IV) : limites des expériences dites ; évaluation prévue (art. 18) ; **partiellement traitée** dans l'étude d'impact (§ 5.2.4, § 5.3.4 : taux marginaux) ; l'effet sur l'offre de travail n'est pas modélisé (renvoyé à l'économiste) |
+| 55 | G | **répondue** | N | | note 18, D13.5 [C] ; note 19 (1 Md€) ; rédigée dans le dispositif (art. 4, VII) [opus-5.5], **aucune décision ne l'arrête** |
+| 56 | G | **décidée** | R | | 72 [P], 91 et 96 [opus-5.5 as ggim] ; dispositif v0.1, art. 6 : au plus 50 %, jamais moins que le droit actuel, dégressivité linéaire ; taux marginaux et coût : étude d'impact v0.1, § 5.3.4 |
+| 57 | G | **décidée** | P | | 55, 58 [P] ; note 18, D6, D9 |
+| 58 | H | **décidée** | P | | 73 [P] ; note 18, D13.6 |
+| 59 | H | **répondue** | R | | note 19 (trajectoire v4) ; correction en M9 |
+| 60 | H | **décidée** | N | **top 4** | 42, 49 [P] |
+| 61 | H | **décidée** | P | | 54, 75 ; note 18, D8 |
+| 62 | H | **décidée** | P | | 54 [P] ; note 18, D8, D13.8 |
+| 63 | H | **décidée** | N | | 82 [opus-5.5 as ggim] ; note 18, E ; argumentaire dans l'exposé v0.2 |
+| 64 | I | **décidée** | R | | 54 [P] ; note 18, D8 |
+| 65 | I | **décidée** | P | | **75** [opus-5.5 as ggim] (les droits d'abord) |
+| 66 | I | **répondue** | P | | exposé v0.2 (§ V) : le terme est employé sans revendiquer d'effet correcteur ; effet net sur l'arbitrage travail-IA **non traité** dans l'étude d'impact (§ 5.2.2 ne mesure que l'effet prix) |
+| 67 | J | **répondue** | N | **top 2** | note 18, O2, D3 ; 41, 51 [P] |
+| 68 | J | **répondue** | N | **top 3** | note 18, O2, D7 ; 44, 46 [P] |
+| 69 | J | **décidée** | N | **top 1** | 37, 39, 48 [P] |
+| 70 | J | **décidée** | N | | 43, 44, 62 [P] ; note 18, D11 |
+| 71 | K | **décidée** | N | | 97 ; étude d'impact v0.1, § 5.2.1 : la charge pèse sur les utilisateurs en France ; la valeur saisie est celle de l'usage, pas la marge des fournisseurs [opus-5.5] |
+| 72 | K | **répondue** | P | | note 18, D11 ; **partiellement traitée** dans l'étude d'impact (§ 5.2.3 : les PME et l'abattement) ; le chiffrage pour les marchés tiers n'est pas fait |
+| 73 | K | **décidée** | N | | 97 ; étude d'impact v0.1, § 5.2.3 : abattement (88), neutralité concurrentielle et de localisation des centres de données [opus-5.5] |
+| 74 | K | **décidée** | P | | 97 ; étude d'impact v0.1, § 5.2.2 et 5.1.5 : − 29 % à − 55 % de dépense (ε = 0,5) ; sensibilité 0,3 à 1,0 ; croissance non modélisée [opus-5.5] |
+| 75 | L | **décidée** | N | | 82 [opus-5.5 as ggim] ; 43, 67 [P] ; note 18, E ; argumentaire dans l'exposé v0.2 |
+| 76 | L | **décidée** | P | | 32 [G] ; note 18, D13.8 ; note 19, § 3 |
+| 77 | L | **répondue** | P | | 74 [P] ; note 09 ; argumentaire en M9 |
+| 78 | M | **décidée** | N | | 66 [P] ; note 18, D12.3 |
+| 79 | M | **répondue** | N | | note 18, D12.4 [C] ; rédigée dans le dispositif (L.-9, IV) [opus-5.5], sans décision propre |
+| 80 | M | **décidée** | P | | 64, 69 [P] ; note 18, D12.1, D13.1 |
 
 ---
 
@@ -211,6 +212,10 @@ Les questions sont reproduites telles que l'agent les a posées. Elles sont tout
 78. Un agent d'IA qui appelle d'autres modèles en chaîne, ou produit des données synthétiques destinées à entraîner un autre modèle, génère-t-il plusieurs faits générateurs ? Comment éviter la taxation répétée d'un même travail ?
 79. Les requêtes en erreur, les réessais automatiques, les tests de développement et les évaluations de modèles sont-ils taxés ?
 80. Comment traiter une fonction d'IA marginale intégrée à un logiciel métier (correction, autocomplétion, suppression de bruit dans une visioconférence) dont l'utilisateur ignore même l'existence ?
+
+### Revue de M7 (2026-10-04)
+
+[opus-5.5] Revue des 80 statuts d'après les sections D de la note 18, la note 19 et le journal (n° 37 à 76). Changements principaux : les questions traitées en M3 à M6 mais restées « ouvertes » dans la liste (14, 16, 17, 23, 24, 28, 37, 39, 41, 42, 43, 45, 46, 47, 51, 57, 61, 62, 64, 65…) passent à « décidée » quand une décision les couvre ; Q65 est réglée par la décision 75 ; Q63 et Q75 reçoivent une réponse proposée (note 18, E) ; chaque question encore ouverte est rattachée à une étape (M9, M10, M11) ou réservée à Guillaume (Q50). Les statuts « décidée » qui renvoient à une décision [P] sont des décisions par procuration.
 
 ### Confrontation avec le corpus
 

@@ -2,22 +2,33 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02
+- **Dernière mise à jour** : 2026-10-04 (M14 : chiffres de la trajectoire, décisions 89, 106)
 
 
 ## En vigueur
 
-- **Le double dividende est un argument central** : la taxe finance le chômage universel et permet de baisser les cotisations chômage sur les salaires.
-- **Utilisation des recettes** : de 2026 à 2028, le fonds de réserve et la formation rémunérée ; ensuite, un **partage moitié-moitié** entre l'extension des droits et la baisse des cotisations.
+- **Le double dividende est un argument central** : la taxe finance le chômage universel et permet de baisser les cotisations chômage sur les salaires. **Depuis la décision 75 [opus-5.5 as ggim], il est différé**, et la décision 80 le dit **modeste et tardif** : il commence **au retour de m à 2** une fois le socle cible atteint, et seulement s'il est soutenable avec m ≤ 2 (décision 89) : en **2036** dans la trajectoire de référence (m ≤ 3 puis 2) et en 2037 avec m ≤ 2 (scénario central, note 19, M14). C'est un bénéfice second, pas une promesse.
+- **Utilisation des recettes** (↺ décision 75, qui modifie la décision 30 [G] pendant la montée en charge) : pendant la phase 0 (2028-2030 dans la v4), le fonds de réserve et la formation rémunérée ; ensuite, **les droits d'abord** : le surplus va en totalité à la hausse du socle jusqu'au socle cible ; **une fois la cible atteinte, le partage moitié-moitié** entre les droits et la baisse des cotisations reprend ; ~~la moitié « droits » finance alors l'indexation du socle~~ → **l'indexation du socle est un droit prioritaire (rang 1, décision 106)** ; la moitié « droits » finance les extensions votées en LFSS, à défaut la baisse des cotisations (décision 80) ; m est ramené à 2 au plus par défaut (décision 79).
 - **Ordre de grandeur** : 1 point de cotisation ≈ 11 à 12 Md€ [Déduit, à vérifier].
 - **L'objection de Summers** et les réponses : on taxe l'IA, on assume. L'adoption est mûre dans le cloud ; l'IA locale démarre.
 - **Questions ouvertes** (fichier 17) : qui paie réellement la taxe, la compétitivité, l'effet sur les PME et sur l'industrie française.
+- **Affectation (M3, décision 49 [P])** : le double dividende passe par une **fraction de la taxe versée à l'Unédic en LFSS**, en compensation de la baisse des contributions patronales, sur le modèle de la CSG versée à l'Unédic.
+- **Ordre d'emploi des recettes** (décisions 54 et 75 ; note 18, D8) : les **droits déjà ouverts** ; puis le **fonds de réserve** jusqu'à sa cible ; puis le **surplus aux droits** jusqu'au socle cible ; ensuite le partage moitié-moitié. En cas de retournement, les droits passent avant la baisse des cotisations (Q62). Q65 est réglée par la décision 75. Quand la contribution patronale atteint zéro (Q64), le surplus va au fonds de réserve, et m peut être abaissé.
+- **Ordre de grandeur, v4 avec indexation** (note 19, scénario central ; décision 80) : environ **0,16 point de cotisation en 2040, avec m ≤ 2 comme avec m ≤ 3** ; 2,2 à 3,6 points dans le scénario haut [opus-5.5]. *(Avant M14 : 0,21 point ; sans indexation, en M7 : 0,75 point, chiffre surestimé.)*
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, fin de M7 (2026-10-04)
+
+- **[opus-5.5 as ggim] Décision 75** : les droits d'abord pendant la montée en charge, puis le partage moitié-moitié une fois le socle cible atteint. Pourquoi : le chômage universel est le vrai but ; le partage dès l'ouverture imposait m = 4 pour atteindre la cible (note 19). ↺ de la décision 30 [G] ci-dessous (« ensuite : chaque euro… est partagé moitié-moitié »), qui reste ici pour mémoire.
+
+### Session metamaieutique, M3 (2026-10-02)
+
+- **[P] Décision 49** : une fraction de la taxe va à l'Unédic pour la baisse des cotisations. **[C]** L'ordre d'emploi des recettes est proposé (note 18, D8).
 
 ### En bref
 

@@ -2,7 +2,7 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02
+- **Dernière mise à jour** : 2026-10-04 (M14 : décisions 98, 99, 108)
 
 
 ## En vigueur
@@ -17,12 +17,32 @@
   - il remplace le RSA et l'ASS.
 - **Coût** [À vérifier] : environ 68 à 72 Md€ brut. Il remplace environ 52 Md€ de dépenses existantes, d'où un **besoin net d'environ 16 à 20 Md€**.
 - **Questions ouvertes** (fichier 17) : le calcul individuel ou par foyer, les étudiants et le temps partiel, la résidence et le droit de l'UE, la gouvernance de l'Unédic, les départements (article 72-2).
+- **Architecture juridique (M3 de la session metamaieutique, décision 49 [P])** : le **socle** est une prestation d'une **branche de sécurité sociale** propre, financée par la taxe Jevons et protégée par l'art. LO 111-3-14 du code de la sécurité sociale. Son versement est confié aux CAF. Le **complément** reste une prestation d'assurance de l'**Unédic**. Le détail est dans la note 18 (D4 et D6).
+- **Droit de l'Union [C]** : au regard du règlement (CE) n° 883/2004, le socle serait **en l'état une prestation de chômage** (art. 3, § 1, h). Sa classification dépend de ses caractéristiques, pas de la branche qui le verse. On peut exiger un **droit au séjour** (CJUE, C-308/14, 2016). Son inscription à l'**annexe X**, qui le rendrait non exportable, est une **étape ultérieure**. Voir la note 18, D6.
+- **RSA et ASS [C]** : le RSA est **recentralisé**, avec une reprise des ressources transférées aux départements, sur le modèle de l'expérimentation de l'art. 43 de la LFI pour 2022. L'ASS est financée par l'État : sa dépense est transférée à la branche par une contribution de l'État. Voir la note 18, D6.
+- **Flux à préciser en M6** : la part « socle » de l'ARE actuelle, que l'Unédic n'aurait plus à verser.
+- **M4 (décisions 55 à 57 [P])** : le RSA et l'ASS passent à la branche, avec une **garantie de non-régression** : une garantie familiale permanente au niveau du RSA majoré, le maintien des droits connexes et des trimestres de retraite, et une clause de sauvegarde individuelle (note 18, D9 [C]). La **condition de séjour** est plus ouverte que celle du RSA, et n'exclut personne d'aujourd'hui éligible (D10 [C]). La part « socle » de l'ARE est reversée à la branche. **Le chiffrage est à refaire en M6.**
+- **M6 [C]** (note 18, D13.2 à D13.7) : un socle individuel au seuil de 60 %, avec la garantie familiale ; les étudiants en formation initiale non éligibles ; un socle réduit pour les revenus élevés du patrimoine **n'est pas retenu** (variante chiffrée, décision 71) ; **ces deux points restent des questions réservées à Guillaume** (décisions 70 et 71) ; une sortie progressive de 12 mois, puis la prime d'activité ; le complément égal à l'écart entre l'ARE et le socle ; la formation rémunérée (le socle, RNCP/Qualiopi, l'abondement du CPF) ; une ouverture en phases, le **montant du socle étant la variable d'ajustement** voté en LFSS ; un **besoin net révisé d'environ 18 à 23 Md€**.
+- **M14 (décisions 98, 99, 108 [opus-5.5 as ggim])** : la dégressivité de la sortie progressive porte sur les derniers des douze mois ; le RSA des personnes en activité à faible revenu est servi par la branche en complément différentiel ; la garantie familiale suit la revalorisation du RSA, non la hausse du socle (coût : 0,55 Md€ au socle cible). Besoin net de 2026 : 6,0 Md€ au niveau du RSA, 19,4 Md€ au socle cible (note 19).
+- **M12 (décision 96 [opus-5.5 as ggim])** : la sortie progressive (12 mois, au plus 50 % des revenus d'activité, décision 91) ne fait **jamais moins bien que le droit actuel** (le RSA et la prime d'activité) : le bénéficiaire perçoit le plus favorable ; la marche de fin de période est supprimée par une **dégressivité linéaire** inscrite dans la loi. Chiffrage : étude d'impact v0.1, § 5.3.4.
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M6 (2026-10-02)
+
+- **[C]** Les questions 49, 50, 53, 55 et 58 sont traitées en note 18, D13. Point d'alerte : la part « socle » de l'ARE représenterait une grande partie des prestations de l'Unédic, qui se recentrerait sur le complément.
+
+### Session metamaieutique, M4 (2026-10-02)
+
+- **[P] Décisions 55 à 57.** **[C]** Une comparaison indicative montre qu'un socle individuel seul ferait perdre les parents isolés avec deux enfants ou plus et les très grandes familles. D'où la garantie familiale permanente (note 18, D9).
+
+### Session metamaieutique, M3 (2026-10-02)
+
+- **[P] Décision 49** : le socle est une prestation de sécurité sociale, dans une branche propre. **[C]** La vérification au regard du règlement 883/2004, la recentralisation du RSA et le véhicule de création de la branche sont dans la note 18 (D6).
 
 ### En bref
 

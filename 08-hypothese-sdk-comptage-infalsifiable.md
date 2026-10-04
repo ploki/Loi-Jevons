@@ -2,23 +2,44 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02
+- **Dernière mise à jour** : 2026-10-04 (M14 : abattement, terminal)
 
 
 ## En vigueur
 
-- **Le SDK est installé partout où l'IA sert un usage professionnel**, portables compris. Il est intégré aux logiciels qui font tourner les modèles, et les éditeurs sont certifiés sur le modèle de la norme NF525.
-- **Pas de forfait ni de franchise.** Chaque entreprise bénéficie d'un **abattement**, dont le montant est à fixer.
-- **IA embarquée** : exonérée pour les particuliers.
-- **IA locale et embarquée professionnelle** : un **taux réduit, voire nul**, pendant une période de lancement de 3 à 5 ans, avec une clause de rendez-vous. On compte partout, mais on ne taxe que ce qui est mûr.
-- **Contrôle** : une falsification est **détectable, pas impossible**. On recoupe avec la facturation électronique, les heures de GPU louées et l'électricité consommée. Le prix de référence est l'indice tiré des déclarations.
-- **Questions ouvertes** (fichier 17) : les appareils professionnels, le RGPD et le secret des affaires, les sanctions, le fractionnement entre sociétés d'un groupe, l'entraînement des modèles.
+> Mis à jour en M2 de la session metamaieutique (décisions [P] 43 et 44). La faisabilité juridique est dans la note 18 (O6 et O9).
+
+- **↺ L'obligation de comptage pèse sur le redevable** (décision 43 [P]). Il doit tenir une **comptabilité-matière** des volumes, exacte et contrôlable. **Aucune obligation n'est imposée aux éditeurs** de logiciels.
+- **Le SDK libre et certifié devient une voie simplifiée** : l'utiliser vaut **présomption de bonne foi**, comme les logiciels de caisse certifiés. L'entreprise peut aussi justifier ses volumes autrement (les relevés des fournisseurs, ses propres journaux).
+- **Raisons** : imposer un compteur aux éditeurs serait une règle technique à notifier (directive (UE) 2015/1535), une restriction possible à la libre prestation de services, et une source de conflit avec le règlement européen sur l'IA [À vérifier]. Le texte sera **notifié** de toute façon.
+- **Données transmises** : uniquement des **volumes agrégés**, jamais le contenu des requêtes (RGPD, secret des affaires).
+- **Abattement** : **1 000 € de taxe par groupe et par an**, non indexé, révisable en LFSS, restitué automatiquement (décision 88) ; appliqué au niveau du **groupe** (anti-fractionnement). Pas de forfait ni de franchise (décision 30 [G]).
+- **IA locale et embarquée** (décision 44 [P]) : un **taux réduit** pour l'inférence **exécutée sur un équipement terminal** (poste de travail, appareil embarqué), et non sur un serveur. Il est **temporaire**, avec une clause de rendez-vous, et **notifié préventivement** à la Commission (aides d'État).
+- **IA embarquée des particuliers** : hors du champ.
+- **Contrôle** : une falsification est **détectable, pas impossible**. On recoupe avec la facturation électronique, les heures de GPU louées et l'électricité consommée.
+- **Questions ouvertes** (fichier 17) : les sanctions, les moyens de l'administration, le fractionnement, le coût de conformité (M8) ; la durée de la période de lancement et le niveau du taux réduit (M6).
+- **M4 [C]** (note 18, D11) : l'**équipement terminal** est défini (sous la maîtrise physique de l'utilisateur, non exploité pour servir des tiers) ; un serveur en colocation n'en est pas un. Le taux réduit est proposé à 0,25 × le tarif plein pendant trois ans, avec une extinction au plus tard à cinq ans et un critère objectif de maturité. L'IA embarquée est taxée sur un volume forfaitaire par catégorie d'appareil. Le SDK libre est piloté par la DGFiP, avec un référentiel de type NF525. Le projet est notifié par prudence (directive 2015/1535 et aides d'État).
+- **M14 (décision 103 [opus-5.5 as ggim], ↺ partiel de la décision 60)** : le tarif réduit de 0,25 s'applique pendant les trois premières années d'application, puis s'éteint, sauf prolongation votée en LFSS jusqu'à cinq ans au plus (au lieu d'une extinction à cinq ans) ; **toute la taxe n'entre en vigueur qu'après la décision de la Commission** ou l'autorisation réputée acquise, de sorte que l'IA sur terminal ne paie jamais le plein tarif du fait de la procédure (note 18, D11 bis, proposition [opus-5.5] à valider).
+- **M5** : le lancement à 0,25 × le tarif pendant trois ans, avec une extinction à cinq ans (décision 60 [P], modifiée par la décision 103) ; l'option pour le réel avec le SDK (décision 61 [P]) ; la notification par prudence (décision 62 [P]). **[C]** (note 18, D12.5 à D12.7) : un registre d'entraînement, les sanctions, l'abattement au niveau du groupe et restitué automatiquement, le registre des revendeurs agréés, le lissage aux bornes des tranches.
 
 ---
 
 ## Historique du raisonnement
 
 > Les sections suivantes retracent le raisonnement. En cas de divergence, la section « En vigueur » prévaut.
+
+### Session metamaieutique, M5 (2026-10-02)
+
+- **[P] Décisions 60 à 62.** **[C]** Le contrôle et les sanctions sont en note 18, D12.5 à D12.7.
+
+### Session metamaieutique, M4 (2026-10-02)
+
+- **[C]** Les questions 37, 38 et 45 à 48 sont traitées en note 18, D11.
+
+### Session metamaieutique, M2 (2026-10-02) : décisions par procuration
+
+- **[P] ↺ Décision 43** : l'obligation porte sur le redevable, et le SDK devient une voie simplifiée. Elle revient sur les décisions **13** (le SDK comme dispositif de collecte pour le Trésor) et **28** (« un portable d'entreprise installe le SDK »). **L'intention est préservée** : on compte partout où l'IA sert un usage professionnel, mais par une obligation de résultat sur l'entreprise, et non par un logiciel imposé.
+- **[P] Décision 44** : le taux réduit est défini par l'exécution sur un équipement terminal. Le « voire nul » de la décision 30 n'est pas retenu à ce stade : le niveau sera fixé en M6.
 
 ### En bref
 
