@@ -52,6 +52,7 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 **Les identités** :
 - **`ggim`** : Guillaume Gimenez, l'auteur du projet ;
 - **`opus-5.5`** : le modèle `claude-opus-5-5` (Anthropic), qui a tenu la session metamaieutique.
+- **`sonnet-5.5`** : le modèle `claude-sonnet-5-5` (Anthropic), qui a pris la suite de l'orchestration à partir de l'itération M15 (changement de modèle demandé par Guillaume pour économiser des tokens), et qui a rédigé l'extension du skill de `CLAUDE.md`.
 
 **Les marqueurs des nouveaux écrits** :
 

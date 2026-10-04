@@ -30,6 +30,10 @@ Guillaume valide le mandat (« je crois que c'est bon »), sans répondre explic
 
 Guillaume lance la session metamaieutique dans `~/Documents/Jevons-meta`.
 
+## Itération 8 (2026-10-04)
+
+Guillaume fait fusionner la branche metamaieutique dans `main` (commit `0712000`). Il demande ensuite de **mettre dans `CLAUDE.md` l'observation de Claude sur son utilisation du skill et de `CLAUDE.md`**, pour la **tester comme extension du skill** avant de l'intégrer au skill. Fait : une section « Extension du skill, à tester » dans `CLAUDE.md`, dix observations avec chacune une règle à essayer, marquées comme propositions de `[sonnet-5.5]`, non validées. L'identité `sonnet-5.5` est ajoutée à l'index.
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)
