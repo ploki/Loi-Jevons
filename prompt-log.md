@@ -30,6 +30,15 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
 
+## Itération M10 (2026-10-04) — exposé des motifs v0.2 rédigé ; passage au dispositif
+
+Réponse par procuration au tour de l'agent (journal n° 77 à 83 ; l'exposé v0.2 est créé ; l'indexation fait passer la cible de 2034 à 2038 avec m ≤ 2) :
+1. **Le multiple pendant la montée en charge** : le **dispositif garde la fourchette légale de 1 à 4 et le vote annuel** ; il n'y inscrit pas de trajectoire. L'**étude d'impact** présente comme **trajectoire de référence du Gouvernement m = 3 au plus pendant la montée en charge**, avec la justification renforcée, puis un retour à 2. Pourquoi : cela sert mieux le but (la cible en 2034), le Gouvernement soutient pleinement le projet, et la décision reste au Parlement chaque année. Le repère des deux tiers est une décision par procuration (51), pas une décision de Guillaume.
+2. **L'indexation à 2 %** : la sensibilité (1 %, 2 %, 3 %) va dans l'étude d'impact, et la confirmation est demandée à l'économiste. **À vérifier d'abord** : la cohérence des unités du script. Si les montants sont indexés en nominal, le marché de l'IA (et donc la recette) doit lui aussi être en nominal. Le confirmer ou corriger.
+3. **La baisse des cotisations est suspendue avant de puiser dans le fonds, hors retournement** : validé. C'est cohérent avec « les droits d'abord ».
+4. **L'exposé v0.2 est accepté en l'état** ; le contrôle fin se fera à la relecture de cohérence et à la confrontation à l'aveugle.
+5. **Passer à M10 : le dispositif v0.1**, en forme légistique, organisé en titres (la taxe, la branche et le chômage universel, l'affectation et la loi organique, l'entrée en vigueur et la notification). Les numéros d'articles inconnus sont marqués [À vérifier]. Le montant de l'abattement (Q44) doit être tranché.
+
 ## Itération M9 (2026-10-04) — fin de M7 : v4 vérifiée, « les droits d'abord » ; passage à l'exposé
 
 Réponse par procuration au tour de l'agent (décisions 75 et 76, revue des 80 questions : 42 décidées, 26 répondues, 12 ouvertes) :

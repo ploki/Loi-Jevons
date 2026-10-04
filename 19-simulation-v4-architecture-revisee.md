@@ -2,24 +2,25 @@
 
 - **Statut** : en discussion (M7 de la session metamaieutique, terminée le 2026-10-04)
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (fin de M7 : vérification des chiffres, décision 75, scénario bas)
+- **Dernière mise à jour** : 2026-10-04 (M9 : indexation, décisions 77 à 81 ; avant : fin de M7)
 
 > Script : `outils/sim_v4.py` (la v3 est conservée dans `outils/sim_v3.py` et la note 14). Tous les paramètres sont **[C]** ; les montants non sourcés sont **[À vérifier]**. Les décisions citées sont celles du journal. Depuis le 2026-10-04, les ajouts portent les marqueurs nominatifs (voir `00-methode-conventions-et-index.md`, « Identités et marqueurs ») : **[opus-5.5]** pour une proposition de l'agent, **[opus-5.5 as ggim]** pour une décision par procuration.
 
 ## En vigueur
 
-**La règle d'emploi des recettes est désormais « les droits d'abord »** (décision 75 [opus-5.5 as ggim], ↺ de la décision 30 [G] pendant la montée en charge) : tant que le socle cible n'est pas atteint, le surplus va aux droits ; le partage moitié-moitié reprend ensuite. Les résultats ci-dessous sont calculés avec cette règle ; ceux de l'ancienne règle D8 (décision 54) sont gardés pour comparaison.
+**Les règles retenues** (depuis M9) : **les droits d'abord** jusqu'au socle cible, puis le partage moitié-moitié (décision 75) ; **l'ouverture du socle sur trois ans**, fonds compris (décision 78) ; **m ramené à 2 au plus une fois la cible atteinte**, par défaut (décision 79) ; **l'indexation** du socle, du besoin, de la formation et du point de cotisation sur le revenu médian, + 2 % par an en nominal [Unverified] (décision 80) ; un fonds de six mois du besoin net (décision 81). Le socle est exprimé **en euros de 2026** ; les recettes, en euros courants. Les résultats sous les hypothèses de M7 (sans indexation, ouverture annuelle) sont gardés aux sections 2.1 à 2.5, pour comparaison.
 
-**La réponse franche** [opus-5.5]. L'architecture révisée **ne finance pas le but au plancher**, sauf dans le scénario haut. Elle le finance **avec m ≤ 2** dans le scénario central. Elle **ne le finance pas** dans le scénario bas.
+**La réponse franche** [opus-5.5] (section 2.0) :
 
-1. **Au plancher (m = 1), le chômage universel est ouvert à tous en 2031, à un niveau réduit** : le socle atteint environ **935 € par mois en 2035** et **1 074 € en 2040**, contre une cible de 1 200 €. Seul le scénario haut atteint la cible au plancher (2031).
-2. **Dans le scénario central, la cible de 1 200 € est atteinte en 2034 avec m ≤ 2**, c'est-à-dire **sans dépasser le repère des deux tiers** (décision 51). Si le Parlement laisse m monter jusqu'à 2,5, elle l'est en 2033. Avec l'ancienne règle D8, il fallait porter m à 4 pour l'atteindre en 2036.
-3. **Le double dividende est retardé, pas abandonné** : la baisse des cotisations commence l'année où la cible est atteinte. Elle vaut **0,26 point en 2035 et 0,75 point en 2040** (m ≤ 2), contre 1,2 et 2,2 points avec D8 et m = 4.
-4. **Dans le scénario bas, la taxe ne finance pas le but.** Elle rapporte 3,3 à 7,7 Md€ en 2040 selon m, alors que l'ouverture du socle au niveau du RSA coûte environ 8 Md€ par an (formation comprise). Avec la règle d'ouverture du script (la recette de l'année doit couvrir l'ouverture), **le socle ne s'ouvre jamais d'ici 2040**, et le fonds de réserve accumule 15 à 43 Md€ sans emploi. Avec la règle de D13.6 (l'équilibre sur trois ans, fonds compris), il s'ouvre au niveau du RSA en **2035 (m ≤ 4) ou 2037 (m ≤ 2)**, et le fonds est épuisé vers 2040. **Pas de revirement** : on le dit dans l'exposé et dans l'étude d'impact, avec le recours à la **contribution d'équilibre** (D8) ; la taxe Zucman est citée comme une ressource complémentaire, **hors dispositif** (décision 32). Formulation proposée en section 3.
-5. **La variante « étudiants inclus »** (question laissée ouverte, décision 70) ajoute environ **40 Md€ par an** au socle cible. Dans le scénario central, **elle n'est pas finançable par la taxe** : avec m ≤ 4, le socle n'ouvre qu'en 2034 et atteint 935 € en 2040. Dans le scénario haut, elle l'est (cible en 2032, m = 2).
-6. **La variante « réduction pour le patrimoine »** (question laissée ouverte, décision 71) économise environ **0,6 Md€ par an** au socle cible et avance la cible d'un an (2033 au lieu de 2034, avec m ≤ 2). **Son enjeu est de principe, pas budgétaire.**
-7. **La première année** (2028, au plancher) rapporte environ **2,6 Md€**, et non « un milliard » comme le dit l'exposé v0.1 (Q13 et Q59, à corriger dans l'exposé v0.2, M9).
-8. **Les sensibilités qui comptent** : la croissance du marché ; l'**élasticité** (à 1,0, la cible n'est jamais atteinte, et le socle plafonne à environ 1 010 à 1 120 € en 2040 ; à 0,3, elle l'est en 2032) ; l'**inscription des inactifs** (500 000 personnes de plus repoussent la cible à 2040 avec m ≤ 2, à 2035 avec m ≤ 4).
+1. **La première année** (2028, au plancher) rapporte environ **2,6 Md€**, et non « un milliard » (exposé v0.1).
+2. **Le socle s'ouvre à tous en 2031**, au niveau du RSA, dans les scénarios central et haut.
+3. **Dans le scénario central, la cible** (le seuil de pauvreté, environ 1 200 € de 2026) **est atteinte en 2038 avec m ≤ 2**, ou **en 2034 si la LFSS porte m à 3** pendant la montée en charge (avec la justification renforcée de la décision 51), m redescendant à 2 en 2038. **L'indexation retarde la cible de quatre ans à m ≤ 2** : le chiffre « 2034 avec m ≤ 2 » de la décision 75, calculé sans indexation, ne tient plus.
+4. **Au plancher (m = 1)**, le socle plafonne à environ **890 € de 2026 en 2040**. Seul le scénario haut atteint la cible au plancher (2031).
+5. **La baisse des cotisations est modeste et tardive** : environ **0,1 point (m ≤ 2) à 0,2 point (m ≤ 3) en 2040** dans le scénario central ; 2 à 3,6 points dans le scénario haut. C'est un bénéfice second, pas une promesse (décision 80).
+6. **Dans le scénario bas, la taxe seule ne finance pas le but.** Le socle s'ouvre au niveau du RSA en **2036 (m ≤ 4), 2037 (m ≤ 3) ou 2039 (m ≤ 2)**, jamais au plancher ; avec m ≤ 4, le fonds est épuisé en 2039 et la **contribution d'équilibre** atteint 2,8 Md€ en 2040. Atteindre la cible demanderait environ 20 Md€ par an de ressources hors taxe. La taxe Zucman est citée hors dispositif, sans rendement chiffré (décisions 32 et 77).
+7. **La variante « étudiants inclus »** (décision 70, question ouverte) **n'est pas finançable par la taxe dans le scénario central** : le socle reste au niveau du RSA (748 € de 2026 en 2040 avec m ≤ 4). Dans le scénario haut, la cible est atteinte en 2033.
+8. **La variante « patrimoine »** (décision 71, question ouverte) avance la cible d'un an avec m ≤ 3 (2033). Son enjeu est de principe, pas budgétaire.
+9. **Les sensibilités** : l'indexation (à 1 %, cible en 2036 avec m ≤ 2 ; à 3 %, jamais avec m ≤ 2) ; l'élasticité (à 1,0, la cible n'est jamais atteinte ; à 0,3, elle l'est en 2033) ; l'inscription de 500 000 inactifs (cible en 2036 avec m ≤ 4 seulement).
 
 ---
 
@@ -73,7 +74,44 @@
 
 ## 2. Les résultats
 
-### 2.1 Synthèse, règle retenue (« les droits d'abord », décision 75)
+### 2.0 Synthèse, règles retenues en M9 (décisions 75, 78, 79, 80, 81)
+
+| Scénario | Plafond de m | Ouverture du socle | Socle cible atteint | m maximal | m en 2040 | Socle 2035 (€ 2026) | Socle 2040 | Baisse de cotisation 2035 | 2040 | Déficit maximal (contribution d'équilibre) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Bas | 1 | jamais | non | 1 | 1 | — | — | 0 | 0 | 0 (fonds : 12,9 Md€ en 2040) |
+| Bas | 2 | 2039 | non | 2 | 2 | — | 650 | 0 | 0 | 0 |
+| Bas | 3 | 2037 | non | 3 | 3 | — | 650 | 0 | 0 | 0,3 Md€ |
+| Bas | 4 | 2036 | non | 4 | 4 | — | 650 | 0 | 0 | **2,8 Md€ (2040)** |
+| Central | 1 | 2031 | non | 1 | 1 | 833 | 890 | 0 | 0 | 0 |
+| **Central** | **2** | 2031 | **2038** | 2 | 2 | 1 124 | 1 200 | 0 | **0,09 pt** | 0 |
+| **Central** | **3 ou 4** | 2031 | **2034** | 3 | 2 | 1 200 | 1 200 | 0,22 pt | **0,20 pt** | 0 |
+| Haut | 1 | 2031 | 2031 | 1 | 1 | 1 200 | 1 200 | 1,8 pt | 2,2 pts | 0 |
+| Haut | 2 à 4 | 2031 | 2031 | 1,5 | 1,5 | 1 200 | 1 200 | 3,1 pts | 3,6 pts | 0 |
+
+**Lecture** [opus-5.5] :
+- Dans le scénario central avec m ≤ 3, m monte à 3 en 2034, puis la règle de la décision 79 le ramène à 2 en 2038. À m = 2, la recette couvre les droits indexés, mais la baisse des cotisations déjà engagée (0,2 point) est alors financée en partie par le fonds, qui descend à 7,4 Md€ en 2040, sous sa cible. **Au-delà de 2040, cette baisse ne serait pas tenable à m = 2 sans croissance de l'assiette** : c'est une raison de plus de la dire modeste.
+- Le scénario central avec m ≤ 2 a un palier entre 2035 et 2037 : la hausse du socle est absorbée par l'indexation et par la reconstitution du fonds.
+- Les montants du socle sont en euros de 2026 : 1 200 € de 2026 valent environ 1 410 € courants en 2034 et 1 580 € en 2040.
+
+**Les variantes** (scénario central, règles retenues) :
+
+| Variante | m ≤ 2 : cible | m ≤ 2 : socle 2040 | m ≤ 3 : cible | m ≤ 4 : cible | m ≤ 4 : socle 2040 |
+|---|---|---|---|---|---|
+| Base | 2038 | 1 200 | 2034 | 2034 | 1 200 |
+| Étudiants inclus | non | 650 | non | non | 748 |
+| Réduction pour le patrimoine | 2038 | 1 200 | 2033 | 2033 | 1 200 |
+| 500 000 inactifs de plus | non | 976 | non (1 187) | 2036 | 1 200 |
+| Fonds de six mois bruts | 2040 | 1 200 | 2036 | 2035 | 1 200 |
+| Indexation à 1 % | 2036 | 1 200 | 2033 | 2033 | 1 200 |
+| Indexation à 3 % | non | 1 119 | 2034 | 2034 | 1 200 |
+| Élasticité 0,3 | 2033 | 1 200 | 2033 | 2033 | 1 200 |
+| Élasticité 1,0 | non | 833 | non | non | 911 |
+| Décalage de P_k (× 1,09) | 2034 | 1 200 | 2033 | 2033 | 1 200 |
+| Sans serveurs propres ni écart de recouvrement | 2038 | 1 200 | 2034 | 2034 | 1 200 |
+
+> Les sections 2.1 à 2.5 ci-dessous sont calculées **sous les hypothèses de M7** (sans indexation, ouverture annuelle sauf mention, sans la règle 79). Elles restent exactes pour ces hypothèses, mais ne sont plus la référence.
+
+### 2.1 Synthèse, hypothèses de M7 (« les droits d'abord », décision 75, sans indexation)
 
 | Scénario | Plafond de m | Ouverture du socle | Socle cible atteint | m maximal | Socle en 2035 (€/mois) | Socle en 2040 | Baisse de cotisation en 2035 | en 2040 |
 |---|---|---|---|---|---|---|---|---|
@@ -157,14 +195,14 @@
 
 ## 3. Ce que la v4 change pour les livrables
 
-1. **L'exposé v0.2** [C, mis à jour par opus-5.5] ne peut pas dire que le chômage universel est « finançable au début des années 2030 ». Il peut dire : **ouvert à tous en 2031 ; au niveau cible vers 2034 dans le scénario central**, sans que la taxe dépasse les deux tiers du coût ; **pas d'ici 2040 si la croissance de l'usage est faible**, sans une autre ressource.
+1. **L'exposé v0.2** [C, mis à jour par opus-5.5 en M9] ne peut pas dire que le chômage universel est « finançable au début des années 2030 ». Il peut dire : **ouvert à tous en 2031 ; au niveau du seuil de pauvreté en 2034 si le Parlement porte temporairement le multiple à 3, ou vers 2038 s'il s'en tient aux deux tiers** (scénario central, socle indexé) ; **pas d'ici 2040 si la croissance de l'usage est faible**, sans une autre ressource.
 2. **Le niveau du socle est bien la variable d'ajustement** (décision 73) : le dispositif ne fait jamais défaut, il monte moins vite.
 3. **Le plancher reste un principe moral** (la moitié de la valeur au bien commun), pas un financement suffisant : c'est ce que disait déjà la v3, et la v4 le confirme.
 4. **La règle d'emploi** (décision 75) s'écrit dans le dispositif : les droits d'abord jusqu'au socle cible, puis le partage moitié-moitié. L'exposé présente le double dividende comme **différé**, et non abandonné.
 5. **L'étude d'impact v0.1** reprendra les tableaux 2.1 à 2.5, avec la variante « étudiants » et la variante « patrimoine » présentées comme des **choix ouverts**, que Guillaume tranchera (décisions 70 et 71).
 6. **Le scénario bas : la formulation proposée** [opus-5.5], à valider.
    - **Pour l'exposé des motifs** : « Le rendement de la taxe dépend de la croissance de l'usage professionnel de l'intelligence artificielle. Si cette croissance est forte, comme elle l'est aujourd'hui, la taxe suffit à porter le socle au seuil de pauvreté dans les premières années de la décennie 2030. Si elle est faible, elle ne suffit pas à elle seule : le socle s'ouvre plus tard et monte moins vite, car la loi ne promet pas de droits que ses recettes ne financent pas. La branche dispose alors, comme les autres branches de la sécurité sociale, de la contribution d'équilibre que vote la loi de financement de la sécurité sociale. D'autres ressources pourront s'y ajouter, au premier rang desquelles une imposition des très grandes fortunes, dont le principe est débattu par ailleurs : le présent projet n'en dépend pas. »
-   - **Pour l'étude d'impact** : le tableau 2.5, avec l'écart chiffré (de 0,3 à 2,7 Md€ par an pour maintenir le socle au niveau du RSA après l'épuisement du fonds, de 13 à 16 Md€ par an pour atteindre la cible), et une phrase franche : « Dans le scénario bas, l'objectif de la loi n'est pas atteint par la seule taxe sur l'intelligence artificielle d'ici 2040. »
+   - **Pour l'étude d'impact** : le tableau 2.0 (lignes « Bas »), avec l'écart chiffré (une contribution d'équilibre de 2,8 Md€ dès 2040 avec m ≤ 4 pour maintenir le socle au niveau du RSA ; environ 20 Md€ par an pour atteindre la cible ; chiffres de M9, avec indexation), et une phrase franche : « Dans le scénario bas, l'objectif de la loi n'est pas atteint par la seule taxe sur l'intelligence artificielle d'ici 2040. »
    - **Le nom de la taxe Zucman** peut figurer dans l'exposé (décision 32), comme un projet distinct et complémentaire (Jevons taxe le flux de valeur de l'IA, Zucman le stock des grandes fortunes, note 15), à condition de ne lui attribuer aucun rendement chiffré dans le texte (Q76).
 
 ## 4. Limites
@@ -174,8 +212,8 @@
 - **La baisse de m** est faite pas à pas : dans le scénario haut, le fonds dépasse sa cible, et la LFSS pourrait abaisser m plus vite.
 - **La formation** est chiffrée forfaitairement (1 Md€).
 - **Les effets de second tour** (la baisse des cotisations sur l'emploi, l'IA sur la masse salariale) ne sont pas modélisés (fichier 11, étude d'impact).
-- [opus-5.5] **La cible de 1 200 € est constante en euros courants.** Or le seuil de pauvreté suit le revenu médian. Son indexation absorberait une partie de la moitié « droits » du partage après la cible ; le script l'envoie entièrement à la baisse des cotisations, ce qui **surestime** le double dividende après 2034.
-- [opus-5.5] **La règle d'ouverture du script est annuelle**, plus stricte que celle de D13.6 (l'équilibre sur trois ans, fonds compris). Elle ne change rien dans les scénarios central et haut, mais beaucoup dans le scénario bas (section 2.5).
+- ~~[opus-5.5] **La cible de 1 200 € est constante en euros courants.** Or le seuil de pauvreté suit le revenu médian. Son indexation absorberait une partie de la moitié « droits » du partage après la cible ; le script l'envoie entièrement à la baisse des cotisations, ce qui **surestime** le double dividende après 2034.~~ → **modélisée en M9** (décision 80) ; le taux de 2 % est [Unverified]. **Reste** : la valeur des recettes est en euros courants, et le marché n'est pas déflaté ; un point de cotisation est indexé comme le socle.
+- ~~[opus-5.5] **La règle d'ouverture du script est annuelle**, plus stricte que celle de D13.6 (l'équilibre sur trois ans, fonds compris). Elle ne change rien dans les scénarios central et haut, mais beaucoup dans le scénario bas (section 2.5).~~ → la règle sur trois ans est retenue (décision 78) et appliquée par défaut.
 
 ## Historique du raisonnement
 
@@ -185,13 +223,16 @@
 4. **2026-10-04** : la proposition (b), « les droits d'abord », est **acceptée par procuration** : **décision 75** [opus-5.5 as ggim], ↺ de la décision 30 [G] pendant la montée en charge. Le script prend cette règle par défaut ; l'ancienne règle reste calculable (`alloc='D8'`) et ses résultats sont inchangés. Les variantes sont recalculées avec la règle retenue. **[opus-5.5]**
 5. **2026-10-04** : l'orchestrateur demande de dire honnêtement que la taxe seule ne finance pas le but dans le scénario bas, sans revirement. **Constat nouveau** [opus-5.5] : avec la règle annuelle, le fonds y accumule 15 à 43 Md€ sans que le socle s'ouvre. Ajout de la variante d'ouverture sur trois ans (D13.6), du tableau 2.5 et d'une formulation pour l'exposé et l'étude d'impact.
 
+6. **2026-10-04, M9** : l'orchestrateur valide par procuration la formulation du scénario bas (77), l'ouverture sur trois ans (78), m ramené à 2 au plus après la cible (79), l'emploi de la moitié « droits » et l'indexation (80), le fonds net (81). L'indexation est modélisée. **Constat** [opus-5.5] : elle retarde la cible de 2034 à 2038 avec m ≤ 2 dans le scénario central ; 2034 demande m = 3 pendant quatre ans ; la baisse des cotisations tombe à 0,1-0,2 point en 2040. La v4 sans indexation reproduit exactement les chiffres de M7 (contrôle de non-régression). **[opus-5.5]**
+
 ## Questions ouvertes
 
 - ~~La règle d'emploi pendant la montée en charge : D8 tel quel, ou les droits d'abord~~ : **les droits d'abord** (décision 75).
-- La cible du fonds : six mois du besoin net, ou six mois des prestations brutes. [opus-5.5] Je recommande le **besoin net** : le fonds protège ce que la taxe finance, et le reste du socle est financé par des recettes de la branche qui ne dépendent pas de la taxe. La variante brute retarde la cible d'un an.
-- [opus-5.5] **La règle d'ouverture** : annuelle (le script) ou sur trois ans, fonds compris (D13.6). Je recommande d'écrire **la règle de D13.6** dans le dispositif : elle reste prudente, et elle évite de percevoir la taxe pendant des années sans ouvrir de droits.
-- [opus-5.5] **m au-delà de 2 après la cible** : faut-il ramener m à 2 au plus une fois le socle cible atteint, de sorte que le double dividende ne justifie jamais à lui seul de dépasser le repère des deux tiers ? Je le recommande, par cohérence avec la décision 75 (le double dividende est un bénéfice second).
-- [opus-5.5] **L'objet de la moitié « droits » après la cible** : l'indexation du socle sur le seuil de pauvreté et les extensions que la LFSS voterait ; à défaut, la baisse des cotisations.
+- ~~La cible du fonds : nette ou brute~~ : **nette** (décision 81).
+- ~~La règle d'ouverture~~ : **sur trois ans** (décision 78).
+- ~~m au-delà de 2 après la cible~~ : **ramené à 2 au plus par défaut**, la LFSS pouvant aller au-delà par un vote motivé (décision 79).
+- ~~L'objet de la moitié « droits » après la cible~~ : l'indexation et les extensions votées, à défaut la baisse des cotisations (décision 80).
+- [opus-5.5] **Le multiple pendant la montée en charge** : m ≤ 2 (cible vers 2038) ou m = 3 pendant quelques années (cible en 2034) ? C'est un choix du Parlement ; l'exposé présente les deux. Le taux d'indexation (2 %) est à confirmer.
 - Le montant de l'abattement (Q44), à fixer dans le dispositif (M10).
 - Les étudiants et le patrimoine : des choix ouverts, réservés à Guillaume (décisions 70 et 71).
 

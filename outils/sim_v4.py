@@ -3,6 +3,10 @@
 # 2026-10-04 [opus-5.5] : la règle d'emploi par défaut devient « les droits d'abord » (décision 75) ; l'ancienne
 # règle D8 (décision 54) reste calculable avec alloc='D8'. Ajout de la variante d'ouverture sur trois ans (D13.6)
 # et du détail du scénario bas.
+# 2026-10-04 (M9) [opus-5.5] : par défaut, l'ouverture sur trois ans (décision 78), m ramené à 2 au plus une fois
+# la cible atteinte (décision 79) et l'indexation des montants (décision 80) : le socle, le besoin, la formation
+# et la valeur du point de cotisation suivent le revenu médian (+ 2 % par an en nominal [Unverified]). Le socle est
+# exprimé en euros de 2026 (pouvoir d'achat constant au regard du seuil de pauvreté) ; les recettes, en euros courants.
 import sys
 
 # ---------------------------------------------------------------- calendrier
@@ -61,8 +65,10 @@ C = dict(
     FUND_MONTHS=6,    # cible du fonds : six mois (décision 54), appliqués au besoin net financé par la taxe [C]
     FUND_GROSS=False, # variante : six mois des prestations brutes du socle (environ 29 Md€ au socle cible)
     ETU=False, PATR=False, INACT=False,
-    OPEN_RULE='annuel',  # ouverture du socle si la recette de l'année couvre le niveau du RSA ;
-                         # 'trois_ans' : si la recette plus un tiers du fonds le couvre (équilibre sur trois ans, D13.6)
+    OPEN_RULE='trois_ans',  # décision 78 : ouverture si la recette plus un tiers du fonds couvre le niveau du RSA
+                            # (équilibre sur trois ans, D13.6) ; 'annuel' : la recette de l'année seule
+    IDX=0.02,         # décision 80 : indexation nominale annuelle des montants depuis 2026 (revenu médian) [Unverified]
+    M_POST=2.0,       # décision 79 : une fois la cible atteinte, m est ramené à 2 au plus (None : pas de règle)
 )
 
 def need(s, c):
@@ -96,17 +102,20 @@ def run(name, mcap=1.0, alloc='droits', p=None, c=None):
     m = 1.0; s = None; B = 0.0; fund = 0.0; rows = []
     for y in YEARS:
         R, spend = revenue(V[y], y, m, p)
-        form = min(R, c['FORM']); avail = R - form
+        I = (1 + c['IDX']) ** (y - 2026)    # indice des montants (euros courants / euros 2026)
+        nd = lambda x: need(x, c) * I       # besoin en euros courants
+        BMAX = c['B_MAX'] * I
+        form = min(R, c['FORM'] * I); avail = R - form
         note = ''
         reserve = fund / 3 if c['OPEN_RULE'] == 'trois_ans' else 0.0
-        if s is None and y >= OPEN1 and avail + reserve >= need(S_RSA, c):
+        if s is None and y >= OPEN1 and avail + reserve >= nd(S_RSA):
             s = S_RSA; note = 'ouverture'
         if s is None:
             fund += avail          # phase 0 : RSA et ASS repris à l'identique (neutre), tout va au fonds
         else:
-            commit = need(s, c) + B
+            commit = nd(s) + B
             surplus = avail - commit
-            tgt = (c['FUND_MONTHS'] / 12) * (gross(s) if c['FUND_GROSS'] else need(s, c) + c['FORM'])
+            tgt = (c['FUND_MONTHS'] / 12) * (gross(s) * I if c['FUND_GROSS'] else nd(s) + c['FORM'] * I)
             if surplus < 0:
                 draw = min(fund, -surplus); fund -= draw; gap = -surplus - draw
                 if gap > 0:        # les droits priment : on suspend d'abord la baisse des cotisations
@@ -118,25 +127,30 @@ def run(name, mcap=1.0, alloc='droits', p=None, c=None):
                 if surplus > 0:
                     if alloc == 'D8':
                         half = surplus / 2
-                        newA = min(need(S_CIBLE, c), need(s, c) + half); usedA = newA - need(s, c)
-                        usedB = min(c['B_MAX'] - B, surplus - usedA)
+                        newA = min(nd(S_CIBLE), nd(s) + half); usedA = newA - nd(s)
+                        usedB = min(max(0.0, BMAX - B), surplus - usedA)
                         rest = surplus - usedA - usedB
                         if rest > 0:   # ce que B ne peut absorber revient aux droits
-                            newA2 = min(need(S_CIBLE, c), newA + rest); rest -= newA2 - newA; newA = newA2
+                            newA2 = min(nd(S_CIBLE), newA + rest); rest -= newA2 - newA; newA = newA2
                     else:              # décision 75 : droits d'abord, puis cotisations
-                        newA = min(need(S_CIBLE, c), need(s, c) + surplus); rest = surplus - (newA - need(s, c))
-                        usedB = min(c['B_MAX'] - B, rest); rest -= usedB
-                    s = s_for(newA, c); B += usedB; fund += max(0.0, rest)
-        rows.append(dict(y=y, V=V[y], m=m, R=R, spend=spend, s=s, need=(need(s, c) if s else 0.0),
-                         B=B, pts=B / c['PT'], fund=fund, note=note))
+                        newA = min(nd(S_CIBLE), nd(s) + surplus); rest = surplus - (newA - nd(s))
+                        usedB = min(max(0.0, BMAX - B), rest); rest -= usedB
+                    s = s_for(newA / I, c); B += usedB; fund += max(0.0, rest)
+        rows.append(dict(y=y, V=V[y], m=m, R=R, spend=spend, s=s, need=(nd(s) if s else 0.0),
+                         B=B, pts=B / (c['PT'] * I), fund=fund, note=note, I=I))
         # vote de m pour l'année suivante (LFSS), lissé à ± 0,5 par an [C]
         complete = s is not None and s >= S_CIBLE - 0.5
         if y >= OPEN1 - 1:   # m reste à 1 pendant la phase 0 ; la LFSS pour l'année d'ouverture peut le relever
             if not complete and m < mcap: m = min(mcap, m + 0.5)
-            elif complete and B >= c['B_MAX'] - 0.01 and m > 1:
+            elif complete and c['M_POST'] is not None and m > c['M_POST']:
+                # décision 79 : ramener m vers 2 si la recette attendue couvre encore les droits (hors baisse des cotisations)
+                R2, _ = revenue(V[y + 1] if y < END else V[y], y + 1, max(c['M_POST'], m - 0.5), p)
+                I2 = I * (1 + c['IDX'])
+                if R2 - c['FORM'] * I2 >= need(s, c) * I2: m = max(c['M_POST'], m - 0.5)
+            elif complete and B >= BMAX - 0.01 and m > 1:
                 # baisse de m seulement si la recette attendue à m - 0,5 couvre encore les engagements
                 R2, _ = revenue(V[y + 1] if y < END else V[y], y + 1, m - 0.5, p)
-                if R2 - c['FORM'] >= need(s, c) + B: m = max(1.0, m - 0.5)
+                if R2 - c['FORM'] * I * (1 + c['IDX']) >= need(s, c) * I * (1 + c['IDX']) + B: m = max(1.0, m - 0.5)
     return rows
 
 def summary(rows):
@@ -163,30 +177,38 @@ def grid(alloc='D8', c=None, p=None, label=''):
                 k, cap, o or 'jamais', f or 'non (2040)', fmt_s(at[2035]['s']), fmt_s(at[2040]['s']),
                 at[2035]['pts'], at[2040]['pts'], max(r['m'] for r in rows)))
 
+SANS_IDX = {'IDX': 0.0}
+AVANT_M9 = {'IDX': 0.0, 'OPEN_RULE': 'annuel', 'M_POST': None}   # les hypothèses de M7, pour comparaison
+
+def grid2(c=None, alloc='droits', label='', caps=(1.0, 2.0, 3.0, 4.0)):
+    print('\n#### Synthèse %s (allocation %s)' % (label, alloc))
+    print('scénario | plafond de m | ouverture | socle cible atteint | socle 2035 (€ 2026) | socle 2040 | pts 2035 | pts 2040 | m max | m 2040 | fonds 2040 | déficit max')
+    for k in SCEN:
+        for cap in caps:
+            rows = run(k, cap, alloc, None, c); o, f, at = summary(rows)
+            dmax = max([float(r['note'].split()[1]) for r in rows if r['note'].startswith('déficit')] or [0.0])
+            print('%s | %.0f | %s | %s | %s | %s | %.2f | %.2f | %.1f | %.1f | %.1f | %.1f' % (
+                k, cap, o or 'jamais', f or 'non', fmt_s(at[2035]['s']), fmt_s(at[2040]['s']),
+                max(0.0, at[2035]['pts']), max(0.0, at[2040]['pts']), max(r['m'] for r in rows), at[2040]['m'], at[2040]['fund'], dmax))
+
 if __name__ == '__main__':
-    print('\n## Central, règle retenue (droits d\'abord, décision 75), m plafonné à 2'); table(run('Central', 2.0))
-    print('\n## Central, règle retenue (droits d\'abord, décision 75), m plafonné à 4'); table(run('Central', 4.0))
-    print('\n## Central, ancienne règle D8 (décision 54), m plafonné à 4, pour comparaison'); table(run('Central', 4.0, 'D8'))
-    grid('droits', label='base')
-    grid('D8', label='base')
-    print('\n## Scénario bas : recette, fonds et ouverture (règle retenue)')
-    print('règle d\'ouverture | plafond | ouverture | recette 2035 | recette 2040 | fonds 2040 | socle 2040')
-    for rule in ('annuel', 'trois_ans'):
-        for cap in (1.0, 2.0, 4.0):
-            rows = run('Bas', cap, 'droits', None, {'OPEN_RULE': rule}); o, f, at = summary(rows)
-            print('%s | %.0f | %s | %.1f | %.1f | %.1f | %s' % (rule, cap, o or 'jamais', at[2035]['R'], at[2040]['R'],
-                  at[2040]['fund'], fmt_s(at[2040]['s'])))
-    print('\n## Variantes et sensibilités (Central)')
-    print('variante | règle | plafond | socle cible atteint | socle 2035 | socle 2040 | pts 2040')
+    print('# Règles retenues : droits d\'abord (75), ouverture sur trois ans (78), m <= 2 après la cible (79), indexation (80)')
+    for cap in (2.0, 3.0, 4.0):
+        print('\n## Central, m plafonné à %.0f (règles retenues ; socle en euros 2026)' % cap); table(run('Central', cap))
+    print('\n## Bas, m plafonné à 4 (règles retenues)'); table(run('Bas', 4.0))
+    grid2(label='règles retenues')
+    grid2(SANS_IDX, label='sans indexation')
+    grid2(AVANT_M9, label='hypothèses de M7 (sans indexation, ouverture annuelle, sans règle 79)')
+    grid2(AVANT_M9, 'D8', label='ancienne règle D8 (décision 54), hypothèses de M7')
+    print('\n## Variantes et sensibilités (Central, règles retenues)')
+    print('variante | plafond | socle cible atteint | socle 2035 | socle 2040 | pts 2040')
     VAR = [('base', {}, {}), ('étudiants inclus', {'ETU': True}, {}), ('réduction patrimoine', {'PATR': True}, {}),
            ('inscription de 0,5 M inactifs', {'INACT': True}, {}), ('fonds = 6 mois bruts', {'FUND_GROSS': True}, {}),
-           ('ouverture sur trois ans', {'OPEN_RULE': 'trois_ans'}, {}),
+           ('indexation 1 %', {'IDX': 0.01}, {}), ('indexation 3 %', {'IDX': 0.03}, {}),
            ('élasticité 0,3', {}, {'EPS': 0.3}), ('élasticité 1,0', {}, {'EPS': 1.0}),
            ('décalage de P_k (x1,09)', {}, {'LAG': 1.09}), ('sans serveurs propres ni recouvrement', {}, {'F_INTERNE': 1.0, 'CIVISME': 1.0})]
-    for alloc in ('droits', 'D8'):
-        for lab, cc, pp in VAR:
-            for cap in (2.0, 4.0):
-                rows = run('Central', cap, alloc, pp, cc); o, f, at = summary(rows)
-                print('%s | %s | %.0f | %s | %s | %s | %.2f' % (lab, alloc, cap, f or 'non', fmt_s(at[2035]['s']), fmt_s(at[2040]['s']), at[2040]['pts']))
-    print('\n## Étudiants inclus, Haut, m <= 4 (règle retenue)'); table(run('Haut', 4.0, 'droits', None, {'ETU': True}))
-    print('\n## Étudiants inclus, Haut, m <= 4 (D8)'); table(run('Haut', 4.0, 'D8', None, {'ETU': True}))
+    for lab, cc, pp in VAR:
+        for cap in (2.0, 3.0, 4.0):
+            rows = run('Central', cap, 'droits', pp, cc); o, f, at = summary(rows)
+            print('%s | %.0f | %s | %s | %s | %.2f' % (lab, cap, f or 'non', fmt_s(at[2035]['s']), fmt_s(at[2040]['s']), max(0.0, at[2040]['pts'])))
+    print('\n## Étudiants inclus, Haut, m <= 4 (règles retenues)'); table(run('Haut', 4.0, 'droits', None, {'ETU': True}))

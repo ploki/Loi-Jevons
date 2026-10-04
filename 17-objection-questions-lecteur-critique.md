@@ -2,24 +2,24 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (fin de M7 : revue des 80 questions)
+- **Dernière mise à jour** : 2026-10-04 (M9 : décision 82, exposé v0.2)
 
 
 ## En vigueur
 
 - **Liste de suivi** des 80 questions. Chaque question a un **statut** : ouverte, répondue ou décidée. Quand une question est tranchée, on note dans « Renvoi » le numéro de la décision du journal.
-- Situation au 2026-10-04 (**fin de M7, revue complète des 80 questions** [opus-5.5]) : **42 décidées**, **26 répondues**, **12 ouvertes**. Les 12 ouvertes sont toutes **rattachées** à une étape : l'exposé v0.2 (**M9** : 1, 2, 5, 6, et en partie 54 et 66), le dispositif v0.1 (**M10** : 44), l'étude d'impact v0.1 (**M11** : 8, 71, 73, 74, et en partie 54 et 66), ou **réservée à Guillaume** (50 : les étudiants et le patrimoine, décisions 70 et 71). Le suivi des 20 questions non traitées est dans la **note 18, section E** (10 décidées, 7 répondues, 3 ouvertes rattachées).
+- Situation au 2026-10-04 (**M9**, après l'exposé v0.2) : **44 décidées**, **30 répondues**, **6 ouvertes**. Les 6 ouvertes sont rattachées : le dispositif v0.1 (**M10** : 44), l'étude d'impact v0.1 (**M11** : 8, 71, 73, 74), ou **réservée à Guillaume** (50 : les étudiants et le patrimoine, décisions 70 et 71). *En M7 : 42 décidées, 26 répondues, 12 ouvertes ; en M9, Q63 et Q75 sont décidées (82), et les questions rattachées à M9 (1, 2, 5, 6, 54, 66) sont traitées dans l'exposé v0.2.* Le suivi des 20 questions non traitées est dans la **note 18, section E**.
 - *Méthode de la revue* : « décidée » = tranchée par une décision du journal ; « répondue » = traitée dans une note, sans décision propre (une réponse [C] ou [opus-5.5] reste à valider) ; « ouverte » = à traiter, avec son rattachement. La colonne « Corpus (R/P/N) » garde le classement d'origine de l'agent lecteur. Avant la revue (M6) : 23 répondues, 12 décidées, 45 ouvertes.
 - **Priorités avant de rédiger le dispositif** : 69 (l'article 401 de la directive TVA), 67, 68, 60, 40, 15, 35, 32, 26, 22. **Toutes fermées en M7** : 8 décidées (69, 60, 40, 15, 35, 32, 26, 22), 2 répondues (67, 68).
 
 | n° | Thème | Statut | Corpus (R/P/N) | Priorité | Renvoi |
 |---|---|---|---|---|---|
-| 1 | A | ouverte | N | | **→ M9** (exposé : sourcer ou reformuler) |
-| 2 | A | ouverte | P | | **→ M9** (exposé : sourcer ou retirer le « multiplié par sept ») |
+| 1 | A | **répondue** | N | | exposé v0.2 (introduction) : niveau de vie × 4 à 8 selon Keynes [S] ; ralentissement de la productivité reconnu |
+| 2 | A | **répondue** | P | | exposé v0.2 : le chiffre « multiplié par sept », non sourcé, est retiré |
 | 3 | A | **répondue** | P | | note 19, § 2.4 (sensibilité à l'élasticité) [opus-5.5] |
 | 4 | A | **répondue** | R | | — |
-| 5 | A | ouverte | P | | **→ M9** (exposé ; fait [À vérifier], note 16) |
-| 6 | A | ouverte | P | | **→ M9** (exposé ; note 16) |
+| 5 | A | **répondue** | P | | exposé v0.2 (§ I) : causes multiples ; assurance chômage obligatoire en 1977, loi entrée en vigueur en 1984 [S] ; note 16 |
+| 6 | A | **répondue** | P | | exposé v0.2 (§ I) : une convention, que la loi généralise ; 15 000 dockers ; montant en euros actuels → M11 |
 | 7 | A | **répondue** | R | | — |
 | 8 | A | ouverte | P | | **→ M11** (étude d'impact) |
 | 9 | A | **décidée** | P | | 38, 45 [P] ; note 18, D13.1 |
@@ -67,7 +67,7 @@
 | 51 | G | **décidée** | P | | 56, 59 [P] ; note 18, D6, D10 |
 | 52 | G | **répondue** | R | | note 19 (besoin net de 20 Md€) ; note 05 |
 | 53 | G | **décidée** | P | | 57, 74 [P] ; note 18, D13.4 |
-| 54 | G | ouverte | P | | **→ M9** (exposé, note 09) et **M11** (étude d'impact) |
+| 54 | G | **répondue** | P | | exposé v0.2 (§ IV) : limites des expériences dites ; évaluation prévue ; effets → M11 |
 | 55 | G | **répondue** | N | | note 18, D13.5 [C] ; note 19 (1 Md€) ; arrêtée en M10 |
 | 56 | G | **décidée** | R | | 72 [P] ; taux de dégressivité à fixer en M10 |
 | 57 | G | **décidée** | P | | 55, 58 [P] ; note 18, D6, D9 |
@@ -76,10 +76,10 @@
 | 60 | H | **décidée** | N | **top 4** | 42, 49 [P] |
 | 61 | H | **décidée** | P | | 54, 75 ; note 18, D8 |
 | 62 | H | **décidée** | P | | 54 [P] ; note 18, D8, D13.8 |
-| 63 | H | **répondue** | N | | note 18, E [opus-5.5, à valider] ; argumentaire en M9 |
+| 63 | H | **décidée** | N | | 82 [opus-5.5 as ggim] ; note 18, E ; argumentaire dans l'exposé v0.2 |
 | 64 | I | **décidée** | R | | 54 [P] ; note 18, D8 |
 | 65 | I | **décidée** | P | | **75** [opus-5.5 as ggim] (les droits d'abord) |
-| 66 | I | ouverte | P | | **→ M9** (vocabulaire de l'exposé) et **M11** (étude d'impact) ; note 11 |
+| 66 | I | **répondue** | P | | exposé v0.2 (§ V) : le terme est employé sans revendiquer d'effet correcteur ; effet net → M11 |
 | 67 | J | **répondue** | N | **top 2** | note 18, O2, D3 ; 41, 51 [P] |
 | 68 | J | **répondue** | N | **top 3** | note 18, O2, D7 ; 44, 46 [P] |
 | 69 | J | **décidée** | N | **top 1** | 37, 39, 48 [P] |
@@ -88,7 +88,7 @@
 | 72 | K | **répondue** | P | | note 18, D11 ; chiffrage en M11 |
 | 73 | K | ouverte | N | | **→ M11** (étude d'impact) ; éléments : 60, 75 |
 | 74 | K | ouverte | P | | **→ M11** (étude d'impact) ; élasticité : note 19, § 2.4 |
-| 75 | L | **répondue** | N | | note 18, E [opus-5.5] ; 43, 67 [P] ; argumentaire en M9 |
+| 75 | L | **décidée** | N | | 82 [opus-5.5 as ggim] ; 43, 67 [P] ; note 18, E ; argumentaire dans l'exposé v0.2 |
 | 76 | L | **décidée** | P | | 32 [G] ; note 18, D13.8 ; note 19, § 3 |
 | 77 | L | **répondue** | P | | 74 [P] ; note 09 ; argumentaire en M9 |
 | 78 | M | **décidée** | N | | 66 [P] ; note 18, D12.3 |
