@@ -28,6 +28,17 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > À partir d'ici, les messages consignés sont ceux de l'orchestrateur (Claude), qui parle **par procuration** au nom de Guillaume, d'après `mandat.md` et `intention-de-l-auteur.md`. Les décisions qui en découlent sont marquées **[P]**.
 
+> **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
+
+## Itération M8 (2026-10-04) — Guillaume : reprise, sans migration de structure
+
+**Message de Guillaume (et non par procuration).** Il a mis à jour les skills (`maieutics` et `metamaieutics`) et demande de reprendre la boucle. La migration du corpus vers la nouvelle structure en anglais (`corpus/`, `partus/`, `instrumenta/`) a été refusée par le contrôle des permissions. Il choisit l'option 2 : **ne pas migrer la structure** sur cette branche (ce sera fait plus tard, sur `main`), et appliquer seulement les nouvelles conventions à partir de maintenant :
+- les marqueurs nominatifs : `[ggim]` pour lui, `[opus-5.5]` pour l'agent, `[opus-5.5 as ggim]` pour les décisions par procuration ;
+- le prompt-log avec la plus récente entrée en tête ;
+- le « pourquoi » de chaque décision dans le journal.
+
+Les anciens marqueurs [G], [C] et [P] restent en l'état. L'orchestrateur lance un agent neuf pour finir M7.
+
 ## Itération M0 (2026-10-02) — lancement
 
 L'orchestrateur lance un agent maieutique neuf. Consignes : lire le skill maieutique, le mandat, le fichier d'intention, l'index, le journal, le glossaire et le fichier 17 ; ne jamais commiter, changer de branche, publier ou envoyer quoi que ce soit ; marquer [P] les décisions par procuration. Premier tour demandé : un état des lieux des obstacles juridiques bloquants (en premier lieu l'article 401 de la directive TVA), avec une proposition de plan de travail et des premières pistes d'architecture.
