@@ -4,7 +4,7 @@
 
 ### dite « Loi Jevons » — DISPOSITIF
 
-*Document de travail : version 0.1, 4 octobre 2026. Point de départ destiné à être expertisé par un légiste. Il accompagne l'exposé des motifs v0.2. Les numéros d'articles de codes qui ne sont pas encore connus sont marqués [À vérifier]. Les notes de rédaction, en italique et entre crochets, ne font pas partie du texte ; elles renvoient au corpus (notes 18 et 19, journal des décisions) et sont marquées [opus-5.5] quand elles portent une proposition non encore validée.*
+*Document de travail : version 0.1, 4 octobre 2026, révisée le même jour après la relecture de cohérence (journal, n° 98 à 109). Point de départ destiné à être expertisé par un légiste. Il accompagne l'exposé des motifs v0.2. Les numéros d'articles de codes qui ne sont pas encore connus sont marqués [À vérifier]. Les notes de rédaction, en italique et entre crochets, ne font pas partie du texte ; elles renvoient au corpus (notes 18 et 19, journal des décisions). Une disposition marquée [opus-5.5] est une proposition de l'agent rédacteur, non encore validée ; [opus-5.5 as ggim] signale une décision prise par procuration, au nom de l'auteur, pendant la session de travail ; aucune disposition n'a été validée par l'auteur lui-même.*
 
 *Le texte comprend trois parties distinctes : **A.** le projet de loi ordinaire (titres Iᵉʳ à IV) ; **B.** le projet de loi organique, déposé conjointement ; **C.** l'annexe des dispositions qui relèvent d'une loi de financement de la sécurité sociale ou d'une loi de finances, présentées pour information.*
 
@@ -30,7 +30,7 @@ Le livre [À vérifier] du code des impositions sur les biens et services est co
 >
 > « 2° Un système d'intelligence artificielle, au sens du 1) du même article 3, qui génère des contenus de synthèse de type audio, image, vidéo ou texte, y compris du code informatique, la traduction et la transcription, au sens du paragraphe 2 de l'article 50 du même règlement.
 >
-> « II. – Ne sont pas soumises à la taxe les utilisations d'un système mentionné au 2° du I lorsque ce système remplit une fonction d'assistance pour la mise en forme standard ou ne modifie pas de manière substantielle les données d'entrée ou leur sémantique. Le présent II ne s'applique pas à la traduction ni à la transcription.
+> « II. – Ne sont pas soumises à la taxe les utilisations d'un système mentionné au 2° du I lorsque ce système remplit une fonction d'assistance pour la mise en forme standard ou ne modifie pas de manière substantielle les données d'entrée ou leur sémantique. Le présent II ne s'applique pas à la traduction ni à la transcription. La transcription s'entend de la conversion de la parole en texte ; la reconnaissance optique de caractères n'en relève pas.
 >
 > « III. – L'entraînement et l'affinage des modèles ne constituent pas une utilisation au sens du I. La génération de données destinées à l'entraînement d'un modèle en constitue une.
 >
@@ -60,7 +60,9 @@ Le livre [À vérifier] du code des impositions sur les biens et services est co
 >
 > « 4° Le volume utilisé au cours d'un mois excède un seuil fixé par arrêté du ministre chargé du budget, qui ne peut être inférieur à dix fois le volume médian des abonnements destinés aux particuliers.
 >
-> « II. – La preuve contraire mentionnée au I peut être apportée par une simple déclaration d'usage personnel de l'utilisateur, conservée par le fournisseur. Une fausse déclaration est passible de l'amende prévue à l'article L. [À vérifier]-21.
+> *[Note de rédaction [opus-5.5] : le seuil de dix fois le volume médian est une proposition de l'agent, non validée (note 18, D7) ; il vise à n'atteindre aucun usage personnel intensif.]*
+>
+> « II. – La preuve contraire mentionnée au I peut être apportée par une simple déclaration d'usage personnel de l'utilisateur, conservée par le fournisseur. Lorsque la déclaration est inexacte, la taxe est due dans les conditions prévues au III de l'article L. [À vérifier]-6 ; l'amende prévue au IV de l'article L. [À vérifier]-21 n'est applicable qu'aux personnes mentionnées à ce IV.
 >
 > « III. – Le fournisseur demande à son client, lors de la souscription et de chaque renouvellement, si l'utilisation est effectuée dans le cadre d'une activité économique et, dans l'affirmative, son numéro d'identification. Le fournisseur qui a recueilli ces informations de bonne foi n'est pas responsable de leur inexactitude.
 >
@@ -83,7 +85,9 @@ Le livre [À vérifier] du code des impositions sur les biens et services est co
 >
 > « II. – Tout fournisseur qui fournit des services mentionnés à l'article L. [À vérifier]-1 à des clients établis en France peut s'enregistrer auprès de l'administration. Le fournisseur qui n'est pas établi dans un État membre de l'Union européenne désigne un représentant fiscal [À vérifier : renvoi au droit commun du CIBS].
 >
-> « III. – La personne qui utilise un service d'intelligence artificielle dans le cadre d'une activité économique au moyen d'un compte souscrit au nom d'une personne physique, ou qui en rembourse le coût, acquitte la taxe sur ces utilisations. À défaut de relevé, la taxe est calculée sur un volume forfaitaire par compte et par mois, fixé par arrêté dans la classe médiane. La personne qui a mis à la disposition de ses salariés ou agents des comptes professionnels et a interdit l'usage de comptes personnels n'est redevable qu'au titre des utilisations qu'elle connaît ou qu'elle rembourse.
+> « III. – Lorsqu'un service d'intelligence artificielle est utilisé dans le cadre d'une activité économique au moyen d'un compte souscrit au nom d'une personne physique, la taxe sur ces utilisations est acquittée par la personne pour le compte de laquelle l'activité est exercée : l'employeur, l'administration ou l'organisme qui emploie l'utilisateur ou qui rembourse le coût du service, ou l'entrepreneur individuel lorsqu'il exerce l'activité pour son propre compte. Le salarié ou l'agent n'est jamais redevable. À défaut de relevé, la taxe est calculée sur le volume forfaitaire par compte et par mois fixé par le tableau annexé à l'article L. [À vérifier]-11, dans la classe 2. La personne qui a mis à la disposition de ses salariés ou agents des comptes professionnels et a interdit l'usage de comptes personnels n'est redevable qu'au titre des utilisations qu'elle connaît ou qu'elle rembourse.
+>
+> *[Note de rédaction : décision 105 [opus-5.5 as ggim] (aucune personne physique non professionnelle ni aucun salarié n'est redevable ni passible d'amende).]*
 >
 > « *Art. L. [À vérifier]-7.* – L'intermédiaire qui acquiert l'accès à l'inférence pour le compte de ses clients collecte la taxe sur les volumes d'inférence consommés pour chacun d'eux, et non sur le prix qu'il leur facture.
 >
@@ -134,11 +138,15 @@ Le livre [À vérifier] du code des impositions sur les biens et services est co
 >
 > *[Note de rédaction : les valeurs 0,25 et 0,025 sont indicatives et calées sur les rapports de prix usuels [À vérifier] (décision 65).]*
 >
-> « *Art. L. [À vérifier]-11.* – I. – Lorsque le fournisseur facture en d'autres unités, le volume est déterminé par une table de conversion fixée par arrêté du ministre chargé du budget, après avis de la commission mentionnée à l'article L. [À vérifier]-10, par jeton et par type de contenu, par image et par seconde de son ou de vidéo.
+> « *Art. L. [À vérifier]-11.* – I. – Lorsque le fournisseur facture en d'autres unités, le volume est déterminé par la table de conversion figurant au tableau annexé au présent article, par jeton et par type de contenu, par image et par seconde de son ou de vidéo.
 >
-> « II. – Pour les services fournis au forfait sans relevé de volume, ainsi que pour l'intelligence artificielle embarquée qui traite des flux continus, le volume est un volume forfaitaire annuel par compte ou par catégorie d'appareil, fixé par le même arrêté.
+> « II. – Pour les services fournis au forfait sans relevé de volume, ainsi que pour l'intelligence artificielle embarquée qui traite des flux continus, le volume est un volume forfaitaire annuel par compte ou par catégorie d'appareil, fixé par le même tableau. Le volume forfaitaire mensuel par compte mentionné au III de l'article L. [À vérifier]-6 y figure également.
 >
-> « III. – Le redevable peut opter pour la déclaration du volume réel lorsqu'il le justifie par sa comptabilité-matière. L'option vaut pour l'année civile.
+> « III. – Les valeurs du tableau sont révisées par la loi de financement de la sécurité sociale, après avis de la commission mentionnée à l'article L. [À vérifier]-10. Un arrêté du ministre chargé du budget peut seulement préciser, sans en modifier les valeurs, le rattachement d'une unité de facturation nouvelle à l'une des lignes du tableau.
+>
+> « IV. – Le redevable peut opter pour la déclaration du volume réel lorsqu'il le justifie par sa comptabilité-matière. L'option vaut pour l'année civile.
+>
+> *[Note de rédaction : la table de conversion et les forfaits relèvent de la loi, au titre de l'article 34 de la Constitution (décision 61 : « table légale de conversion » ; note 18, D11). Les valeurs du tableau sont à établir avec la commission [Unverified] ; l'ordre de grandeur pour le texte est d'environ quatre octets-équivalents par jeton.]*
 >
 > « CHAPITRE IV
 > « Tarif
@@ -155,6 +163,8 @@ Le livre [À vérifier] du code des impositions sur les biens et services est co
 >
 > « III. – Dans une zone de 10 % de part et d'autre de chaque borne, le tarif est interpolé linéairement entre ceux des deux classes adjacentes.
 >
+> *[Note de rédaction [opus-5.5] : les bornes de 0,2 et de 2 fois l'indice global ne sont qu'un exemple dans la note 18 (D1) ; elles sont proposées par l'agent et ne sont pas validées. Le principe de trois classes et le lissage aux bornes sont décidés (48, 68).]*
+>
 > « IV. – Les services fournis au forfait sans prix unitaire, et les modèles dont le prix de référence ne peut être établi, sont rangés dans la classe 2, sauf option du redevable pour leur classement réel.
 >
 > « *Art. L. [À vérifier]-13.* – I. – L'Institut national de la statistique et des études économiques calcule et publie, avant le début de chaque trimestre, un indice global et un indice par classe, égaux au prix moyen hors taxe par octet-équivalent pondéré constaté au cours du trimestre précédent.
@@ -167,22 +177,26 @@ Le livre [À vérifier] du code des impositions sur les biens et services est co
 >
 > « II. – Le multiple est fixé chaque année par la loi de financement de la sécurité sociale. Il ne peut être inférieur à 1 ni supérieur à 4.
 >
-> « III. – Jusqu'à l'intervention de la loi de financement de la sécurité sociale qui le fixe pour la première fois, et au plus tard jusqu'au 31 décembre de la troisième année suivant l'entrée en vigueur du présent titre, le multiple est égal à 1. À défaut de fixation pour une année, le multiple de l'année précédente est reconduit.
+> « III. – Le multiple est égal à 1 pendant les trois premières années civiles d'application du présent titre. À défaut de fixation pour une année ultérieure, le multiple de l'année précédente est reconduit.
 >
 > « IV. – Le multiple ne peut être porté au-delà de 2 qu'au vu d'une justification particulière figurant au rapport mentionné à l'article [À vérifier] de la loi n° … du … relative au financement du chômage universel par une taxe sur l'intelligence artificielle. *[Renvoi à l'article 19 de la présente loi.]*
+>
+> « V. – Pour l'application du présent titre, la première année civile d'application est celle au cours de laquelle il entre en vigueur.
 >
 > « CHAPITRE V
 > « Équipements terminaux
 >
 > « *Art. L. [À vérifier]-15.* – I. – Le tarif applicable à l'inférence exécutée sur un équipement terminal est égal au quart du tarif mentionné à l'article L. [À vérifier]-14.
 >
-> « II. – Le I cesse de s'appliquer le 1ᵉʳ janvier de l'année qui suit celle au cours de laquelle l'un des deux critères suivants est constaté par arrêté, au vu des déclarations et d'une enquête de la statistique publique :
+> « II. – Le I s'applique jusqu'au 31 décembre de la troisième année civile d'application du présent titre. La loi de financement de la sécurité sociale peut en prolonger l'application, une ou plusieurs fois, sans pouvoir aller au-delà du 31 décembre de la cinquième année civile d'application.
+>
+> « III. – Le I cesse de s'appliquer avant le terme mentionné au II le 1ᵉʳ janvier de l'année qui suit celle au cours de laquelle l'un des deux critères suivants est constaté par arrêté, au vu des déclarations et d'une enquête de la statistique publique :
 >
 > « 1° La part de l'inférence exécutée sur un équipement terminal dans le volume total déclaré excède 20 % ;
 >
 > « 2° La part des entreprises utilisatrices qui exécutent de l'inférence sur un équipement terminal excède 50 %.
 >
-> « III. – En tout état de cause, le I cesse de s'appliquer à l'expiration de la cinquième année suivant l'entrée en vigueur du présent titre.
+> *[Note de rédaction : décision 103 [opus-5.5 as ggim] (C2) : trois ans, puis extinction, sauf prolongation votée en LFSS jusqu'à cinq ans au plus ; extinction avancée par le critère de maturité. Le présent titre n'entrant en vigueur qu'après la décision de la Commission (article 16), le tarif réduit s'applique dès le premier jour : l'IA locale ne paie jamais le plein tarif du fait de la procédure.]*
 >
 > « CHAPITRE VI
 > « Abattement
@@ -193,7 +207,7 @@ Le livre [À vérifier] du code des impositions sur les biens et services est co
 >
 > « III. – Le montant mentionné au I peut être révisé par la loi de financement de la sécurité sociale.
 >
-> *[Note de rédaction [opus-5.5 → ggim], validée par procuration (décision 88 [opus-5.5 as ggim]) : l'abattement est exprimé **en taxe**, et non en volume ni en dépense, pour trois raisons. Il ne dépend ni de la classe du modèle ni de la baisse des prix ; son coût ne croît pas avec le multiple ; et il se restitue simplement. **1 000 €** de taxe par an correspondent, au plancher, à environ 1 000 € de dépense hors taxe, soit trois ou quatre abonnements professionnels courants [Unverified] : la plupart des très petites entreprises n'acquittent rien, ce qui répond à « ménager ce qui démarre » et au coût de conformité (Q43). Le coût est d'environ 0,5 Md€ par an pour 500 000 groupes utilisateurs [Unverified], soit environ 16 % de la recette brute en 2028 et 2 % en 2035 (étude d'impact, § 5.4). Il est apprécié au niveau du groupe contre le fractionnement (Q42, décision 67). Il n'est pas indexé : son poids relatif décroît à mesure que l'usage mûrit.]*
+> *[Note de rédaction [opus-5.5 as ggim], décision prise par procuration (décision 88) : l'abattement est exprimé **en taxe**, et non en volume ni en dépense, pour trois raisons. Il ne dépend ni de la classe du modèle ni de la baisse des prix ; son coût ne croît pas avec le multiple ; et il se restitue simplement. **1 000 €** de taxe par an correspondent, au plancher, à environ 1 000 € de dépense hors taxe, soit trois ou quatre abonnements professionnels courants [Unverified] : la plupart des très petites entreprises n'acquittent rien, ce qui répond à « ménager ce qui démarre » et au coût de conformité (Q43). Le coût est d'environ 0,5 Md€ par an pour 500 000 groupes utilisateurs [Unverified], soit environ 16 % de la recette brute en 2028 et 2 % en 2035 (étude d'impact, § 5.4). Il est apprécié au niveau du groupe contre le fractionnement (Q42, décision 67). Il n'est pas indexé : son poids relatif décroît à mesure que l'usage mûrit.]*
 >
 > « CHAPITRE VII
 > « Obligations déclaratives et comptables
@@ -221,11 +235,11 @@ Le livre [À vérifier] du code des impositions sur les biens et services est co
 >
 > « *Art. L. [À vérifier]-21.* – I. – Les articles 1727, 1728 et 1729 du code général des impôts s'appliquent à la taxe [À vérifier : articulation avec le régime de sanctions du CIBS].
 >
-> « II. – Le défaut de tenue de la comptabilité-matière est passible d'une amende égale à 5 % des droits rappelés, sans pouvoir être inférieure à 1 500 € [opus-5.5 → ggim : point de départ, à relire par le juriste sous l'angle de la proportionnalité, décision 90].
+> « II. – Le défaut de tenue de la comptabilité-matière est passible d'une amende égale à 5 % des droits rappelés, sans pouvoir être inférieure à 1 500 € [opus-5.5 as ggim : point de départ, à relire par le juriste sous l'angle de la proportionnalité, décision 90].
 >
 > « III. – L'utilisation d'une fausse attestation de revendeur agréé entraîne une majoration de 80 % des droits éludés. Le client qui s'est présenté comme revendeur agréé est solidairement tenu au paiement de la taxe.
 >
-> « IV. – La fausse déclaration d'usage personnel mentionnée au II de l'article L. [À vérifier]-3 est passible d'une amende de 150 € par compte et par mois [opus-5.5 → ggim : point de départ, à relire par le juriste sous l'angle de la proportionnalité, décision 90]. »
+> « IV. – La fausse déclaration d'usage personnel mentionnée au II de l'article L. [À vérifier]-3 est passible d'une amende de 150 € par compte et par mois [opus-5.5 as ggim : point de départ, à relire par le juriste sous l'angle de la proportionnalité, décision 90]. L'amende n'est due que par une personne agissant dans le cadre de son activité professionnelle, y compris un entrepreneur individuel, ou par l'employeur, l'administration ou l'organisme pour le compte duquel la fausse déclaration a été faite, lorsqu'il en a eu connaissance ou qu'il rembourse le coût du service. Elle n'est jamais due par un salarié, un agent public ou une personne physique agissant en dehors de toute activité professionnelle. »
 
 ### Article 2
 
@@ -257,17 +271,21 @@ III. – Ne sont pas éligibles au socle :
 
 2° Les personnes inscrites dans une formation initiale, qui conservent le bénéfice des bourses dont elles relèvent.
 
-*[Note de rédaction : le 2° est un **choix ouvert** (décision 70). Il est retenu ici comme hypothèse de chiffrage. Variante : supprimer le 2° ; coût supplémentaire d'environ 40 Md€ par an, non finançable par la taxe dans le scénario central (note 19).]*
+*[Note de rédaction : le 2° est une **option ouverte, soumise au débat parlementaire** (décisions 70 et 102). Il est retenu ici comme hypothèse de chiffrage. Variante : supprimer le 2° ; coût supplémentaire d'environ 40 Md€ par an au socle cible, non finançable par la taxe dans le scénario central (étude d'impact, § 5.1.4).]*
 
 IV. – Le socle est individuel. Le bénéfice du socle n'est subordonné à aucune obligation de recherche d'emploi ni à aucune contrepartie d'activité. *[Coordination [À vérifier] : modification des articles L. 5411-6 et suivants du code du travail issus de la loi n° 2023-1196 du 18 décembre 2023 pour le plein emploi, pour les bénéficiaires du socle.]*
 
-V. – Le montant mensuel du socle est fixé chaque année par la loi de financement de la sécurité sociale. Il ne peut être inférieur au montant forfaitaire du revenu de solidarité active applicable à une personne seule à la date d'entrée en vigueur du présent titre, revalorisé dans les conditions prévues à l'article L. 161-25 du code de la sécurité sociale [À vérifier]. Sa cible est le seuil de pauvreté, égal à 60 % du revenu médian, publié par l'Institut national de la statistique et des études économiques ; une fois cette cible atteinte, le montant suit l'évolution du revenu médian.
+V. – Le montant mensuel du socle est fixé chaque année par la loi de financement de la sécurité sociale. Il ne peut être inférieur au montant forfaitaire du revenu de solidarité active applicable à une personne seule à la date d'entrée en vigueur du présent titre, revalorisé dans les conditions prévues à l'article L. 161-25 du code de la sécurité sociale [À vérifier]. Sa cible est le seuil de pauvreté, égal à 60 % du revenu médian, publié par l'Institut national de la statistique et des études économiques ; une fois cette cible atteinte, le montant suit l'évolution du revenu médian. Cette revalorisation est un droit, financé en priorité dans les conditions du 1° du I de l'article 13.
 
 VI. – Le socle n'est pas pris en compte dans les ressources pour l'attribution des prestations familiales. Pour l'attribution des aides personnelles au logement, il n'est pris en compte que pour la fraction qui excède le montant du revenu de solidarité active dont aurait bénéficié le foyer [À vérifier : article L. 822-5 du code de la construction et de l'habitation].
 
+*[Note de rédaction [opus-5.5] : la règle sur les aides au logement est une proposition de l'agent (note 18, D13.2), non validée ; aucune décision du journal ne l'arrête.]*
+
 VII. – Le socle est maintenu pendant le suivi d'une formation ouvrant droit à une certification enregistrée au répertoire national des certifications professionnelles ou au répertoire spécifique, dispensée par un organisme certifié au titre de l'article L. 6316-1 du code du travail. Les coûts pédagogiques sont pris en charge par un abondement du compte personnel de formation, financé par la branche [À vérifier : article L. 6323-4 du code du travail].
 
-*[Note de rédaction : la réduction du socle pour les revenus élevés du patrimoine (décision 71) **n'est pas retenue** ; elle reste un choix ouvert au débat parlementaire.]*
+*[Note de rédaction [opus-5.5] : les conditions de la formation (RNCP, répertoire spécifique, organisme certifié, abondement du CPF) sont une proposition de l'agent (note 18, D13.5), non validée ; seul le principe d'une formation financée pendant la phase de lancement est décidé (décision 30 [G], décision 73).]*
+
+*[Note de rédaction : la réduction du socle pour les revenus élevés du patrimoine **n'est pas retenue** ; c'est une option ouverte, soumise au débat parlementaire (décisions 71 et 102).]*
 
 ### Article 5 — La condition de séjour
 
@@ -283,6 +301,8 @@ a) Les conditions prévues pour le revenu de solidarité active à l'article L. 
 
 b) Être titulaire d'un titre de séjour autorisant à travailler et justifier d'au moins six mois d'activité salariée ou non salariée en France [À vérifier : article 12 de la directive 2011/98/UE].
 
+*[Note de rédaction : le a) reprend la condition de cinq ans de titre de séjour exigée pour le revenu de solidarité active, avec ses exceptions. Sa suppression est une option ouverte, soumise au débat parlementaire (décision 59) ; elle n'est pas chiffrée.]*
+
 ### Article 6 — La sortie progressive
 
 I. – En cas de reprise d'une activité professionnelle, le bénéficiaire du socle continue de le percevoir pendant douze mois, diminué d'une fraction des revenus d'activité fixée par décret, qui ne peut excéder 50 %.
@@ -293,7 +313,7 @@ III. – Pendant toute la période mentionnée au I, le bénéficiaire perçoit 
 
 IV. – À l'issue de cette période, le bénéficiaire relève, le cas échéant, de la prime d'activité, dans des conditions qui ne peuvent être moins favorables que celles mentionnées au III [À vérifier].
 
-*[Note de rédaction [opus-5.5 → ggim] : le plafond de 50 % est validé (décision 91). Le III et le II traduisent la décision 96 [opus-5.5 as ggim] : reprendre un travail rapporte toujours au moins autant qu'aujourd'hui, et la marche de fin de période est supprimée. **Modalité proposée** [opus-5.5, à valider] : la dégressivité porte sur les six derniers des douze mois ; variante : douze mois pleins, puis une période dégressive supplémentaire. Chiffrage : étude d'impact, § 5.3.4.]*
+*[Note de rédaction [opus-5.5 as ggim] : le plafond de 50 % est décidé par procuration (décision 91). Le III et le II traduisent la décision 96 : reprendre un travail rapporte toujours au moins autant qu'aujourd'hui, et la marche de fin de période est supprimée. La dégressivité porte sur les derniers des douze mois (décision 98 ; six mois dans le chiffrage) ; variante chiffrée : douze mois pleins, puis une période dégressive supplémentaire. Chiffrage : étude d'impact, § 5.3.4. Le montant du III, pour les personnes qui exercent une activité, est servi par la caisse nationale selon le IV *bis* de l'article 8 (décision 99).]*
 
 ### Article 7 — Le complément et l'assurance chômage
 
@@ -305,7 +325,7 @@ III. – L'organisme gestionnaire de l'assurance chômage verse chaque année à
 
 ### Article 8 — La reprise du revenu de solidarité active et de l'allocation de solidarité spécifique
 
-I. – À compter de la date d'entrée en vigueur du présent titre, l'instruction, l'attribution et le financement du revenu de solidarité active pour les personnes mentionnées au I de l'article 4 sont assurés par la Caisse nationale du chômage universel. *[Les ressources des départements correspondantes sont reprises par une loi de finances, sur le modèle de l'article 43 de la loi n° 2021-1900 du 30 décembre 2021 de finances pour 2022 (partie C).]*
+I. – À compter de la date d'entrée en vigueur du titre Iᵉʳ, l'instruction, l'attribution et le financement du revenu de solidarité active pour les personnes mentionnées au I de l'article 4 sont assurés par la Caisse nationale du chômage universel. *[Les ressources des départements correspondantes sont reprises par une loi de finances, sur le modèle de l'article 43 de la loi n° 2021-1900 du 30 décembre 2021 de finances pour 2022 (partie C).]*
 
 II. – L'accompagnement social et professionnel des bénéficiaires reste exercé par les départements. Il est proposé au bénéficiaire, qui est libre de l'accepter.
 
@@ -313,9 +333,13 @@ III. – L'allocation de solidarité spécifique est servie par la Caisse nation
 
 IV. – Pendant la phase de lancement prévue à l'article 10, le revenu de solidarité active et l'allocation de solidarité spécifique sont servis à l'identique par la caisse nationale. À compter de l'ouverture du socle, celui-ci s'y substitue pour les personnes qui y sont éligibles, sous les garanties de l'article 9.
 
+IV *bis*. – Les personnes qui exercent une activité professionnelle et qui ne sont pas éligibles au socle conservent le bénéfice du revenu de solidarité active dans les conditions prévues par le code de l'action sociale et des familles à la date de publication de la présente loi, revalorisé. Il leur est servi par la caisse nationale sous la forme d'un complément différentiel. *[Décision 99 [opus-5.5 as ggim].]*
+
 ### Article 9 — La garantie de non-régression
 
-I. – Le foyer dont un membre au moins bénéficie du socle perçoit au moins le montant du revenu de solidarité active, majoration pour parent isolé comprise, calculé selon le barème en vigueur à la date de l'ouverture du socle, puis revalorisé comme le socle. L'écart est versé sous la forme d'un complément familial du socle.
+I. – Le foyer dont un membre au moins bénéficie du socle perçoit au moins le montant du revenu de solidarité active, majoration pour parent isolé comprise, calculé selon le barème en vigueur à la date de l'ouverture du socle, puis revalorisé dans les conditions applicables au revenu de solidarité active [À vérifier : article L. 161-25 du code de la sécurité sociale]. L'écart est versé sous la forme d'un complément familial du socle.
+
+*[Note de rédaction : décision 108 [opus-5.5 as ggim] (C7) : la garantie suit la revalorisation légale du RSA, non la hausse du socle ; la non-régression se mesure par rapport au droit actuel. Coût : étude d'impact, § 5.3.2.]*
 
 II. – Les droits attachés à la qualité d'allocataire du revenu de solidarité active par les lois et règlements en vigueur, notamment en matière de protection complémentaire en matière de santé et de tarifs sociaux, sont attachés à la qualité de bénéficiaire du socle ou du complément familial [À vérifier : inventaire et articles de coordination].
 
@@ -323,11 +347,13 @@ III. – Les périodes de perception du socle sont assimilées à des périodes 
 
 IV. – Pendant cinq ans à compter de l'ouverture du socle, toute personne qui bénéficiait la veille du revenu de solidarité active ou de l'allocation de solidarité spécifique perçoit au moins, tant qu'elle en remplit les conditions, le montant qu'elle percevait à cette date, revalorisé.
 
+V. – Les garanties prévues au III de l'article 6, au I et au IV du présent article ne se cumulent pas. Pour un même mois, le foyer perçoit le montant le plus élevé qui résulte de leur application.
+
 ### Article 10 — Les phases d'ouverture des droits
 
-I. – Pendant les trois premières années suivant l'entrée en vigueur du titre Iᵉʳ, le produit de la taxe alimente le fonds de réserve mentionné à l'article 12 et finance les coûts pédagogiques mentionnés au VII de l'article 4. Le socle n'est pas encore ouvert.
+I. – Pendant les trois premières années civiles d'application du titre Iᵉʳ, au sens du V de l'article L. [À vérifier]-14 du code des impositions sur les biens et services, le produit de la taxe alimente le fonds de réserve mentionné à l'article 12 et finance les coûts pédagogiques mentionnés au VII de l'article 4. Le socle n'est pas encore ouvert.
 
-II. – Le socle est ouvert, au plus tôt au 1ᵉʳ janvier de la quatrième année, par la loi de financement de la sécurité sociale, à un montant au moins égal à celui mentionné au V de l'article 4, lorsque les recettes prévisionnelles de la branche, augmentées du fonds de réserve, en assurent l'équilibre sur trois ans.
+II. – Le socle est ouvert, au plus tôt au 1ᵉʳ janvier de la quatrième année civile d'application, par la loi de financement de la sécurité sociale, à un montant au moins égal à celui mentionné au V de l'article 4, lorsque les recettes prévisionnelles de la branche, augmentées du fonds de réserve, en assurent l'équilibre sur trois ans.
 
 III. – Le montant du socle est ensuite relevé chaque année, vers la cible mentionnée au V de l'article 4, dans la mesure où l'équilibre de la branche sur trois ans, fonds de réserve compris, le permet. Aucun droit ne peut être ouvert ni relevé si les recettes ne le financent pas.
 
@@ -351,13 +377,15 @@ III. – Le fonds est administré par un conseil de surveillance comprenant des 
 
 I. – Le produit de la taxe est employé dans l'ordre suivant :
 
-1° Le financement des droits ouverts, y compris la revalorisation du socle ;
+1° Le financement des droits ouverts, y compris la revalorisation du socle et, une fois sa cible atteinte, son évolution comme le revenu médian prévue au V de l'article 4 ;
 
 2° La reconstitution du fonds de réserve jusqu'à sa cible ;
 
 3° Tant que le socle n'a pas atteint sa cible, la hausse de son montant ;
 
-4° Une fois la cible atteinte, le surplus est réparti à parts égales entre, d'une part, l'indexation du socle et les extensions de droits décidées par la loi de financement de la sécurité sociale et, d'autre part, la fraction prévue à l'article 14. La part qui ne trouve pas d'emploi au titre des droits est affectée à cette fraction, dans la limite prévue au I *bis* ; le reste est versé au fonds de réserve.
+4° Une fois la cible atteinte, le surplus est réparti à parts égales entre, d'une part, les extensions de droits décidées par la loi de financement de la sécurité sociale et, d'autre part, la fraction prévue à l'article 14. La part qui ne trouve pas d'emploi au titre des extensions de droits est affectée à cette fraction, dans la limite prévue au I *bis* ; le reste est versé au fonds de réserve.
+
+*[Note de rédaction : décision 106 [opus-5.5 as ggim] (C5) : l'évolution du socle comme le revenu médian est un droit, financé au 1° ; elle n'est plus imputée sur la moitié « droits » du surplus.]*
 
 I *bis*. – Une baisse supplémentaire des contributions patronales ne peut être financée par la fraction prévue à l'article 14 que si le produit de la taxe que procurerait un multiple au plus égal à 2, pour l'année en cours et pour l'année suivante, couvre les dépenses mentionnées aux 1° et 3° du I, les coûts pédagogiques mentionnés au VII de l'article 4, l'ensemble des baisses de contributions déjà financées et la baisse nouvelle.
 
@@ -371,13 +399,13 @@ II. – Lorsque les recettes ne couvrent pas les dépenses de la branche :
 
 3° En tout état de cause, une contribution d'équilibre de l'État peut être fixée par la loi de financement de la sécurité sociale.
 
-III. – Il y a retournement, au sens du II, lorsque l'assiette de la taxe de l'année, évaluée au multiple de l'année précédente, est inférieure à celle de l'année précédente, ou que la loi de financement de la sécurité sociale constate une baisse durable de l'assiette. Une baisse du multiple ne constitue pas un retournement.
+III. – Il y a retournement, au sens du II, lorsque la dépense taxable de l'année est inférieure à celle de l'année précédente, ou que la loi de financement de la sécurité sociale constate une baisse durable de la dépense taxable. La dépense taxable est le montant total, hors taxe sur l'intelligence artificielle et hors taxe sur la valeur ajoutée, des utilisations soumises à la taxe, tel qu'il ressort des déclarations ; pour la comparaison entre deux années, elle est corrigée de l'effet estimé d'une variation du multiple, selon une méthode fixée par décret. Une baisse du multiple ne constitue pas un retournement.
 
-*[Note de rédaction : décision 95 [opus-5.5 as ggim]. L'assiette s'entend de la dépense taxable ; la définition par le produit était déclenchée par la seule baisse votée du multiple.]*
+*[Note de rédaction : décision 95 [opus-5.5 as ggim]. Le retournement se mesure sur la dépense taxable, et non sur le volume en octets-équivalents qui constitue l'assiette au sens de l'article L. [À vérifier]-9 : le volume croît quand les prix baissent, et ne signalerait presque jamais un retournement. La définition par le produit de la taxe était déclenchée par la seule baisse votée du multiple.]*
 
 IV. – Une fois la cible du socle atteinte, le multiple est ramené à 2 au plus, sauf disposition contraire et motivée de la loi de financement de la sécurité sociale, notamment en cas de retournement. Pour apprécier si le produit de la taxe le permet, il est tenu compte, à raison d'un tiers par an, de la fraction des réserves du fonds mentionné à l'article 12 qui excède sa cible.
 
-*[Note de rédaction : la dernière phrase traduit la décision 94 [opus-5.5 as ggim] : elle raccourcit d'un an la période où le multiple excède 2 (étude d'impact, § 5.1.1).]*
+*[Note de rédaction : la dernière phrase traduit la décision 94 [opus-5.5 as ggim]. Dans la trajectoire de référence, elle ramène le multiple à 2 en 2035 au lieu de 2036 (étude d'impact, § 5.1.1).]*
 
 ### Article 14 — La fraction versée à l'assurance chômage
 
@@ -389,21 +417,29 @@ Une fraction du produit de la taxe, fixée chaque année par la loi de financeme
 
 ### Article 15 — L'entrée en vigueur
 
-I. – Le titre Iᵉʳ entre en vigueur le 1ᵉʳ janvier de l'année suivant la publication de la présente loi, et au plus tôt à l'expiration du délai de statu quo mentionné à l'article 16.
+I. – Le titre Iᵉʳ entre en vigueur le 1ᵉʳ janvier de l'année qui suit la plus tardive des deux dates suivantes : la publication de la présente loi ; la réalisation de la condition prévue au II de l'article 16.
 
-II. – Les articles 3 et 11 à 14 entrent en vigueur à la même date. Les articles 4 à 10 entrent en vigueur selon le calendrier prévu à l'article 10.
+II. – Les articles 3, 8, 10 et 11 à 14 entrent en vigueur à la même date que le titre Iᵉʳ. Les articles 4 à 7 et 9 entrent en vigueur à la date d'ouverture du socle fixée par la loi de financement de la sécurité sociale en application du II de l'article 10, à l'exception du VII de l'article 4, qui entre en vigueur à la même date que le titre Iᵉʳ afin que la formation soit financée dès la phase de lancement.
 
 III. – Jusqu'à la création effective de la caisse nationale, le produit de la taxe est versé au fonds de réserve.
 
 ### Article 16 — La notification
 
-I. – Le présent projet est notifié à la Commission européenne au titre de la directive (UE) 2015/1535 du 9 septembre 2015 et au titre du paragraphe 3 de l'article 108 du traité sur le fonctionnement de l'Union européenne.
+I. – Le titre Iᵉʳ est notifié à la Commission européenne, au stade du projet, au titre de la directive (UE) 2015/1535 du 9 septembre 2015, avec le délai de statu quo de trois mois prévu à son article 6, et au titre du paragraphe 3 de l'article 108 du traité sur le fonctionnement de l'Union européenne, pour l'article L. [À vérifier]-15 du code des impositions sur les biens et services et pour l'abattement prévu à l'article L. [À vérifier]-16 du même code.
 
-II. – L'article L. [À vérifier]-15 du code des impositions sur les biens et services n'entre en vigueur qu'à compter de la date de réception de la décision de la Commission européenne le déclarant compatible avec le marché intérieur.
+II. – La condition mentionnée au I de l'article 15 est réalisée à la date à laquelle intervient l'un des actes suivants :
+
+1° La décision de la Commission européenne constatant que les mesures notifiées ne constituent pas des aides d'État, ou les déclarant compatibles avec le marché intérieur [S : règlement (UE) 2015/1589, art. 4, § 2 et 3, et art. 9] ;
+
+2° L'expiration du délai de quinze jours ouvrables qui suit l'avis donné par le Gouvernement à la Commission, lorsque les mesures notifiées sont réputées autorisées faute de décision dans le délai d'examen préliminaire [S : règlement (UE) 2015/1589, art. 4, § 6].
+
+III. – Si la Commission européenne déclare l'article L. [À vérifier]-15 incompatible avec le marché intérieur, le Gouvernement présente au Parlement, dans un délai de trois mois, un projet de loi qui en tire les conséquences, en vue de ménager l'inférence exécutée sur un équipement terminal par des mesures compatibles avec le marché intérieur.
+
+*[Note de rédaction [opus-5.5] : décision 103 [opus-5.5 as ggim] (C2) ; le mécanisme est une proposition de l'agent, à valider. Une exonération partielle mise en œuvre avant la décision de la Commission serait une aide illégale, récupérable sur ses bénéficiaires ; subordonner le seul tarif réduit à la décision ferait payer le plein tarif à l'IA locale. C'est donc **toute la taxe** qui n'entre en vigueur qu'après la décision ou l'autorisation réputée acquise : l'IA locale ne paie jamais le plein tarif du fait de la procédure. Risque résiduel : si la Commission ouvre la procédure formelle d'examen, la taxe entière est retardée (note 18, D11 bis).]*
 
 ### Article 17 — La clause de rendez-vous relative aux équipements terminaux
 
-Au plus tard trois ans après l'entrée en vigueur du titre Iᵉʳ, le Gouvernement remet au Parlement un rapport sur l'inférence exécutée sur des équipements terminaux, sa diffusion, le respect des critères mentionnés au II de l'article L. [À vérifier]-15 du code des impositions sur les biens et services et l'opportunité de mettre fin plus tôt au tarif réduit.
+Au plus tard le 30 juin de la troisième année civile d'application du titre Iᵉʳ, le Gouvernement remet au Parlement un rapport sur l'inférence exécutée sur des équipements terminaux, sa diffusion, l'état des critères mentionnés au III de l'article L. [À vérifier]-15 du code des impositions sur les biens et services et l'opportunité de prolonger le tarif réduit en application du II du même article.
 
 ### Article 18 — L'évaluation
 
@@ -435,7 +471,7 @@ La loi de financement de la sécurité sociale de l'année fixe, dans sa partie 
 
 L'annexe au projet de loi de financement de la sécurité sociale mentionnée à l'article LO 111-4-1 [À vérifier] comprend le rapport sur la taxe sur l'intelligence artificielle et le chômage universel. Lorsque le projet de loi propose un multiple supérieur à 2, ou déroge à l'ordre d'emploi des recettes fixé par la loi, ce rapport en expose la justification.
 
-*[Note de rédaction [opus-5.5] : l'article 3 donne une assise organique aux deux règles de pilotage voulues par l'auteur (la justification au-delà des deux tiers, décisions 51 et 79 ; l'ordre d'emploi des droits d'abord, décisions 75 et 86). Une loi ordinaire ultérieure peut toujours déroger à ces règles ; la loi organique impose seulement que la dérogation soit motivée (note 18, D13.8).]*
+*[Note de rédaction [opus-5.5] : l'article 3 donne une assise organique aux deux règles de pilotage décidées par procuration pendant la session de travail, et non par l'auteur lui-même (la justification au-delà des deux tiers, décisions 51 et 79 ; l'ordre d'emploi des droits d'abord, décisions 75 et 86). Une loi ordinaire ultérieure peut toujours déroger à ces règles ; la loi organique impose seulement que la dérogation soit motivée (note 18, D13.8).]*
 
 ### Article 4
 
@@ -447,15 +483,16 @@ La taxe sur l'intelligence artificielle et les réserves du fonds de réserve du
 
 *Présentées pour information. Elles ne font pas partie du projet de loi ordinaire ; elles seraient inscrites dans les premiers textes financiers qui suivent son adoption.*
 
-**C1. Première loi de financement de la sécurité sociale suivant l'adoption (LFSS pour 2028)** :
+**C1. Première loi de financement de la sécurité sociale suivant l'entrée en vigueur du titre Iᵉʳ (en principe, LFSS pour 2028)** :
 - l'intégration de la branche du chômage universel dans les tableaux d'équilibre ;
 - la confirmation de l'affectation de la taxe à la branche ;
-- le multiple fixé à 1 pour 2028 ;
+- le rappel du multiple égal à 1 pendant les trois premières années civiles d'application (article L. [À vérifier]-14, III) ;
 - l'objectif de dépenses de la branche pour la phase de lancement (le revenu de solidarité active et l'allocation de solidarité spécifique repris à l'identique, et la formation).
 
 **C2. Loi de financement de la sécurité sociale de l'année d'ouverture du socle (au plus tôt, LFSS pour 2031)** :
 - le montant du socle ;
-- le multiple de l'année ; la trajectoire de référence du Gouvernement présentée dans l'étude d'impact est un multiple de 3 au plus pendant la montée en charge, avec la justification particulière, puis un retour à 2 (décision 84) ;
+- le multiple de l'année ; la trajectoire de référence du Gouvernement présentée dans l'étude d'impact est un multiple de 3 au plus pendant la montée en charge, avec la justification particulière, puis un retour à 2 ;
+- le cas échéant, la prolongation du tarif réduit sur équipement terminal (article L. [À vérifier]-15, II) ;
 - la fraction versée à l'assurance chômage, nulle tant que le socle n'a pas atteint sa cible ;
 - la contribution de l'État au titre de l'allocation de solidarité spécifique.
 
@@ -465,4 +502,4 @@ La taxe sur l'intelligence artificielle et les réserves du fonds de réserve du
 
 ---
 
-*Principales sources dans le corpus : note 18 (D1 à D13, section F), note 19 (simulation v4), journal des décisions (n° 37 à 97). Les choix ouverts au débat sont signalés en note : les étudiants en formation initiale (décision 70), la réduction pour les revenus du patrimoine (décision 71).*
+*Principales sources dans le corpus : note 18 (D1 à D13, section F), note 19 (simulation v4), journal des décisions (n° 37 à 109). Les options ouvertes au débat parlementaire sont signalées en note : les étudiants en formation initiale, la réduction pour les revenus du patrimoine, la condition de cinq ans de résidence pour les ressortissants de pays tiers (article 5, a).*

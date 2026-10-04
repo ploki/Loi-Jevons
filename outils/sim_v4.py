@@ -21,6 +21,13 @@
 # 2026-10-04 (M12) [opus-5.5] : décisions 94 (M79_FONDS par défaut), 95 (retournement sur l'assiette) et 96 (sortie
 # progressive au plus favorable, puis dégressivité linéaire : SP, legacy, sp_pay, sp_cost ; le surcoût par rapport à
 # l'hypothèse d'origine est ajouté au besoin). Le réglage M11 reproduit exactement la sortie de M11.
+# 2026-10-04 (M14, passe de corrections) [opus-5.5] : (1) raccord du besoin et de la sortie progressive (rapport de
+# relecture, A4) : N_RSA comptait 1,0 Md€ de sortie progressive « d'origine » alors que le modèle explicite la chiffre à
+# - 0,52 Md€ au niveau du RSA ; le besoin est désormais une part hors sortie progressive (N_RSA - 1,0 ; N_CIBLE -
+# sp_cost(1200, 'M11'), soit l'hypothèse d'origine incluse dans les 20 Md€) plus sp_cost(s, SORTIE) ; (2) la garantie
+# familiale (A5, arbitrage C7 [opus-5.5 as ggim] : elle suit la revalorisation légale du RSA, pas la hausse du socle)
+# est chiffrée explicitement (GF_TYPES, gf_cost) ; (3) variante du tarif réduit sur terminal prolongé à cinq ans (C2).
+# Le réglage AVANT_M14 (SP_RACCORD=False, GF=None) reproduit exactement la sortie précédente ; option --avant-m14.
 import sys
 
 # ---------------------------------------------------------------- calendrier
@@ -98,6 +105,11 @@ C = dict(
                          # dégressivité linéaire sur les D derniers mois ; 'M11' : socle - f x salaire, sans plancher
                          # (l'hypothèse N_RSA d'origine) ; 'plus_favorable' : le plancher sans dégressivité ;
                          # 'prolonge' : 12 mois pleins au plus favorable, puis D mois dégressifs en plus
+    SP_RACCORD=True,  # M14 (A4) : le besoin = part hors sortie progressive + sp_cost(s, SORTIE) ; False : la formule
+                      # précédente, N(s) + sp_cost(s, SORTIE) - sp_cost(s, 'M11'), qui comptait 1,52 Md€ au niveau du RSA
+    SP_ORIG_RSA=1.0,  # la sortie progressive « d'origine » comprise dans N_RSA (note 19, § 1.3)
+    GF='rsa',         # M14 (A5, C7) : garantie familiale revalorisée comme le RSA ; 'socle' : revalorisée comme le socle
+                      # (rédaction de l'art. 9 avant M14) ; None : non chiffrée (avant M14)
 )
 
 # ---------------------------------------------------------------- sortie progressive (décision 96) [Unverified]
@@ -136,15 +148,45 @@ def sp_cost(S, mode, sp=SP):
     return sp['ENTREES'] * per / 1000.0
 
 
+# ---------------------------------------------------------------- garantie familiale (art. 9, I ; D9 ; C7) [Unverified]
+# Foyers allocataires du RSA que le socle individuel désavantagerait : (libellé, millions de foyers, RSA du foyer en
+# € de 2026 par mois, avant forfait logement (note 18, D9), nombre d'adultes). Les effectifs sont des hypothèses de
+# l'agent [opus-5.5, Unverified], calées pour retrouver l'ordre de grandeur de D13.7 (0,5 à 1 Md€ au socle cible).
+GF_TYPES = [
+    ('parent isolé, 1 enfant (RSA majoré)', 0.10, 1110.0, 1),
+    ('parent isolé, 2 enfants (RSA majoré)', 0.10, 1390.0, 1),
+    ('parent isolé, 3 enfants ou plus (RSA majoré)', 0.05, 1670.0, 1),
+    ('couple, 2 enfants', 0.15, 1365.0, 2),
+    ('couple, 6 enfants ou plus', 0.01, 2700.0, 2),
+]
+
+def gf_cost(s, rule):
+    """Versements du complément familial (Md€ de 2026 par an) pour un socle s : l'écart entre le montant garanti et la
+    somme des socles du foyer. rule='rsa' (C7) : le montant garanti suit la revalorisation légale du RSA, supposée égale,
+    par prudence, à l'indexation du modèle (montant constant en € de 2026) ; rule='socle' : il suit le socle (× s/650)."""
+    tot = 0.0
+    for _, n, G, a in GF_TYPES:
+        g = G if rule == 'rsa' else G * s / S_RSA
+        tot += n * max(0.0, g - a * s) * 12 / 1000
+    return tot
+
 def need(s, c):
     """Besoin net annuel de la branche financé par la taxe (Md€), pour un socle s (€/mois)."""
     x = (s - S_RSA) / (S_CIBLE - S_RSA)
-    n = c['N_RSA'] + x * (c['N_CIBLE'] - c['N_RSA'])
+    if c.get('SP_RACCORD'):   # M14 (A4) : la sortie progressive est retirée des deux points de calage, puis chiffrée
+        lo = c['N_RSA'] - c['SP_ORIG_RSA']; hi = c['N_CIBLE'] - sp_cost(S_CIBLE, 'M11')
+        n = lo + x * (hi - lo) + sp_cost(s, c['SORTIE'])
+    else:
+        n = c['N_RSA'] + x * (c['N_CIBLE'] - c['N_RSA'])
+        if c['SORTIE'] != 'M11':   # décision 96 : surcoût de la correction par rapport à l'hypothèse d'origine (N_RSA)
+            n += sp_cost(s, c['SORTIE']) - sp_cost(s, 'M11')
+    if c.get('GF'):   # M14 (A5) : N_RSA reprend les foyers à l'identique (le complément y est implicite, financé par le
+        # RSA repris) ; N_CIBLE (note 05) déduit leur RSA entier et ne le contient pas : on remplace la part implicite
+        # interpolée, (1 - x) × gf(650), par le versement effectif gf(s)
+        n += gf_cost(s, c['GF']) - (1 - x) * gf_cost(S_RSA, c['GF'])
     if c['ETU']:   n += 2.9 * s * 12 / 1000 - 2.3    # 2,9 M d'étudiants, bourses (2,3 Md€) reprises [À vérifier]
     if c['PATR']:  n -= 0.02 * 4.0 * 0.5 * s * 12 / 1000   # 2 % des bénéficiaires, socle réduit de moitié [C]
     if c['INACT']: n += 0.5 * s * 12 / 1000            # 0,5 M d'inactifs supplémentaires qui s'inscrivent [C]
-    if c['SORTIE'] != 'M11':   # décision 96 : surcoût de la correction par rapport à l'hypothèse d'origine (N_RSA)
-        n += sp_cost(s, c['SORTIE']) - sp_cost(s, 'M11')
     return n
 
 def gross(s):
@@ -273,7 +315,9 @@ def grid(alloc='D8', c=None, p=None, label=''):
                 at[2035]['pts'], at[2040]['pts'], max(r['m'] for r in rows)))
 
 SANS_IDX = {'IDX': 0.0}
-M11 = {'M79_FONDS': False, 'RETOURNEMENT': 'produit', 'SORTIE': 'M11'}   # les règles de M11 (non-régression)
+AVANT_M14 = {'SP_RACCORD': False, 'GF': None}   # les règles d'avant la passe de corrections (non-régression)
+if '--avant-m14' in sys.argv: C.update(AVANT_M14)
+M11 = dict(AVANT_M14, M79_FONDS=False, RETOURNEMENT='produit', SORTIE='M11')   # les règles de M11 (non-régression)
 M10 = dict(M11, B_SOUTENABLE=False)   # les règles de M10, sans la décision 89 (contrôle de non-régression)
 AVANT_M9 = dict(M11, IDX=0.0, OPEN_RULE='annuel', M_POST=None, B_AVANT_FONDS=False, B_SOUTENABLE=False)   # les hypothèses de M7, pour comparaison
 
@@ -289,7 +333,7 @@ def grid2(c=None, alloc='droits', label='', caps=(1.0, 2.0, 3.0, 4.0)):
                 max(0.0, at[2035]['pts']), max(0.0, at[2040]['pts']), max(r['m'] for r in rows), at[2040]['m'], at[2040]['fund'], dmax))
 
 if __name__ == '__main__':
-    print('# Règles retenues : droits d\'abord (75), ouverture sur trois ans (78), m <= 2 après la cible (79), indexation (80), baisse des cotisations soutenable à m <= 2 (89), excédent du fonds (94), retournement sur l\'assiette (95), sortie progressive corrigée (96)')
+    print('# Règles retenues : droits d\'abord (75), ouverture sur trois ans (78), m <= 2 après la cible (79), indexation (80), baisse des cotisations soutenable à m <= 2 (89), excédent du fonds (94), retournement sur l\'assiette (95), sortie progressive corrigée (96)' + ('' if '--avant-m14' in sys.argv else ' ; M14 : besoin raccordé à la sortie progressive (A4), garantie familiale chiffrée (C7)'))
     for cap in (2.0, 3.0, 4.0):
         print('\n## Central, m plafonné à %.0f (règles retenues ; socle en euros 2026)' % cap); table(run('Central', cap))
     print('\n## Bas, m plafonné à 4 (règles retenues)'); table(run('Bas', 4.0))
@@ -305,6 +349,8 @@ if __name__ == '__main__':
            ('inscription de 0,5 M inactifs', {'INACT': True}, {}), ('fonds = 6 mois bruts', {'FUND_GROSS': True}, {}),
            ('sans l\'excédent du fonds (règle de M11)', {'M79_FONDS': False}, {}), ('sortie : plancher sans dégressivité', {'SORTIE': 'plus_favorable'}, {}), ('sortie : 12 mois + 6 mois dégressifs', {'SORTIE': 'prolonge'}, {}), ('sortie : hypothèse d\'origine (M11)', {'SORTIE': 'M11'}, {}), ('indexation 1 %', {'IDX': 0.01}, {}), ('indexation 3 %', {'IDX': 0.03}, {}),
            ('élasticité 0,3', {}, {'EPS': 0.3}), ('élasticité 1,0', {}, {'EPS': 1.0}),
+           ('terminal réduit prolongé à cinq ans (C2)', {}, {'TERM_RED_END': 2032}),
+           ('garantie familiale revalorisée comme le socle', {'GF': 'socle'}, {}),
            ('décalage de P_k (x1,09)', {}, {'LAG': 1.09}), ('sans serveurs propres ni recouvrement', {}, {'F_INTERNE': 1.0, 'CIVISME': 1.0})]
     for lab, cc, pp in VAR:
         for cap in (2.0, 3.0, 4.0):

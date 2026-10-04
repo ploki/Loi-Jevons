@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M12 : décisions 96 et 97)
+- **Dernière mise à jour** : 2026-10-04 (M14 : renvois corrigés, point B5 du rapport de relecture)
 
 
 ## En vigueur
@@ -19,7 +19,7 @@
 | 3 | A | **répondue** | P | | note 19, § 2.4 (sensibilité à l'élasticité) [opus-5.5] |
 | 4 | A | **répondue** | R | | — |
 | 5 | A | **répondue** | P | | exposé v0.2 (§ I) : causes multiples ; assurance chômage obligatoire en 1977, loi entrée en vigueur en 1984 [S] ; note 16 |
-| 6 | A | **répondue** | P | | exposé v0.2 (§ I) : une convention, que la loi généralise ; 15 000 dockers ; montant en euros actuels → M11 |
+| 6 | A | **répondue** | P | | exposé v0.2 (§ I) : une convention, que la loi généralise ; 15 000 dockers ; montant en euros actuels : **non traité** (ni l'exposé ni l'étude d'impact ne le donnent ; renvoyé à l'expertise, rapport de retour) |
 | 7 | A | **répondue** | R | | — |
 | 8 | A | **décidée** | P | | 97 ; étude d'impact v0.1, § 1.3 : pas de série française probante ; le projet n'en dépend pas (82) ; un dispositif d'observation [opus-5.5] |
 | 9 | A | **décidée** | P | | 38, 45 [P] ; note 18, D13.1 |
@@ -32,7 +32,7 @@
 | 16 | B | **décidée** | P | | 65 [P] ; note 18, D12.3 |
 | 17 | B | **décidée** | P | | 65 [P] ; note 18, D12.2 |
 | 18 | B | **répondue** | P | | 9 [G], 65 [P] : un principe de justice, pas une mesure ; à présenter ainsi en M9 |
-| 19 | B | **répondue** | P | | note 18, D12.4 [C] ; rédaction en M10 |
+| 19 | B | **répondue** | P | | note 18, D12.4 [C] ; rédigée dans le dispositif (L.-1, II ; L.-9, IV) [opus-5.5], sans décision propre |
 | 20 | B | **décidée** | P | | 64, 69 [P] ; note 18, D13.1 |
 | 21 | B | **décidée** | P | | 53 [P] |
 | 22 | B | **décidée** | N | **top 10** | 46 [P] |
@@ -62,13 +62,13 @@
 | 46 | F | **décidée** | P | | 61 [P] ; note 18, D11 |
 | 47 | F | **décidée** | P | | 44 [P] ; note 18, D11 |
 | 48 | F | **décidée** | P | | 60 [P] |
-| 49 | G | **répondue** | P | | note 18, D13.2 [C] ; arrêtée en M10 |
+| 49 | G | **répondue** | P | | note 18, D13.2 [C] ; rédigée dans le dispositif (art. 4, V et VI) [opus-5.5], **aucune décision ne l'arrête** |
 | 50 | G | ouverte | P | | **réservée à ggim** : étudiants (70) et patrimoine (71) ; le reste décidé (72, 73) |
 | 51 | G | **décidée** | P | | 56, 59 [P] ; note 18, D6, D10 |
 | 52 | G | **répondue** | R | | note 19 (besoin net de 20 Md€) ; note 05 |
 | 53 | G | **décidée** | P | | 57, 74 [P] ; note 18, D13.4 |
-| 54 | G | **répondue** | P | | exposé v0.2 (§ IV) : limites des expériences dites ; évaluation prévue ; effets → M11 |
-| 55 | G | **répondue** | N | | note 18, D13.5 [C] ; note 19 (1 Md€) ; arrêtée en M10 |
+| 54 | G | **répondue** | P | | exposé v0.2 (§ IV) : limites des expériences dites ; évaluation prévue (art. 18) ; **partiellement traitée** dans l'étude d'impact (§ 5.2.4, § 5.3.4 : taux marginaux) ; l'effet sur l'offre de travail n'est pas modélisé (renvoyé à l'économiste) |
+| 55 | G | **répondue** | N | | note 18, D13.5 [C] ; note 19 (1 Md€) ; rédigée dans le dispositif (art. 4, VII) [opus-5.5], **aucune décision ne l'arrête** |
 | 56 | G | **décidée** | R | | 72 [P], 91 et 96 [opus-5.5 as ggim] ; dispositif v0.1, art. 6 : au plus 50 %, jamais moins que le droit actuel, dégressivité linéaire ; taux marginaux et coût : étude d'impact v0.1, § 5.3.4 |
 | 57 | G | **décidée** | P | | 55, 58 [P] ; note 18, D6, D9 |
 | 58 | H | **décidée** | P | | 73 [P] ; note 18, D13.6 |
@@ -79,20 +79,20 @@
 | 63 | H | **décidée** | N | | 82 [opus-5.5 as ggim] ; note 18, E ; argumentaire dans l'exposé v0.2 |
 | 64 | I | **décidée** | R | | 54 [P] ; note 18, D8 |
 | 65 | I | **décidée** | P | | **75** [opus-5.5 as ggim] (les droits d'abord) |
-| 66 | I | **répondue** | P | | exposé v0.2 (§ V) : le terme est employé sans revendiquer d'effet correcteur ; effet net → M11 |
+| 66 | I | **répondue** | P | | exposé v0.2 (§ V) : le terme est employé sans revendiquer d'effet correcteur ; effet net sur l'arbitrage travail-IA **non traité** dans l'étude d'impact (§ 5.2.2 ne mesure que l'effet prix) |
 | 67 | J | **répondue** | N | **top 2** | note 18, O2, D3 ; 41, 51 [P] |
 | 68 | J | **répondue** | N | **top 3** | note 18, O2, D7 ; 44, 46 [P] |
 | 69 | J | **décidée** | N | **top 1** | 37, 39, 48 [P] |
 | 70 | J | **décidée** | N | | 43, 44, 62 [P] ; note 18, D11 |
 | 71 | K | **décidée** | N | | 97 ; étude d'impact v0.1, § 5.2.1 : la charge pèse sur les utilisateurs en France ; la valeur saisie est celle de l'usage, pas la marge des fournisseurs [opus-5.5] |
-| 72 | K | **répondue** | P | | note 18, D11 ; chiffrage en M11 |
+| 72 | K | **répondue** | P | | note 18, D11 ; **partiellement traitée** dans l'étude d'impact (§ 5.2.3 : les PME et l'abattement) ; le chiffrage pour les marchés tiers n'est pas fait |
 | 73 | K | **décidée** | N | | 97 ; étude d'impact v0.1, § 5.2.3 : abattement (88), neutralité concurrentielle et de localisation des centres de données [opus-5.5] |
 | 74 | K | **décidée** | P | | 97 ; étude d'impact v0.1, § 5.2.2 et 5.1.5 : − 29 % à − 55 % de dépense (ε = 0,5) ; sensibilité 0,3 à 1,0 ; croissance non modélisée [opus-5.5] |
 | 75 | L | **décidée** | N | | 82 [opus-5.5 as ggim] ; 43, 67 [P] ; note 18, E ; argumentaire dans l'exposé v0.2 |
 | 76 | L | **décidée** | P | | 32 [G] ; note 18, D13.8 ; note 19, § 3 |
 | 77 | L | **répondue** | P | | 74 [P] ; note 09 ; argumentaire en M9 |
 | 78 | M | **décidée** | N | | 66 [P] ; note 18, D12.3 |
-| 79 | M | **répondue** | N | | note 18, D12.4 [C] ; rédaction en M10 |
+| 79 | M | **répondue** | N | | note 18, D12.4 [C] ; rédigée dans le dispositif (L.-9, IV) [opus-5.5], sans décision propre |
 | 80 | M | **décidée** | P | | 64, 69 [P] ; note 18, D12.1, D13.1 |
 
 ---

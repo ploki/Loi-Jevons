@@ -2,7 +2,7 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M6)
+- **Dernière mise à jour** : 2026-10-04 (M14 : décisions 98, 99, 108)
 
 
 ## En vigueur
@@ -22,7 +22,8 @@
 - **RSA et ASS [C]** : le RSA est **recentralisé**, avec une reprise des ressources transférées aux départements, sur le modèle de l'expérimentation de l'art. 43 de la LFI pour 2022. L'ASS est financée par l'État : sa dépense est transférée à la branche par une contribution de l'État. Voir la note 18, D6.
 - **Flux à préciser en M6** : la part « socle » de l'ARE actuelle, que l'Unédic n'aurait plus à verser.
 - **M4 (décisions 55 à 57 [P])** : le RSA et l'ASS passent à la branche, avec une **garantie de non-régression** : une garantie familiale permanente au niveau du RSA majoré, le maintien des droits connexes et des trimestres de retraite, et une clause de sauvegarde individuelle (note 18, D9 [C]). La **condition de séjour** est plus ouverte que celle du RSA, et n'exclut personne d'aujourd'hui éligible (D10 [C]). La part « socle » de l'ARE est reversée à la branche. **Le chiffrage est à refaire en M6.**
-- **M6 [C]** (note 18, D13.2 à D13.7) : un socle individuel au seuil de 60 %, avec la garantie familiale ; les étudiants en formation initiale non éligibles et un socle réduit pour les revenus élevés du patrimoine (**deux points d'intention à confirmer**) ; une sortie progressive de 12 mois, puis la prime d'activité ; le complément égal à l'écart entre l'ARE et le socle ; la formation rémunérée (le socle, RNCP/Qualiopi, l'abondement du CPF) ; une ouverture en phases, le **montant du socle étant la variable d'ajustement** voté en LFSS ; un **besoin net révisé d'environ 18 à 23 Md€**.
+- **M6 [C]** (note 18, D13.2 à D13.7) : un socle individuel au seuil de 60 %, avec la garantie familiale ; les étudiants en formation initiale non éligibles ; un socle réduit pour les revenus élevés du patrimoine **n'est pas retenu** (variante chiffrée, décision 71) ; **ces deux points restent des questions réservées à Guillaume** (décisions 70 et 71) ; une sortie progressive de 12 mois, puis la prime d'activité ; le complément égal à l'écart entre l'ARE et le socle ; la formation rémunérée (le socle, RNCP/Qualiopi, l'abondement du CPF) ; une ouverture en phases, le **montant du socle étant la variable d'ajustement** voté en LFSS ; un **besoin net révisé d'environ 18 à 23 Md€**.
+- **M14 (décisions 98, 99, 108 [opus-5.5 as ggim])** : la dégressivité de la sortie progressive porte sur les derniers des douze mois ; le RSA des personnes en activité à faible revenu est servi par la branche en complément différentiel ; la garantie familiale suit la revalorisation du RSA, non la hausse du socle (coût : 0,55 Md€ au socle cible). Besoin net de 2026 : 6,0 Md€ au niveau du RSA, 19,4 Md€ au socle cible (note 19).
 - **M12 (décision 96 [opus-5.5 as ggim])** : la sortie progressive (12 mois, au plus 50 % des revenus d'activité, décision 91) ne fait **jamais moins bien que le droit actuel** (le RSA et la prime d'activité) : le bénéficiaire perçoit le plus favorable ; la marche de fin de période est supprimée par une **dégressivité linéaire** inscrite dans la loi. Chiffrage : étude d'impact v0.1, § 5.3.4.
 
 ---

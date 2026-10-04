@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M3)
+- **Dernière mise à jour** : 2026-10-04 (M14 : décisions 79, 84, 89 ; lissage modélisé)
 
 
 ## En vigueur
@@ -18,9 +18,10 @@
 - **↺ Le relèvement automatique « selon les besoins » par arrêté est abandonné** : il exposait à l'incompétence négative (article 34). Le besoin de financement (B/A) devient un **élément d'information** du rapport annexé au projet de loi qui fixe m.
 - **Déclarations** : le calendrier de la TVA est conservé, comme un simple circuit pratique (décision 26 [G]) ; il ne crée aucun risque au regard de l'article 401.
 - **Justification** : le **savoir collectif** sur lequel les modèles ont été entraînés. Au moins la moitié de la valeur revient au bien commun.
-- **Le lissage** : il est désormais assuré par le vote annuel de m. La simulation v4 (M10) le modélisera.
+- **Le lissage** : il est désormais assuré par le vote annuel de m. La simulation v4 le modélise : m évolue de ± 0,5 par an (note 19).
 - **M3** : la condition de la décision 39 est levée (décision 48 [P]) ; **m est voté en LFSS** (décision 50 [P]) ; **au-delà de m = 2**, une justification renforcée est exigée dans le rapport annexé au PLFSS (décision 51 [P]). L'exposé rappelle que l'ordre de grandeur reste **celui du carburant**.
 - **Repli** : un tarif en euros par unité, voté chaque année, avec une clause de réduction automatique si l'indice franchit 4P (décision 48 [P]).
+- **Pilotage de m depuis M10** [opus-5.5 as ggim] : une fois le socle cible atteint, m est ramené à 2 au plus par défaut, la LFSS pouvant aller au-delà par un vote motivé (décision 79) ; le dispositif ne fixe aucune trajectoire de m, et l'étude d'impact présente comme trajectoire de référence m ≤ 3 pendant la montée en charge, puis 2 (décision 84, maintenue en M14, hésitation à signaler) ; une baisse des cotisations n'est engagée que si elle est soutenable avec m ≤ 2 (décision 89) ; le tarif réduit sur terminal est de 0,25 × le tarif (décisions 60, 103).
 
 ---
 

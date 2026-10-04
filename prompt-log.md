@@ -30,6 +30,20 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
 
+## Itération M15 (2026-10-04) — passe de corrections terminée ; lancement de la confrontation à l'aveugle (Sonnet)
+
+**Message de Guillaume** (et non par procuration) : il consomme ses tokens très vite et demande s'il peut changer de modèle ou réduire l'effort. Après discussion, il approuve ce plan : l'agent de corrections termine avec Opus ; la confrontation à l'aveugle et le rapport de retour sont confiés à des agents **Sonnet** ; les corrections après la confrontation se limitent à ce qui est juridiquement bloquant. L'orchestrateur est passé à Sonnet 5.5 (`/model`).
+
+Réponse par procuration au tour de l'agent (journal 98 à 109 ; les 26 points de la relecture sont corrigés, sauf Q6 renvoyée à l'expertise ; trajectoire révisée : cible en 2033 avec m ≤ 3, m revient à 2 en 2035, baisse des cotisations de 0,16 point en 2040 ; avec m ≤ 2, cible en 2037) :
+1. **Le mécanisme D11 bis est validé** [opus-5.5 as ggim]. Pourquoi : il garantit que l'IA locale ne paie jamais le plein tarif à cause de la procédure, ce qui est l'intention (« ménager ce qui démarre »). À faire relire par un juriste.
+2. **Le retard possible de toute la recette** si la Commission ouvre la procédure formelle est accepté, avec une **prénotification précoce**, dès la rédaction. C'est une **hésitation** pour le rapport de retour.
+3. **Les effectifs de la garantie familiale** (410 000 foyers) et les paramètres de la décision 100 vont à l'économiste.
+4. **Les hésitations 104 et 107** (la dégressivité dans les douze mois, qui touche la décision 31 [G] ; m ≤ 3 au-delà du repère des deux tiers) sont à lire en premier dans le rapport de retour.
+5. **Pas d'élagage de la note 19 maintenant** : l'élagage est une proposition à faire à Guillaume (maieutics § 3), pas à décider par procuration.
+6. **Q6, Q54, Q66 et Q72** : renvoyées à l'expertise dans le rapport de retour.
+7. **La note 21 citée dans le plan** : on la crée pour les questions de la confrontation. La note 20 est la relecture de cohérence.
+8. **Confrontation à l'aveugle**, par un agent neuf (Sonnet) qui lit **uniquement les trois livrables**, centrée sur la légalité.
+
 ## Itération M14 (2026-10-04) — rapport de la relecture de cohérence ; arbitrages des points C ; lancement des corrections
 
 La relecture de cohérence, faite par un agent neuf en lecture seule, a relevé 17 contradictions de fond, 9 erreurs de tenue et 7 points de décision. Son rapport est recopié tel quel dans la note `20-audit-coherence-M13.md`. Les arbitrages par procuration des points C :

@@ -3,6 +3,9 @@
 # M12 [opus-5.5] : décomposition des effets des décisions 94 à 96 ; la section 6 est refaite (décision 96).
 # Les paramètres propres à ce script (sortie progressive, conformité, frontaliers, secteur public) sont des
 # hypothèses de l'agent, [Unverified] : ce sont des ordres de grandeur à faire confirmer par l'économiste.
+# M14 [opus-5.5] (passe de corrections) : décomposition étendue (raccord du besoin, A4 ; garantie familiale, C7 ;
+# variantes 94 et terminal) ; marche du 13e mois imprimée (A12) ; coût de la garantie familiale (section 10).
+# Option --avant-m14 : les règles d'avant la passe de corrections (contrôle de non-régression).
 # Usage : python3 outils/etude_impact_v01.py
 import sim_v4 as s
 
@@ -34,16 +37,21 @@ for cap in (1.0, 2.0, 3.0, 4.0):
     print('m <= %.0f | ouverture %s | cible %s | m max %.1f | années à m > 2 : %d | pts 2035 %s | pts 2040 %s | fonds 2040 %s | socle 2040 %s' % (
         cap, o, f or 'non', max(r['m'] for r in rows), sum(1 for r in rows if r['m'] > 2.0),
         f2(max(0, at[2035]['pts'])), f2(max(0, at[2040]['pts'])), f1(at[2040]['fund']), soc(at[2040]['s'])))
-section('1 ter. Décomposition des changements de M12 (Central) : cible, années à m > 2, retour de m à 2, pts 2040, fonds 2040')
-STEPS = [('règles de M11', dict(s.M11)),
-         ('+ excédent du fonds (94)', dict(s.M11, M79_FONDS=True)),
-         ('+ retournement sur l\'assiette (95)', dict(s.M11, M79_FONDS=True, RETOURNEMENT='assiette')),
-         ('+ sortie au plus favorable, sans dégressivité (96)', dict(s.M11, M79_FONDS=True, RETOURNEMENT='assiette', SORTIE='plus_favorable')),
-         ('+ dégressivité dans les 12 mois (96, retenue)', {}),
-         ('variante : 12 mois + 6 mois dégressifs', {'SORTIE': 'prolonge'})]
+section('1 ter. Décomposition des changements de M12 et de M14 (Central) : cible, années à m > 2, retour de m à 2, pts 2040, fonds 2040')
+STEPS = [('règles de M11', dict(s.M11), {}),
+         ('+ excédent du fonds (94)', dict(s.M11, M79_FONDS=True), {}),
+         ('+ retournement sur l\'assiette (95)', dict(s.M11, M79_FONDS=True, RETOURNEMENT='assiette'), {}),
+         ('+ sortie au plus favorable, sans dégressivité (96)', dict(s.M11, M79_FONDS=True, RETOURNEMENT='assiette', SORTIE='plus_favorable'), {}),
+         ('+ dégressivité dans les 12 mois (96, 98)', dict(s.AVANT_M14), {}),
+         ('+ besoin raccordé à la sortie progressive (A4)', {'GF': None}, {}),
+         ('+ garantie familiale revalorisée comme le RSA (C7, retenue)', {}, {}),
+         ('variante : sans l\'excédent du fonds (94)', {'M79_FONDS': False}, {}),
+         ('variante : 12 mois + 6 mois dégressifs', {'SORTIE': 'prolonge'}, {}),
+         ('variante : garantie revalorisée comme le socle', {'GF': 'socle'}, {}),
+         ('variante : terminal réduit prolongé à cinq ans (C2)', {}, {'TERM_RED_END': 2032})]
 for cap in (ALT, REF):
-    for lab, cc in STEPS:
-        rows = s.run('Central', cap, c=cc); o, f, at = s.summary(rows)
+    for lab, cc, pp in STEPS:
+        rows = s.run('Central', cap, 'droits', pp, cc); o, f, at = s.summary(rows)
         back = next((r['y'] for r in rows if f and r['y'] > f and r['m'] <= 2.0), None) if cap > 2 else None
         print('m <= %.0f | %s | ouverture %s (socle %s) | cible %s | années à m > 2 : %d | retour à 2 : %s | pts 2035 %s | pts 2040 %s | fonds 2040 %s' % (
             cap, lab, o, s.fmt_s(at[o]['s']), f or 'non', sum(1 for r in rows if r['m'] > 2.0), back or '—',
@@ -61,7 +69,7 @@ for cap in (2.0, 3.0, 4.0):
         ', '.join('%d : %.1f' % d for d in defs) or 'aucun', f1(gap)))
 
 # ------------------------------------------------------------------ 3. variantes ouvertes
-section('3. Variantes réservées à l\'auteur (Central) : cible, socle 2040, surcoût au socle cible (Md€ de 2026)')
+section('3. Choix ouverts (Central) : cible, socle 2040, surcoût au socle cible (Md€ de 2026)')
 base_n = s.need(s.S_CIBLE, s.C)
 for lab, cc in (('base', {}), ('étudiants inclus', {'ETU': True}), ('réduction patrimoine', {'PATR': True})):
     c = dict(s.C, **cc)
@@ -112,6 +120,9 @@ for S in (s.S_RSA, s.S_CIBLE):
 print('TME pendant les mois 1-6 (corrigé) : socle 650 -> %.0f %% au-delà de %.0f € de salaire (le droit actuel est plus favorable) ; socle 1200 -> %.0f %% jusqu\'à %.0f €' % (
     100 * SP['LT'], (s.S_RSA - SP['LF']) / (SP['F'] - SP['LT']), 100 * SP['F'], s.S_CIBLE / SP['F']))
 print('TME pendant la dégressivité (mois 7 à 12) : k x f, soit de %.0f %% à %.0f %%' % (100 * SP['F'] * 6 / 7, 100 * SP['F'] / 7))
+for S in (s.S_RSA, s.S_CIBLE):   # A12 : la marche du 13e mois dans la version de M11 (sans plancher ni dégressivité)
+    steps = [(SP['SMIC'] * x + s.sp_pay(S, SP['SMIC'] * x, 12, 'M11')) - (SP['SMIC'] * x + s.sp_pay(S, SP['SMIC'] * x, 13, 'M11')) for x in SP['W']]
+    print('Marche du 13e mois, version de M11, socle %.0f : de %.0f à %.0f € (une hausse si négatif)' % (S, min(steps), max(steps)))
 section('6 bis. Coût net de la sortie progressive par rapport au droit actuel (Md€ de 2026 par an ; 0,6 M de reprises par an [Unverified])')
 print('socle | M11 (sans plancher) | plus favorable | + dégressivité dans les 12 mois (retenue) | 12 mois + 6 mois dégressifs')
 for S in (s.S_RSA, 925.0, s.S_CIBLE):
@@ -155,3 +166,14 @@ PUB = 0.10
 for r in ref:
     if r['y'] in (2028, 2031, 2035, 2040):
         print('%d | recette %.1f | payé par les APU %.1f | apport net aux APU (hors APU) %.1f' % (r['y'], r['R'], PUB * r['R'], (1 - PUB) * r['R']))
+
+# ------------------------------------------------------------------ 10. garantie familiale (art. 9, I ; C7) [Unverified]
+section('10. Garantie familiale : versements du complément familial et effet sur le besoin (Md€ de 2026 par an) [Unverified]')
+print('foyers retenus : ' + ' ; '.join('%s : %.0f k foyers, RSA %.0f €' % (lab, n * 1000, G) for lab, n, G, a in s.GF_TYPES))
+print('socle | versements, garantie au RSA (C7, retenue) | versements, garantie comme le socle | ajout au besoin (C7) | ajout au besoin (comme le socle)')
+for S in (s.S_RSA, 925.0, s.S_CIBLE):
+    x = (S - s.S_RSA) / (s.S_CIBLE - s.S_RSA)
+    print('%.0f | %s | %s | %s | %s' % (S, f2(s.gf_cost(S, 'rsa')), f2(s.gf_cost(S, 'socle')),
+        f2(s.gf_cost(S, 'rsa') - (1 - x) * s.gf_cost(s.S_RSA, 'rsa')), f2(s.gf_cost(S, 'socle') - (1 - x) * s.gf_cost(s.S_RSA, 'socle'))))
+print('besoin net (Md€ de 2026) : socle 650 : %s (avant M14 : %s) ; socle 1200 : %s (avant M14 : %s)' % (
+    f2(s.need(s.S_RSA, s.C)), f2(s.need(s.S_RSA, dict(s.C, **s.AVANT_M14))), f2(s.need(s.S_CIBLE, s.C)), f2(s.need(s.S_CIBLE, dict(s.C, **s.AVANT_M14)))))

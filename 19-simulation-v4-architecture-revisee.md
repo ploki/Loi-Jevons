@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion (M7 de la session metamaieutique, terminée le 2026-10-04)
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M12 : décisions 94 à 96 ; avant : M11)
+- **Dernière mise à jour** : 2026-10-04 (M14 : raccord du besoin, garantie familiale, tarif réduit ; avant : M12)
 
 > Script : `outils/sim_v4.py` (la v3 est conservée dans `outils/sim_v3.py` et la note 14). Tous les paramètres sont **[C]** ; les montants non sourcés sont **[À vérifier]**. Les décisions citées sont celles du journal. Depuis le 2026-10-04, les ajouts portent les marqueurs nominatifs (voir `00-methode-conventions-et-index.md`, « Identités et marqueurs ») : **[opus-5.5]** pour une proposition de l'agent, **[opus-5.5 as ggim]** pour une décision par procuration.
 
@@ -10,7 +10,15 @@
 
 **Les règles retenues** (depuis M9) : **les droits d'abord** jusqu'au socle cible, puis le partage moitié-moitié (décision 75) ; **l'ouverture du socle sur trois ans**, fonds compris (décision 78) ; **m ramené à 2 au plus une fois la cible atteinte**, par défaut (décision 79) ; **l'indexation** du socle, du besoin, de la formation et du point de cotisation sur le revenu médian, + 2 % par an en nominal [Unverified] (décision 80) ; un fonds de six mois du besoin net (décision 81). Le socle est exprimé **en euros de 2026** ; les recettes, en euros courants. Les résultats sous les hypothèses de M7 (sans indexation, ouverture annuelle) sont gardés aux sections 2.1 à 2.5, pour comparaison.
 
-**Mise à jour M12 (2026-10-04)** [opus-5.5] — elle prévaut sur tous les chiffres ci-dessous quand ils diffèrent :
+**Mise à jour M14 (2026-10-04, passe de corrections)** [opus-5.5] — elle prévaut sur tous les chiffres ci-dessous quand ils diffèrent :
+- **Deux corrections du modèle** (rapport de relecture, note 20, A4 et A5), sans décision nouvelle (109) : (1) le besoin net est raccordé au modèle explicite de la sortie progressive : `N_RSA` (7 Md€) et `N_CIBLE` (20 Md€) comptaient chacun la sortie progressive « d'origine » (1,0 Md€ au niveau du RSA, alors que le modèle explicite la chiffre à − 0,52 Md€) ; elle en est retirée, puis `sp_cost(s, SORTIE)` est ajoutée (`SP_RACCORD=True`) ; (2) la **garantie familiale** est chiffrée (`GF='rsa'`, décision 108 : elle suit la revalorisation du RSA) : 0,55 Md€ de 2026 au socle cible, 0,16 au socle de 925 €, rien de plus au niveau du RSA [Unverified : 410 000 foyers] ; `GF='socle'` donne 4,31 Md€ à la cible. **Besoin net** de 2026 : 6,0 Md€ au niveau du RSA (7,52 avant), 19,4 Md€ au socle cible (18,8 avant).
+- **Non-régression** : l'option `--avant-m14` (`SP_RACCORD=False`, `GF=None`, dictionnaire `AVANT_M14`) reproduit la sortie de M13 à l'identique, aux six lignes de variantes ajoutées près (contrôle par `diff`). Les grilles « règles de M11 » et « règles de M10 » sont inchangées.
+- **Trajectoire de référence (Central, m ≤ 3 puis 2)** : socle ouvert en 2031 à 839 € ; la cible en **2033** ; m à 2,5 en 2033 et 2034, ramené à 2 en **2035** (en **2036** sans l'excédent du fonds : la décision 94 a un effet) ; la baisse des cotisations commence en **2036** et atteint **0,16 point en 2040** ; fonds de 14,5 Md€ en 2040 (cible 13,4). **Avec m ≤ 2** : la cible en **2037**, 0,16 point, fonds de 13,7 Md€. Au plancher (m = 1), socle de 939 € en 2040. Scénario haut : 2,20 à 3,61 points en 2040.
+- **Scénario bas** : ouverture en 2035 (m ≤ 3 ou 4) ou 2037 (m ≤ 2) ; contribution d'équilibre de 0,8 Md€ (2039) et 1,7 Md€ (2040) avec m ≤ 3, 0,1 Md€ (2040) avec m ≤ 2, aucune avec m ≤ 4 ; atteindre la cible demanderait environ 18 à 21 Md€ par an hors taxe.
+- **Variantes** (Central, m ≤ 2 / m ≤ 3) : tarif réduit sur terminal prolongé à cinq ans (C2, `TERM_RED_END=2032`) : 2037 / 2033, sans effet sur la baisse des cotisations ; garantie familiale revalorisée comme le socle : jamais / 2035, aucune baisse des cotisations ; douze mois pleins puis six mois dégressifs : 2040 / 2034 ; étudiants inclus : jamais (socle de 650, 688, 789 € en 2040 avec m ≤ 2, 3, 4) ; patrimoine : 2036 / 2033 ; sensibilités : indexation à 1 %, 2034 / 2033 ; à 3 %, jamais / 2034 ; élasticité 0,3, 2033 ; élasticité 1,0, jamais.
+- **Les chiffres des mises à jour M12, M11 et M10 et de la section 2.0 ci-dessous sont historiques** (avec 0,21 point, cible 2036 avec m ≤ 2 pour M12).
+
+**Mise à jour M12 (2026-10-04)** [opus-5.5] — historique ; la mise à jour M14 prévaut :
 - **Trois règles nouvelles, par défaut dans le script** : l'excédent du fonds compté pour ramener m à 2 (décision 94, `M79_FONDS=True`) ; le retournement défini sur l'assiette, à multiple constant (décision 95, `RETOURNEMENT='assiette'`) ; la sortie progressive au plus favorable, avec une dégressivité linéaire sur les six derniers des douze mois (décision 96, `SORTIE='degressif'` ; fonctions `legacy`, `sp_pay`, `sp_cost` ; le surcoût par rapport à l'hypothèse d'origine est ajouté au besoin net). La modalité « six derniers mois » est une proposition [opus-5.5], non arrêtée ; la variante `prolonge` (douze mois pleins, puis six mois dégressifs) est chiffrée.
 - **Non-régression** : le réglage `M11` (`M79_FONDS=False`, `RETOURNEMENT='produit'`, `SORTIE='M11'`) reproduit **à l'identique** toute la sortie de M11 (contrôle par `diff`) ; la grille « règles de M11 » est imprimée par le script.
 - **La sortie progressive** (hypothèses [Unverified] : 600 000 reprises par an, salaires du quart de SMIC au SMIC, droit actuel simplifié à max(0 ; 640 − 0,39 × salaire)) : coût net par rapport au droit actuel, au niveau du RSA, de − 0,52 Md€ dans la version de M11 (la régression « économisait ») à 0 ; à la cible, 3,32 Md€ (M11 et plancher seul), **2,14 Md€ avec la dégressivité dans les douze mois**, 3,80 Md€ avec la variante prolongée.
@@ -36,17 +44,17 @@
 - **Variantes** (m ≤ 3) : étudiants, socle à 667 € de 2026 en 2040 (non finançable) ; patrimoine, cible en 2033 ; 500 000 inactifs, cible en 2039 ; élasticité 1,0, socle à 917 € en 2040 ; élasticité 0,3, cible en 2033.
 - **Écarts avec l'exposé v0.2** (accepté en l'état, décision 87), à reprendre en relecture de cohérence (M12) : « dès 2034 s'il le porte temporairement à trois » → 2033, m culminant à 2,5 ; « 0,1 à 0,2 point en 2040 » → environ 0,05 à 0,1 point. Les chiffres de l'exposé restent des ordres de grandeur.
 
-**La réponse franche** [opus-5.5] (section 2.0) :
+**La réponse franche** [opus-5.5] (état à la fin de M14 ; la section 2.0 garde les chiffres de M9) :
 
 1. **La première année** (2028, au plancher) rapporte environ **2,6 Md€**, et non « un milliard » (exposé v0.1).
-2. **Le socle s'ouvre à tous en 2031**, au niveau du RSA, dans les scénarios central et haut.
-3. **Dans le scénario central, la cible** (le seuil de pauvreté, environ 1 200 € de 2026) **est atteinte en 2038 avec m ≤ 2**, ou **en 2034 si la LFSS porte m à 3** pendant la montée en charge (avec la justification renforcée de la décision 51), m redescendant à 2 en 2038. **L'indexation retarde la cible de quatre ans à m ≤ 2** : le chiffre « 2034 avec m ≤ 2 » de la décision 75, calculé sans indexation, ne tient plus.
-4. **Au plancher (m = 1)**, le socle plafonne à environ **890 € de 2026 en 2040**. Seul le scénario haut atteint la cible au plancher (2031).
-5. **La baisse des cotisations est modeste et tardive** : environ **0,1 point (m ≤ 2) à 0,2 point (m ≤ 3) en 2040** dans le scénario central ; 2 à 3,6 points dans le scénario haut. C'est un bénéfice second, pas une promesse (décision 80).
-6. **Dans le scénario bas, la taxe seule ne finance pas le but.** Le socle s'ouvre au niveau du RSA en **2036 (m ≤ 4), 2037 (m ≤ 3) ou 2039 (m ≤ 2)**, jamais au plancher ; avec m ≤ 4, le fonds est épuisé en 2039 et la **contribution d'équilibre** atteint 2,8 Md€ en 2040. Atteindre la cible demanderait environ 20 Md€ par an de ressources hors taxe. La taxe Zucman est citée hors dispositif, sans rendement chiffré (décisions 32 et 77).
-7. **La variante « étudiants inclus »** (décision 70, question ouverte) **n'est pas finançable par la taxe dans le scénario central** : le socle reste au niveau du RSA (748 € de 2026 en 2040 avec m ≤ 4). Dans le scénario haut, la cible est atteinte en 2033.
-8. **La variante « patrimoine »** (décision 71, question ouverte) avance la cible d'un an avec m ≤ 3 (2033). Son enjeu est de principe, pas budgétaire.
-9. **Les sensibilités** : l'indexation (à 1 %, cible en 2036 avec m ≤ 2 ; à 3 %, jamais avec m ≤ 2) ; l'élasticité (à 1,0, la cible n'est jamais atteinte ; à 0,3, elle l'est en 2033) ; l'inscription de 500 000 inactifs (cible en 2036 avec m ≤ 4 seulement).
+2. **Le socle s'ouvre à tous en 2031**, au niveau du RSA (839 € de 2026 dans la trajectoire de référence), dans les scénarios central et haut.
+3. **Dans le scénario central, la cible** (le seuil de pauvreté, environ 1 200 € de 2026) **est atteinte en 2037 avec m ≤ 2**, ou **en 2033 si la LFSS autorise m jusqu'à 3** (m culmine à 2,5 en 2033 et 2034, puis revient à 2 en 2035). L'indexation (décision 80) a retardé la cible de 2034 à 2038 avec m ≤ 2 ; la dégressivité dans les douze mois la ramène à 2037.
+4. **Au plancher (m = 1)**, le socle plafonne à environ **939 € de 2026 en 2040**. Seul le scénario haut atteint la cible au plancher (2031).
+5. **La baisse des cotisations est modeste et tardive** : **0,16 point en 2040** dans le scénario central (avec m ≤ 2 comme avec m ≤ 3), 2,2 à 3,6 points dans le scénario haut. Elle commence en 2036 (trajectoire de référence). C'est un bénéfice second, pas une promesse (décision 80).
+6. **Dans le scénario bas, la taxe seule ne finance pas le but.** Le socle s'ouvre au niveau du RSA en **2035 (m ≤ 3 ou 4) ou 2037 (m ≤ 2)**, jamais au plancher ; avec m ≤ 3, la **contribution d'équilibre** atteint 0,8 Md€ en 2039 et 1,7 Md€ en 2040 ; avec m ≤ 4, aucune d'ici 2040. Atteindre la cible demanderait environ 18 à 21 Md€ par an de ressources hors taxe. La taxe Zucman est citée hors dispositif, sans rendement chiffré (décisions 32 et 77).
+7. **La variante « étudiants inclus »** (décision 70, option ouverte) **n'est pas finançable par la taxe dans le scénario central** : le socle reste à 650-789 € de 2026 en 2040 selon m. Dans le scénario haut, la cible est atteinte en 2033.
+8. **La variante « patrimoine »** (décision 71, option ouverte) avance la cible d'un an avec m ≤ 2 (2036) et ne change rien avec m ≤ 3 (2033). Son enjeu est de principe, pas budgétaire.
+9. **Les sensibilités** : l'indexation (à 1 %, cible en 2034 avec m ≤ 2 et 2033 avec m ≤ 3 ; à 3 %, jamais avec m ≤ 2, 2034 avec m ≤ 3) ; l'élasticité (à 1,0, la cible n'est jamais atteinte ; à 0,3, elle l'est en 2033) ; l'inscription de 500 000 inactifs (cible en 2035 avec m ≤ 4, 2038 avec m ≤ 3, jamais avec m ≤ 2).
 
 ---
 
@@ -58,7 +66,7 @@
 |---|---|---|
 | Entrée en vigueur | Le **1ᵉʳ janvier 2028** : un vote en 2027, plus le statu quo de trois mois de la notification | Décision 62 |
 | Phase 0 | 2028 à 2030 : la taxe est perçue, le fonds se constitue, la formation est financée ; le RSA et l'ASS sont repris à l'identique (neutre) ; **m = 1** | D13.6, décision 73 |
-| Phase 1 | Au plus tôt en **2031**, et seulement si la recette de l'année couvre l'ouverture du socle au niveau du RSA (« les droits ne précèdent jamais les recettes »). **Variante** [opus-5.5] : la recette plus un tiers du fonds (l'équilibre sur trois ans de D13.6) | D13.6, décision 73 |
+| Phase 1 | Au plus tôt en **2031**, et seulement si la recette de l'année plus un tiers du fonds (l'équilibre sur trois ans de D13.6, **règle retenue**, décision 78) couvre l'ouverture du socle au niveau du RSA (« les droits ne précèdent jamais les recettes »). *Règle annuelle : la recette seule, abandonnée.* | D13.6, décision 73 |
 | Phase 2 | Le socle monte du niveau du RSA (650 € [À vérifier]) vers la cible (1 200 € [À vérifier]), en fonction des recettes | D13.6, décision 73 |
 | Vote de m | En LFSS, à partir de la LFSS pour 2031 ; **lissé à ± 0,5 par an** ; relevé tant que le socle cible n'est pas atteint ; abaissé seulement si la recette attendue couvre encore les engagements | Décisions 40, 50, 51 ; fichier 10 |
 
@@ -73,7 +81,7 @@
 | Champ D13.1 | × 0,95 | − 5 % | L'IA non générative est exclue (décision 64) |
 | Serveurs propres | × 1,10 | + 10 % | Taxés, mais absents de la v2 et de la v3 (note 13) |
 | Recouvrement | × 0,90 | − 10 % | La fraude, les erreurs et les litiges |
-| Abattement | 0,5 Md€ de dépense exonérée | **− 15 % de la recette en 2028, − 3 % en 2035** (scénario central, m = 1) ; soit 10 % puis 2 % du marché | Environ 500 000 groupes × 1 000 € ; **le montant reste à fixer** (Q44) |
+| Abattement | 0,5 Md€ **de taxe** (1 000 € de taxe par groupe et par an, décision 88) | 16 % de la recette brute en 2028, 2 % en 2035 | Environ 500 000 groupes × 1 000 € [Unverified] ; *avant M10 : 0,5 Md€ de dépense exonérée (− 15 % puis − 3 %)* |
 | IA sur terminal | 5 % du volume en 2028, + 2 points par an, jusqu'à 20 % | Au tarif 0,25 jusqu'en 2030, puis au plein tarif | Décision 60 |
 | Coefficients par flux et classes | Neutres | — | P_k est un prix moyen par octet-équivalent pondéré : en moyenne de classe, la taxe vaut m × la dépense (D2) |
 | Décalage de P_k | Neutralisé (× 1,00) | Sensibilité à × 1,09 | Un trimestre de décalage avec des prix en baisse de 30 % par an joue **en faveur** de la recette (D2) |
@@ -84,7 +92,7 @@
 
 | Poste | Valeur | Source |
 |---|---|---|
-| Besoin net à l'ouverture, au niveau du RSA | **7 Md€** : les 18-24 ans (3,9), l'individualisation des couples (1,2), la voie (b) du séjour (0,5), les frontaliers (0,3), la sortie progressive de 12 mois (1,0) [C]. *La somme fait 6,9 ; le script l'arrondit à 7.* | D13.3, D13.7, décision 72 |
+| Besoin net à l'ouverture, au niveau du RSA | **7 Md€ de calage** : les 18-24 ans (3,9), l'individualisation des couples (1,2), la voie (b) du séjour (0,5), les frontaliers (0,3), la sortie progressive d'origine (1,0) [C]. *La somme fait 6,9 ; le script l'arrondit à 7.* **M14** : la sortie progressive d'origine est retirée du calage (reste 6,0) et remplacée par le modèle explicite (0 au niveau du RSA, 2,14 Md€ à la cible) ; la garantie familiale est ajoutée (0 au RSA, 0,55 à la cible) | D13.3, D13.7, décisions 72, 96, 108 |
 | Besoin net au socle cible | **20 Md€** (hors formation) | D13.7 (18 à 23 Md€) |
 | Entre les deux | Interpolation linéaire selon le montant du socle | — |
 | Formation (coûts pédagogiques, abondement du CPF) | **1 Md€** par an dès 2028 [C, À vérifier] | D13.5 |
@@ -100,7 +108,7 @@
 
 ## 2. Les résultats
 
-### 2.0 Synthèse, règles retenues en M9 (décisions 75, 78, 79, 80, 81)
+### 2.0 Synthèse, règles retenues en M9 (décisions 75, 78, 79, 80, 81) [chiffres de M9, historiques ; voir la mise à jour M14]
 
 | Scénario | Plafond de m | Ouverture du socle | Socle cible atteint | m maximal | m en 2040 | Socle 2035 (€ 2026) | Socle 2040 | Baisse de cotisation 2035 | 2040 | Déficit maximal (contribution d'équilibre) |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -234,7 +242,7 @@
 ## 4. Limites
 
 - Le modèle des dépenses est **linéaire** entre deux points de calibrage, eux-mêmes [À vérifier]. La population du socle (4 millions de personnes, note 05) est **probablement sous-estimée** : les couples allocataires du RSA comptent deux adultes, et les personnes au foyer qui s'inscrivent ne sont comptées qu'en variante.
-- **L'excédent du fonds** au-delà de sa cible n'est pas employé (il l'est seulement par la baisse de m) : c'est prudent, et cela sous-estime légèrement la vitesse de montée.
+- ~~**L'excédent du fonds** au-delà de sa cible n'est pas employé~~ → **un tiers de l'excédent est compté pour ramener m à 2** (décision 94).
 - **La baisse de m** est faite pas à pas : dans le scénario haut, le fonds dépasse sa cible, et la LFSS pourrait abaisser m plus vite.
 - **La formation** est chiffrée forfaitairement (1 Md€).
 - **Les effets de second tour** (la baisse des cotisations sur l'emploi, l'IA sur la masse salariale) ne sont pas modélisés (fichier 11, étude d'impact).
@@ -255,6 +263,8 @@
 
 8. **2026-10-04, M12** : l'orchestrateur adopte l'excédent du fonds (94) et le retournement sur l'assiette (95), et **conteste la sortie progressive** de M11, qui faisait moins bien que le droit actuel au niveau du RSA (96). Modélisation des trois règles ; contrôle de non-régression (le réglage M11 reproduit la sortie de M11 à l'identique). **Constat** [opus-5.5] : le plancher coûte 0,52 Md€ au niveau du RSA et rien à la cible ; c'est la modalité de la dégressivité, non le plancher, qui avance la cible avec m ≤ 2 (2036). **[opus-5.5]**
 
+9. **2026-10-04, M14** : relecture de cohérence ; **constat** [opus-5.5] : le besoin comptait deux fois la sortie progressive d'origine et omettait la garantie familiale ; raccord du modèle (`SP_RACCORD`, `GF`), variante du terminal à cinq ans ; trajectoire révisée (cible 2033 avec m ≤ 3, 2037 avec m ≤ 2 ; 0,16 point en 2040). Non-régression par `diff` avec `--avant-m14`. **[opus-5.5]**
+
 ## Questions ouvertes
 
 - ~~La règle d'emploi pendant la montée en charge : D8 tel quel, ou les droits d'abord~~ : **les droits d'abord** (décision 75).
@@ -262,12 +272,12 @@
 - ~~La règle d'ouverture~~ : **sur trois ans** (décision 78).
 - ~~m au-delà de 2 après la cible~~ : **ramené à 2 au plus par défaut**, la LFSS pouvant aller au-delà par un vote motivé (décision 79).
 - ~~L'objet de la moitié « droits » après la cible~~ : l'indexation et les extensions votées, à défaut la baisse des cotisations (décision 80).
-- [opus-5.5] **Le multiple pendant la montée en charge** : m ≤ 2 (cible vers 2038) ou m = 3 pendant quelques années (cible en 2034) ? C'est un choix du Parlement ; l'exposé présente les deux. Le taux d'indexation (2 %) est à confirmer.
+- ~~Le multiple pendant la montée en charge~~ : le dispositif garde la fourchette de 1 à 4 ; la trajectoire de référence est m ≤ 3 (décision 84, maintenue, hésitation à signaler : 107). Le taux d'indexation (2 %) est à confirmer par l'économiste (85).
 - ~~Le montant de l'abattement (Q44)~~ : **1 000 € de taxe par groupe et par an** (décision 88).
 - ~~Le « cliquet » sur la baisse de m~~ : **refusé** ; la baisse des cotisations n'est engagée que si elle est soutenable avec m ≤ 2 (décision 89).
 - ~~[opus-5.5] **L'excédent du fonds** au-delà de sa cible : le compter pour ramener m à 2 un an plus tôt (variante `M79_FONDS`) ?~~ → **adopté** (décision 94).
 - ~~[opus-5.5] **La définition du retournement** : sur l'assiette plutôt que sur le produit ?~~ → **adopté** (décision 95).
-- [opus-5.5] **La modalité de la dégressivité** de la sortie progressive (décision 96) : dans les douze mois (retenue pour le chiffrage, − 1,18 Md€ à la cible) ou après (+ 0,48 Md€) ? Le nombre de mois (6) et le paramètre des reprises d'emploi (600 000 par an) sont [Unverified].
+- ~~La modalité de la dégressivité~~ : **dans les douze mois** (décision 98 ; hésitation à signaler : 104). Le nombre de mois (6) et le paramètre des reprises d'emploi (600 000 par an) sont [Unverified], à faire confirmer par l'économiste (100).
 - Les étudiants et le patrimoine : des choix ouverts, réservés à Guillaume (décisions 70 et 71).
 
 ## Liens
