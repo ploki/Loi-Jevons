@@ -30,6 +30,10 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
 
+## Itération M17 (2026-10-04) — questions de la confrontation à l'aveugle consignées ; session en pause
+
+Le lecteur aveugle (Sonnet 5.5, qui n'a lu que les trois livrables) a rendu **97 questions et 20 contradictions**. Elles sont consignées telles quelles dans la note `21-confrontation-aveugle-M15-questions.md`. **Le classement face au corpus (phase 2) n'est pas lancé** : Guillaume a demandé une pause pour interroger le corpus avec lui. Aucun agent ne tourne.
+
 ## Itération M16 (2026-10-04) — Guillaume : un chantier d'étude sur l'effet de consommation
 
 **Message de Guillaume** (et non par procuration), pendant la pause qu'il a demandée : il faut noter qu'il faut **étudier l'impact économique lié au surplus de consommation** que génère la mesure, **par tranche d'âge**. Il cite les **jeunes adultes en formation initiale qui vivent chez leurs parents** : pour lui, c'est un **coup de pouce pour les jeunes les plus défavorisés**, et un **surplus de TVA et d'achats de biens et services**. L'orchestrateur a reformulé (étude à faire, pas de décision d'inclure les étudiants) avant de consigner : journal n° 110, note 18 (questions ouvertes), fichier 17 (Q50). Rien d'autre n'est lancé : la session est en pause, à la demande de Guillaume.
