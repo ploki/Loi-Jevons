@@ -30,6 +30,10 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
 
+## Itération M19 (2026-10-04) — Guillaume : l'application Rust doit se régler en temps réel
+
+**Message de Guillaume** (et non par procuration) : l'application Rust devra permettre de **changer les paramètres et les conditions en temps réel**. Noté (journal n° 113, note 19). La lecture de l'orchestrateur (paramètres = valeurs ; conditions = règles et variantes) est marquée à confirmer. Rien n'est lancé.
+
 ## Itération M18 (2026-10-04) — Guillaume : corrections des chiffres et des phrases fausses ; une application Rust à venir
 
 **Message de Guillaume** (et non par procuration), après avoir lu le résumé des questions du lecteur aveugle :
