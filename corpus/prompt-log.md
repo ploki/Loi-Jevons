@@ -54,6 +54,10 @@ Guillaume demande la seconde relecture des corrections (« oui fais relire ») e
 
 Guillaume dit regretter le terme « Loi Jevons » : ce devrait plutôt être « Taxe Jevons ». Après les questions et les réserves de Claude, il y renonce : « Non, oublie ça », et demande de **consigner pourquoi on ne le fait pas**.
 
+## Itération 14 (2026-10-05)
+
+Guillaume donne la raison pour laquelle on garde « Loi Jevons » : « ce qu'on fait couvre et la taxe et la redistribution ».
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)

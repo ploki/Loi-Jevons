@@ -2,7 +2,7 @@
 
 - **Statut** : stabilisé
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-05 (« Taxe Jevons » envisagé puis écarté, décision 117)
+- **Dernière mise à jour** : 2026-10-05 (« Taxe Jevons » envisagé puis écarté, décisions 117 et 118)
 
 
 ## En vigueur
@@ -37,7 +37,8 @@ Titre retenu : **« Loi Jevons : financement du chômage universel par la taxe s
 
 - **[ggim]** Guillaume regrette le terme « Loi Jevons » et propose « Taxe Jevons » à la place.
 - **[opus-5.5]** Avis donné : pour, le parallèle avec la taxe Zucman, un nom qui dit le mécanisme, et la fin de la confusion possible avec la « loi de Jevons » (le paradoxe) ; contre, le nom mettrait en avant **le moyen (la taxe) plutôt que le but (le chômage universel)**, alors que « le vrai but, c'est le chômage universel » [ggim] ; « taxe » est plus difficile à défendre en campagne que « loi » ; le titre d'usage répéterait « taxe » deux fois (« Taxe Jevons : financement du chômage universel par la taxe sur l'intelligence artificielle »).
-- **[ggim]** « Non, oublie ça » : **on garde « Loi Jevons »**. Guillaume a écarté le changement juste après ces réserves, sans dire laquelle l'a décidé ; les raisons ci-dessus sont celles de l'échange, pas une motivation qu'il aurait formulée.
+- **[ggim]** « Non, oublie ça » : **on garde « Loi Jevons »**.
+- **[ggim] Sa raison** : « ce qu'on fait couvre et la taxe et la redistribution ». Le texte n'est pas qu'une taxe : il crée aussi le chômage universel qu'elle finance, et « Loi » couvre les deux. Les autres arguments ci-dessus restent ceux de [opus-5.5].
 
 ### Liens
 
