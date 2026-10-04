@@ -25,7 +25,7 @@
   - **La sortie progressive** : 12 mois, au plus 50 % des revenus d'activité (décisions 72 [P] et 91), puis la prime d'activité ; elle ne fait **jamais moins bien que le droit actuel** (le RSA et la prime d'activité), la marche de fin de période étant supprimée par une **dégressivité linéaire** inscrite dans la loi (décision 96 [opus-5.5 as ggim]), sur les derniers des douze mois (décision 98 [opus-5.5 as ggim], hésitation signalée au rapport de retour). Chiffrage : étude d'impact v0.1, § 5.3.4.
   - **La formation rémunérée** [C] (D13.5) : le socle maintenu, les certifications RNCP et Qualiopi, l'abondement du CPF.
 - **Questions réservées à Guillaume** (décisions 70 et 71, laissées ouvertes ; options ouvertes au débat dans les livrables, décision 102) : les **étudiants en formation initiale** (non éligibles dans la proposition de D13.3) et un **socle réduit pour les revenus élevés du patrimoine** (non retenu, chiffré en variante).
-- **Coût** : le **besoin net de 2026** est de **6,0 Md€ au niveau du RSA** et de **19,4 Md€ au socle cible** (note 19, M14) ; la garantie familiale coûte 0,55 Md€ au socle cible (décision 108). *(Avant : un coût brut d'environ 68 à 72 Md€ [À vérifier], remplaçant environ 52 Md€ de dépenses existantes, d'où un besoin net d'environ 16 à 20 Md€ ; puis 18 à 23 Md€ en M6.)*
+- **Coût** : le **besoin net de 2026** est de **6,0 Md€ au niveau du RSA** et de **19,4 Md€ au socle cible** (note 19, M14) ; la garantie familiale coûte 0,55 Md€ au socle cible (décision 108) [Unverified]. *(Avant : un coût brut d'environ 68 à 72 Md€ [À vérifier], remplaçant environ 52 Md€ de dépenses existantes, d'où un besoin net d'environ 16 à 20 Md€ ; puis 18 à 23 Md€ en M6.)*
 
 ---
 

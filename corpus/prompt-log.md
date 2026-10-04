@@ -46,6 +46,10 @@ Guillaume demande de lancer l'**élagage** (« vas-y pour l'élagage »), propos
 
 Guillaume demande de lancer la relecture de l'élagage (« oui, lance la relecture »). Il demande aussi de regarder dans tout l'historique des commits s'il n'a pas mis d'informations personnelles, pour décider s'il rend le dépôt public.
 
+## Itération 12 (2026-10-04)
+
+Guillaume demande la seconde relecture des corrections (« oui fais relire ») et redemande de vérifier tout l'historique des commits à la recherche d'informations personnelles, avant de décider s'il rend le dépôt public. Retouches de tenue de la seconde relecture : note 18 (numéros du journal « hors session », en-tête) ; note 05, [Unverified] sur la garantie familiale, aligné sur le n° 108 du journal.
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)
