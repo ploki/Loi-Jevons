@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion (M7 de la session metamaieutique, terminée le 2026-10-04)
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M9 : décisions 77 à 83, indexation, exposé v0.2)
+- **Dernière mise à jour** : 2026-10-04 (M10 : décisions 84 à 87, dispositif v0.1)
 
 > Note de la session metamaieutique « Rendre la Loi Jevons réalisable » (voir `mandat.md`). Les décisions par procuration sont marquées **[P]** et numérotées comme au journal ; les propositions non validées restent **[C]**. Les textes vérifiés sur le web sont marqués **[S]** ; le reste est **[À vérifier]**. **Depuis le 2026-10-04** (décision 76), les ajouts portent les marqueurs nominatifs : **[opus-5.5]** (proposition de l'agent), **[opus-5.5 as ggim]** (décision par procuration, l'ancien [P]), **[Unverified]** (l'ancien [À vérifier]) ; voir le fichier 00, « Identités et marqueurs ».
 
@@ -775,9 +775,9 @@ Tous les montants sont [C, À vérifier].
 
 ---
 
-## F. Guide de reprise pour un agent neuf (état à la fin de M7, le 2026-10-04)
+## F. Guide de reprise pour un agent neuf (état à la fin de M10, le 2026-10-04)
 
-**À lire, dans l'ordre** : `mandat.md` ; `intention-de-l-auteur.md` ; la section « En vigueur » de cette note ; le **journal** (n° 37 à 76 : les décisions [P] puis, depuis le n° 75, [opus-5.5 as ggim] et [ggim]) ; la section E de cette note ; la **note 19** (simulation v4), section « En vigueur » ; puis les sections D citées au besoin. Les notes 04, 05, 08, 10 et 11 ont une section « En vigueur » à jour, qui renvoie ici. **Les conventions de marquage** sont dans le fichier 00, « Identités et marqueurs » (décision 76).
+**À lire, dans l'ordre** : `mandat.md` ; `intention-de-l-auteur.md` ; la section « En vigueur » de cette note ; le **journal** (n° 37 à 87 : les décisions [P] puis, depuis le n° 75, [opus-5.5 as ggim] et [ggim]) ; la section E de cette note ; la **note 19** (simulation v4), section « En vigueur » ; puis les sections D citées au besoin. Les notes 04, 05, 08, 10 et 11 ont une section « En vigueur » à jour, qui renvoie ici. **Les conventions de marquage** sont dans le fichier 00, « Identités et marqueurs » (décision 76).
 
 **L'architecture en une page** :
 
@@ -797,12 +797,19 @@ Tous les montants sont [C, À vérifier].
 | Calendrier | Le vote en 2027 ; la notification et le statu quo ; l'entrée en vigueur en 2028 ; la phase 0 de trois ans ; l'ouverture du socle au plus tôt en 2031 ; le montant du socle, voté en LFSS, est la variable d'ajustement | 62, 73 |
 | Champ du socle, choix ouverts | **Les étudiants en formation initiale** et **la réduction pour les revenus du patrimoine** : réservés à Guillaume, chiffrés en variantes | 70, 71 |
 
+**État à la fin de M10** [opus-5.5] :
+- **Décisions 84 à 87** : aucune trajectoire de m dans le dispositif ; la trajectoire de référence du Gouvernement (m ≤ 3, puis 2) figure dans l'étude d'impact (84) ; l'indexation à 2 %, avec sa sensibilité (85) ; la baisse des cotisations suspendue avant le fonds, hors retournement (86) ; l'exposé v0.2 accepté, le dispositif dans un nouveau fichier (87).
+- **Les unités du script sont cohérentes** (le marché et la recette sont en euros courants) ; **l'abattement est exprimé en taxe** : 1 000 € par groupe et par an (proposition sur Q44, **à valider**).
+- **Trajectoire de référence** (note 19, mise à jour M10) : la cible atteinte en 2033, m culminant à 2,5 ; la baisse des cotisations retombe à 0,05 point en 2038-2040, après le retour de m à 2.
+- **À reprendre en relecture de cohérence (M12)** : les chiffres de l'exposé v0.2 (« dès 2034 » → 2033 ; « 0,1 à 0,2 point » → environ 0,05 à 0,1 point) ; les montants d'amendes proposés dans le dispositif (articles L. [À vérifier]-21) ; les 60 renvois marqués [À vérifier].
+- **Un point de conception ouvert** [opus-5.5] : la règle 79 abaisse m dès que la recette couvre les droits, ce qui annule la baisse des cotisations déjà engagée (0,26 → 0,05 point). Variante : n'abaisser m que si la recette couvre aussi la baisse engagée.
+
 **Les résultats de la v4** (note 19, scénario central, règles retenues en M9, socle indexé) : une première recette de 2,6 Md€ en 2028 ; un fonds de 10,2 Md€ en 2030 ; le socle ouvert à tous en 2031 au niveau du RSA ; **la cible atteinte en 2034 avec m = 3 pendant la montée en charge, ou vers 2038 avec m ≤ 2** ; une baisse des cotisations d'environ 0,1 à 0,2 point en 2040. **Le scénario bas ne finance pas le but par la taxe seule** (D13.8).
 
 **Ce qui reste à faire** (plan, section C, renuméroté : l'itération M8 a été la reprise par Guillaume après la mise à jour des skills) :
 - ~~**M7** : la simulation v4 et la revue des 80 questions~~ (faites le 2026-10-04 : note 19, fichier 17) ;
 - ~~**M9** : l'exposé des motifs v0.2~~ (fait le 2026-10-04 : `livrable/…-v0.2.md` ; la liste de corrections ci-dessous y est appliquée) ;
-- **M10** : le dispositif v0.1 ;
+- ~~**M10** : le dispositif v0.1~~ (fait le 2026-10-04 : `livrable/loi-jevons-dispositif-v0.1.md`, avec le projet de loi organique (partie B) et l'annexe LFSS / loi de finances (partie C)) ;
 - **M11** : l'étude d'impact v0.1 ;
 - **M12** : la relecture de cohérence ;
 - **M13** : la confrontation à l'aveugle ;

@@ -30,6 +30,16 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
 
+## Itération M11 (2026-10-04) — dispositif v0.1 rédigé ; passage à l'étude d'impact (agent neuf)
+
+Réponse par procuration au tour de l'agent (journal 84 à 87 ; le dispositif v0.1 compte 20 articles, un projet de loi organique et une annexe LFSS / LF ; les unités du script sont vérifiées et cohérentes) :
+1. **L'abattement de 1 000 € de taxe par groupe et par an**, non indexé et révisable en LFSS : validé. Pourquoi : c'est un abattement, pas une franchise (la décision 30 est respectée), son coût ne croît pas avec m, et il ménage les plus petits.
+2. **Contestation de la proposition de « cliquet »** (ne baisser m que si la recette couvre aussi la baisse des cotisations déjà engagée). Elle maintiendrait m au-dessus de 2 pour le seul double dividende, ce qui contredit le pourquoi de la décision 79. **La règle retenue est l'inverse** : on n'engage une baisse des cotisations que si elle est **soutenable avec m ≤ 2**. Ainsi le double dividende ne recule pas, et il ne tient pas m au-dessus de 2. Il faut le modéliser et dire ce que cela change.
+3. **Les montants de sanction** sont gardés comme point de départ, à faire relire par le juriste (et à vérifier sous l'angle de la proportionnalité).
+4. **Le plafond de la sortie progressive à 50 %**, avec un taux fixé par décret : validé. Les taux marginaux seront chiffrés dans l'étude d'impact.
+5. **Les écarts de chiffres de l'exposé v0.2** seront corrigés à la relecture de cohérence : les inscrire dans la liste de la section F, pour ne pas les oublier.
+6. **Passer à M11, l'étude d'impact v0.1.** L'agent étant saturé, un **agent neuf** reprend, à partir de la section F de la note 18.
+
 ## Itération M10 (2026-10-04) — exposé des motifs v0.2 rédigé ; passage au dispositif
 
 Réponse par procuration au tour de l'agent (journal n° 77 à 83 ; l'exposé v0.2 est créé ; l'indexation fait passer la cible de 2034 à 2038 avec m ≤ 2) :

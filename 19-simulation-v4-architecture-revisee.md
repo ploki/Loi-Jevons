@@ -2,13 +2,22 @@
 
 - **Statut** : en discussion (M7 de la session metamaieutique, terminée le 2026-10-04)
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M9 : indexation, décisions 77 à 81 ; avant : fin de M7)
+- **Dernière mise à jour** : 2026-10-04 (M10 : unités vérifiées, décisions 84 à 86, abattement en taxe ; avant : M9)
 
 > Script : `outils/sim_v4.py` (la v3 est conservée dans `outils/sim_v3.py` et la note 14). Tous les paramètres sont **[C]** ; les montants non sourcés sont **[À vérifier]**. Les décisions citées sont celles du journal. Depuis le 2026-10-04, les ajouts portent les marqueurs nominatifs (voir `00-methode-conventions-et-index.md`, « Identités et marqueurs ») : **[opus-5.5]** pour une proposition de l'agent, **[opus-5.5 as ggim]** pour une décision par procuration.
 
 ## En vigueur
 
 **Les règles retenues** (depuis M9) : **les droits d'abord** jusqu'au socle cible, puis le partage moitié-moitié (décision 75) ; **l'ouverture du socle sur trois ans**, fonds compris (décision 78) ; **m ramené à 2 au plus une fois la cible atteinte**, par défaut (décision 79) ; **l'indexation** du socle, du besoin, de la formation et du point de cotisation sur le revenu médian, + 2 % par an en nominal [Unverified] (décision 80) ; un fonds de six mois du besoin net (décision 81). Le socle est exprimé **en euros de 2026** ; les recettes, en euros courants. Les résultats sous les hypothèses de M7 (sans indexation, ouverture annuelle) sont gardés aux sections 2.1 à 2.5, pour comparaison.
+
+**Mise à jour M10 (2026-10-04)** [opus-5.5] — elle prévaut sur les chiffres ci-dessous quand ils diffèrent :
+- **Les unités sont cohérentes** (décision 85) : le marché du script est le chiffre d'affaires HT de l'IA professionnelle en France, en euros courants (note 13) ; c'est un volume × un prix, donc la baisse de P_k y est incluse, et la recette (m × dépense) est en euros courants, comme les montants indexés. Rien n'est corrigé.
+- **Deux changements de modèle** : la décision 86 (hors retournement, la baisse des cotisations est suspendue avant de puiser dans le fonds) ; l'**abattement exprimé en taxe**, 1 000 € de taxe par groupe et par an, soit 0,5 Md€ pour environ 500 000 groupes [Unverified] (proposition Q44, à valider ; avant : 0,5 Md€ de dépense, dont le coût croissait avec m).
+- **La trajectoire de référence du Gouvernement** (décision 84 : m ≤ 3 pendant la montée en charge, puis 2), scénario central : 2,6 Md€ en 2028 ; un fonds de 10,1 Md€ en 2030 ; le socle ouvert en 2031 (782 € de 2026) ; **la cible atteinte en 2033, m culminant à 2,5** (2033-2036) ; m ramené à 2 en 2037 ; la baisse des cotisations monte à 0,26 point en 2036, puis retombe à **0,05 point** en 2038-2040, car le retour de m à 2 ne couvre plus que les droits indexés.
+- **Avec m ≤ 2** : la cible en 2038, 0,12 point en 2040. **Sensibilité à l'indexation** (m ≤ 3 / m ≤ 2) : à 1 %, cible en 2033 / 2035 ; à 2 %, 2033 / 2038 ; à 3 %, 2034 (m = 3) / jamais.
+- **Scénario bas, m ≤ 4** : le socle s'ouvre au niveau du RSA en 2035 ; le fonds est épuisé en 2039 ; la contribution d'équilibre atteint 1,5 Md€ en 2040.
+- **Variantes** (m ≤ 3) : étudiants, socle à 667 € de 2026 en 2040 (non finançable) ; patrimoine, cible en 2033 ; 500 000 inactifs, cible en 2039 ; élasticité 1,0, socle à 917 € en 2040 ; élasticité 0,3, cible en 2033.
+- **Écarts avec l'exposé v0.2** (accepté en l'état, décision 87), à reprendre en relecture de cohérence (M12) : « dès 2034 s'il le porte temporairement à trois » → 2033, m culminant à 2,5 ; « 0,1 à 0,2 point en 2040 » → environ 0,05 à 0,1 point. Les chiffres de l'exposé restent des ordres de grandeur.
 
 **La réponse franche** [opus-5.5] (section 2.0) :
 

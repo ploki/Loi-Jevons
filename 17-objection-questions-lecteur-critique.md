@@ -8,7 +8,7 @@
 ## En vigueur
 
 - **Liste de suivi** des 80 questions. Chaque question a un **statut** : ouverte, répondue ou décidée. Quand une question est tranchée, on note dans « Renvoi » le numéro de la décision du journal.
-- Situation au 2026-10-04 (**M9**, après l'exposé v0.2) : **44 décidées**, **30 répondues**, **6 ouvertes**. Les 6 ouvertes sont rattachées : le dispositif v0.1 (**M10** : 44), l'étude d'impact v0.1 (**M11** : 8, 71, 73, 74), ou **réservée à Guillaume** (50 : les étudiants et le patrimoine, décisions 70 et 71). *En M7 : 42 décidées, 26 répondues, 12 ouvertes ; en M9, Q63 et Q75 sont décidées (82), et les questions rattachées à M9 (1, 2, 5, 6, 54, 66) sont traitées dans l'exposé v0.2.* Le suivi des 20 questions non traitées est dans la **note 18, section E**.
+- Situation au 2026-10-04 (**M10**, après le dispositif v0.1) : **44 décidées**, **31 répondues**, **5 ouvertes** : l'étude d'impact v0.1 (**M11** : 8, 71, 73, 74) et la question **réservée à Guillaume** (50 : les étudiants et le patrimoine, décisions 70 et 71). *Historique : M7, 42 / 26 / 12 ; M9, 44 / 30 / 6 ; en M10, Q44 reçoit une réponse proposée (l'abattement), à valider.* Le suivi des 20 questions non traitées est dans la **note 18, section E**.
 - *Méthode de la revue* : « décidée » = tranchée par une décision du journal ; « répondue » = traitée dans une note, sans décision propre (une réponse [C] ou [opus-5.5] reste à valider) ; « ouverte » = à traiter, avec son rattachement. La colonne « Corpus (R/P/N) » garde le classement d'origine de l'agent lecteur. Avant la revue (M6) : 23 répondues, 12 décidées, 45 ouvertes.
 - **Priorités avant de rédiger le dispositif** : 69 (l'article 401 de la directive TVA), 67, 68, 60, 40, 15, 35, 32, 26, 22. **Toutes fermées en M7** : 8 décidées (69, 60, 40, 15, 35, 32, 26, 22), 2 répondues (67, 68).
 
@@ -57,7 +57,7 @@
 | 41 | E | **décidée** | P | | 67 [P] ; note 18, D12.5 |
 | 42 | E | **décidée** | P | | 53, 67 [P] ; note 18, D12.5 |
 | 43 | E | **décidée** | P | | 67 [P] ; note 18, D12.5 ; chiffrage en M11 |
-| 44 | F | ouverte | P | | **→ M10** (montant dans le dispositif) ; au niveau du groupe (67 [P]) |
+| 44 | F | **répondue** | P | | dispositif v0.1, art. L. [À vérifier]-16 : 1 000 € de taxe par groupe et par an, restitué automatiquement [opus-5.5, à valider] |
 | 45 | F | **décidée** | P | | 44 [P] ; note 18, D11 |
 | 46 | F | **décidée** | P | | 61 [P] ; note 18, D11 |
 | 47 | F | **décidée** | P | | 44 [P] ; note 18, D11 |
@@ -69,7 +69,7 @@
 | 53 | G | **décidée** | P | | 57, 74 [P] ; note 18, D13.4 |
 | 54 | G | **répondue** | P | | exposé v0.2 (§ IV) : limites des expériences dites ; évaluation prévue ; effets → M11 |
 | 55 | G | **répondue** | N | | note 18, D13.5 [C] ; note 19 (1 Md€) ; arrêtée en M10 |
-| 56 | G | **décidée** | R | | 72 [P] ; taux de dégressivité à fixer en M10 |
+| 56 | G | **décidée** | R | | 72 [P] ; dispositif v0.1, art. 6 : fraction fixée par décret, au plus 50 % [opus-5.5] |
 | 57 | G | **décidée** | P | | 55, 58 [P] ; note 18, D6, D9 |
 | 58 | H | **décidée** | P | | 73 [P] ; note 18, D13.6 |
 | 59 | H | **répondue** | R | | note 19 (trajectoire v4) ; correction en M9 |

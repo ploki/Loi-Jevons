@@ -82,7 +82,7 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 - `journal-des-decisions.md` : le journal des décisions structurantes et des changements d'avis, **à tenir à jour à chaque décision**.
 - `transcript-session-2026-10-01.md` : le transcript, arrêté le 2026-10-02 (fin des sauvegardes). Il est conservé comme archive.
 - Le dossier est versionné avec **git** depuis le 2026-10-02.
-- `livrable/` : les livrables. Le projet de loi existe en **v0.1** (exposé des motifs, objet du fichier 17) et en **v0.2** (exposé des motifs aligné sur l'architecture révisée, M9, décision 83).
+- `livrable/` : les livrables. Le projet de loi existe en **v0.1** (exposé des motifs, objet du fichier 17) et en **v0.2** (exposé des motifs aligné sur l'architecture révisée, M9, décision 83). Le **dispositif v0.1** (`loi-jevons-dispositif-v0.1.md`, M10, décision 87) contient le projet de loi ordinaire, le projet de loi organique et une annexe LFSS / loi de finances.
 - `outils/` : les scripts de simulation. `sim_v4.py` est la référence depuis M7.
 
 ## Index

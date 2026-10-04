@@ -7,6 +7,11 @@
 # la cible atteinte (décision 79) et l'indexation des montants (décision 80) : le socle, le besoin, la formation
 # et la valeur du point de cotisation suivent le revenu médian (+ 2 % par an en nominal [Unverified]). Le socle est
 # exprimé en euros de 2026 (pouvoir d'achat constant au regard du seuil de pauvreté) ; les recettes, en euros courants.
+# 2026-10-04 (M10) [opus-5.5] : vérification des unités (décision 85) : le marché V est le chiffre d'affaires HT
+# de l'IA vendue aux professionnels en France (note 13), en euros courants ; c'est un volume × un prix, de sorte
+# que la baisse de P_k y est déjà incluse, et la recette (m × dépense) est elle aussi en euros courants. Les unités
+# sont cohérentes avec l'indexation nominale ; rien n'est corrigé. Ajouts : la décision 86 (hors retournement, la
+# baisse des cotisations est suspendue avant de puiser dans le fonds) et l'abattement exprimé en taxe (Q44, proposition).
 import sys
 
 # ---------------------------------------------------------------- calendrier
@@ -36,7 +41,9 @@ P = dict(
     F_CHAMP=0.95,     # champ D13.1 : l'IA non générative est exclue [C]
     F_INTERNE=1.10,   # inférence sur serveurs propres, absente de v2/v3 [C, À vérifier]
     CIVISME=0.90,     # écart de recouvrement (fraude, erreurs, litiges) [C]
-    ABATT=0.5,        # Md€ de dépense HT sous l'abattement (environ 500 000 groupes x 1 000 €) [C, À vérifier]
+    ABATT=0.5,        # Md€ de TAXE abattue : 1 000 € de taxe par groupe et par an (proposition Q44, opus-5.5),
+                      # environ 500 000 groupes utilisateurs [Unverified] ; avant M10 : 0,5 Md€ de dépense
+    ABATT_EN_TAXE=True,
     TERM0=0.05, TERM_STEP=0.02, TERM_MAX=0.20,   # part du volume exécutée sur terminal [C]
     TERM_RED_END=2030,  # 0,25 x le tarif pendant trois ans (décision 60) ; plein tarif ensuite (maturité)
     LAG=1.0,          # effet du décalage de P_k (trimestre précédent, prix en baisse) : neutralisé par prudence
@@ -50,8 +57,11 @@ def revenue(V, y, m, p):
     red = 0.25 if y <= p['TERM_RED_END'] else 1.0
     cloud = base * (1 - ts) * (1 + m) ** (-p['EPS'])
     term = base * ts * (1 + red * m) ** (-p['EPS'])
-    taxable_cloud = max(0.0, cloud - p['ABATT'])
-    R = p['CIVISME'] * p['LAG'] * (m * taxable_cloud + red * m * term)
+    if p['ABATT_EN_TAXE']:
+        R = max(0.0, p['CIVISME'] * p['LAG'] * (m * cloud + red * m * term) - p['ABATT'])
+    else:
+        taxable_cloud = max(0.0, cloud - p['ABATT'])
+        R = p['CIVISME'] * p['LAG'] * (m * taxable_cloud + red * m * term)
     return R, cloud + term   # recette, dépense HT après réaction de la demande
 
 # ---------------------------------------------------------------- dépenses (D13.2 à D13.7)
@@ -68,6 +78,7 @@ C = dict(
     OPEN_RULE='trois_ans',  # décision 78 : ouverture si la recette plus un tiers du fonds couvre le niveau du RSA
                             # (équilibre sur trois ans, D13.6) ; 'annuel' : la recette de l'année seule
     IDX=0.02,         # décision 80 : indexation nominale annuelle des montants depuis 2026 (revenu médian) [Unverified]
+    B_AVANT_FONDS=True,  # décision 86 (False : l'ordre de la décision 54, le fonds d'abord)
     M_POST=2.0,       # décision 79 : une fois la cible atteinte, m est ramené à 2 au plus (None : pas de règle)
 )
 
@@ -99,9 +110,10 @@ def run(name, mcap=1.0, alloc='droits', p=None, c=None):
     les droits étant alors au plafond, il va à la baisse des cotisations). alloc='D8' : l'ordre de la décision 54."""
     p = dict(P, **(p or {})); c = dict(C, **(c or {}))
     V = market(name)
-    m = 1.0; s = None; B = 0.0; fund = 0.0; rows = []
+    m = 1.0; s = None; B = 0.0; fund = 0.0; rows = []; prevR = None
     for y in YEARS:
         R, spend = revenue(V[y], y, m, p)
+        retournement = prevR is not None and R < prevR; prevR = R
         I = (1 + c['IDX']) ** (y - 2026)    # indice des montants (euros courants / euros 2026)
         nd = lambda x: need(x, c) * I       # besoin en euros courants
         BMAX = c['B_MAX'] * I
@@ -117,8 +129,11 @@ def run(name, mcap=1.0, alloc='droits', p=None, c=None):
             surplus = avail - commit
             tgt = (c['FUND_MONTHS'] / 12) * (gross(s) * I if c['FUND_GROSS'] else nd(s) + c['FORM'] * I)
             if surplus < 0:
-                draw = min(fund, -surplus); fund -= draw; gap = -surplus - draw
-                if gap > 0:        # les droits priment : on suspend d'abord la baisse des cotisations
+                gap = -surplus
+                if c['B_AVANT_FONDS'] and not retournement:   # décision 86 : la baisse des cotisations d'abord
+                    cut = min(B, gap); B -= cut; gap -= cut
+                draw = min(fund, gap); fund -= draw; gap -= draw
+                if gap > 0:        # les droits priment : on suspend la baisse des cotisations
                     cut = min(B, gap); B -= cut; gap -= cut
                 if gap > 0:
                     note = 'déficit %.1f (contribution d\'équilibre)' % gap
@@ -178,7 +193,7 @@ def grid(alloc='D8', c=None, p=None, label=''):
                 at[2035]['pts'], at[2040]['pts'], max(r['m'] for r in rows)))
 
 SANS_IDX = {'IDX': 0.0}
-AVANT_M9 = {'IDX': 0.0, 'OPEN_RULE': 'annuel', 'M_POST': None}   # les hypothèses de M7, pour comparaison
+AVANT_M9 = {'IDX': 0.0, 'OPEN_RULE': 'annuel', 'M_POST': None, 'B_AVANT_FONDS': False}   # les hypothèses de M7, pour comparaison
 
 def grid2(c=None, alloc='droits', label='', caps=(1.0, 2.0, 3.0, 4.0)):
     print('\n#### Synthèse %s (allocation %s)' % (label, alloc))
