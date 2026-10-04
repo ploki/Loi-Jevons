@@ -2,22 +2,22 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M14 : abattement, terminal)
+- **Dernière mise à jour** : 2026-10-04 (élagage, décisions 115 et 116 ; auparavant 2026-10-04 (M14 : abattement, terminal))
 
 
 ## En vigueur
 
-> Consolidée lors de l'élagage du 2026-10-04 (décision 115) [opus-5.5 → ggim], sans changement de fond : les mises à jour successives de la session metamaieutique (M2 à M14) sont fondues ici, et l'ancienne version est gardée dans l'historique. La faisabilité juridique est dans la note 18 (O6, O9, D11, D11 bis, D12).
+> Consolidée lors de l'élagage du 2026-10-04 (décision 115) [opus-5.5 → ggim], sans décision nouvelle (quelques renvois au journal ajoutés, corrections de la décision 116) : les mises à jour successives de la session metamaieutique (M2 à M14) sont fondues ici, et l'ancienne version est gardée dans l'historique. La faisabilité juridique est dans la note 18 (O6, O9, D11, D11 bis, D12).
 
 - **↺ L'obligation de comptage pèse sur le redevable** (décision 43 [P]). Il doit tenir une **comptabilité-matière** des volumes, exacte et contrôlable. **Aucune obligation n'est imposée aux éditeurs** de logiciels.
 - **Le SDK libre et certifié devient une voie simplifiée** : l'utiliser vaut **présomption de bonne foi**, comme les logiciels de caisse certifiés. L'entreprise peut aussi justifier ses volumes autrement (les relevés des fournisseurs, ses propres journaux). **[C]** (D11) : le SDK est piloté par la DGFiP, avec un référentiel de type NF525. Le SDK ouvre l'**option pour le réel** face aux forfaits (décision 61 [P]).
 - **Raisons** : imposer un compteur aux éditeurs serait une règle technique à notifier (directive (UE) 2015/1535), une restriction possible à la libre prestation de services, et une source de conflit avec le règlement européen sur l'IA [À vérifier]. Le texte est **notifié** de toute façon, par prudence (décision 62 [P]).
 - **Données transmises** : uniquement des **volumes agrégés**, jamais le contenu des requêtes (RGPD, secret des affaires).
 - **Abattement** : **1 000 € de taxe par groupe et par an**, non indexé, révisable en LFSS, restitué automatiquement (décision 88) ; appliqué au niveau du **groupe** (anti-fractionnement). Pas de forfait ni de franchise (décision 30 [G]).
-- **IA locale et embarquée** (décision 44 [P]) : un **taux réduit** pour l'inférence **exécutée sur un équipement terminal**, et non sur un serveur.
+- **IA locale et embarquée** (décision 44 [P]) : un **taux réduit** pour l'inférence **exécutée sur un équipement terminal** (poste de travail, appareil embarqué), et non sur un serveur. Il est **temporaire**, avec une clause de rendez-vous, et **notifié préventivement** à la Commission (aides d'État, décision 62 [P]).
   - **[C]** (D11) : l'**équipement terminal** est sous la maîtrise physique de l'utilisateur et n'est pas exploité pour servir des tiers ; un serveur en colocation n'en est pas un. L'IA embarquée est taxée sur un volume forfaitaire par catégorie d'appareil.
   - **0,25 × le tarif pendant les trois premières années d'application**, puis extinction, sauf prolongation votée en LFSS jusqu'à cinq ans au plus ; extinction anticipée par un critère objectif de maturité (décisions 60 [P] et 103 [opus-5.5 as ggim], ↺ partiel de la décision 60).
-  - **Toute la taxe n'entre en vigueur qu'après la décision de la Commission** ou l'autorisation réputée acquise, de sorte que l'IA sur terminal ne paie jamais le plein tarif du fait de la procédure (décision 103, D11 bis ; hésitation signalée au rapport de retour).
+  - **Toute la taxe n'entre en vigueur qu'après la décision de la Commission** ou l'autorisation réputée acquise, de sorte que l'IA sur terminal ne paie jamais le plein tarif du fait de la procédure (décision 103 [opus-5.5 as ggim] pour la contrainte ; le mécanisme est une **proposition [opus-5.5] à valider**, note 18, D11 bis ; hésitation signalée au rapport de retour).
 - **IA embarquée des particuliers** : hors du champ.
 - **Contrôle** : une falsification est **détectable, pas impossible**. On recoupe avec la facturation électronique, les heures de GPU louées et l'électricité consommée. **[C]** (D12.5 à D12.7, décisions 67 et 68 [P]) : un registre d'entraînement, les sanctions, le registre des revendeurs agréés, le lissage aux bornes des tranches. Aucune amende pour un salarié ou un particulier (décision 105 [opus-5.5 as ggim]).
 

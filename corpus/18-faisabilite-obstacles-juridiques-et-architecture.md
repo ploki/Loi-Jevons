@@ -8,7 +8,7 @@
 
 ## En vigueur
 
-> **Pour reprendre** : l'architecture tient en une page ci-dessous. Les décisions sont au journal (n° 37 à 109). La trajectoire chiffrée est dans la **note 19** (simulation v4). Les questions qui restent sont dans la rubrique « Questions ouvertes » et dans le fichier 17. Les sections A, B et D gardent le raisonnement. **Élagage du 2026-10-04 (décision 115)** [opus-5.5 → ggim] : le récapitulatif des décisions par itération, le plan de travail (ancienne section C), le suivi des 20 questions, toutes fermées (ancienne section E), et le guide de reprise de la session (ancienne section F) sont recopiés tels quels dans `../archive/18-faisabilite-sections-C-E-F-et-decisions-par-iteration.md`. L'architecture en une page et la liste des points d'expertise en sont tirées ici.
+> **Pour reprendre** : l'architecture tient en une page ci-dessous. Les décisions de la session sont au journal (n° 37 à 109 ; les suivantes, de Guillaume, depuis le n° 110). La trajectoire chiffrée est dans la **note 19** (simulation v4). Les questions qui restent sont dans la rubrique « Questions ouvertes » et dans le fichier 17. Les sections A, B et D gardent le raisonnement. **Élagage du 2026-10-04 (décision 115)** [opus-5.5 → ggim] : le récapitulatif des décisions par itération, le plan de travail (ancienne section C), le suivi des 20 questions, toutes fermées (ancienne section E), et le guide de reprise de la session (ancienne section F) sont recopiés tels quels dans `../archive/18-faisabilite-sections-C-E-F-et-decisions-par-iteration.md`. L'architecture en une page et la liste des points d'expertise en sont tirées ici.
 
 **L'architecture en une page** (état à la fin de M14) :
 

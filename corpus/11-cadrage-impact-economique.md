@@ -2,7 +2,7 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M14 : chiffres de la trajectoire, décisions 89, 106)
+- **Dernière mise à jour** : 2026-10-04 (élagage, décisions 115 et 116 ; auparavant 2026-10-04 (M14 : chiffres de la trajectoire, décisions 89, 106))
 
 
 ## En vigueur

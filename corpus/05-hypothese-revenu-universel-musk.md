@@ -2,15 +2,15 @@
 
 - **Statut** : brouillon
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M14 : décisions 98, 99, 108)
+- **Dernière mise à jour** : 2026-10-04 (élagage, décisions 115 et 116 ; auparavant 2026-10-04 (M14 : décisions 98, 99, 108))
 
 
 ## En vigueur
 
-> Consolidée lors de l'élagage du 2026-10-04 (décision 115) [opus-5.5 → ggim], sans changement de fond : les mises à jour successives de la session metamaieutique (M3 à M14) sont fondues ici, et l'ancienne version est gardée dans l'historique. Le détail juridique est dans la note 18 (D4, D6, D9, D10, D13).
+> Consolidée lors de l'élagage du 2026-10-04 (décision 115) [opus-5.5 → ggim], sans décision nouvelle (quelques renvois au journal ajoutés, corrections de la décision 116) : les mises à jour successives de la session metamaieutique (M3 à M14) sont fondues ici, et l'ancienne version est gardée dans l'historique. Le détail juridique est dans la note 18 (D4, D6, D9, D10, D13).
 
 - **Chômage universel**, et non un revenu versé à tous. Le revenu universel au sens strict n'est conservé que pour mémoire.
-- **Paramètres validés** [G] :
+- **Paramètres validés** :
   - sans limite de durée ;
   - aucune obligation de recherche d'emploi : une simple inscription suffit, et la formation rémunérée est un droit ;
   - un socle proche du seuil de pauvreté (environ 1 200 € par mois [À vérifier]), plus un complément proportionnel à l'ancien salaire pendant une durée limitée ;
@@ -25,7 +25,7 @@
   - **La sortie progressive** : 12 mois, au plus 50 % des revenus d'activité (décisions 72 [P] et 91), puis la prime d'activité ; elle ne fait **jamais moins bien que le droit actuel** (le RSA et la prime d'activité), la marche de fin de période étant supprimée par une **dégressivité linéaire** inscrite dans la loi (décision 96 [opus-5.5 as ggim]), sur les derniers des douze mois (décision 98 [opus-5.5 as ggim], hésitation signalée au rapport de retour). Chiffrage : étude d'impact v0.1, § 5.3.4.
   - **La formation rémunérée** [C] (D13.5) : le socle maintenu, les certifications RNCP et Qualiopi, l'abondement du CPF.
 - **Questions réservées à Guillaume** (décisions 70 et 71, laissées ouvertes ; options ouvertes au débat dans les livrables, décision 102) : les **étudiants en formation initiale** (non éligibles dans la proposition de D13.3) et un **socle réduit pour les revenus élevés du patrimoine** (non retenu, chiffré en variante).
-- **Coût** : le **besoin net de 2026** est de **6,0 Md€ au niveau du RSA** et de **19,4 Md€ au socle cible** (note 19, M14) [Unverified]. *(Avant : 16 à 20 Md€, puis 18 à 23 Md€ en M6.)*
+- **Coût** : le **besoin net de 2026** est de **6,0 Md€ au niveau du RSA** et de **19,4 Md€ au socle cible** (note 19, M14) ; la garantie familiale coûte 0,55 Md€ au socle cible (décision 108). *(Avant : un coût brut d'environ 68 à 72 Md€ [À vérifier], remplaçant environ 52 Md€ de dépenses existantes, d'où un besoin net d'environ 16 à 20 Md€ ; puis 18 à 23 Md€ en M6.)*
 
 ---
 

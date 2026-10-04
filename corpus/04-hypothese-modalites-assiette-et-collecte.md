@@ -2,12 +2,12 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-01
-- **Dernière mise à jour** : 2026-10-02 (session metamaieutique, M6)
+- **Dernière mise à jour** : 2026-10-04 (élagage, décisions 115 et 116 ; auparavant 2026-10-02 (session metamaieutique, M6))
 
 
 ## En vigueur
 
-> Consolidée lors de l'élagage du 2026-10-04 (décision 115) [opus-5.5 → ggim], sans changement de fond : les mises à jour successives de la session metamaieutique (M2 à M6) sont fondues ici, et l'ancienne version est gardée dans l'historique. La faisabilité juridique est dans la note 18.
+> Consolidée lors de l'élagage du 2026-10-04 (décision 115) [opus-5.5 → ggim], sans décision nouvelle (quelques renvois au journal ajoutés, corrections de la décision 116) : les mises à jour successives de la session metamaieutique (M2 à M6) sont fondues ici, et l'ancienne version est gardée dans l'historique. La faisabilité juridique est dans la note 18.
 
 - **Nature** : une imposition de toutes natures du type **accise sur un service**, perçue **une seule fois**, au stade de l'**utilisation professionnelle finale** ; **aucune déduction en chaîne** (décision 37 [P]).
 - **Champ** : l'**usage professionnel**, c'est-à-dire l'utilisation par une personne qui agit dans le cadre d'une activité économique ou d'une mission de service public. Il porte sur l'inférence des **modèles d'IA à usage général** (règlement sur l'IA, art. 3, point 63) **et** des systèmes qui génèrent des contenus de synthèse (art. 50, § 2), traduction et transcription comprises ; l'IA non générative est exclue (décisions 64 et 69 [P] ; formulation en note 18, D13.1).

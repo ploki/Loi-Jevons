@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M14 : renvois corrigés, point B5 du rapport de relecture)
+- **Dernière mise à jour** : 2026-10-04 (élagage, décisions 115 et 116 ; auparavant 2026-10-04 (M14 : renvois corrigés, point B5 du rapport de relecture))
 
 
 ## En vigueur
@@ -76,7 +76,7 @@
 | 60 | H | **décidée** | N | **top 4** | 42, 49 [P] |
 | 61 | H | **décidée** | P | | 54, 75 ; note 18, D8 |
 | 62 | H | **décidée** | P | | 54 [P] ; note 18, D8, D13.8 |
-| 63 | H | **décidée** | N | | 82 [opus-5.5 as ggim] ; note 18, E ; argumentaire dans l'exposé v0.2 |
+| 63 | H | **décidée** | N | | 82 [opus-5.5 as ggim] ; note 18, E (archivée) ; argumentaire dans l'exposé v0.2 |
 | 64 | I | **décidée** | R | | 54 [P] ; note 18, D8 |
 | 65 | I | **décidée** | P | | **75** [opus-5.5 as ggim] (les droits d'abord) |
 | 66 | I | **répondue** | P | | exposé v0.2 (§ V) : le terme est employé sans revendiquer d'effet correcteur ; effet net sur l'arbitrage travail-IA **non traité** dans l'étude d'impact (§ 5.2.2 ne mesure que l'effet prix) |
@@ -88,7 +88,7 @@
 | 72 | K | **répondue** | P | | note 18, D11 ; **partiellement traitée** dans l'étude d'impact (§ 5.2.3 : les PME et l'abattement) ; le chiffrage pour les marchés tiers n'est pas fait |
 | 73 | K | **décidée** | N | | 97 ; étude d'impact v0.1, § 5.2.3 : abattement (88), neutralité concurrentielle et de localisation des centres de données [opus-5.5] |
 | 74 | K | **décidée** | P | | 97 ; étude d'impact v0.1, § 5.2.2 et 5.1.5 : − 29 % à − 55 % de dépense (ε = 0,5) ; sensibilité 0,3 à 1,0 ; croissance non modélisée [opus-5.5] |
-| 75 | L | **décidée** | N | | 82 [opus-5.5 as ggim] ; 43, 67 [P] ; note 18, E ; argumentaire dans l'exposé v0.2 |
+| 75 | L | **décidée** | N | | 82 [opus-5.5 as ggim] ; 43, 67 [P] ; note 18, E (archivée) ; argumentaire dans l'exposé v0.2 |
 | 76 | L | **décidée** | P | | 32 [G] ; note 18, D13.8 ; note 19, § 3 |
 | 77 | L | **répondue** | P | | 74 [P] ; note 09 ; argumentaire en M9 |
 | 78 | M | **décidée** | N | | 66 [P] ; note 18, D12.3 |

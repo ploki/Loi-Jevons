@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion (M7 de la session metamaieutique, terminée le 2026-10-04)
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M14 : raccord du besoin, garantie familiale, tarif réduit ; avant : M12)
+- **Dernière mise à jour** : 2026-10-04 (élagage, décisions 115 et 116 ; auparavant 2026-10-04 (M14 : raccord du besoin, garantie familiale, tarif réduit ; avant : M12))
 
 > Script : `outils/sim_v4.py` (la v3 est archivée : `archive/sim_v3.py` et `archive/14-simulation-v3-trajectoire-partage.md`). Tous les paramètres sont **[C]** ; les montants non sourcés sont **[À vérifier]**. Les décisions citées sont celles du journal. Depuis le 2026-10-04, les ajouts portent les marqueurs nominatifs (voir `00-methode-conventions-et-index.md`, « Identités et marqueurs ») : **[opus-5.5]** pour une proposition de l'agent, **[opus-5.5 as ggim]** pour une décision par procuration.
 
@@ -281,7 +281,7 @@
 ## Liens
 
 - [archive/14-simulation-v3-trajectoire-partage.md](../archive/14-simulation-v3-trajectoire-partage.md)
-- [18-faisabilite-obstacles-juridiques-et-architecture.md](18-faisabilite-obstacles-juridiques-et-architecture.md) (sections D8, D13, F)
+- [18-faisabilite-obstacles-juridiques-et-architecture.md](18-faisabilite-obstacles-juridiques-et-architecture.md) (sections D8, D13 ; la section F est archivée)
 - [05-hypothese-revenu-universel-musk.md](05-hypothese-revenu-universel-musk.md)
 - [11-cadrage-impact-economique.md](11-cadrage-impact-economique.md)
 - [15-concept-complementarite-taxe-zucman.md](15-concept-complementarite-taxe-zucman.md)

@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-01
-- **Dernière mise à jour** : 2026-10-02
+- **Dernière mise à jour** : 2026-10-04 (élagage, décisions 115 et 116 ; auparavant 2026-10-02)
 
 
 ## En vigueur

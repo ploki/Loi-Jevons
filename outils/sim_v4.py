@@ -1,5 +1,5 @@
 # Simulation v4 : architecture révisée (session metamaieutique, M7). Voir la note 19.
-# Garde sim_v3.py pour comparaison. Tous les paramètres sont [C] ; les montants non sourcés sont [À vérifier].
+# sim_v3.py est archivé (archive/sim_v3.py). Tous les paramètres sont [C] ; les montants non sourcés sont [À vérifier].
 # 2026-10-04 [opus-5.5] : la règle d'emploi par défaut devient « les droits d'abord » (décision 75) ; l'ancienne
 # règle D8 (décision 54) reste calculable avec alloc='D8'. Ajout de la variante d'ouverture sur trois ans (D13.6)
 # et du détail du scénario bas.
@@ -51,7 +51,7 @@ def market(name):
         V[y] = V[y - 1] * (g[i] if i < len(g) else G_LATE)
     return V
 
-# ---------------------------------------------------------------- assiette (paramètres de la section F de la note 18)
+# ---------------------------------------------------------------- assiette (paramètres de la section F de la note 18, archivée)
 P = dict(
     EPS=0.5,          # élasticité de la demande au prix (inconnue : sensibilité 0,3 et 1,0)
     F_CHAMP=0.95,     # champ D13.1 : l'IA non générative est exclue [C]

@@ -42,6 +42,10 @@ Guillaume charge le skill `maieutics` et demande de **commencer par la migration
 
 Guillaume demande de lancer l'**élagage** (« vas-y pour l'élagage »), proposé après la migration.
 
+## Itération 11 (2026-10-04)
+
+Guillaume demande de lancer la relecture de l'élagage (« oui, lance la relecture »). Il demande aussi de regarder dans tout l'historique des commits s'il n'a pas mis d'informations personnelles, pour décider s'il rend le dépôt public.
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)
