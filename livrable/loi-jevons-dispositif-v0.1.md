@@ -193,7 +193,7 @@ Le livre [À vérifier] du code des impositions sur les biens et services est co
 >
 > « III. – Le montant mentionné au I peut être révisé par la loi de financement de la sécurité sociale.
 >
-> *[Note de rédaction [opus-5.5], proposition sur Q44, à valider : l'abattement est exprimé **en taxe**, et non en volume ni en dépense, pour trois raisons. Il ne dépend ni de la classe du modèle ni de la baisse des prix ; son coût ne croît pas avec le multiple ; et il se restitue simplement. **1 000 €** de taxe par an correspondent, au plancher, à environ 1 000 € de dépense hors taxe, soit trois ou quatre abonnements professionnels courants [Unverified] : la plupart des très petites entreprises n'acquittent rien, ce qui répond à « ménager ce qui démarre » et au coût de conformité (Q43). Le coût est d'environ 0,5 Md€ par an pour 500 000 groupes utilisateurs [Unverified], soit environ 20 % de la recette en 2028 et 2 % en 2035 (note 19). Il est apprécié au niveau du groupe contre le fractionnement (Q42, décision 67). Il n'est pas indexé : son poids relatif décroît à mesure que l'usage mûrit.]*
+> *[Note de rédaction [opus-5.5 → ggim], validée par procuration (décision 88 [opus-5.5 as ggim]) : l'abattement est exprimé **en taxe**, et non en volume ni en dépense, pour trois raisons. Il ne dépend ni de la classe du modèle ni de la baisse des prix ; son coût ne croît pas avec le multiple ; et il se restitue simplement. **1 000 €** de taxe par an correspondent, au plancher, à environ 1 000 € de dépense hors taxe, soit trois ou quatre abonnements professionnels courants [Unverified] : la plupart des très petites entreprises n'acquittent rien, ce qui répond à « ménager ce qui démarre » et au coût de conformité (Q43). Le coût est d'environ 0,5 Md€ par an pour 500 000 groupes utilisateurs [Unverified], soit environ 16 % de la recette brute en 2028 et 2 % en 2035 (étude d'impact, § 5.4). Il est apprécié au niveau du groupe contre le fractionnement (Q42, décision 67). Il n'est pas indexé : son poids relatif décroît à mesure que l'usage mûrit.]*
 >
 > « CHAPITRE VII
 > « Obligations déclaratives et comptables
@@ -221,11 +221,11 @@ Le livre [À vérifier] du code des impositions sur les biens et services est co
 >
 > « *Art. L. [À vérifier]-21.* – I. – Les articles 1727, 1728 et 1729 du code général des impôts s'appliquent à la taxe [À vérifier : articulation avec le régime de sanctions du CIBS].
 >
-> « II. – Le défaut de tenue de la comptabilité-matière est passible d'une amende égale à 5 % des droits rappelés, sans pouvoir être inférieure à 1 500 € [opus-5.5, montant à valider].
+> « II. – Le défaut de tenue de la comptabilité-matière est passible d'une amende égale à 5 % des droits rappelés, sans pouvoir être inférieure à 1 500 € [opus-5.5 → ggim : point de départ, à relire par le juriste sous l'angle de la proportionnalité, décision 90].
 >
 > « III. – L'utilisation d'une fausse attestation de revendeur agréé entraîne une majoration de 80 % des droits éludés. Le client qui s'est présenté comme revendeur agréé est solidairement tenu au paiement de la taxe.
 >
-> « IV. – La fausse déclaration d'usage personnel mentionnée au II de l'article L. [À vérifier]-3 est passible d'une amende de 150 € par compte et par mois [opus-5.5, montant à valider]. »
+> « IV. – La fausse déclaration d'usage personnel mentionnée au II de l'article L. [À vérifier]-3 est passible d'une amende de 150 € par compte et par mois [opus-5.5 → ggim : point de départ, à relire par le juriste sous l'angle de la proportionnalité, décision 90]. »
 
 ### Article 2
 
@@ -289,7 +289,7 @@ I. – En cas de reprise d'une activité professionnelle, le bénéficiaire du s
 
 II. – À l'issue de cette période, le bénéficiaire relève, le cas échéant, de la prime d'activité. Les articles L. 841-1 et suivants du code de la sécurité sociale sont adaptés de sorte que le cumul du socle dégressif et de la prime d'activité ne soit jamais inférieur à ce que procure la législation antérieure [À vérifier].
 
-*[Note de rédaction [opus-5.5] : le plafond de 50 % reprend l'ordre de grandeur de la note 05 ; le taux exact est à fixer après étude des taux marginaux implicites (Q56).]*
+*[Note de rédaction [opus-5.5 → ggim] : le plafond de 50 % est validé (décision 91 [opus-5.5 as ggim]) ; il reprend l'ordre de grandeur de la note 05. Le taux fixé par décret tient compte des taux marginaux chiffrés dans l'étude d'impact (§ 5.3) [opus-5.5] : tant que le socle est proche du montant du RSA, un taux supérieur à environ 40 % ferait moins bien que la prime d'activité, et c'est la garantie du II qui joue ; à la cible, la fin de la période de douze mois crée une marche de 400 à 700 € par mois (Q56).]*
 
 ### Article 7 — Le complément et l'assurance chômage
 
@@ -353,7 +353,11 @@ I. – Le produit de la taxe est employé dans l'ordre suivant :
 
 3° Tant que le socle n'a pas atteint sa cible, la hausse de son montant ;
 
-4° Une fois la cible atteinte, le surplus est réparti à parts égales entre, d'une part, l'indexation du socle et les extensions de droits décidées par la loi de financement de la sécurité sociale et, d'autre part, la fraction prévue à l'article 14. La part qui ne trouve pas d'emploi au titre des droits est affectée à cette fraction.
+4° Une fois la cible atteinte, le surplus est réparti à parts égales entre, d'une part, l'indexation du socle et les extensions de droits décidées par la loi de financement de la sécurité sociale et, d'autre part, la fraction prévue à l'article 14. La part qui ne trouve pas d'emploi au titre des droits est affectée à cette fraction, dans la limite prévue au I *bis* ; le reste est versé au fonds de réserve.
+
+I *bis*. – Une baisse supplémentaire des contributions patronales ne peut être financée par la fraction prévue à l'article 14 que si le produit de la taxe que procurerait un multiple au plus égal à 2, pour l'année en cours et pour l'année suivante, couvre les dépenses mentionnées aux 1° et 3° du I, les coûts pédagogiques mentionnés au VII de l'article 4, l'ensemble des baisses de contributions déjà financées et la baisse nouvelle.
+
+*[Note de rédaction [opus-5.5] : le I bis traduit la décision 89 [opus-5.5 as ggim] : le double dividende n'est engagé que s'il est soutenable avec m ≤ 2 ; il ne recule donc pas quand le multiple revient à 2, et il ne peut jamais justifier un multiple supérieur à 2. Le « cliquet » proposé en M10 est écarté. Effet chiffré : note 19 et étude d'impact, § 5.1.]*
 
 II. – Lorsque les recettes ne couvrent pas les dépenses de la branche :
 
@@ -453,4 +457,4 @@ La taxe sur l'intelligence artificielle et les réserves du fonds de réserve du
 
 ---
 
-*Principales sources dans le corpus : note 18 (D1 à D13, section F), note 19 (simulation v4), journal des décisions (n° 37 à 87). Les choix ouverts au débat sont signalés en note : les étudiants en formation initiale (décision 70), la réduction pour les revenus du patrimoine (décision 71).*
+*Principales sources dans le corpus : note 18 (D1 à D13, section F), note 19 (simulation v4), journal des décisions (n° 37 à 93). Les choix ouverts au débat sont signalés en note : les étudiants en formation initiale (décision 70), la réduction pour les revenus du patrimoine (décision 71).*

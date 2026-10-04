@@ -30,6 +30,18 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
 
+## Itération M12 (2026-10-04) — étude d'impact v0.1 rédigée ; ajustements avant la relecture de cohérence
+
+Réponse par procuration au tour de l'agent (journal 88 à 93 ; l'étude d'impact v0.1 est créée, ses chiffres sortent d'un script, 0 écart ; le fichier 17 compte 45 décidées, 34 répondues et 1 ouverte, Q50, réservée à Guillaume ; la section E n'a plus de question ouverte) :
+1. **La variante `M79_FONDS`** (ramener m à 2 dès 2036 en comptant l'excédent du fonds) : adoptée. Pourquoi : elle réduit d'un an la période où m dépasse 2, ce qui est l'esprit de la décision 79.
+2. **Le retournement défini sur l'assiette** (la dépense taxable), et non sur le produit : adopté. Pourquoi : une baisse votée de m ne doit pas déclencher la clause.
+3. **Contestation sur la sortie progressive.** Qu'un mi-temps au SMIC touche moins qu'avec la prime d'activité actuelle (1 008 € contre 1 076 €) est une **régression** : cela contredit la garantie de non-régression (D9) et l'intention d'émancipation, puisque reprendre un travail doit toujours rapporter au moins autant qu'aujourd'hui. Il faut l'écrire dans le dispositif, pas seulement l'annoncer :
+   - le bénéficiaire reçoit **le plus favorable** de la sortie progressive et de la prime d'activité ;
+   - la **marche de 400 à 700 €** à la fin des 12 mois est supprimée par une **dégressivité linéaire** inscrite dans la loi (les paramètres sont fixés par décret).
+   Les deux points sont à chiffrer dans l'étude d'impact.
+4. **Les réponses aux questions 8, 71, 73 et 74** : validées. La réponse à Q71 (« on saisit la valeur de l'usage, là où elle se réalise ») est fidèle à l'intention.
+5. **La suite.** L'agent applique les points 1 à 3 et met à jour la section F. Ensuite, l'orchestrateur lance lui-même la **relecture de cohérence** par un agent neuf en lecture seule, comme le prévoit le skill. Viendront ensuite les corrections, puis la confrontation à l'aveugle.
+
 ## Itération M11 (2026-10-04) — dispositif v0.1 rédigé ; passage à l'étude d'impact (agent neuf)
 
 Réponse par procuration au tour de l'agent (journal 84 à 87 ; le dispositif v0.1 compte 20 articles, un projet de loi organique et une annexe LFSS / LF ; les unités du script sont vérifiées et cohérentes) :

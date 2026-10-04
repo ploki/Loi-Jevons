@@ -2,13 +2,13 @@
 
 - **Statut** : en discussion (M7 de la session metamaieutique, terminée le 2026-10-04)
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M10 : décisions 84 à 87, dispositif v0.1)
+- **Dernière mise à jour** : 2026-10-04 (M11 : décisions 88 à 93, étude d'impact v0.1)
 
 > Note de la session metamaieutique « Rendre la Loi Jevons réalisable » (voir `mandat.md`). Les décisions par procuration sont marquées **[P]** et numérotées comme au journal ; les propositions non validées restent **[C]**. Les textes vérifiés sur le web sont marqués **[S]** ; le reste est **[À vérifier]**. **Depuis le 2026-10-04** (décision 76), les ajouts portent les marqueurs nominatifs : **[opus-5.5]** (proposition de l'agent), **[opus-5.5 as ggim]** (décision par procuration, l'ancien [P]), **[Unverified]** (l'ancien [À vérifier]) ; voir le fichier 00, « Identités et marqueurs ».
 
 ## En vigueur
 
-> **Pour reprendre** : l'architecture tient en une page dans la **section F**. Les décisions sont au journal (n° 37 à 76). La trajectoire chiffrée est dans la **note 19** (simulation v4). Les questions qui restent sont en **section E**, dans le fichier 17 (revu en M7) et dans la rubrique « Questions ouvertes ».
+> **Pour reprendre** : l'architecture tient en une page dans la **section F**. Les décisions sont au journal (n° 37 à 93). La trajectoire chiffrée est dans la **note 19** (simulation v4). Les questions qui restent sont en **section E**, dans le fichier 17 (revu en M7) et dans la rubrique « Questions ouvertes ».
 
 **Décisions prises en M2** (journal, n° 37 à 47) :
 - **37 [P]** : pas de déduction en chaîne ; la revente est en suspension, sur attestation.
@@ -41,6 +41,8 @@
 **Encore à l'état de proposition** [C] : le socle (**D13.2** : montant, individualisation, APL) et la formation (**D13.5**). Ils seront arrêtés dans le dispositif (M10).
 
 **Ce que dit la simulation v4** (note 19, règles des décisions 75 et 78 à 81, avec l'indexation du socle) [opus-5.5] : la première recette est d'environ 2,6 Md€ (2028) ; le socle s'ouvre à tous au niveau du RSA en 2031 ; dans le scénario central, **la cible est atteinte en 2034 si la LFSS porte m à 3 pendant la montée en charge, ou vers 2038 avec m ≤ 2** ; au plancher, le socle plafonne à environ 890 € de 2026 en 2040 ; la baisse des cotisations est d'environ 0,1 à 0,2 point en 2040 ; **dans le scénario bas, la taxe seule ne finance pas le but** : le socle s'ouvre au niveau du RSA entre 2036 et 2039, puis le recours est la contribution d'équilibre (2,8 Md€ en 2040 avec m ≤ 4) ; la taxe Zucman est citée hors dispositif, sans rendement chiffré (32, 77) ; la variante « étudiants » n'est pas finançable par la taxe dans le scénario central.
+
+**Décisions prises en M11** (journal, n° 88 à 93) [opus-5.5 as ggim] : l'abattement de 1 000 € de taxe par groupe (88) ; **le « cliquet » refusé : une baisse des cotisations n'est engagée que si elle est soutenable avec m ≤ 2** (89) ; les montants de sanction gardés comme point de départ, à relire par le juriste (90) ; le plafond de la sortie progressive à 50 % (91) ; les écarts de l'exposé v0.2 renvoyés à la relecture de cohérence (92) ; l'étude d'impact v0.1 et son script (93).
 
 **Décisions prises en M9** (journal, n° 77 à 83) : le scénario bas dit honnêtement (77) ; l'ouverture sur trois ans (78) ; m ramené à 2 au plus après la cible, par défaut (79) ; la moitié « droits » pour l'indexation et les extensions, l'indexation modélisée, le double dividende dit modeste et tardif (80) ; le fonds de six mois du besoin net (81) ; les réponses à Q63 et Q75 validées (82) ; l'exposé v0.2 dans un nouveau fichier (83).
 
@@ -757,27 +759,27 @@ Tous les montants sont [C, À vérifier].
 | 26 ★ | Le tarif unique face à des prix très différents | **décidée** | Le tarif par classe (décisions 39 et 48, D1) | — |
 | 22 ★ | Le secteur public, les associations, la recherche | **décidée** | Dans le champ, avec l'abattement (décision 46, D5) | — |
 | 1 | La productivité depuis Keynes | **répondue** | Reformulée dans l'exposé v0.2 : le niveau de vie multiplié par 4 à 8 selon Keynes [S], le ralentissement de la productivité reconnu | — |
-| 34 | Les prestations produites à l'étranger avec de l'IA | **répondue** | Un risque assumé (AGCS, contrôle), mesuré dans l'étude d'impact (D11) | Mesure : M11 |
+| 34 | Les prestations produites à l'étranger avec de l'IA | **répondue** | Un risque assumé (AGCS, contrôle), suivi par l'évaluation (D11 ; étude d'impact v0.1, § 5.2.3) | — |
 | 55 | La formation rémunérée | **répondue** [C] | Le socle maintenu, les certifications RNCP et Qualiopi, l'abondement du CPF (D13.5) ; 1 Md€ par an dans la v4 (note 19) | Arrêtée dans le dispositif : M10 |
 | 63 | Si l'IA ne détruit pas d'emplois en net | **décidée** (82) | La justification ne repose pas sur la destruction nette d'emplois, mais sur le **savoir collectif** (une valeur fondée sur une ressource commune, décision 2025-1157 QPC, D3) et sur le but, le chômage universel (« c'est pas tant pour absorber la vague », intention). Si le besoin est moindre, le socle cible est atteint plus tôt, le surplus va au partage, puis m baisse vers le plancher (D8, Q64) | Argumentaire : M9 |
 | 70 | Le compteur, les aides d'État | **décidée** | O6, O9, D11 : pas de règle technique imposée (43) ; le taux réduit sur terminal (44) ; une notification par prudence (62) | — |
-| 71 | L'incidence de la taxe | ouverte | Éléments : la taxe est répercutée (D3) ; le fournisseur enregistré collecte (38) | **M11** (étude d'impact) |
-| 73 | Les PME, les jeunes entreprises, les centres de données | ouverte | Éléments : l'abattement, le terminal à 0,25 (60), le double dividende différé (75) | **M11** (étude d'impact) |
-| 75 | L'acceptabilité pour les entreprises | **décidée** (82) | La prémisse ne tient plus : le compteur n'est pas imposé (43), une TPE cliente d'un fournisseur enregistré ne déclare rien et l'abattement lui est restitué (D12.5, décision 67) ; le double dividende, différé (75) | Argumentaire : M9 ; chiffrage du coût de conformité : M11 |
+| 71 | L'incidence de la taxe | **répondue** [opus-5.5] | La charge pèse sur les utilisateurs professionnels en France, puis sur leurs clients ; ce n'est pas contraire à l'objet, la valeur saisie étant celle de l'usage, là où elle se réalise (étude d'impact v0.1, § 5.2.1) | À valider |
+| 73 | Les PME, les jeunes entreprises, les centres de données | **répondue** [opus-5.5] | L'abattement (88) ; aucune déclaration via un fournisseur enregistré ; neutralité concurrentielle pour les jeunes entreprises et neutralité de localisation pour les centres de données (étude d'impact v0.1, § 5.2.3) | À valider |
+| 75 | L'acceptabilité pour les entreprises | **décidée** (82) | La prémisse ne tient plus : le compteur n'est pas imposé (43), une TPE cliente d'un fournisseur enregistré ne déclare rien et l'abattement lui est restitué (D12.5, décision 67) ; le double dividende, différé (75) | Argumentaire : M9 ; coût de conformité chiffré : étude d'impact v0.1, § 5.4 |
 | 78 | Les agents en chaîne, les données synthétiques | **décidée** | Chaque inférence est un usage ; la règle de transparence ; la génération synthétique est taxée, l'entraînement non (D12.3 ; décision 66) | — |
 | 79 | Les erreurs, les réessais, les tests | **répondue** [C] | Le volume facturé ou traité ; les erreurs non facturées sont exclues ; les tests sont taxés (D12.4) | Rédaction : M10 |
 
-**Décompte (M9)** : **12 décidées** (15, 22, 26, 32, 35, 40, 60, 63, 69, 70, 75, 78), **6 répondues** (1, 34, 55, 67, 68, 79), **2 ouvertes**, les questions 71 et 73, **rattachées à l'étude d'impact (M11)**. *En M7 : 10 décidées, 7 répondues, 3 ouvertes ; Q63 et Q75 sont décidées (82) ; Q1 est traitée dans l'exposé v0.2.*
+**Décompte (M11)** [opus-5.5] : **12 décidées** (15, 22, 26, 32, 35, 40, 60, 63, 69, 70, 75, 78), **8 répondues** (1, 34, 55, 67, 68, 71, 73, 79), **aucune ouverte**. Q71 et Q73 sont répondues par l'étude d'impact v0.1 (réponses à valider). *En M9 : 12 décidées, 6 répondues, 2 ouvertes (71, 73). En M7 : 10 décidées, 7 répondues, 3 ouvertes.* **Le critère du mandat est atteint pour les 20 questions.**
 
 **Les 10 prioritaires** : 8 décidées (69, 60, 40, 15, 35, 32, 26, 22) et 2 répondues (67, 68). **Le critère du mandat est atteint pour elles.**
 
-**Questions « partielles » du fichier 17 traitées** (hors des 20) : en M3, Q57 (D6), Q61, Q62, Q64, Q65 (D8, décision 54), Q28 (D3), Q21 (D7, décision 53), Q51 (D6, D10) ; en M4, Q31, Q33, Q36, Q37, Q38, Q45 à Q48, Q72 (D11) ; en M5, Q14, Q16, Q17, Q19, Q20, Q39, Q41, Q42, Q43, Q80 (D12) ; en M6, Q49, Q50, Q53, Q58 (D13), et Q20 et Q80 révisées (D13.1) ; en M7, Q3, Q13, Q59, Q74 (note 19), Q65 (décision 75), Q76 (scénario bas, D13.8).
+**Questions « partielles » du fichier 17 traitées** (hors des 20) : en M3, Q57 (D6), Q61, Q62, Q64, Q65 (D8, décision 54), Q28 (D3), Q21 (D7, décision 53), Q51 (D6, D10) ; en M4, Q31, Q33, Q36, Q37, Q38, Q45 à Q48, Q72 (D11) ; en M5, Q14, Q16, Q17, Q19, Q20, Q39, Q41, Q42, Q43, Q80 (D12) ; en M6, Q49, Q50, Q53, Q58 (D13), et Q20 et Q80 révisées (D13.1) ; en M7, Q3, Q13, Q59, Q74 (note 19), Q65 (décision 75), Q76 (scénario bas, D13.8) ; en M11, Q8, Q74 (étude d'impact v0.1), Q44 (décision 88), Q56 (décision 91, taux marginaux chiffrés).
 
 ---
 
-## F. Guide de reprise pour un agent neuf (état à la fin de M10, le 2026-10-04)
+## F. Guide de reprise pour un agent neuf (état à la fin de M11, le 2026-10-04)
 
-**À lire, dans l'ordre** : `mandat.md` ; `intention-de-l-auteur.md` ; la section « En vigueur » de cette note ; le **journal** (n° 37 à 87 : les décisions [P] puis, depuis le n° 75, [opus-5.5 as ggim] et [ggim]) ; la section E de cette note ; la **note 19** (simulation v4), section « En vigueur » ; puis les sections D citées au besoin. Les notes 04, 05, 08, 10 et 11 ont une section « En vigueur » à jour, qui renvoie ici. **Les conventions de marquage** sont dans le fichier 00, « Identités et marqueurs » (décision 76).
+**À lire, dans l'ordre** : `mandat.md` ; `intention-de-l-auteur.md` ; la section « En vigueur » de cette note ; le **journal** (n° 37 à 93 : les décisions [P] puis, depuis le n° 75, [opus-5.5 as ggim] et [ggim]) ; la section E de cette note ; la **note 19** (simulation v4), section « En vigueur » ; puis les sections D citées au besoin. Les notes 04, 05, 08, 10 et 11 ont une section « En vigueur » à jour, qui renvoie ici. **Les conventions de marquage** sont dans le fichier 00, « Identités et marqueurs » (décision 76).
 
 **L'architecture en une page** :
 
@@ -786,35 +788,52 @@ Tous les montants sont [C, À vérifier].
 | Nature | Une imposition de toutes natures, du type accise sur un service, à un seul stade, sans déduction ; placée dans le CIBS [À vérifier] | 37 |
 | Champ | L'utilisation professionnelle en France de l'inférence des modèles d'IA à usage général et des systèmes générant des contenus de synthèse (D13.1) ; les particuliers, l'entraînement et l'IA non générative sont hors du champ ; le secteur public est inclus | 45, 46, 64 |
 | Unité | L'octet-équivalent (1 caractère = 1) ; des coefficients par type de contenu et par flux (générées 1 ; lues 0,25 ; cache 0,025), fixés par la loi | 9, 30, 65 |
+| Abattement | 1 000 € de taxe par groupe et par an, non indexé, révisable en LFSS, restitué automatiquement | 67, **88** |
 | Tarif | m × P_k par classe (trois tranches de prix catalogue, lissées aux bornes) ; P_k calculé par l'INSEE chaque trimestre ; m voté en LFSS entre 1 et 4, avec une justification renforcée au-delà de 2 ; en repli, un tarif en euros par unité | 39, 40, 41, 48, 50, 51, 68 |
 | Redevable | Le fournisseur enregistré collecte ; à défaut, le client autoliquide ; l'usage propre est déclaré ; un revendeur agréé achète en suspension ; règle de transparence ; règle contre les comptes grand public | 37, 38, 53, 66, 68 |
 | Territorialité | L'utilisation effective en France ; l'export est hors du champ, mais déclaré ; une table de conversion, des forfaits, une option pour le réel | 52, 61 |
 | IA sur terminal | 0,25 × le tarif pendant trois ans, une extinction à cinq ans au plus tard, un critère de maturité ; notification à la Commission | 44, 60, 62 |
 | Comptage | Une obligation de résultat pour le redevable (une comptabilité-matière) ; le SDK libre et certifié vaut présomption de bonne foi | 43, 67 |
 | Affectation | Une branche de sécurité sociale propre ; une recette exclusive (art. LO 111-3-14) ; un fonds de réserve de six mois ; une fraction pour l'Unédic ; une loi organique et une loi ordinaire | 42, 49, 54 |
-| Emploi des recettes | Les droits ouverts, puis le fonds, puis **les droits d'abord** jusqu'au socle cible ; ensuite le partage moitié-moitié avec la baisse des cotisations ; en retournement, le fonds, m, la suspension de la baisse des cotisations, puis la contribution d'équilibre | 54, **75** |
+| Emploi des recettes | Les droits ouverts, puis le fonds, puis **les droits d'abord** jusqu'au socle cible ; ensuite le partage moitié-moitié avec la baisse des cotisations ; en retournement, le fonds, m, la suspension de la baisse des cotisations, puis la contribution d'équilibre ; **une baisse des cotisations n'est engagée que si elle est soutenable avec m ≤ 2** ; m ramené à 2 au plus après la cible | 54, **75**, 79, 86, **89** |
 | Chômage universel | Le socle (prestation de chômage au sens du règlement 883/2004), individuel, du niveau du RSA vers le seuil de pauvreté (environ 1 200 €) ; le RSA et l'ASS repris avec la non-régression ; une condition de séjour plus ouverte que celle du RSA ; la part « socle » de l'ARE reversée à la branche ; la sortie progressive de 12 mois ; l'Unédic recentrée sur le complément | 55 à 59, 72, 74 |
 | Calendrier | Le vote en 2027 ; la notification et le statu quo ; l'entrée en vigueur en 2028 ; la phase 0 de trois ans ; l'ouverture du socle au plus tôt en 2031 ; le montant du socle, voté en LFSS, est la variable d'ajustement | 62, 73 |
 | Champ du socle, choix ouverts | **Les étudiants en formation initiale** et **la réduction pour les revenus du patrimoine** : réservés à Guillaume, chiffrés en variantes | 70, 71 |
 
-**État à la fin de M10** [opus-5.5] :
+**État à la fin de M11** [opus-5.5] :
+- **Décisions 88 à 93** : l'abattement validé (88) ; **le cliquet refusé, la règle inverse retenue** : la baisse des cotisations n'est engagée que si elle est soutenable avec m ≤ 2 (89), modélisée (`B_SOUTENABLE`), non-régression vérifiée (sortie de M10 reproduite à l'identique avec l'ancien réglage) ; les sanctions, point de départ (90) ; la sortie progressive plafonnée à 50 % (91) ; les écarts de l'exposé renvoyés à M12 (92) ; l'étude d'impact v0.1 et son script (93).
+- **L'étude d'impact v0.1** est écrite : `livrable/loi-jevons-etude-d-impact-v0.1.md` ; chiffres produits par `outils/etude_impact_v01.py` ; relecture des chiffres contre la sortie du script : **0 écart** (117 cellules de la trajectoire de référence contrôlées automatiquement, les autres tableaux à la main).
+- **Trajectoire de référence** (m ≤ 3 puis 2, décision 89) : la cible en 2033, m culminant à 2,5 de 2033 à 2036 ; la baisse des cotisations commence en 2037 et monte sans reculer jusqu'à **0,10 point en 2040** ; le fonds atteint 20 Md€ en 2040 (cible 13,9). Avec m ≤ 2 : la cible en 2038, 0,10 point en 2040.
+- **Fichier 17** : 45 décidées, 34 répondues, 1 ouverte (Q50, réservée à Guillaume). **Section E** : 12 décidées, 8 répondues, aucune ouverte.
+- **Trois points nouveaux** [opus-5.5], en questions ouvertes : l'excédent du fonds (variante `M79_FONDS`) ; la définition du retournement (art. 13, III), déclenchée par la seule baisse votée de m ; la sortie progressive (un taux d'environ 40 % au plus tant que le socle est proche du RSA ; la marche du 13ᵉ mois à la cible).
+
+**État à la fin de M10** [opus-5.5] (historique) :
 - **Décisions 84 à 87** : aucune trajectoire de m dans le dispositif ; la trajectoire de référence du Gouvernement (m ≤ 3, puis 2) figure dans l'étude d'impact (84) ; l'indexation à 2 %, avec sa sensibilité (85) ; la baisse des cotisations suspendue avant le fonds, hors retournement (86) ; l'exposé v0.2 accepté, le dispositif dans un nouveau fichier (87).
 - **Les unités du script sont cohérentes** (le marché et la recette sont en euros courants) ; **l'abattement est exprimé en taxe** : 1 000 € par groupe et par an (proposition sur Q44, **à valider**).
 - **Trajectoire de référence** (note 19, mise à jour M10) : la cible atteinte en 2033, m culminant à 2,5 ; la baisse des cotisations retombe à 0,05 point en 2038-2040, après le retour de m à 2.
-- **À reprendre en relecture de cohérence (M12)** : les chiffres de l'exposé v0.2 (« dès 2034 » → 2033 ; « 0,1 à 0,2 point » → environ 0,05 à 0,1 point) ; les montants d'amendes proposés dans le dispositif (articles L. [À vérifier]-21) ; les 60 renvois marqués [À vérifier].
-- **Un point de conception ouvert** [opus-5.5] : la règle 79 abaisse m dès que la recette couvre les droits, ce qui annule la baisse des cotisations déjà engagée (0,26 → 0,05 point). Variante : n'abaisser m que si la recette couvre aussi la baisse engagée.
+- **À reprendre en relecture de cohérence (M12)** : voir la liste à jour ci-dessous (fin de M11).
+- ~~**Un point de conception ouvert** [opus-5.5] : la règle 79 abaisse m dès que la recette couvre les droits, ce qui annule la baisse des cotisations déjà engagée (0,26 → 0,05 point). Variante : n'abaisser m que si la recette couvre aussi la baisse engagée.~~ → la variante (le « cliquet ») est refusée ; règle inverse (décision 89).
 
-**Les résultats de la v4** (note 19, scénario central, règles retenues en M9, socle indexé) : une première recette de 2,6 Md€ en 2028 ; un fonds de 10,2 Md€ en 2030 ; le socle ouvert à tous en 2031 au niveau du RSA ; **la cible atteinte en 2034 avec m = 3 pendant la montée en charge, ou vers 2038 avec m ≤ 2** ; une baisse des cotisations d'environ 0,1 à 0,2 point en 2040. **Le scénario bas ne finance pas le but par la taxe seule** (D13.8).
+**Les résultats de la v4 à la fin de M9** (historique ; l'état à jour est ci-dessus et dans la note 19, mise à jour M11) : une première recette de 2,6 Md€ en 2028 ; un fonds de 10,2 Md€ en 2030 ; le socle ouvert à tous en 2031 au niveau du RSA ; **la cible atteinte en 2034 avec m = 3 pendant la montée en charge, ou vers 2038 avec m ≤ 2** ; une baisse des cotisations d'environ 0,1 à 0,2 point en 2040. **Le scénario bas ne finance pas le but par la taxe seule** (D13.8).
 
 **Ce qui reste à faire** (plan, section C, renuméroté : l'itération M8 a été la reprise par Guillaume après la mise à jour des skills) :
 - ~~**M7** : la simulation v4 et la revue des 80 questions~~ (faites le 2026-10-04 : note 19, fichier 17) ;
 - ~~**M9** : l'exposé des motifs v0.2~~ (fait le 2026-10-04 : `livrable/…-v0.2.md` ; la liste de corrections ci-dessous y est appliquée) ;
 - ~~**M10** : le dispositif v0.1~~ (fait le 2026-10-04 : `livrable/loi-jevons-dispositif-v0.1.md`, avec le projet de loi organique (partie B) et l'annexe LFSS / loi de finances (partie C)) ;
-- **M11** : l'étude d'impact v0.1 ;
-- **M12** : la relecture de cohérence ;
+- ~~**M11** : l'étude d'impact v0.1~~ (faite le 2026-10-04 : `livrable/loi-jevons-etude-d-impact-v0.1.md`, `outils/etude_impact_v01.py`) ;
+- **M12** : la relecture de cohérence, par un agent neuf en lecture seule, avec la liste ci-dessous ;
 - **M13** : la confrontation à l'aveugle ;
 - **M14** : les corrections ;
 - **M15** : `rapport-de-retour.md`.
+
+**À reprendre en relecture de cohérence (M12)** (décision 92) [opus-5.5] :
+- **Exposé v0.2, § V** : « dès 2034 s'il le porte temporairement à trois » → **2033**, le multiple culminant à 2,5 ; « de l'ordre de 0,1 à 0,2 point de cotisation en 2040 » → **environ 0,1 point** (décision 89 : 0,10 point avec m ≤ 2 comme avec m ≤ 3) ; dire que la baisse **ne commence qu'au retour du multiple à 2** et qu'**elle n'est engagée que si elle est soutenable avec un multiple de 2 au plus** (89).
+- **Exposé v0.2, présentation du titre III** : ajouter la règle de la décision 89 ; **§ VI** : « le surplus va au partage, et le Parlement abaisse le multiple » reste juste.
+- **Exposé v0.2, fin du fichier** : les rubriques « DISPOSITIF » et « ÉTUDE D'IMPACT », marquées « À rédiger », renvoient désormais aux fichiers `livrable/loi-jevons-dispositif-v0.1.md` et `livrable/loi-jevons-etude-d-impact-v0.1.md`.
+- **Note 19** : les sections 2.0 à 2.6 et la « réponse franche » portent des chiffres de M9 ; seules les mises à jour M10 et M11 de la section « En vigueur » sont à jour. Un élagage est à proposer.
+- **Note 18** : la section « En vigueur » (« Ce que dit la simulation v4 ») porte encore les chiffres de M9 (cible en 2034 à m = 3, 0,1 à 0,2 point, contribution de 2,8 Md€) ; les chiffres à jour sont dans la section F et l'étude d'impact.
+- **Dispositif v0.1** : les montants d'amendes (art. L. [À vérifier]-21), point de départ (90) ; la définition du retournement (art. 13, III) ; les 60 renvois marqués [À vérifier].
+- **Fichier 17, Q6** : le montant de l'accord des docks en euros actuels, renvoyé à M11, n'a pas été traité dans l'étude d'impact.
 
 **Les corrections à porter dans l'exposé v0.2 (M9)**, outre les contradictions du fichier 17 (**appliquées en M9** ; à vérifier par la relecture de cohérence, M12) :
 - retirer « les exportateurs ne sont pas pénalisés » (63) ;
@@ -856,15 +875,17 @@ Tous les montants sont [C, À vérifier].
 7. **2026-10-02, M5** : décisions 58 à 63 **[P]**. Rédaction de D12 (l'assiette technique et le contrôle). **Choix structurant** : le champ est limité aux **modèles d'IA à usage général**, au sens de l'art. 3, point 63, du règlement sur l'IA. Cela relie le champ à la justification du savoir collectif, et règle les questions 20 et 80. **[C]**
 8. **2026-10-02, M6** : décisions 64 à 68 **[P]**. L'orchestrateur a contesté le champ (un générateur spécialisé d'images échapperait à la taxe, alors que l'illustrateur est l'exemple fondateur) : le champ est élargi aux systèmes de l'art. 50, § 2 (D13.1). Rédaction de D13 (le chômage universel) et de la section F (le guide de reprise). **[C]**
 9. **2026-10-04, fin de M7** : un agent neuf (opus-5.5) reprend après l'interruption de l'agent de relève, qui avait inscrit les décisions 69 à 74 et écrit la note 19. Vérification de la note 19 contre la sortie du script (trois écarts mineurs, corrigés) ; **décision 75** [opus-5.5 as ggim], les droits d'abord, ↺ de la décision 30 [G] ; décision 76 [ggim], les conventions de la branche ; rédaction de D13.8 (la règle d'emploi, le scénario bas) ; revue des 80 questions du fichier 17 et de la section E. **Constat** : aucun obstacle juridique bloquant nouveau ; le scénario bas est une limite budgétaire, assumée. **[opus-5.5]**
+10. **2026-10-04, M11** : un agent neuf (opus-5.5) reprend d'après la section F. Décisions 88 à 93 ; modélisation de la décision 89 et contrôle de non-régression ; rédaction de l'étude d'impact v0.1 et de son script ; Q8, Q71, Q73 et Q74 répondues. **Constat** : aucun obstacle juridique nouveau ; la sortie progressive au plafond de 50 % est moins favorable que la prime d'activité tant que le socle est proche du RSA. **[opus-5.5]**
 
 ## Questions ouvertes
 
+- **Après M11** [opus-5.5] : (1) l'excédent du fonds sur sa cible (6 Md€ en 2040 dans la trajectoire de référence) : le compter pour ramener m à 2 un an plus tôt (variante `M79_FONDS` de `sim_v4.py`) ? (2) la définition du retournement (dispositif, art. 13, III), déclenchée par la seule baisse votée de m : la fonder sur l'assiette ? (3) la sortie progressive : un taux d'environ 40 % au plus tant que le socle est proche du RSA, et une dégressivité en fin de période pour adoucir la marche du 13ᵉ mois ? Les frontaliers sont bornés (0,04 à 0,27 Md€, étude d'impact, § 5.1.7).
 - **Après M9** [opus-5.5] : le multiple pendant la montée en charge (m ≤ 2, cible vers 2038, ou m = 3, cible en 2034), présenté comme un choix du Parlement ; le taux d'indexation (2 %) [Unverified]. **Réservées à Guillaume** : les étudiants (70) et le patrimoine (71).
 - ~~**Après M7** : la formulation du scénario bas, la règle d'ouverture, m après la cible, la moitié « droits », la cible du fonds, Q63 et Q75~~ (décisions 77 à 82).
 - ~~**Après M6** : la validation de D13~~ (faite en M7 : décisions 69 à 74 ; D13.2 et D13.5 restent des propositions, à arrêter dans le dispositif).
 - **Après M5** : ~~la validation de D12~~ (faite : décisions 64 à 68).
 - ~~**Après M4** : la validation de D9 (le mécanisme de non-régression), de D10 (la condition de séjour et son repli) et de D11 (en particulier Q48 : le niveau du taux réduit, sa durée et le critère de maturité).~~ (décisions 58 à 61)
-- **Après M3** : ~~la validation de D7, de D8 et de D6 §4-5 ; le reversement de la part « socle » de l'ARE~~ (décisions 53 à 57, 74) ; reste : **les frontaliers**, à chiffrer dans l'étude d'impact (M11).
+- **Après M3** : ~~la validation de D7, de D8 et de D6 §4-5 ; le reversement de la part « socle » de l'ARE~~ (décisions 53 à 57, 74) ; reste : ~~**les frontaliers**, à chiffrer dans l'étude d'impact (M11)~~ (bornés en M11 : étude d'impact v0.1, § 5.1.7).
 
 - ~~La levée de la condition de la décision 39 (D1).~~ (décision 48)
 - ~~Le choix de la voie d'affectation (D4), à arrêter en M3.~~ (décision 49)

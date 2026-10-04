@@ -12,6 +12,12 @@
 # que la baisse de P_k y est déjà incluse, et la recette (m × dépense) est elle aussi en euros courants. Les unités
 # sont cohérentes avec l'indexation nominale ; rien n'est corrigé. Ajouts : la décision 86 (hors retournement, la
 # baisse des cotisations est suspendue avant de puiser dans le fonds) et l'abattement exprimé en taxe (Q44, proposition).
+# 2026-10-04 (M11) [opus-5.5] : l'abattement de 1 000 € de taxe par groupe est validé (décision 88). Règle de la
+# décision 89 (B_SOUTENABLE) : une baisse des cotisations n'est ENGAGÉE que si elle est soutenable avec m <= 2,
+# c'est-à-dire si la recette que donnerait m = min(m, 2), cette année et l'année suivante (montants indexés), couvre
+# la formation, les droits et la baisse déjà engagée augmentée de la nouvelle. Ce qui n'est pas engagé va au fonds.
+# Le « cliquet » proposé en M10 (ne baisser m que si la recette couvre aussi la baisse engagée) est refusé.
+# B_SOUTENABLE=False reproduit exactement la sortie de M10 (contrôle de non-régression).
 import sys
 
 # ---------------------------------------------------------------- calendrier
@@ -80,6 +86,9 @@ C = dict(
     IDX=0.02,         # décision 80 : indexation nominale annuelle des montants depuis 2026 (revenu médian) [Unverified]
     B_AVANT_FONDS=True,  # décision 86 (False : l'ordre de la décision 54, le fonds d'abord)
     M_POST=2.0,       # décision 79 : une fois la cible atteinte, m est ramené à 2 au plus (None : pas de règle)
+    B_SOUTENABLE=True,  # décision 89 : la baisse des cotisations n'est engagée que si elle est soutenable avec m <= 2
+    M79_FONDS=False,  # variante (proposition opus-5.5, M11) : pour ramener m vers 2 (décision 79), compter aussi
+                      # un tiers de l'excédent du fonds sur sa cible (l'équilibre sur trois ans de l'article 10)
 )
 
 def need(s, c):
@@ -103,6 +112,20 @@ def s_for(target_need, c):
         if need(mid, c) < target_need: lo = mid
         else: hi = mid
     return lo
+
+# ---------------------------------------------------------------- décision 89
+def capB(V, y, m, needA, B, I, p, c):
+    """Marge disponible pour ENGAGER une baisse des cotisations supplémentaire (Md€ courants) : ce que la recette
+    à m' = min(m, M_POST) couvrirait au-delà de la formation, des droits (needA) et de la baisse déjà engagée (B),
+    l'année y et l'année y + 1 (montants indexés ; la baisse engagée reste en euros courants)."""
+    m2 = min(m, c['M_POST']) if c['M_POST'] is not None else m
+    out = []
+    for k in (0, 1):
+        yy = min(y + k, END)
+        R2, _ = revenue(V[yy], y + k, m2, p)
+        g = (1 + c['IDX']) ** k
+        out.append(R2 - min(R2, c['FORM'] * I * g) - needA * g - B)
+    return max(0.0, min(out))
 
 # ---------------------------------------------------------------- simulation
 def run(name, mcap=1.0, alloc='droits', p=None, c=None):
@@ -149,7 +172,10 @@ def run(name, mcap=1.0, alloc='droits', p=None, c=None):
                             newA2 = min(nd(S_CIBLE), newA + rest); rest -= newA2 - newA; newA = newA2
                     else:              # décision 75 : droits d'abord, puis cotisations
                         newA = min(nd(S_CIBLE), nd(s) + surplus); rest = surplus - (newA - nd(s))
-                        usedB = min(max(0.0, BMAX - B), rest); rest -= usedB
+                        usedB = min(max(0.0, BMAX - B), rest)
+                        if c['B_SOUTENABLE']:   # décision 89 : soutenable avec m <= 2, cette année et la suivante
+                            usedB = min(usedB, capB(V, y, m, newA, B, I, p, c))
+                        rest -= usedB
                     s = s_for(newA / I, c); B += usedB; fund += max(0.0, rest)
         rows.append(dict(y=y, V=V[y], m=m, R=R, spend=spend, s=s, need=(nd(s) if s else 0.0),
                          B=B, pts=B / (c['PT'] * I), fund=fund, note=note, I=I))
@@ -161,7 +187,10 @@ def run(name, mcap=1.0, alloc='droits', p=None, c=None):
                 # décision 79 : ramener m vers 2 si la recette attendue couvre encore les droits (hors baisse des cotisations)
                 R2, _ = revenue(V[y + 1] if y < END else V[y], y + 1, max(c['M_POST'], m - 0.5), p)
                 I2 = I * (1 + c['IDX'])
-                if R2 - c['FORM'] * I2 >= need(s, c) * I2: m = max(c['M_POST'], m - 0.5)
+                xs = 0.0
+                if c['M79_FONDS']:   # variante : un tiers de l'excédent du fonds sur sa cible
+                    xs = max(0.0, fund - (c['FUND_MONTHS'] / 12) * (need(s, c) + c['FORM']) * I2) / 3
+                if R2 - c['FORM'] * I2 + xs >= need(s, c) * I2: m = max(c['M_POST'], m - 0.5)
             elif complete and B >= BMAX - 0.01 and m > 1:
                 # baisse de m seulement si la recette attendue à m - 0,5 couvre encore les engagements
                 R2, _ = revenue(V[y + 1] if y < END else V[y], y + 1, m - 0.5, p)
@@ -193,7 +222,8 @@ def grid(alloc='D8', c=None, p=None, label=''):
                 at[2035]['pts'], at[2040]['pts'], max(r['m'] for r in rows)))
 
 SANS_IDX = {'IDX': 0.0}
-AVANT_M9 = {'IDX': 0.0, 'OPEN_RULE': 'annuel', 'M_POST': None, 'B_AVANT_FONDS': False}   # les hypothèses de M7, pour comparaison
+M10 = {'B_SOUTENABLE': False}   # les règles de M10, sans la décision 89 (contrôle de non-régression)
+AVANT_M9 = {'IDX': 0.0, 'OPEN_RULE': 'annuel', 'M_POST': None, 'B_AVANT_FONDS': False, 'B_SOUTENABLE': False}   # les hypothèses de M7, pour comparaison
 
 def grid2(c=None, alloc='droits', label='', caps=(1.0, 2.0, 3.0, 4.0)):
     print('\n#### Synthèse %s (allocation %s)' % (label, alloc))
@@ -207,19 +237,20 @@ def grid2(c=None, alloc='droits', label='', caps=(1.0, 2.0, 3.0, 4.0)):
                 max(0.0, at[2035]['pts']), max(0.0, at[2040]['pts']), max(r['m'] for r in rows), at[2040]['m'], at[2040]['fund'], dmax))
 
 if __name__ == '__main__':
-    print('# Règles retenues : droits d\'abord (75), ouverture sur trois ans (78), m <= 2 après la cible (79), indexation (80)')
+    print('# Règles retenues : droits d\'abord (75), ouverture sur trois ans (78), m <= 2 après la cible (79), indexation (80), baisse des cotisations soutenable à m <= 2 (89)')
     for cap in (2.0, 3.0, 4.0):
         print('\n## Central, m plafonné à %.0f (règles retenues ; socle en euros 2026)' % cap); table(run('Central', cap))
     print('\n## Bas, m plafonné à 4 (règles retenues)'); table(run('Bas', 4.0))
     grid2(label='règles retenues')
     grid2(SANS_IDX, label='sans indexation')
+    grid2(M10, label='règles de M10, sans la décision 89 (contrôle de non-régression)')
     grid2(AVANT_M9, label='hypothèses de M7 (sans indexation, ouverture annuelle, sans règle 79)')
     grid2(AVANT_M9, 'D8', label='ancienne règle D8 (décision 54), hypothèses de M7')
     print('\n## Variantes et sensibilités (Central, règles retenues)')
     print('variante | plafond | socle cible atteint | socle 2035 | socle 2040 | pts 2040')
     VAR = [('base', {}, {}), ('étudiants inclus', {'ETU': True}, {}), ('réduction patrimoine', {'PATR': True}, {}),
            ('inscription de 0,5 M inactifs', {'INACT': True}, {}), ('fonds = 6 mois bruts', {'FUND_GROSS': True}, {}),
-           ('indexation 1 %', {'IDX': 0.01}, {}), ('indexation 3 %', {'IDX': 0.03}, {}),
+           ('m ramené à 2 avec l\'excédent du fonds (proposition)', {'M79_FONDS': True}, {}), ('indexation 1 %', {'IDX': 0.01}, {}), ('indexation 3 %', {'IDX': 0.03}, {}),
            ('élasticité 0,3', {}, {'EPS': 0.3}), ('élasticité 1,0', {}, {'EPS': 1.0}),
            ('décalage de P_k (x1,09)', {}, {'LAG': 1.09}), ('sans serveurs propres ni recouvrement', {}, {'F_INTERNE': 1.0, 'CIVISME': 1.0})]
     for lab, cc, pp in VAR:

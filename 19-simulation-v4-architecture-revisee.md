@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion (M7 de la session metamaieutique, terminée le 2026-10-04)
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M10 : unités vérifiées, décisions 84 à 86, abattement en taxe ; avant : M9)
+- **Dernière mise à jour** : 2026-10-04 (M11 : décisions 88 et 89, la baisse des cotisations soutenable à m ≤ 2 ; avant : M10)
 
 > Script : `outils/sim_v4.py` (la v3 est conservée dans `outils/sim_v3.py` et la note 14). Tous les paramètres sont **[C]** ; les montants non sourcés sont **[À vérifier]**. Les décisions citées sont celles du journal. Depuis le 2026-10-04, les ajouts portent les marqueurs nominatifs (voir `00-methode-conventions-et-index.md`, « Identités et marqueurs ») : **[opus-5.5]** pour une proposition de l'agent, **[opus-5.5 as ggim]** pour une décision par procuration.
 
@@ -10,7 +10,16 @@
 
 **Les règles retenues** (depuis M9) : **les droits d'abord** jusqu'au socle cible, puis le partage moitié-moitié (décision 75) ; **l'ouverture du socle sur trois ans**, fonds compris (décision 78) ; **m ramené à 2 au plus une fois la cible atteinte**, par défaut (décision 79) ; **l'indexation** du socle, du besoin, de la formation et du point de cotisation sur le revenu médian, + 2 % par an en nominal [Unverified] (décision 80) ; un fonds de six mois du besoin net (décision 81). Le socle est exprimé **en euros de 2026** ; les recettes, en euros courants. Les résultats sous les hypothèses de M7 (sans indexation, ouverture annuelle) sont gardés aux sections 2.1 à 2.5, pour comparaison.
 
-**Mise à jour M10 (2026-10-04)** [opus-5.5] — elle prévaut sur les chiffres ci-dessous quand ils diffèrent :
+**Mise à jour M11 (2026-10-04)** [opus-5.5] — elle prévaut sur tous les chiffres ci-dessous quand ils diffèrent :
+- **Décision 89** [opus-5.5 as ggim] : une baisse des cotisations n'est **engagée** que si elle est **soutenable avec m ≤ 2** (la recette à min(m, 2), l'année en cours et la suivante, couvre la formation, les droits et toute la baisse engagée) ; le reste va au fonds. Le « cliquet » de M10 est refusé. Script : `B_SOUTENABLE=True` par défaut (fonction `capB`).
+- **Non-régression** : avec `B_SOUTENABLE=False`, le script reproduit **à l'identique** toute la sortie de M10 (contrôle fait par `diff` de la sortie complète ; la grille « règles de M10 » est imprimée par le script). Les grilles « sans indexation » ne changent que par le fonds ; les grilles « hypothèses de M7 » et « D8 » sont inchangées.
+- **Ce qui change, trajectoire de référence (Central, m ≤ 3 puis 2)** : la cible est toujours atteinte en **2033**, m culminant à **2,5** de 2033 à 2036, puis ramené à 2 en 2037 ; **la baisse des cotisations ne commence qu'en 2037** et **ne recule plus** : 0,02 point (2037), 0,06 (2038), **0,10 point en 2039 et 2040** (au lieu de 0,26 point en 2036 retombant à 0,05). Pendant les quatre années à m = 2,5, le surplus va au fonds, qui monte à **19,4 Md€ en 2036 et 20,0 Md€ en 2040** (cible : 12,8 puis 13,9 Md€).
+- **Avec m ≤ 2** : la cible en 2038 ; 0,10 point en 2040 (au lieu de 0,12) ; fonds de 14,1 Md€. **Scénario haut** : 3,55 points en 2040 (au lieu de 3,59), sans recul. **Scénario bas** : inchangé (aucune baisse des cotisations).
+- **Sensibilités** (règles retenues) : indexation à 3 %, aucune baisse des cotisations d'ici 2040, même avec m ≤ 3 (au lieu de 0,11 point) ; élasticité 0,3, 0,61 point ; réduction pour le patrimoine, 0,15 point.
+- **Un excédent du fonds sans emploi** [opus-5.5] : la variante `M79_FONDS` (compter un tiers de l'excédent du fonds sur sa cible pour ramener m à 2, selon l'équilibre sur trois ans de l'article 10) ramène m à 2 **un an plus tôt (2036)** et laisse un fonds de 15,9 Md€ en 2040 ; la cible et le double dividende sont inchangés. **Proposition, non retenue** (voir les questions ouvertes).
+- **Les chiffres de l'étude d'impact v0.1** sont produits par `outils/etude_impact_v01.py`, qui appelle ce script.
+
+**Mise à jour M10 (2026-10-04)** [opus-5.5] — elle prévaut sur les chiffres ci-dessous quand ils diffèrent (sauf la mise à jour M11) :
 - **Les unités sont cohérentes** (décision 85) : le marché du script est le chiffre d'affaires HT de l'IA professionnelle en France, en euros courants (note 13) ; c'est un volume × un prix, donc la baisse de P_k y est incluse, et la recette (m × dépense) est en euros courants, comme les montants indexés. Rien n'est corrigé.
 - **Deux changements de modèle** : la décision 86 (hors retournement, la baisse des cotisations est suspendue avant de puiser dans le fonds) ; l'**abattement exprimé en taxe**, 1 000 € de taxe par groupe et par an, soit 0,5 Md€ pour environ 500 000 groupes [Unverified] (proposition Q44, à valider ; avant : 0,5 Md€ de dépense, dont le coût croissait avec m).
 - **La trajectoire de référence du Gouvernement** (décision 84 : m ≤ 3 pendant la montée en charge, puis 2), scénario central : 2,6 Md€ en 2028 ; un fonds de 10,1 Md€ en 2030 ; le socle ouvert en 2031 (782 € de 2026) ; **la cible atteinte en 2033, m culminant à 2,5** (2033-2036) ; m ramené à 2 en 2037 ; la baisse des cotisations monte à 0,26 point en 2036, puis retombe à **0,05 point** en 2038-2040, car le retour de m à 2 ne couvre plus que les droits indexés.
@@ -234,6 +243,8 @@
 
 6. **2026-10-04, M9** : l'orchestrateur valide par procuration la formulation du scénario bas (77), l'ouverture sur trois ans (78), m ramené à 2 au plus après la cible (79), l'emploi de la moitié « droits » et l'indexation (80), le fonds net (81). L'indexation est modélisée. **Constat** [opus-5.5] : elle retarde la cible de 2034 à 2038 avec m ≤ 2 dans le scénario central ; 2034 demande m = 3 pendant quatre ans ; la baisse des cotisations tombe à 0,1-0,2 point en 2040. La v4 sans indexation reproduit exactement les chiffres de M7 (contrôle de non-régression). **[opus-5.5]**
 
+7. **2026-10-04, M11** : l'orchestrateur refuse le « cliquet » et retient la règle inverse (décision 89) ; il valide l'abattement en taxe (88). Modélisation (`B_SOUTENABLE`, `capB`) ; contrôle de non-régression par `diff` de la sortie complète (identique avec l'ancien réglage). **Constat** [opus-5.5] : le double dividende ne recule plus, mais il est encore plus tardif (2037) ; le surplus des années à m = 2,5 s'accumule au fonds sans emploi. Création de `outils/etude_impact_v01.py` pour l'étude d'impact. **[opus-5.5]**
+
 ## Questions ouvertes
 
 - ~~La règle d'emploi pendant la montée en charge : D8 tel quel, ou les droits d'abord~~ : **les droits d'abord** (décision 75).
@@ -242,7 +253,10 @@
 - ~~m au-delà de 2 après la cible~~ : **ramené à 2 au plus par défaut**, la LFSS pouvant aller au-delà par un vote motivé (décision 79).
 - ~~L'objet de la moitié « droits » après la cible~~ : l'indexation et les extensions votées, à défaut la baisse des cotisations (décision 80).
 - [opus-5.5] **Le multiple pendant la montée en charge** : m ≤ 2 (cible vers 2038) ou m = 3 pendant quelques années (cible en 2034) ? C'est un choix du Parlement ; l'exposé présente les deux. Le taux d'indexation (2 %) est à confirmer.
-- Le montant de l'abattement (Q44), à fixer dans le dispositif (M10).
+- ~~Le montant de l'abattement (Q44)~~ : **1 000 € de taxe par groupe et par an** (décision 88).
+- ~~Le « cliquet » sur la baisse de m~~ : **refusé** ; la baisse des cotisations n'est engagée que si elle est soutenable avec m ≤ 2 (décision 89).
+- [opus-5.5] **L'excédent du fonds** au-delà de sa cible (6 Md€ en 2040 dans la trajectoire de référence) : le compter pour ramener m à 2 un an plus tôt (variante `M79_FONDS`), ou le laisser en réserve ?
+- [opus-5.5] **La définition du retournement** (dispositif, art. 13, III : un produit inférieur à celui de l'année précédente) est déclenchée par la seule baisse votée de m (2037 dans la trajectoire de référence) ; il vaudrait mieux la définir sur l'**assiette** (la dépense taxable), et non sur le produit.
 - Les étudiants et le patrimoine : des choix ouverts, réservés à Guillaume (décisions 70 et 71).
 
 ## Liens
