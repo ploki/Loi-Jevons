@@ -287,9 +287,13 @@ b) Être titulaire d'un titre de séjour autorisant à travailler et justifier d
 
 I. – En cas de reprise d'une activité professionnelle, le bénéficiaire du socle continue de le percevoir pendant douze mois, diminué d'une fraction des revenus d'activité fixée par décret, qui ne peut excéder 50 %.
 
-II. – À l'issue de cette période, le bénéficiaire relève, le cas échéant, de la prime d'activité. Les articles L. 841-1 et suivants du code de la sécurité sociale sont adaptés de sorte que le cumul du socle dégressif et de la prime d'activité ne soit jamais inférieur à ce que procure la législation antérieure [À vérifier].
+II. – Au cours des derniers mois de la période mentionnée au I, dont le nombre est fixé par décret, le montant versé au titre du I décroît linéairement, chaque mois, jusqu'à s'annuler à l'issue de cette période.
 
-*[Note de rédaction [opus-5.5 → ggim] : le plafond de 50 % est validé (décision 91 [opus-5.5 as ggim]) ; il reprend l'ordre de grandeur de la note 05. Le taux fixé par décret tient compte des taux marginaux chiffrés dans l'étude d'impact (§ 5.3) [opus-5.5] : tant que le socle est proche du montant du RSA, un taux supérieur à environ 40 % ferait moins bien que la prime d'activité, et c'est la garantie du II qui joue ; à la cible, la fin de la période de douze mois crée une marche de 400 à 700 € par mois (Q56).]*
+III. – Pendant toute la période mentionnée au I, le bénéficiaire perçoit le plus élevé des deux montants suivants : le montant versé au titre des I et II ; le montant du revenu de solidarité active et de la prime d'activité auxquels il aurait droit en application de la législation en vigueur à la date de publication de la présente loi, revalorisés [À vérifier : articles L. 262-2 du code de l'action sociale et des familles et L. 842-3 du code de la sécurité sociale].
+
+IV. – À l'issue de cette période, le bénéficiaire relève, le cas échéant, de la prime d'activité, dans des conditions qui ne peuvent être moins favorables que celles mentionnées au III [À vérifier].
+
+*[Note de rédaction [opus-5.5 → ggim] : le plafond de 50 % est validé (décision 91). Le III et le II traduisent la décision 96 [opus-5.5 as ggim] : reprendre un travail rapporte toujours au moins autant qu'aujourd'hui, et la marche de fin de période est supprimée. **Modalité proposée** [opus-5.5, à valider] : la dégressivité porte sur les six derniers des douze mois ; variante : douze mois pleins, puis une période dégressive supplémentaire. Chiffrage : étude d'impact, § 5.3.4.]*
 
 ### Article 7 — Le complément et l'assurance chômage
 
@@ -367,9 +371,13 @@ II. – Lorsque les recettes ne couvrent pas les dépenses de la branche :
 
 3° En tout état de cause, une contribution d'équilibre de l'État peut être fixée par la loi de financement de la sécurité sociale.
 
-III. – Il y a retournement, au sens du II, lorsque le produit de la taxe de l'année est inférieur à celui de l'année précédente, ou que la loi de financement de la sécurité sociale constate une baisse durable de l'assiette.
+III. – Il y a retournement, au sens du II, lorsque l'assiette de la taxe de l'année, évaluée au multiple de l'année précédente, est inférieure à celle de l'année précédente, ou que la loi de financement de la sécurité sociale constate une baisse durable de l'assiette. Une baisse du multiple ne constitue pas un retournement.
 
-IV. – Une fois la cible du socle atteinte, le multiple est ramené à 2 au plus, sauf disposition contraire et motivée de la loi de financement de la sécurité sociale, notamment en cas de retournement.
+*[Note de rédaction : décision 95 [opus-5.5 as ggim]. L'assiette s'entend de la dépense taxable ; la définition par le produit était déclenchée par la seule baisse votée du multiple.]*
+
+IV. – Une fois la cible du socle atteinte, le multiple est ramené à 2 au plus, sauf disposition contraire et motivée de la loi de financement de la sécurité sociale, notamment en cas de retournement. Pour apprécier si le produit de la taxe le permet, il est tenu compte, à raison d'un tiers par an, de la fraction des réserves du fonds mentionné à l'article 12 qui excède sa cible.
+
+*[Note de rédaction : la dernière phrase traduit la décision 94 [opus-5.5 as ggim] : elle raccourcit d'un an la période où le multiple excède 2 (étude d'impact, § 5.1.1).]*
 
 ### Article 14 — La fraction versée à l'assurance chômage
 
@@ -457,4 +465,4 @@ La taxe sur l'intelligence artificielle et les réserves du fonds de réserve du
 
 ---
 
-*Principales sources dans le corpus : note 18 (D1 à D13, section F), note 19 (simulation v4), journal des décisions (n° 37 à 93). Les choix ouverts au débat sont signalés en note : les étudiants en formation initiale (décision 70), la réduction pour les revenus du patrimoine (décision 71).*
+*Principales sources dans le corpus : note 18 (D1 à D13, section F), note 19 (simulation v4), journal des décisions (n° 37 à 97). Les choix ouverts au débat sont signalés en note : les étudiants en formation initiale (décision 70), la réduction pour les revenus du patrimoine (décision 71).*

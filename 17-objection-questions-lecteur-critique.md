@@ -2,13 +2,13 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M11 : décisions 88 à 91, étude d'impact v0.1)
+- **Dernière mise à jour** : 2026-10-04 (M12 : décisions 96 et 97)
 
 
 ## En vigueur
 
 - **Liste de suivi** des 80 questions. Chaque question a un **statut** : ouverte, répondue ou décidée. Quand une question est tranchée, on note dans « Renvoi » le numéro de la décision du journal.
-- Situation au 2026-10-04 (**M11**, après l'étude d'impact v0.1) [opus-5.5] : **45 décidées**, **34 répondues**, **1 ouverte** : la question **réservée à Guillaume** (50 : les étudiants et le patrimoine, décisions 70 et 71). En M11, Q44 est décidée (88) ; Q8, Q71, Q73 et Q74 sont répondues par l'étude d'impact v0.1 (réponses [opus-5.5], à valider). *Historique : M7, 42 / 26 / 12 ; M9, 44 / 30 / 6 ; M10, 44 / 31 / 5.* Le suivi des 20 questions non traitées est dans la **note 18, section E**.
+- Situation au 2026-10-04 (**M12**) [opus-5.5] : **49 décidées**, **30 répondues**, **1 ouverte** : la question **réservée à Guillaume** (50 : les étudiants et le patrimoine, décisions 70 et 71). En M12, les réponses de l'étude d'impact à Q8, Q71, Q73 et Q74 sont validées (97). *Historique : M7, 42 / 26 / 12 ; M9, 44 / 30 / 6 ; M10, 44 / 31 / 5 ; M11, 45 / 34 / 1.* Le suivi des 20 questions non traitées est dans la **note 18, section E**.
 - *Méthode de la revue* : « décidée » = tranchée par une décision du journal ; « répondue » = traitée dans une note, sans décision propre (une réponse [C] ou [opus-5.5] reste à valider) ; « ouverte » = à traiter, avec son rattachement. La colonne « Corpus (R/P/N) » garde le classement d'origine de l'agent lecteur. Avant la revue (M6) : 23 répondues, 12 décidées, 45 ouvertes.
 - **Priorités avant de rédiger le dispositif** : 69 (l'article 401 de la directive TVA), 67, 68, 60, 40, 15, 35, 32, 26, 22. **Toutes fermées en M7** : 8 décidées (69, 60, 40, 15, 35, 32, 26, 22), 2 répondues (67, 68).
 
@@ -21,7 +21,7 @@
 | 5 | A | **répondue** | P | | exposé v0.2 (§ I) : causes multiples ; assurance chômage obligatoire en 1977, loi entrée en vigueur en 1984 [S] ; note 16 |
 | 6 | A | **répondue** | P | | exposé v0.2 (§ I) : une convention, que la loi généralise ; 15 000 dockers ; montant en euros actuels → M11 |
 | 7 | A | **répondue** | R | | — |
-| 8 | A | **répondue** | P | | étude d'impact v0.1, § 1.3 : pas de série française probante ; le projet n'en dépend pas (82) ; un dispositif d'observation [opus-5.5] |
+| 8 | A | **décidée** | P | | 97 ; étude d'impact v0.1, § 1.3 : pas de série française probante ; le projet n'en dépend pas (82) ; un dispositif d'observation [opus-5.5] |
 | 9 | A | **décidée** | P | | 38, 45 [P] ; note 18, D13.1 |
 | 10 | A | **répondue** | R | | note 18, D2 |
 | 11 | A | **répondue** | P | | 51 [P] ; note 18, D3 ; chiffres du carburant à vérifier en M9 |
@@ -69,7 +69,7 @@
 | 53 | G | **décidée** | P | | 57, 74 [P] ; note 18, D13.4 |
 | 54 | G | **répondue** | P | | exposé v0.2 (§ IV) : limites des expériences dites ; évaluation prévue ; effets → M11 |
 | 55 | G | **répondue** | N | | note 18, D13.5 [C] ; note 19 (1 Md€) ; arrêtée en M10 |
-| 56 | G | **décidée** | R | | 72 [P], 91 [opus-5.5 as ggim] ; dispositif v0.1, art. 6 : fraction fixée par décret, au plus 50 % ; taux marginaux : étude d'impact v0.1, § 5.3.4 |
+| 56 | G | **décidée** | R | | 72 [P], 91 et 96 [opus-5.5 as ggim] ; dispositif v0.1, art. 6 : au plus 50 %, jamais moins que le droit actuel, dégressivité linéaire ; taux marginaux et coût : étude d'impact v0.1, § 5.3.4 |
 | 57 | G | **décidée** | P | | 55, 58 [P] ; note 18, D6, D9 |
 | 58 | H | **décidée** | P | | 73 [P] ; note 18, D13.6 |
 | 59 | H | **répondue** | R | | note 19 (trajectoire v4) ; correction en M9 |
@@ -84,10 +84,10 @@
 | 68 | J | **répondue** | N | **top 3** | note 18, O2, D7 ; 44, 46 [P] |
 | 69 | J | **décidée** | N | **top 1** | 37, 39, 48 [P] |
 | 70 | J | **décidée** | N | | 43, 44, 62 [P] ; note 18, D11 |
-| 71 | K | **répondue** | N | | étude d'impact v0.1, § 5.2.1 : la charge pèse sur les utilisateurs en France ; la valeur saisie est celle de l'usage, pas la marge des fournisseurs [opus-5.5] |
+| 71 | K | **décidée** | N | | 97 ; étude d'impact v0.1, § 5.2.1 : la charge pèse sur les utilisateurs en France ; la valeur saisie est celle de l'usage, pas la marge des fournisseurs [opus-5.5] |
 | 72 | K | **répondue** | P | | note 18, D11 ; chiffrage en M11 |
-| 73 | K | **répondue** | N | | étude d'impact v0.1, § 5.2.3 : abattement (88), neutralité concurrentielle et de localisation des centres de données [opus-5.5] |
-| 74 | K | **répondue** | P | | étude d'impact v0.1, § 5.2.2 et 5.1.5 : − 29 % à − 55 % de dépense (ε = 0,5) ; sensibilité 0,3 à 1,0 ; croissance non modélisée [opus-5.5] |
+| 73 | K | **décidée** | N | | 97 ; étude d'impact v0.1, § 5.2.3 : abattement (88), neutralité concurrentielle et de localisation des centres de données [opus-5.5] |
+| 74 | K | **décidée** | P | | 97 ; étude d'impact v0.1, § 5.2.2 et 5.1.5 : − 29 % à − 55 % de dépense (ε = 0,5) ; sensibilité 0,3 à 1,0 ; croissance non modélisée [opus-5.5] |
 | 75 | L | **décidée** | N | | 82 [opus-5.5 as ggim] ; 43, 67 [P] ; note 18, E ; argumentaire dans l'exposé v0.2 |
 | 76 | L | **décidée** | P | | 32 [G] ; note 18, D13.8 ; note 19, § 3 |
 | 77 | L | **répondue** | P | | 74 [P] ; note 09 ; argumentaire en M9 |

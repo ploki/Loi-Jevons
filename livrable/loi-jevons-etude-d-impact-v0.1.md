@@ -4,7 +4,9 @@
 
 ### dite « Loi Jevons » — ÉTUDE D'IMPACT
 
-*Document de travail : version 0.1, 4 octobre 2026. Point de départ destiné à être expertisé par un économiste et par un juriste. Elle accompagne l'exposé des motifs v0.2 et le dispositif v0.1. Elle suit le plan prévu par l'article 8 de la loi organique n° 2009-403 du 15 avril 2009.*
+*Document de travail : version 0.1, 4 octobre 2026, mise à jour en M12 (décisions 94 à 97 : excédent du fonds, retournement, sortie progressive).*
+
+*Point de départ destiné à être expertisé par un économiste et par un juriste. Elle accompagne l'exposé des motifs v0.2 et le dispositif v0.1. Elle suit le plan prévu par l'article 8 de la loi organique n° 2009-403 du 15 avril 2009.*
 
 *Tous les chiffres viennent de `outils/etude_impact_v01.py`, qui appelle le modèle `outils/sim_v4.py` (note 19 du corpus). Ce sont des **ordres de grandeur**. Les montants sont en milliards d'euros courants (Md€), sauf le socle, exprimé en euros de 2026 (pouvoir d'achat constant au regard du seuil de pauvreté). Les hypothèses non sourcées sont marquées [Unverified] ; les sources vérifiées, [S]. Les propositions de l'agent rédacteur qui n'ont pas été validées sont marquées [opus-5.5].*
 
@@ -67,10 +69,10 @@ L'assiette, le taux et les modalités de recouvrement d'une imposition de toutes
 | Branche | Une branche du chômage universel, une caisse nationale, le versement par les CAF | 3 |
 | Socle | Individuel, sans obligation de recherche ; du niveau du RSA vers le seuil de pauvreté, fixé en LFSS ; formation maintenue | 4 |
 | Séjour | Les conditions du RSA, plus l'accès après six mois d'emploi (directive 2011/98/UE) | 5 |
-| Sortie progressive | Douze mois, réduction d'une fraction des revenus d'activité fixée par décret, au plus 50 % (décision 91) | 6 |
+| Sortie progressive | Douze mois, réduction d'une fraction des revenus d'activité fixée par décret, au plus 50 % (décision 91) ; dégressivité linéaire en fin de période ; jamais moins que le droit actuel (décision 96) | 6 |
 | Reprises | Le RSA et l'ASS repris par la branche, avec une garantie de non-régression | 8, 9 |
 | Phases | Trois ans de lancement ; ouverture puis hausse du socle selon l'équilibre sur trois ans | 10 |
-| Emploi des recettes | Les droits, le fonds de réserve, la hausse du socle jusqu'à la cible, puis le partage ; la baisse des cotisations n'est engagée que si elle est soutenable avec m ≤ 2 (décision 89) ; m ramené à 2 au plus après la cible | 11 à 14 |
+| Emploi des recettes | Les droits, le fonds de réserve, la hausse du socle jusqu'à la cible, puis le partage ; la baisse des cotisations n'est engagée que si elle est soutenable avec m ≤ 2 (décision 89) ; m ramené à 2 au plus après la cible, compte tenu d'un tiers de l'excédent du fonds (décision 94) ; le retournement défini sur l'assiette (décision 95) | 11 à 14 |
 
 ## 5. Impacts
 
@@ -85,30 +87,43 @@ Le dispositif n'inscrit aucune trajectoire du multiple : le Parlement le vote ch
 | 2028 | 1,0 | 2,6 | — | — | — | 0 | 1,5 | — |
 | 2029 | 1,0 | 4,3 | — | — | — | 0 | 4,8 | — |
 | 2030 | 1,0 | 6,4 | — | — | — | 0 | 10,1 | — |
-| 2031 | 1,5 | 12,3 | 782 (ouverture) | 864 | 11,2 | 0 | 10,1 | 6,1 |
-| 2032 | 2,0 | 18,2 | 994 | 1 120 | 17,1 | 0 | 10,1 | 9,1 |
-| 2033 | 2,5 | 24,4 | **1 200** (cible) | 1 378 | 23,0 | 0 | 10,3 | 12,1 |
-| 2034 | 2,5 | 26,8 | 1 200 | 1 406 | 23,4 | 0 | 12,5 | 12,3 |
-| 2035 | 2,5 | 28,2 | 1 200 | 1 434 | 23,9 | 0 | 15,6 | 12,5 |
-| 2036 | 2,5 | 29,4 | 1 200 | 1 463 | 24,4 | 0 | 19,4 | 12,8 |
-| 2037 | 2,0 | 26,3 | 1 200 | 1 492 | 24,9 | 0,2 (0,02) | 19,4 | 13,1 |
-| 2038 | 2,0 | 27,4 | 1 200 | 1 522 | 25,4 | 0,8 (0,06) | 19,4 | 13,3 |
-| 2039 | 2,0 | 28,5 | 1 200 | 1 552 | 25,9 | 1,4 (0,10) | 19,4 | 13,6 |
-| 2040 | 2,0 | 29,7 | 1 200 | 1 583 | 26,4 | 1,4 (0,10) | 20,0 | 13,9 |
+| 2031 | 1,5 | 12,3 | 790 (ouverture) | 872 | 11,2 | 0 | 10,1 | 6,1 |
+| 2032 | 2,0 | 18,2 | 1 029 | 1 159 | 17,1 | 0 | 10,1 | 9,1 |
+| 2033 | 2,5 | 24,4 | **1 200** (cible) | 1 378 | 21,6 | 0 | 11,7 | 11,4 |
+| 2034 | 2,5 | 26,8 | 1 200 | 1 406 | 22,0 | 0 | 15,3 | 11,6 |
+| 2035 | 2,0 | 24,3 | 1 200 | 1 434 | 22,5 | 0,6 (0,05) | 15,3 | 11,8 |
+| 2036 | 2,0 | 25,3 | 1 200 | 1 463 | 22,9 | 1,1 (0,09) | 15,3 | 12,1 |
+| 2037 | 2,0 | 26,3 | 1 200 | 1 492 | 23,4 | 1,7 (0,12) | 15,3 | 12,3 |
+| 2038 | 2,0 | 27,4 | 1 200 | 1 522 | 23,9 | 2,3 (0,16) | 15,3 | 12,6 |
+| 2039 | 2,0 | 28,5 | 1 200 | 1 552 | 24,3 | 2,9 (0,20) | 15,3 | 12,8 |
+| 2040 | 2,0 | 29,7 | 1 200 | 1 583 | 24,8 | 3,0 (0,21) | 15,8 | 13,1 |
 
-*Le besoin net est la dépense supplémentaire de la branche par rapport au droit existant (le RSA, l'ASS et la part « socle » de l'assurance chômage étant repris), hors formation (1 Md€ de 2026 par an).*
+*Le besoin net est la dépense supplémentaire de la branche par rapport au droit existant (le RSA, l'ASS et la part « socle » de l'assurance chômage étant repris), hors formation (1 Md€ de 2026 par an) ; il comprend la sortie progressive corrigée (§ 5.3.4).*
 
-**Lecture.** La première recette est de 2,6 Md€ (2028). Le socle s'ouvre à tous en 2031 et atteint le seuil de pauvreté en **2033**. Le multiple reste à 2,5 de 2033 à 2036 : à un multiple de 2, la recette ne couvrirait pas encore les droits indexés. **La baisse des cotisations ne commence qu'en 2037**, au retour du multiple à 2, et atteint **0,10 point en 2040** ; elle ne recule jamais, car elle n'est engagée que si elle est soutenable avec un multiple de 2 au plus (décision 89). Pendant les années à 2,5, le surplus va au fonds de réserve, qui dépasse sa cible de 6 Md€ en 2040.
+**Lecture.** La première recette est de 2,6 Md€ (2028). Le socle s'ouvre à tous en 2031 et atteint le seuil de pauvreté en **2033**. Le multiple reste à 2,5 en 2033 et 2034, puis revient à 2 en **2035**, en tenant compte d'un tiers de l'excédent du fonds de réserve sur sa cible (décision 94). **La baisse des cotisations commence en 2035**, au retour du multiple à 2, et atteint **0,21 point en 2040** ; elle ne recule jamais, car elle n'est engagée que si elle est soutenable avec un multiple de 2 au plus (décision 89).
+
+**Ce qui fait la trajectoire** (scénario central, m ≤ 3) :
+
+| Règles | Cible | Années à m > 2 | Retour de m à 2 | Baisse des cotisations 2040 | Fonds 2040 |
+|---|---|---|---|---|---|
+| Règles de la version précédente (M11) | 2033 | 4 | 2037 | 0,10 point | 20,0 |
+| + excédent du fonds (décision 94) | 2033 | 3 | 2036 | 0,10 point | 15,9 |
+| + retournement défini sur l'assiette (décision 95) | 2033 | 3 | 2036 | 0,10 point | 15,9 |
+| + sortie au plus favorable, sans dégressivité (décision 96) | 2033 | 3 | 2036 | 0,10 point | 15,9 |
+| **+ dégressivité sur les six derniers mois (retenue pour le chiffrage)** | **2033** | **2** | **2035** | **0,21 point** | **15,8** |
+| Variante : douze mois pleins, puis six mois dégressifs | 2034 | 3 | 2036 | 0,05 point | 16,9 |
+
+Le gain de la dernière ligne retenue tient à la **modalité de la dégressivité** : placée dans les douze mois, elle réduit le coût de la sortie progressive à la cible (2,14 Md€ au lieu de 3,32, § 5.3.4) ; placée après, elle l'augmente (3,80 Md€). Ce choix de modalité est une proposition, non encore arrêtée.
 
 #### 5.1.2 Si le Parlement s'en tient à un multiple de 2
 
 | Plafond de m | Socle cible | m maximal | Années à m > 2 | Baisse des cotisations 2040 | Fonds 2040 | Socle 2040 |
 |---|---|---|---|---|---|---|
-| 1 (plancher) | non | 1 | 0 | 0 | 10,1 | 888 € |
-| 2 | **2038** | 2 | 0 | 0,10 point | 14,1 | 1 200 € |
-| 3 (référence) | **2033** | 2,5 | 4 | 0,10 point | 20,0 | 1 200 € |
+| 1 (plancher) | non | 1 | 0 | 0 | 9,7 | 910 € |
+| 2 | **2036** | 2 | 0 | 0,21 point | 13,3 | 1 200 € |
+| 3 (référence) | **2033** | 2,5 | 2 | 0,21 point | 15,8 | 1 200 € |
 
-Le choix du Parlement porte sur **cinq années** d'avance du chômage universel (2033 au lieu de 2038), au prix de quatre années à un multiple de 2,5, au-delà du repère des deux tiers du coût (décision 51). Au plancher, le socle plafonne à 888 € de 2026 en 2040 : le plancher est un principe (la moitié de la valeur au bien commun), pas un financement suffisant.
+Le choix du Parlement porte sur **trois années** d'avance du chômage universel (2033 au lieu de 2036), au prix de deux années à un multiple de 2,5, au-delà du repère des deux tiers du coût (décision 51). Au plancher, le socle plafonne à 910 € de 2026 en 2040 : le plancher est un principe (la moitié de la valeur au bien commun), pas un financement suffisant.
 
 #### 5.1.3 Le scénario bas et la contribution d'équilibre
 
@@ -116,11 +131,11 @@ Le choix du Parlement porte sur **cinq années** d'avance du chômage universel 
 
 | Plafond de m | Ouverture du socle | Socle 2040 | Recette 2040 | Fonds 2040 | Contribution d'équilibre | Écart à la cible en 2040 |
 |---|---|---|---|---|---|---|
-| 2 | 2038 | 650 € | 5,7 | 3,5 | aucune d'ici 2040 | 22,0 |
-| 3 (référence) | 2036 | 650 € | 7,5 | 0 | 1,7 (2040) | 20,2 |
-| 4 | 2035 | 650 € | 9,0 | 0 | 0,8 (2039) ; 1,5 (2040) | 18,7 |
+| 2 | 2038 | 650 € | 5,7 | 1,5 | aucune d'ici 2040 | 20,5 |
+| 3 (référence) | 2036 | 650 € | 7,5 | 0 | 1,3 (2039) ; 3,7 (2040) | 18,6 |
+| 4 | 2036 | 650 € | 9,0 | 2,8 | aucune d'ici 2040 | 17,1 |
 
-Le socle s'ouvre plus tard, au niveau du RSA, et ne monte pas : la loi ne promet pas de droits que ses recettes ne financent pas. Une fois le fonds épuisé, maintenir le socle demande une **contribution d'équilibre** de l'État, votée en LFSS comme pour les autres branches, de l'ordre de 1,5 à 1,7 Md€ par an en 2040. Atteindre la cible demanderait environ **20 Md€ par an** de ressources hors taxe. D'autres ressources pourraient s'y ajouter, dont une imposition des très grandes fortunes débattue par ailleurs ; le projet n'en dépend pas, et la présente étude ne lui attribue aucun rendement.
+Le socle s'ouvre plus tard, au niveau du RSA, et ne monte pas : la loi ne promet pas de droits que ses recettes ne financent pas. Une fois le fonds épuisé, maintenir le socle demande une **contribution d'équilibre** de l'État, votée en LFSS comme pour les autres branches : 3,7 Md€ en 2040 dans la trajectoire de référence. Au niveau du RSA, le plancher de la sortie progressive coûte 0,52 Md€ de plus que dans la version précédente (§ 5.3.4), ce qui pèse surtout dans ce scénario. Atteindre la cible demanderait environ **17 à 20 Md€ par an** de ressources hors taxe. D'autres ressources pourraient s'y ajouter, dont une imposition des très grandes fortunes débattue par ailleurs ; le projet n'en dépend pas, et la présente étude ne lui attribue aucun rendement.
 
 #### 5.1.4 Deux choix ouverts, réservés à l'auteur du projet
 
@@ -128,9 +143,9 @@ Le dispositif retient, pour le chiffrage, l'exclusion des étudiants en formatio
 
 | Variante (scénario central) | Surcoût au niveau du RSA | Surcoût au socle cible | m ≤ 2 | m ≤ 3 | m ≤ 4 |
 |---|---|---|---|---|---|
-| Base | — | — | cible en 2038 | cible en 2033 | cible en 2033 |
-| **Étudiants inclus** (2,9 millions, bourses reprises) | + 20,3 Md€ | + 39,5 Md€ | ouverture 2033 ; 650 € en 2040 | ouverture 2033 ; 667 € en 2040 | ouverture 2033 ; 765 € en 2040 |
-| **Réduction pour le patrimoine** (2 % des bénéficiaires, socle réduit de moitié) | − 0,3 Md€ | − 0,6 Md€ | cible en 2037 | cible en 2033 | cible en 2033 |
+| Base | — | — | cible en 2036 | cible en 2033 | cible en 2033 |
+| **Étudiants inclus** (2,9 millions, bourses reprises) | + 20,3 Md€ | + 39,5 Md€ | ouverture 2033 ; 650 € en 2040 | ouverture 2033 ; 654 € en 2040 | ouverture 2033 ; 767 € en 2040 |
+| **Réduction pour le patrimoine** (2 % des bénéficiaires, socle réduit de moitié) | − 0,3 Md€ | − 0,6 Md€ | cible en 2035 | cible en 2033 | cible en 2033 |
 
 *Surcoûts en Md€ de 2026.* L'inclusion des étudiants **n'est pas finançable par la taxe** dans le scénario central : le socle n'atteint pas la cible d'ici 2040, quel que soit le multiple. Elle l'est dans le scénario haut (cible en 2033, multiple maximal de 2,5). La réduction pour le patrimoine a un enjeu de principe, l'introduction d'une condition de ressources dans un dispositif universel, et un enjeu budgétaire faible.
 
@@ -138,18 +153,18 @@ Le dispositif retient, pour le chiffrage, l'exclusion des étudiants en formatio
 
 | Hypothèse (scénario central) | m ≤ 2 : cible | m ≤ 2 : socle 2040 | m ≤ 3 : cible | m ≤ 3 : socle 2040 | Baisse des cotisations 2040 (m ≤ 3) | Recette 2035 (m ≤ 3) |
 |---|---|---|---|---|---|---|
-| Indexation à 1 % | 2035 | 1 200 € | 2033 | 1 200 € | 0,42 point | 24,3 |
-| **Indexation à 2 % (centrale)** | **2038** | 1 200 € | **2033** | 1 200 € | **0,10 point** | 28,2 |
-| Indexation à 3 % | non | 1 124 € | 2034 | 1 200 € | 0 | 28,2 |
-| Élasticité 0,3 | 2033 | 1 200 € | 2033 | 1 200 € | 0,61 point | 30,4 |
-| **Élasticité 0,5 (centrale)** | **2038** | 1 200 € | **2033** | 1 200 € | **0,10 point** | 28,2 |
-| Élasticité 1,0 | non | 849 € | non | 917 € | 0 | 15,6 |
+| Indexation à 1 % | 2034 | 1 200 € | 2033 | 1 200 € | 0,53 point | 24,3 |
+| **Indexation à 2 % (centrale)** | **2036** | 1 200 € | **2033** | 1 200 € | **0,21 point** | 24,3 |
+| Indexation à 3 % | non | 1 171 € | 2034 | 1 200 € | 0 | 28,2 |
+| Élasticité 0,3 | 2032 | 1 200 € | 2032 | 1 200 € | 0,72 point | 30,4 |
+| **Élasticité 0,5 (centrale)** | **2036** | 1 200 € | **2033** | 1 200 € | **0,21 point** | 24,3 |
+| Élasticité 1,0 | non | 861 € | non | 934 € | 0 | 15,6 |
 
 L'**indexation** des montants sur le revenu médian (+ 2 % par an en nominal [Unverified], décision 85) est décisive : à 3 %, la cible n'est jamais atteinte avec un multiple de 2. L'**élasticité** de la demande au prix est l'hypothèse la plus incertaine : à 1,0, la cible n'est atteinte d'ici 2040 dans aucun cas. Ces deux paramètres sont soumis à l'économiste.
 
 #### 5.1.6 L'effet circulaire pour les administrations publiques
 
-Les administrations publiques, dans le champ de la taxe (décision 46), en acquittent environ 10 % [Unverified] : 0,3 Md€ en 2028, 1,2 Md€ en 2031, 2,8 Md€ en 2035, 3,0 Md€ en 2040. Pour l'État, c'est un transfert vers la sécurité sociale, neutre pour le solde des administrations publiques au sens de Maastricht. Pour les collectivités, les hôpitaux et les universités, c'est une charge réelle que l'article 72-2 de la Constitution n'oblige pas à compenser [Unverified] ; la compenser par les dotations serait circulaire. L'apport net de la taxe aux administrations publiques, hors leur propre part, est donc d'environ 90 % de la recette (26,7 Md€ en 2040).
+Les administrations publiques, dans le champ de la taxe (décision 46), en acquittent environ 10 % [Unverified] : 0,3 Md€ en 2028, 1,2 Md€ en 2031, 2,4 Md€ en 2035, 3,0 Md€ en 2040. Pour l'État, c'est un transfert vers la sécurité sociale, neutre pour le solde des administrations publiques au sens de Maastricht. Pour les collectivités, les hôpitaux et les universités, c'est une charge réelle que l'article 72-2 de la Constitution n'oblige pas à compenser [Unverified] ; la compenser par les dotations serait circulaire. L'apport net de la taxe aux administrations publiques, hors leur propre part, est donc d'environ 90 % de la recette (26,7 Md€ en 2040).
 
 #### 5.1.7 Les frontaliers
 
@@ -185,13 +200,13 @@ Aucune estimation publiée de l'élasticité de la demande professionnelle d'int
 
 #### 5.2.4 Le coût du travail
 
-La baisse des contributions patronales d'assurance chômage est **modeste et tardive** : 0,10 point en 2040 dans la trajectoire de référence, 0,42 point si l'indexation est de 1 %, de 2,1 à 3,6 points dans le scénario haut. Le projet n'en fait pas une promesse. Ses effets sur l'emploi ne sont pas modélisés.
+La baisse des contributions patronales d'assurance chômage est **modeste et tardive** : 0,21 point en 2040 dans la trajectoire de référence, 0,53 point si l'indexation est de 1 %, de 2,25 à 3,66 points dans le scénario haut. Le projet n'en fait pas une promesse. Ses effets sur l'emploi ne sont pas modélisés.
 
 ### 5.3 Impacts sociaux
 
 #### 5.3.1 Les bénéficiaires
 
-Le socle s'ouvre en 2031 aux personnes sans emploi qui n'ont aujourd'hui aucun droit, en premier lieu les jeunes de dix-huit à vingt-quatre ans (3,9 Md€ du besoin net à l'ouverture), aux membres de couples qui n'ont pas de droit propre (1,2 Md€), aux ressortissants de pays tiers qui ont travaillé au moins six mois (0,5 Md€) et aux frontaliers (0,3 Md€) ; la sortie progressive coûte 1,0 Md€ [Unverified : note 19, § 1.3]. Le socle atteint le seuil de pauvreté en 2033 dans la trajectoire de référence.
+Le socle s'ouvre en 2031 aux personnes sans emploi qui n'ont aujourd'hui aucun droit, en premier lieu les jeunes de dix-huit à vingt-quatre ans (3,9 Md€ du besoin net à l'ouverture), aux membres de couples qui n'ont pas de droit propre (1,2 Md€), aux ressortissants de pays tiers qui ont travaillé au moins six mois (0,5 Md€) et aux frontaliers (0,3 Md€) ; la sortie progressive coûte 1,0 Md€ dans l'hypothèse d'origine [Unverified : note 19, § 1.3], corrigée au § 5.3.4. Le socle atteint le seuil de pauvreté en 2033 dans la trajectoire de référence.
 
 #### 5.3.2 La garantie de non-régression
 
@@ -201,26 +216,35 @@ Le socle étant individuel et le RSA familialisé, certains foyers seraient perd
 
 La condition de séjour du socle reprend toutes les voies d'accès actuelles au RSA, avec leurs exceptions, et en ajoute une : six mois d'emploi en France, qu'impose l'article 12 de la directive 2011/98/UE dès lors que le socle est une prestation de chômage [S]. **Personne d'aujourd'hui éligible n'est exclu.** Le surcoût est de 0,5 Md€ (§ 5.3.1). La suppression de la condition de cinq ans pour les autres ressortissants de pays tiers, plus sûre au regard de la Constitution mais plus coûteuse, est un **choix politique ouvert** (décision 59) ; elle n'est pas chiffrée dans la présente version.
 
-#### 5.3.4 Les taux marginaux de la sortie progressive (question 56)
+#### 5.3.4 La sortie progressive et ses taux marginaux (question 56)
 
-Pendant douze mois après une reprise d'activité, le socle est réduit d'une fraction des revenus d'activité, fixée par décret et au plus égale à 50 % (décision 91). Ensuite, la prime d'activité prend le relais. Taux marginal effectif sur le revenu net d'activité et revenu mensuel, pour une personne seule [Unverified : SMIC net de 1 430 € ; prime d'activité simplifiée, sans bonification individuelle] :
+**La règle** (article 6, décisions 91 et 96) : pendant douze mois après une reprise d'activité, le socle est réduit d'une fraction des revenus d'activité, fixée par décret et au plus égale à 50 % ; sur les derniers mois, fixés par décret, le montant restant **décroît linéairement** jusqu'à s'annuler ; **pendant toute la période, le bénéficiaire perçoit le plus favorable** de ce montant et de ce que lui procureraient le RSA et la prime d'activité selon le droit actuel. Reprendre un travail rapporte donc toujours au moins autant qu'aujourd'hui.
 
-| Socle | Taux | Taux marginal effectif | Sortie du socle au salaire net de | Mi-temps au SMIC : revenu pendant / au 13ᵉ mois | Plein temps au SMIC : pendant / au 13ᵉ mois |
+Revenu mensuel (salaire plus versement), personne seule, taux de 50 %, six mois de dégressivité [Unverified : SMIC net de 1 430 € ; droit actuel simplifié : max(0 ; 640 € − 0,39 × salaire), sans bonification individuelle] :
+
+| Socle | Salaire net | Droit actuel | Version précédente : mois 1 à 12 / 13ᵉ mois | Corrigé : mois 1 à 6 / 7ᵉ mois / 12ᵉ mois / 13ᵉ mois | Plus forte baisse d'un mois sur l'autre |
 |---|---|---|---|---|---|
-| 650 € (ouverture) | 30 % | 30 % | 2 167 € | 1 150 / 1 076 € | 1 651 / 1 512 € |
-| 650 € | 40 % | 40 % | 1 625 € | 1 079 / 1 076 € | 1 508 / 1 512 € |
-| 650 € | 50 % | 50 % | 1 300 € | 1 008 / 1 076 € | 1 430 / 1 512 € |
-| 1 200 € (cible) | 30 % | 30 % | 4 000 € | 1 700 / 1 076 € | 2 201 / 1 512 € |
-| 1 200 € | 40 % | 40 % | 3 000 € | 1 629 / 1 076 € | 2 058 / 1 512 € |
-| 1 200 € | 50 % | 50 % | 2 400 € | 1 558 / 1 076 € | 1 915 / 1 512 € |
+| 650 € (ouverture) | 358 € (quart de SMIC) | 858 € | 829 / 858 € | 858 / 858 / 858 / 858 € | 0 |
+| 650 € | 715 € (mi-temps) | 1 076 € | **1 008** / 1 076 € | 1 076 / 1 076 / 1 076 / 1 076 € | 0 |
+| 650 € | 1 430 € (SMIC) | 1 512 € | 1 430 / 1 512 € | 1 512 / 1 512 / 1 512 / 1 512 € | 0 |
+| 1 200 € (cible) | 358 € | 858 € | 1 379 / **858** € | 1 379 / 1 233 / 858 / 858 € | 146 € |
+| 1 200 € | 715 € | 1 076 € | 1 558 / **1 076** € | 1 558 / 1 437 / 1 076 / 1 076 € | 120 € |
+| 1 200 € | 1 430 € | 1 512 € | 1 915 / **1 512** € | 1 915 / 1 846 / 1 512 / 1 512 € | 69 € |
 
-*Repère : la prime d'activité seule a un taux marginal d'environ 39 % dans sa zone dégressive [Unverified].*
+**Taux marginaux effectifs après correction** :
+- **au niveau d'ouverture** (650 €), le droit actuel est plus favorable dès 91 € de salaire : le taux marginal est celui d'aujourd'hui, **39 %**. La régression de la version précédente (1 008 € au lieu de 1 076 € pour un mi-temps au SMIC) disparaît ;
+- **à la cible** (1 200 €), le taux marginal est de **50 %** pendant les six premiers mois, jusqu'à 2 400 € de salaire ; il descend ensuite de 43 % à 7 % pendant la dégressivité. Le revenu reste toujours supérieur au droit actuel ;
+- **la marche du 13ᵉ mois** (400 à 700 € dans la version précédente) est remplacée par des baisses mensuelles de 69 à 146 €.
 
-**Deux constats** [opus-5.5] :
-1. **Au niveau d'ouverture**, un taux de 50 % est moins favorable que la prime d'activité (1 008 € au lieu de 1 076 € pour un mi-temps au SMIC) : c'est alors la garantie du II de l'article 6 qui joue. Le décret devrait fixer un taux d'environ 40 % au plus tant que le socle est proche du RSA.
-2. **À la cible**, la fin de la période de douze mois crée une **marche** de 400 à 700 € par mois. Le travail rapporte toujours davantage que l'inactivité, mais la sortie est brutale. Une dégressivité du montant restant sur les derniers mois l'adoucirait ; c'est une option à expertiser.
+**Le coût** (Md€ de 2026 par an, par rapport au droit actuel ; 600 000 reprises d'emploi par an, salaires répartis du quart de SMIC au SMIC [Unverified]) :
 
-Le coût de l'extension de fait aux travailleurs à bas salaire est contenu par la limite de douze mois (1,0 Md€ dans le besoin net).
+| Socle | Version précédente (sans plancher) | Au plus favorable, sans dégressivité | **Au plus favorable, dégressivité sur les six derniers mois (retenue)** | Au plus favorable, douze mois pleins puis six mois dégressifs |
+|---|---|---|---|---|
+| 650 € | − 0,52 | 0 | **0** | 0 |
+| 925 € | 1,34 | 1,34 | **0,78** | 1,45 |
+| 1 200 € | 3,32 | 3,32 | **2,14** | 3,80 |
+
+Le plancher coûte **0,52 Md€ au niveau du RSA** : c'est exactement ce que la version précédente « économisait » par la régression. À la cible, il ne coûte rien, la sortie progressive y étant toujours plus favorable que le droit actuel. La dégressivité dans les douze mois réduit le coût de 1,18 Md€ à la cible ; une dégressivité ajoutée après les douze mois l'augmente de 0,48 Md€. **Le modèle de la branche ajoute au besoin net l'écart entre la modalité retenue et l'hypothèse d'origine** (`sim_v4.py`, `sp_cost`) : c'est ce qui explique les changements de trajectoire du § 5.1.1.
 
 ### 5.4 Impacts administratifs et coût de conformité (questions 43 et 75)
 
@@ -238,7 +262,7 @@ Le coût de l'extension de fait aux travailleurs à bas salaire est contenu par 
 | **Total des entreprises** | | **0,09 Md€** | **0,05 Md€** |
 | Administration (600 équivalents temps plein ; logiciel libre et systèmes) | | 30 M€ | 48 M€ |
 
-Les coûts annuels représentent 3,8 % de la recette en 2028 et 0,3 % en 2035. L'essentiel de la charge pèse sur quelques centaines de fournisseurs ; **une entreprise qui n'achète qu'à des fournisseurs enregistrés n'a rien à déclarer**. Pour la branche, le versement du socle est délégué aux caisses d'allocations familiales, qui servent déjà le RSA ; la reprise du RSA et de l'ASS modifie l'organisation des départements et de France Travail (§ 7).
+Les coûts annuels représentent 3,8 % de la recette en 2028 et 0,4 % en 2035. L'essentiel de la charge pèse sur quelques centaines de fournisseurs ; **une entreprise qui n'achète qu'à des fournisseurs enregistrés n'a rien à déclarer**. Pour la branche, le versement du socle est délégué aux caisses d'allocations familiales, qui servent déjà le RSA ; la reprise du RSA et de l'ASS modifie l'organisation des départements et de France Travail (§ 7).
 
 **Les sanctions** (article L. [À vérifier]-21) reprennent le droit commun des taxes sur le chiffre d'affaires ; les amendes propres à la taxe sont un point de départ, à expertiser sous l'angle de la proportionnalité (décision 90).
 
@@ -291,7 +315,7 @@ Les collectivités d'outre-mer et le département de Mayotte, où le RSA obéit 
 | 73. Effets sur les PME, les jeunes entreprises, les centres de données | Abattement ; aucune déclaration via un fournisseur enregistré ; neutralité concurrentielle et de localisation | 5.2.3 |
 | 74. Élasticité et croissance | Effets de − 29 % à − 55 % sur la dépense (élasticité 0,5) ; sensibilité de 0,3 à 1,0 ; effet sur la croissance non modélisé, renvoyé à l'économiste | 5.2.2, 5.1.5 |
 | 43 et 75. Coût de conformité | 0,05 Md€ par an pour les entreprises, 48 M€ pour l'administration | 5.4 |
-| 56. Taux marginaux de la sortie progressive | 30 à 50 % ; constats sur le niveau d'ouverture et la marche du 13ᵉ mois | 5.3.4 |
+| 56. Taux marginaux de la sortie progressive | Jamais moins que le droit actuel (39 % au niveau du RSA) ; 50 % à la cible, puis une dégressivité sans marche ; coût chiffré | 5.3.4 |
 | 34. Prestations importées | Risque assumé, suivi par l'évaluation | 5.2.3 |
 
-*Sources principales : note 18 du corpus (O1 à O10, D1 à D13), note 19 (simulation v4), journal des décisions (n° 37 à 93) ; Insee Première n° 2061 (juillet 2025) : https://www.insee.fr/fr/statistiques/8604126.*
+*Sources principales : note 18 du corpus (O1 à O10, D1 à D13), note 19 (simulation v4), journal des décisions (n° 37 à 97) ; Insee Première n° 2061 (juillet 2025) : https://www.insee.fr/fr/statistiques/8604126.*

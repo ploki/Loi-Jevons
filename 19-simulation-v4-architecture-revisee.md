@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion (M7 de la session metamaieutique, terminée le 2026-10-04)
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-04 (M11 : décisions 88 et 89, la baisse des cotisations soutenable à m ≤ 2 ; avant : M10)
+- **Dernière mise à jour** : 2026-10-04 (M12 : décisions 94 à 96 ; avant : M11)
 
 > Script : `outils/sim_v4.py` (la v3 est conservée dans `outils/sim_v3.py` et la note 14). Tous les paramètres sont **[C]** ; les montants non sourcés sont **[À vérifier]**. Les décisions citées sont celles du journal. Depuis le 2026-10-04, les ajouts portent les marqueurs nominatifs (voir `00-methode-conventions-et-index.md`, « Identités et marqueurs ») : **[opus-5.5]** pour une proposition de l'agent, **[opus-5.5 as ggim]** pour une décision par procuration.
 
@@ -10,7 +10,15 @@
 
 **Les règles retenues** (depuis M9) : **les droits d'abord** jusqu'au socle cible, puis le partage moitié-moitié (décision 75) ; **l'ouverture du socle sur trois ans**, fonds compris (décision 78) ; **m ramené à 2 au plus une fois la cible atteinte**, par défaut (décision 79) ; **l'indexation** du socle, du besoin, de la formation et du point de cotisation sur le revenu médian, + 2 % par an en nominal [Unverified] (décision 80) ; un fonds de six mois du besoin net (décision 81). Le socle est exprimé **en euros de 2026** ; les recettes, en euros courants. Les résultats sous les hypothèses de M7 (sans indexation, ouverture annuelle) sont gardés aux sections 2.1 à 2.5, pour comparaison.
 
-**Mise à jour M11 (2026-10-04)** [opus-5.5] — elle prévaut sur tous les chiffres ci-dessous quand ils diffèrent :
+**Mise à jour M12 (2026-10-04)** [opus-5.5] — elle prévaut sur tous les chiffres ci-dessous quand ils diffèrent :
+- **Trois règles nouvelles, par défaut dans le script** : l'excédent du fonds compté pour ramener m à 2 (décision 94, `M79_FONDS=True`) ; le retournement défini sur l'assiette, à multiple constant (décision 95, `RETOURNEMENT='assiette'`) ; la sortie progressive au plus favorable, avec une dégressivité linéaire sur les six derniers des douze mois (décision 96, `SORTIE='degressif'` ; fonctions `legacy`, `sp_pay`, `sp_cost` ; le surcoût par rapport à l'hypothèse d'origine est ajouté au besoin net). La modalité « six derniers mois » est une proposition [opus-5.5], non arrêtée ; la variante `prolonge` (douze mois pleins, puis six mois dégressifs) est chiffrée.
+- **Non-régression** : le réglage `M11` (`M79_FONDS=False`, `RETOURNEMENT='produit'`, `SORTIE='M11'`) reproduit **à l'identique** toute la sortie de M11 (contrôle par `diff`) ; la grille « règles de M11 » est imprimée par le script.
+- **La sortie progressive** (hypothèses [Unverified] : 600 000 reprises par an, salaires du quart de SMIC au SMIC, droit actuel simplifié à max(0 ; 640 − 0,39 × salaire)) : coût net par rapport au droit actuel, au niveau du RSA, de − 0,52 Md€ dans la version de M11 (la régression « économisait ») à 0 ; à la cible, 3,32 Md€ (M11 et plancher seul), **2,14 Md€ avec la dégressivité dans les douze mois**, 3,80 Md€ avec la variante prolongée.
+- **Trajectoire de référence (Central, m ≤ 3 puis 2)** : la cible en **2033** ; m à 2,5 en 2033 et 2034, **ramené à 2 en 2035** ; la baisse des cotisations commence en 2035 et atteint **0,21 point en 2040**, sans recul ; fonds de 15,8 Md€ en 2040 (cible 13,1). **Décomposition** (étude d'impact, § 5.1.1) : la décision 94 seule ramène m à 2 en 2036 (fonds 15,9 Md€) ; la décision 95 et le plancher de la décision 96 ne changent rien dans le scénario central ; **le gain restant (2035, 0,21 point) tient à la dégressivité dans les douze mois**. Avec la variante prolongée : cible en 2034, m à 2 en 2036, 0,05 point.
+- **Avec m ≤ 2** : la cible en **2036** (au lieu de 2038), 0,21 point en 2040. **Scénario bas** : ouverture en 2036 (m ≤ 3 ou 4) ou 2038 (m ≤ 2) ; contribution d'équilibre de 1,3 Md€ (2039) et 3,7 Md€ (2040) avec m ≤ 3, aucune d'ici 2040 avec m ≤ 4 ; le plancher de la sortie progressive pèse surtout ici (+ 0,52 Md€ au niveau du RSA).
+- **Sensibilités** (m ≤ 2 / m ≤ 3) : indexation à 1 %, 2034 / 2033 ; à 3 %, jamais / 2034 ; élasticité 0,3, 2032 ; élasticité 1,0, jamais (socle à 861 / 934 € en 2040).
+
+**Mise à jour M11 (2026-10-04)** [opus-5.5] — historique ; la mise à jour M12 prévaut :
 - **Décision 89** [opus-5.5 as ggim] : une baisse des cotisations n'est **engagée** que si elle est **soutenable avec m ≤ 2** (la recette à min(m, 2), l'année en cours et la suivante, couvre la formation, les droits et toute la baisse engagée) ; le reste va au fonds. Le « cliquet » de M10 est refusé. Script : `B_SOUTENABLE=True` par défaut (fonction `capB`).
 - **Non-régression** : avec `B_SOUTENABLE=False`, le script reproduit **à l'identique** toute la sortie de M10 (contrôle fait par `diff` de la sortie complète ; la grille « règles de M10 » est imprimée par le script). Les grilles « sans indexation » ne changent que par le fonds ; les grilles « hypothèses de M7 » et « D8 » sont inchangées.
 - **Ce qui change, trajectoire de référence (Central, m ≤ 3 puis 2)** : la cible est toujours atteinte en **2033**, m culminant à **2,5** de 2033 à 2036, puis ramené à 2 en 2037 ; **la baisse des cotisations ne commence qu'en 2037** et **ne recule plus** : 0,02 point (2037), 0,06 (2038), **0,10 point en 2039 et 2040** (au lieu de 0,26 point en 2036 retombant à 0,05). Pendant les quatre années à m = 2,5, le surplus va au fonds, qui monte à **19,4 Md€ en 2036 et 20,0 Md€ en 2040** (cible : 12,8 puis 13,9 Md€).
@@ -245,6 +253,8 @@
 
 7. **2026-10-04, M11** : l'orchestrateur refuse le « cliquet » et retient la règle inverse (décision 89) ; il valide l'abattement en taxe (88). Modélisation (`B_SOUTENABLE`, `capB`) ; contrôle de non-régression par `diff` de la sortie complète (identique avec l'ancien réglage). **Constat** [opus-5.5] : le double dividende ne recule plus, mais il est encore plus tardif (2037) ; le surplus des années à m = 2,5 s'accumule au fonds sans emploi. Création de `outils/etude_impact_v01.py` pour l'étude d'impact. **[opus-5.5]**
 
+8. **2026-10-04, M12** : l'orchestrateur adopte l'excédent du fonds (94) et le retournement sur l'assiette (95), et **conteste la sortie progressive** de M11, qui faisait moins bien que le droit actuel au niveau du RSA (96). Modélisation des trois règles ; contrôle de non-régression (le réglage M11 reproduit la sortie de M11 à l'identique). **Constat** [opus-5.5] : le plancher coûte 0,52 Md€ au niveau du RSA et rien à la cible ; c'est la modalité de la dégressivité, non le plancher, qui avance la cible avec m ≤ 2 (2036). **[opus-5.5]**
+
 ## Questions ouvertes
 
 - ~~La règle d'emploi pendant la montée en charge : D8 tel quel, ou les droits d'abord~~ : **les droits d'abord** (décision 75).
@@ -255,8 +265,9 @@
 - [opus-5.5] **Le multiple pendant la montée en charge** : m ≤ 2 (cible vers 2038) ou m = 3 pendant quelques années (cible en 2034) ? C'est un choix du Parlement ; l'exposé présente les deux. Le taux d'indexation (2 %) est à confirmer.
 - ~~Le montant de l'abattement (Q44)~~ : **1 000 € de taxe par groupe et par an** (décision 88).
 - ~~Le « cliquet » sur la baisse de m~~ : **refusé** ; la baisse des cotisations n'est engagée que si elle est soutenable avec m ≤ 2 (décision 89).
-- [opus-5.5] **L'excédent du fonds** au-delà de sa cible (6 Md€ en 2040 dans la trajectoire de référence) : le compter pour ramener m à 2 un an plus tôt (variante `M79_FONDS`), ou le laisser en réserve ?
-- [opus-5.5] **La définition du retournement** (dispositif, art. 13, III : un produit inférieur à celui de l'année précédente) est déclenchée par la seule baisse votée de m (2037 dans la trajectoire de référence) ; il vaudrait mieux la définir sur l'**assiette** (la dépense taxable), et non sur le produit.
+- ~~[opus-5.5] **L'excédent du fonds** au-delà de sa cible : le compter pour ramener m à 2 un an plus tôt (variante `M79_FONDS`) ?~~ → **adopté** (décision 94).
+- ~~[opus-5.5] **La définition du retournement** : sur l'assiette plutôt que sur le produit ?~~ → **adopté** (décision 95).
+- [opus-5.5] **La modalité de la dégressivité** de la sortie progressive (décision 96) : dans les douze mois (retenue pour le chiffrage, − 1,18 Md€ à la cible) ou après (+ 0,48 Md€) ? Le nombre de mois (6) et le paramètre des reprises d'emploi (600 000 par an) sont [Unverified].
 - Les étudiants et le patrimoine : des choix ouverts, réservés à Guillaume (décisions 70 et 71).
 
 ## Liens

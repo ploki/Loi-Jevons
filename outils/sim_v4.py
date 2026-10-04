@@ -18,6 +18,9 @@
 # la formation, les droits et la baisse déjà engagée augmentée de la nouvelle. Ce qui n'est pas engagé va au fonds.
 # Le « cliquet » proposé en M10 (ne baisser m que si la recette couvre aussi la baisse engagée) est refusé.
 # B_SOUTENABLE=False reproduit exactement la sortie de M10 (contrôle de non-régression).
+# 2026-10-04 (M12) [opus-5.5] : décisions 94 (M79_FONDS par défaut), 95 (retournement sur l'assiette) et 96 (sortie
+# progressive au plus favorable, puis dégressivité linéaire : SP, legacy, sp_pay, sp_cost ; le surcoût par rapport à
+# l'hypothèse d'origine est ajouté au besoin). Le réglage M11 reproduit exactement la sortie de M11.
 import sys
 
 # ---------------------------------------------------------------- calendrier
@@ -87,9 +90,51 @@ C = dict(
     B_AVANT_FONDS=True,  # décision 86 (False : l'ordre de la décision 54, le fonds d'abord)
     M_POST=2.0,       # décision 79 : une fois la cible atteinte, m est ramené à 2 au plus (None : pas de règle)
     B_SOUTENABLE=True,  # décision 89 : la baisse des cotisations n'est engagée que si elle est soutenable avec m <= 2
-    M79_FONDS=False,  # variante (proposition opus-5.5, M11) : pour ramener m vers 2 (décision 79), compter aussi
-                      # un tiers de l'excédent du fonds sur sa cible (l'équilibre sur trois ans de l'article 10)
+    M79_FONDS=True,   # décision 94 (proposition opus-5.5 de M11, adoptée en M12) : pour ramener m vers 2 (décision 79),
+                      # compter aussi un tiers de l'excédent du fonds sur sa cible (l'équilibre sur trois ans de l'article 10)
+    RETOURNEMENT='assiette',  # décision 95 : retournement = baisse de l'assiette (dépense taxable, à multiple constant),
+                              # et non du produit ; 'produit' : la définition de M11 (une baisse votée de m la déclenchait)
+    SORTIE='degressif',  # décision 96 : sortie progressive au plus favorable (socle résiduel ou droit actuel), puis
+                         # dégressivité linéaire sur les D derniers mois ; 'M11' : socle - f x salaire, sans plancher
+                         # (l'hypothèse N_RSA d'origine) ; 'plus_favorable' : le plancher sans dégressivité ;
+                         # 'prolonge' : 12 mois pleins au plus favorable, puis D mois dégressifs en plus
 )
+
+# ---------------------------------------------------------------- sortie progressive (décision 96) [Unverified]
+SP = dict(
+    ENTREES=0.6,      # millions de reprises d'emploi par an chez les bénéficiaires du socle [Unverified]
+    F=0.5,            # fraction des revenus d'activité déduite du socle (plafond légal, décision 91)
+    D=6,              # nombre de mois de dégressivité linéaire, fixé par décret [opus-5.5]
+    SMIC=1430.0,      # SMIC net mensuel à temps plein, € de 2026 [Unverified]
+    W=(0.25, 0.5, 0.75, 1.0),   # salaires de reprise, en fraction du SMIC, à parts égales [Unverified]
+    LF=640.0, LT=0.39,  # droit actuel simplifié (RSA + prime d'activité, personne seule) : max(0, LF - LT x w) [Unverified]
+)
+
+def legacy(w, sp=SP):
+    """Ce que procure la législation actuelle (RSA et prime d'activité, simplifiés) à un salaire net w."""
+    return max(0.0, sp['LF'] - sp['LT'] * w)
+
+def sp_pay(S, w, t, mode, sp=SP):
+    """Versement du mois t (1 = premier mois de reprise) pour un socle S et un salaire w."""
+    res = max(0.0, S - sp['F'] * w); L = legacy(w, sp); D = sp['D']
+    if mode == 'M11':
+        return res if t <= 12 else L
+    if mode == 'plus_favorable':
+        return max(res, L) if t <= 12 else L
+    if mode == 'degressif':          # les D derniers des 12 mois : k décroît linéairement
+        k = 1.0 if t <= 12 - D else (12 - t + 1) / (D + 1)
+        return max(k * res, L) if t <= 12 else L
+    if mode == 'prolonge':           # 12 mois pleins, puis D mois dégressifs en plus
+        k = 1.0 if t <= 12 else max(0.0, (12 + D - t + 1) / (D + 1))
+        return max(k * res, L) if t <= 12 + D else L
+    raise ValueError(mode)
+
+def sp_cost(S, mode, sp=SP):
+    """Coût net annuel (Md€ de 2026) de la sortie progressive par rapport à la législation actuelle."""
+    per = sum(sum(sp_pay(S, x * sp['SMIC'], t, mode, sp) - legacy(x * sp['SMIC'], sp) for t in range(1, 25))
+              for x in sp['W']) / len(sp['W'])
+    return sp['ENTREES'] * per / 1000.0
+
 
 def need(s, c):
     """Besoin net annuel de la branche financé par la taxe (Md€), pour un socle s (€/mois)."""
@@ -98,6 +143,8 @@ def need(s, c):
     if c['ETU']:   n += 2.9 * s * 12 / 1000 - 2.3    # 2,9 M d'étudiants, bourses (2,3 Md€) reprises [À vérifier]
     if c['PATR']:  n -= 0.02 * 4.0 * 0.5 * s * 12 / 1000   # 2 % des bénéficiaires, socle réduit de moitié [C]
     if c['INACT']: n += 0.5 * s * 12 / 1000            # 0,5 M d'inactifs supplémentaires qui s'inscrivent [C]
+    if c['SORTIE'] != 'M11':   # décision 96 : surcoût de la correction par rapport à l'hypothèse d'origine (N_RSA)
+        n += sp_cost(s, c['SORTIE']) - sp_cost(s, 'M11')
     return n
 
 def gross(s):
@@ -133,10 +180,14 @@ def run(name, mcap=1.0, alloc='droits', p=None, c=None):
     les droits étant alors au plafond, il va à la baisse des cotisations). alloc='D8' : l'ordre de la décision 54."""
     p = dict(P, **(p or {})); c = dict(C, **(c or {}))
     V = market(name)
-    m = 1.0; s = None; B = 0.0; fund = 0.0; rows = []; prevR = None
+    m = 1.0; s = None; B = 0.0; fund = 0.0; rows = []; prevR = None; prev = None
     for y in YEARS:
         R, spend = revenue(V[y], y, m, p)
-        retournement = prevR is not None and R < prevR; prevR = R
+        if c['RETOURNEMENT'] == 'produit':
+            retournement = prevR is not None and R < prevR
+        else:   # décision 95 : l'assiette de l'année, au multiple de l'année précédente, baisse
+            retournement = prev is not None and revenue(V[y], y, prev[0], p)[1] < prev[1]
+        prevR = R; prev = (m, spend)
         I = (1 + c['IDX']) ** (y - 2026)    # indice des montants (euros courants / euros 2026)
         nd = lambda x: need(x, c) * I       # besoin en euros courants
         BMAX = c['B_MAX'] * I
@@ -222,8 +273,9 @@ def grid(alloc='D8', c=None, p=None, label=''):
                 at[2035]['pts'], at[2040]['pts'], max(r['m'] for r in rows)))
 
 SANS_IDX = {'IDX': 0.0}
-M10 = {'B_SOUTENABLE': False}   # les règles de M10, sans la décision 89 (contrôle de non-régression)
-AVANT_M9 = {'IDX': 0.0, 'OPEN_RULE': 'annuel', 'M_POST': None, 'B_AVANT_FONDS': False, 'B_SOUTENABLE': False}   # les hypothèses de M7, pour comparaison
+M11 = {'M79_FONDS': False, 'RETOURNEMENT': 'produit', 'SORTIE': 'M11'}   # les règles de M11 (non-régression)
+M10 = dict(M11, B_SOUTENABLE=False)   # les règles de M10, sans la décision 89 (contrôle de non-régression)
+AVANT_M9 = dict(M11, IDX=0.0, OPEN_RULE='annuel', M_POST=None, B_AVANT_FONDS=False, B_SOUTENABLE=False)   # les hypothèses de M7, pour comparaison
 
 def grid2(c=None, alloc='droits', label='', caps=(1.0, 2.0, 3.0, 4.0)):
     print('\n#### Synthèse %s (allocation %s)' % (label, alloc))
@@ -237,12 +289,13 @@ def grid2(c=None, alloc='droits', label='', caps=(1.0, 2.0, 3.0, 4.0)):
                 max(0.0, at[2035]['pts']), max(0.0, at[2040]['pts']), max(r['m'] for r in rows), at[2040]['m'], at[2040]['fund'], dmax))
 
 if __name__ == '__main__':
-    print('# Règles retenues : droits d\'abord (75), ouverture sur trois ans (78), m <= 2 après la cible (79), indexation (80), baisse des cotisations soutenable à m <= 2 (89)')
+    print('# Règles retenues : droits d\'abord (75), ouverture sur trois ans (78), m <= 2 après la cible (79), indexation (80), baisse des cotisations soutenable à m <= 2 (89), excédent du fonds (94), retournement sur l\'assiette (95), sortie progressive corrigée (96)')
     for cap in (2.0, 3.0, 4.0):
         print('\n## Central, m plafonné à %.0f (règles retenues ; socle en euros 2026)' % cap); table(run('Central', cap))
     print('\n## Bas, m plafonné à 4 (règles retenues)'); table(run('Bas', 4.0))
     grid2(label='règles retenues')
     grid2(SANS_IDX, label='sans indexation')
+    grid2(M11, label='règles de M11 (contrôle de non-régression)')
     grid2(M10, label='règles de M10, sans la décision 89 (contrôle de non-régression)')
     grid2(AVANT_M9, label='hypothèses de M7 (sans indexation, ouverture annuelle, sans règle 79)')
     grid2(AVANT_M9, 'D8', label='ancienne règle D8 (décision 54), hypothèses de M7')
@@ -250,7 +303,7 @@ if __name__ == '__main__':
     print('variante | plafond | socle cible atteint | socle 2035 | socle 2040 | pts 2040')
     VAR = [('base', {}, {}), ('étudiants inclus', {'ETU': True}, {}), ('réduction patrimoine', {'PATR': True}, {}),
            ('inscription de 0,5 M inactifs', {'INACT': True}, {}), ('fonds = 6 mois bruts', {'FUND_GROSS': True}, {}),
-           ('m ramené à 2 avec l\'excédent du fonds (proposition)', {'M79_FONDS': True}, {}), ('indexation 1 %', {'IDX': 0.01}, {}), ('indexation 3 %', {'IDX': 0.03}, {}),
+           ('sans l\'excédent du fonds (règle de M11)', {'M79_FONDS': False}, {}), ('sortie : plancher sans dégressivité', {'SORTIE': 'plus_favorable'}, {}), ('sortie : 12 mois + 6 mois dégressifs', {'SORTIE': 'prolonge'}, {}), ('sortie : hypothèse d\'origine (M11)', {'SORTIE': 'M11'}, {}), ('indexation 1 %', {'IDX': 0.01}, {}), ('indexation 3 %', {'IDX': 0.03}, {}),
            ('élasticité 0,3', {}, {'EPS': 0.3}), ('élasticité 1,0', {}, {'EPS': 1.0}),
            ('décalage de P_k (x1,09)', {}, {'LAG': 1.09}), ('sans serveurs propres ni recouvrement', {}, {'F_INTERNE': 1.0, 'CIVISME': 1.0})]
     for lab, cc, pp in VAR:

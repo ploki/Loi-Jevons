@@ -30,6 +30,14 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
 
+## Itération M13 (2026-10-04) — sortie progressive corrigée ; lancement de la relecture de cohérence
+
+Réponse par procuration au tour de l'agent (journal 94 à 97 ; la sortie progressive ne fait plus jamais moins bien que le droit actuel ; scénario central : la cible est atteinte en 2033, m revient à 2 en 2035, la baisse des cotisations atteint 0,21 point en 2040 ; avec m ≤ 2, la cible est atteinte en 2036) :
+1. **La dégressivité reste dans les douze mois** : validé. Pourquoi : la décision 72 est respectée, le plancher protège déjà contre toute régression, et le décret fixe le nombre de mois. L'étude d'impact doit dire franchement que ce placement explique une grande part du gain de trajectoire, et montrer la variante.
+2. **Le RSA des actifs à faible revenu est gardé explicitement** sous la forme d'un complément différentiel servi par la branche : validé. Pourquoi : la non-régression (D9) ; un quart-temps au SMIC ne doit jamais perdre par rapport à aujourd'hui.
+3. **Les paramètres de la sortie progressive** (600 000 reprises par an, droit actuel simplifié) : ajoutés à la liste des points à faire confirmer par l'économiste.
+4. **La relecture de cohérence** est confiée par l'orchestrateur à un **agent neuf, en lecture seule**, sur le corpus, les trois livrables et les deux journaux. Son rapport sera transmis à l'agent de travail pour les corrections, en même temps que les points 1 à 3.
+
 ## Itération M12 (2026-10-04) — étude d'impact v0.1 rédigée ; ajustements avant la relecture de cohérence
 
 Réponse par procuration au tour de l'agent (journal 88 à 93 ; l'étude d'impact v0.1 est créée, ses chiffres sortent d'un script, 0 écart ; le fichier 17 compte 45 décidées, 34 répondues et 1 ouverte, Q50, réservée à Guillaume ; la section E n'a plus de question ouverte) :

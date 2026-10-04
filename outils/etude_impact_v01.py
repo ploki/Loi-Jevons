@@ -1,5 +1,6 @@
 # Chiffres de l'étude d'impact v0.1 (M11, 2026-10-04) [opus-5.5].
-# Toutes les trajectoires viennent de sim_v4.py (règles retenues : décisions 75, 78 à 81, 85, 86, 88, 89).
+# Toutes les trajectoires viennent de sim_v4.py (règles retenues : décisions 75, 78 à 81, 85, 86, 88, 89, 94 à 96).
+# M12 [opus-5.5] : décomposition des effets des décisions 94 à 96 ; la section 6 est refaite (décision 96).
 # Les paramètres propres à ce script (sortie progressive, conformité, frontaliers, secteur public) sont des
 # hypothèses de l'agent, [Unverified] : ce sont des ordres de grandeur à faire confirmer par l'économiste.
 # Usage : python3 outils/etude_impact_v01.py
@@ -33,14 +34,20 @@ for cap in (1.0, 2.0, 3.0, 4.0):
     print('m <= %.0f | ouverture %s | cible %s | m max %.1f | années à m > 2 : %d | pts 2035 %s | pts 2040 %s | fonds 2040 %s | socle 2040 %s' % (
         cap, o, f or 'non', max(r['m'] for r in rows), sum(1 for r in rows if r['m'] > 2.0),
         f2(max(0, at[2035]['pts'])), f2(max(0, at[2040]['pts'])), f1(at[2040]['fund']), soc(at[2040]['s'])))
-rows = s.run('Central', REF, c={'M79_FONDS': True}); o, f, at = s.summary(rows)
-print('variante M79_FONDS (m <= 3) | cible %s | m : %s | fonds 2040 %s | pts 2040 %s' % (
-    f, ' '.join('%.1f' % r['m'] for r in rows), f1(at[2040]['fund']), f2(at[2040]['pts'])))
-m10 = s.run('Central', REF, c={'B_SOUTENABLE': False})
-print('règles de M10 (sans la décision 89), m <= 3 | pts : %s | fonds : %s' % (
-    ' '.join(f2(r['pts']) for r in m10), ' '.join(f1(r['fund']) for r in m10)))
-print('règles retenues (décision 89), m <= 3     | pts : %s | fonds : %s' % (
-    ' '.join(f2(max(0, r['pts'])) for r in ref), ' '.join(f1(r['fund']) for r in ref)))
+section('1 ter. Décomposition des changements de M12 (Central) : cible, années à m > 2, retour de m à 2, pts 2040, fonds 2040')
+STEPS = [('règles de M11', dict(s.M11)),
+         ('+ excédent du fonds (94)', dict(s.M11, M79_FONDS=True)),
+         ('+ retournement sur l\'assiette (95)', dict(s.M11, M79_FONDS=True, RETOURNEMENT='assiette')),
+         ('+ sortie au plus favorable, sans dégressivité (96)', dict(s.M11, M79_FONDS=True, RETOURNEMENT='assiette', SORTIE='plus_favorable')),
+         ('+ dégressivité dans les 12 mois (96, retenue)', {}),
+         ('variante : 12 mois + 6 mois dégressifs', {'SORTIE': 'prolonge'})]
+for cap in (ALT, REF):
+    for lab, cc in STEPS:
+        rows = s.run('Central', cap, c=cc); o, f, at = s.summary(rows)
+        back = next((r['y'] for r in rows if f and r['y'] > f and r['m'] <= 2.0), None) if cap > 2 else None
+        print('m <= %.0f | %s | ouverture %s (socle %s) | cible %s | années à m > 2 : %d | retour à 2 : %s | pts 2035 %s | pts 2040 %s | fonds 2040 %s' % (
+            cap, lab, o, s.fmt_s(at[o]['s']), f or 'non', sum(1 for r in rows if r['m'] > 2.0), back or '—',
+            f2(max(0, at[2035]['pts'])), f2(max(0, at[2040]['pts'])), f1(at[2040]['fund'])))
 
 # ------------------------------------------------------------------ 2. scénario bas
 section('2. Scénario bas : ouverture, déficit (contribution d\'équilibre), écart à la cible en 2040')
@@ -91,22 +98,26 @@ for r in ref:
         print('%d | m %.1f | abattement / (recette + abattement) : %.0f %%' % (r['y'], r['m'], 100 * s.P['ABATT'] / (r['R'] + s.P['ABATT'])))
 print('Dépense HT annuelle en deçà de laquelle un groupe ne paie rien : m = 1 : 1 000 € ; m = 2 : 500 € ; m = 3 : 333 € (1 000 / m)')
 
-# ------------------------------------------------------------------ 6. sortie progressive (Q56)
-section('6. Sortie progressive (art. 6 ; décision 91) : taux marginal effectif sur le revenu net d\'activité [Unverified]')
-SMIC_NET = 1430.0          # SMIC mensuel net à temps plein, 2026 [Unverified]
-PA_FORFAIT, PA_TAUX = 640.0, 0.61   # prime d'activité simplifiée, personne seule, sans bonification [Unverified]
-def pa(w): return max(0.0, PA_FORFAIT + PA_TAUX * w - w) if w > 0 else 0.0
-for socle in (s.S_RSA, s.S_CIBLE):
-    for f in (0.3, 0.4, 0.5):
-        sortie = socle / f
-        rows = []
-        for w in (0.5 * SMIC_NET, SMIC_NET):
-            during = w + max(0.0, socle - f * w)
-            after = w + pa(w)
-            rows.append('salaire %.0f : revenu pendant %.0f, au 13e mois %.0f (marche %.0f)' % (w, during, after, during - after))
-        print('socle %.0f € | taux %.0f %% | TME %.0f %% jusqu\'à %.0f € de salaire net | %s' % (
-            socle, 100 * f, 100 * f, sortie, ' ; '.join(rows)))
-print('Repère : prime d\'activité seule, TME dans la zone dégressive = %.0f %% (1 - %.2f) [Unverified]' % (100 * (1 - PA_TAUX), PA_TAUX))
+# ------------------------------------------------------------------ 6. sortie progressive (Q56 ; décisions 91 et 96)
+section('6. Sortie progressive : revenu mensuel (salaire + versement) et taux marginal effectif, f = 50 %, D = 6 [Unverified]')
+SP = s.SP
+print('Droit actuel simplifié (RSA + prime d\'activité) : max(0, %.0f - %.2f x salaire) ; TME %.0f %% [Unverified]' % (SP['LF'], SP['LT'], 100 * SP['LT']))
+for S in (s.S_RSA, s.S_CIBLE):
+    for x in SP['W']:
+        w = x * SP['SMIC']
+        def inc(t, mode): return w + s.sp_pay(S, w, t, mode)
+        print('socle %.0f | salaire %.0f (%.2f SMIC) | droit actuel %.0f | M11 : mois 1-12 %.0f, mois 13 %.0f | corrigé : mois 1-6 %.0f, mois 7 %.0f, mois 12 %.0f, mois 13 %.0f | plus forte baisse d\'un mois à l\'autre %.0f' % (
+            S, w, x, w + s.legacy(w), inc(1, 'M11'), inc(13, 'M11'), inc(1, 'degressif'), inc(7, 'degressif'),
+            inc(12, 'degressif'), inc(13, 'degressif'), max(inc(t, 'degressif') - inc(t + 1, 'degressif') for t in range(1, 13))))
+print('TME pendant les mois 1-6 (corrigé) : socle 650 -> %.0f %% au-delà de %.0f € de salaire (le droit actuel est plus favorable) ; socle 1200 -> %.0f %% jusqu\'à %.0f €' % (
+    100 * SP['LT'], (s.S_RSA - SP['LF']) / (SP['F'] - SP['LT']), 100 * SP['F'], s.S_CIBLE / SP['F']))
+print('TME pendant la dégressivité (mois 7 à 12) : k x f, soit de %.0f %% à %.0f %%' % (100 * SP['F'] * 6 / 7, 100 * SP['F'] / 7))
+section('6 bis. Coût net de la sortie progressive par rapport au droit actuel (Md€ de 2026 par an ; 0,6 M de reprises par an [Unverified])')
+print('socle | M11 (sans plancher) | plus favorable | + dégressivité dans les 12 mois (retenue) | 12 mois + 6 mois dégressifs')
+for S in (s.S_RSA, 925.0, s.S_CIBLE):
+    print('%.0f | %s | %s | %s | %s' % (S, f2(s.sp_cost(S, 'M11')), f2(s.sp_cost(S, 'plus_favorable')), f2(s.sp_cost(S, 'degressif')), f2(s.sp_cost(S, 'prolonge'))))
+print('Surcoût du plancher (plus favorable - M11) au niveau du RSA : %s Md€ ; à la cible : %s Md€' % (
+    f2(s.sp_cost(s.S_RSA, 'plus_favorable') - s.sp_cost(s.S_RSA, 'M11')), f2(s.sp_cost(s.S_CIBLE, 'plus_favorable') - s.sp_cost(s.S_CIBLE, 'M11'))))
 
 # ------------------------------------------------------------------ 7. coût de conformité (Q43, Q75)
 section('7. Coût de conformité annuel, en régime de croisière [Unverified : hypothèses de l\'agent]')
