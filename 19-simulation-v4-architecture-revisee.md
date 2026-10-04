@@ -268,7 +268,7 @@
 ## Questions ouvertes
 
 - **Une application en Rust, à un moment** [ggim, décision 111] : simuler la mesure sur tous les différents indicateurs. Ni calendrier ni périmètre ; les scripts Python restent la référence en attendant.
-- **Exigence de cette application** [ggim, décision 113] : pouvoir changer les paramètres et les conditions en temps réel. Ma lecture [opus-5.5, à confirmer] : les paramètres sont les valeurs, les conditions sont les règles et les variantes.
+- **Exigence de cette application** [ggim, décision 113] : pouvoir changer les paramètres et les conditions en temps réel. Lecture confirmée par Guillaume le 10-04 [ggim] : les paramètres sont les valeurs, les conditions sont les règles et les variantes. **Cette application aura besoin de données** [ggim] ; elles restent à identifier.
 - ~~La règle d'emploi pendant la montée en charge : D8 tel quel, ou les droits d'abord~~ : **les droits d'abord** (décision 75).
 - ~~La cible du fonds : nette ou brute~~ : **nette** (décision 81).
 - ~~La règle d'ouverture~~ : **sur trois ans** (décision 78).

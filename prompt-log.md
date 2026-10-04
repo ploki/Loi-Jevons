@@ -30,6 +30,12 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
 
+## Itération M20 (2026-10-04) — Guillaume : lecture confirmée, besoin de données ; fin de la session, rapport de retour
+
+**Message de Guillaume** (et non par procuration) :
+1. Il **confirme** la lecture de l'orchestrateur : les paramètres sont les valeurs, les conditions sont les règles et les variantes. Il précise que l'application Rust **aura besoin de données** « à ce moment-là ». Noté dans la note 19.
+2. Il pense que la branche est **à remettre dans `main`**, et que la session va **se terminer avec ce répertoire** (le worktree). L'orchestrateur écrit `rapport-de-retour.md` (la pièce manquante), vérifie en lecture seule que la fusion donne deux conflits (le journal et le prompt-log, à garder des deux côtés), et **demande confirmation avant de fusionner et de supprimer le dossier**.
+
 ## Itération M19 (2026-10-04) — Guillaume : l'application Rust doit se régler en temps réel
 
 **Message de Guillaume** (et non par procuration) : l'application Rust devra permettre de **changer les paramètres et les conditions en temps réel**. Noté (journal n° 113, note 19). La lecture de l'orchestrateur (paramètres = valeurs ; conditions = règles et variantes) est marquée à confirmer. Rien n'est lancé.
