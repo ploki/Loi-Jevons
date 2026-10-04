@@ -85,7 +85,7 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 - `livrable/` : les livrables ;
 - `outils/` : les scripts ;
 - `archive/` : ce qui est abandonné ou dépassé. Depuis l'élagage du 2026-10-04 (décision 115) : le transcript du 10-01 ; la note 14 (simulation v3) et `sim_v3.py`, remplacés par la note 19 et `sim_v4.py` ; l'exposé des motifs v0.1, remplacé par la v0.2 ; les sections retirées de la note 18 (récapitulatif des décisions par itération, plan de travail C, suivi E des 20 questions, guide de reprise F), dans `18-faisabilite-sections-C-E-F-et-decisions-par-iteration.md` ;
-- à la racine : `CLAUDE.md`.
+- à la racine : `CLAUDE.md` et `README.md` (la présentation publique du projet, sur le modèle du dépôt Substrat).
 
 ## Fichiers hors numérotation
 
