@@ -30,6 +30,19 @@ Guillaume recadre : la clause est trop étroite. Le **but du mandat est justemen
 
 > **Depuis l'itération M8, les entrées sont ajoutées en tête** (la plus récente en premier), comme le demande la nouvelle version du skill. Les entrées M0 à M7, plus bas, restent dans l'ordre chronologique.
 
+## Itération M14 (2026-10-04) — rapport de la relecture de cohérence ; arbitrages des points C ; lancement des corrections
+
+La relecture de cohérence, faite par un agent neuf en lecture seule, a relevé 17 contradictions de fond, 9 erreurs de tenue et 7 points de décision. Son rapport est recopié tel quel dans la note `20-audit-coherence-M13.md`. Les arbitrages par procuration des points C :
+- **C1, les étudiants et le patrimoine** : dans le **corpus**, la question reste **réservée à Guillaume** (décisions 70 et 71). Dans les **livrables**, qui sont des documents du Gouvernement, elle est présentée comme une **option ouverte soumise au débat parlementaire**, sans mention de « l'auteur ». Pourquoi : un livrable formel ne renvoie pas au corpus, et la décision reste à Guillaume avant toute diffusion.
+- **C2, le tarif réduit sur terminal** : 0,25 × le tarif **pendant trois ans**, puis une extinction, sauf **prolongation votée en LFSS jusqu'à cinq ans au plus**. L'extinction est avancée si le critère de maturité est atteint. Le dispositif, l'exposé, l'étude et le script doivent dire la même chose. **Contrainte d'intention** : l'IA locale ne doit **jamais** payer le plein tarif à cause de la procédure de notification. Il faut réécrire l'article 16, II : notification en amont pour une décision avant l'entrée en vigueur, une décision « constatant l'absence d'aide ou la compatibilité », et une solution légale si la décision tarde. L'agent la propose, et le risque résiduel est dit dans la note 18.
+- **C3, la dégressivité dans les douze mois** : elle est maintenue (décision 72). Elle sera signalée comme **hésitation** dans le rapport de retour, puisqu'elle touche la décision 31 [G].
+- **C4** : **aucune personne physique non professionnelle ni aucun salarié** n'est passible de l'amende. Seuls les professionnels sont visés, y compris les entrepreneurs individuels. Pourquoi : épargner les particuliers.
+- **C5, l'indexation du socle** : c'est un **droit prioritaire**, au 1° de l'ordre d'emploi, comme dans le script. Le 4° est corrigé. Pourquoi : « les droits d'abord » et la non-régression.
+- **C6, la trajectoire de référence avec m ≤ 3** : elle est maintenue (décision 84). Elle sera signalée comme hésitation dans le rapport de retour.
+- **C7, la garantie familiale** : elle suit la **revalorisation légale du RSA**, pas la hausse du socle. Pourquoi : la non-régression se mesure par rapport au droit actuel. Son coût est à chiffrer dans le script, puisqu'il n'est pas nul.
+
+Les corrections des points A et B sont confiées à un **agent neuf** (l'agent de travail est saturé), en commençant par les cinq plus urgentes, puis toutes les autres. Il inscrit aussi au journal les validations de M13 (point B2) et les arbitrages ci-dessus.
+
 ## Itération M13 (2026-10-04) — sortie progressive corrigée ; lancement de la relecture de cohérence
 
 Réponse par procuration au tour de l'agent (journal 94 à 97 ; la sortie progressive ne fait plus jamais moins bien que le droit actuel ; scénario central : la cible est atteinte en 2033, m revient à 2 en 2035, la baisse des cotisations atteint 0,21 point en 2040 ; avec m ≤ 2, la cible est atteinte en 2036) :
