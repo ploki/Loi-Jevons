@@ -50,6 +50,10 @@ Guillaume demande de lancer la relecture de l'élagage (« oui, lance la relectu
 
 Guillaume demande la seconde relecture des corrections (« oui fais relire ») et redemande de vérifier tout l'historique des commits à la recherche d'informations personnelles, avant de décider s'il rend le dépôt public. Retouches de tenue de la seconde relecture : note 18 (numéros du journal « hors session », en-tête) ; note 05, [Unverified] sur la garantie familiale, aligné sur le n° 108 du journal.
 
+## Itération 13 (2026-10-05)
+
+Guillaume dit regretter le terme « Loi Jevons » : ce devrait plutôt être « Taxe Jevons ». Après les questions et les réserves de Claude, il y renonce : « Non, oublie ça », et demande de **consigner pourquoi on ne le fait pas**.
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)
