@@ -1,10 +1,11 @@
 # CLAUDE.md
 
-Ce dossier est un **projet maieutique** (skills `maieutique` et `metamaieutique`). Il porte sur la **Loi Jevons** : le **financement d'un chômage universel par une taxe sur l'intelligence artificielle**.
+Ce dossier est un **projet maieutique** (skills `maieutics` et `metamaieutics`). Il porte sur la **Loi Jevons** : le **financement d'un chômage universel par une taxe sur l'intelligence artificielle**.
 
-À lire en premier : `intention-de-l-auteur.md`, `00-methode-conventions-et-index.md`, `journal-des-decisions.md`, `glossaire.md`.
+À lire en premier : `corpus/intention-de-l-auteur.md`, `corpus/00-methode-conventions-et-index.md`, `corpus/journal-des-decisions.md`, `corpus/glossaire.md`.
 
-- Le dossier est versionné avec git (branche `main`), en **mode (c)** : un commit par itération et une entrée dans `prompt-log.md`.
+- **L'intendance de ce dépôt est en français**, à l'inverse de ce que demandent les skills `maieutics` et `metamaieutics` : noms des fichiers et des dossiers, titres de sections (« En vigueur », « Historique du raisonnement », « Questions ouvertes », « Liens »), en-têtes des notes. Les skills doivent s'y conformer. Les dossiers sont `corpus/` (les notes et les journaux), `livrable/`, `outils/` et `archive/`.
+- Le dossier est versionné avec git (branche `main`), en **mode (c)** : un commit par itération et une entrée dans `corpus/prompt-log.md`.
 - Le journal des décisions est tenu au fil de l'eau. Quand Guillaume change d'avis, chercher dans le corpus ce que ce changement rend faux, le corriger, puis inscrire le revirement au journal.
 
 ## Extension du skill, à tester avant de l'intégrer au skill

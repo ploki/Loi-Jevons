@@ -1,6 +1,8 @@
 # Méthode, conventions et index
 
-> **Projet maieutique** (voir le skill `maieutique`). À lire en premier, avec `intention-de-l-auteur.md`, `journal-des-decisions.md` et `glossaire.md`.
+> **Projet maieutique** (skills `maieutics` et `metamaieutics`, auparavant `maieutique` et `metamaieutique`). À lire en premier, avec `intention-de-l-auteur.md`, `journal-des-decisions.md` et `glossaire.md`.
+
+> **L'intendance de ce dépôt est en français** (décision 114 [ggim]) : noms des fichiers et des dossiers, titres de sections (« En vigueur », « Historique du raisonnement », « Questions ouvertes », « Liens »), en-têtes. Elle prime sur la règle du skill `maieutics`, qui la voudrait en anglais.
 
 > Fichier de référence : à relire en premier à chaque reprise de contexte.
 
@@ -75,18 +77,29 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 | [C → validé] | [opus-5.5 → ggim] (pour la session metamaieutique) |
 | [À vérifier] | [Unverified] |
 
+## Arborescence
+
+> Depuis le 2026-10-04 (décision 114). Avant, tous les fichiers étaient à la racine du dépôt : les journaux, le mandat, le rapport de retour et les audits citent les anciens chemins, qui sont datés, pas faux.
+
+- `corpus/` : ce fichier, les notes numérotées, le glossaire, l'intention, les deux journaux, le mandat et le rapport de retour ;
+- `livrable/` : les livrables ;
+- `outils/` : les scripts ;
+- `archive/` : ce qui est abandonné ou dépassé ;
+- à la racine : `CLAUDE.md`.
+
 ## Fichiers hors numérotation
 
 - `intention-de-l-auteur.md` : l'intention, les convictions et les états d'âme de Guillaume, liés au projet. C'est la boussole, et elle est **à lire en premier**.
 - `mandat.md` : le mandat de la session metamaieutique, validé par Guillaume le 2026-10-02.
 - `prompt-log.md` : le journal des prompts du mode (c).
-- `CLAUDE.md` : déclare le dossier comme projet maieutique.
+- `../CLAUDE.md` : déclare le dossier comme projet maieutique.
 - `glossaire.md` : les termes du projet et leur sens exact.
 - `journal-des-decisions.md` : le journal des décisions structurantes et des changements d'avis, **à tenir à jour à chaque décision**.
-- `transcript-session-2026-10-01.md` : le transcript, arrêté le 2026-10-02 (fin des sauvegardes). Il est conservé comme archive.
+- `rapport-de-retour.md` : le rapport de retour de la session metamaieutique (2026-10-04).
+- `../archive/transcript-session-2026-10-01.md` : le transcript, arrêté le 2026-10-02 (fin des sauvegardes). Il est conservé comme archive.
 - Le dossier est versionné avec **git** depuis le 2026-10-02.
-- `livrable/` : les livrables. Le projet de loi existe en **v0.1** (exposé des motifs, objet du fichier 17) et en **v0.2** (exposé des motifs aligné sur l'architecture révisée, M10, décision 83). Le **dispositif v0.1** (`loi-jevons-dispositif-v0.1.md`, M11, décision 87) contient le projet de loi ordinaire, le projet de loi organique et une annexe LFSS / loi de finances. L'**étude d'impact v0.1** (`loi-jevons-etude-d-impact-v0.1.md`, M12, décision 93) suit le plan de l'art. 8 de la LO n° 2009-403.
-- `outils/` : les scripts de simulation. `sim_v4.py` est la référence depuis M7 ; `etude_impact_v01.py` (M12) en tire les chiffres de l'étude d'impact ; `sim_v3.py` est conservé pour comparaison (note 14). Depuis M14, l'option `--avant-m14` rejoue les règles antérieures (non-régression).
+- `../livrable/` : les livrables. Le projet de loi existe en **v0.1** (exposé des motifs, objet du fichier 17) et en **v0.2** (exposé des motifs aligné sur l'architecture révisée, M10, décision 83). Le **dispositif v0.1** (`loi-jevons-dispositif-v0.1.md`, M11, décision 87) contient le projet de loi ordinaire, le projet de loi organique et une annexe LFSS / loi de finances. L'**étude d'impact v0.1** (`loi-jevons-etude-d-impact-v0.1.md`, M12, décision 93) suit le plan de l'art. 8 de la LO n° 2009-403.
+- `../outils/` : les scripts de simulation. `sim_v4.py` est la référence depuis M7 ; `etude_impact_v01.py` (M12) en tire les chiffres de l'étude d'impact ; `sim_v3.py` est conservé pour comparaison (note 14). Depuis M14, l'option `--avant-m14` rejoue les règles antérieures (non-régression).
 
 ## Index
 

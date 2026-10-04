@@ -272,5 +272,5 @@ Bilan de l'agent après lecture des fichiers 00 à 16 et de `outils/sim_v3.py`. 
 
 ### Liens
 
-- [livrable/loi-jevons-financement-du-chomage-universel-par-la-taxe-sur-l-intelligence-artificielle.md](livrable/loi-jevons-financement-du-chomage-universel-par-la-taxe-sur-l-intelligence-artificielle.md)
+- [livrable/loi-jevons-financement-du-chomage-universel-par-la-taxe-sur-l-intelligence-artificielle.md](../livrable/loi-jevons-financement-du-chomage-universel-par-la-taxe-sur-l-intelligence-artificielle.md)
 - [00-methode-conventions-et-index.md](00-methode-conventions-et-index.md)
