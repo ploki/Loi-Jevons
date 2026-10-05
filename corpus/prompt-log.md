@@ -78,6 +78,10 @@ Guillaume précise : le dépôt est `git@github.com:ploki/Loi-Jevons.git` ; les 
 
 Guillaume demande si les trois contradictions entre les livrables sont notées dans le corpus. Elles ne le sont qu'à l'état brut (note 21) et dans le rapport de retour, parmi 20. Il demande d'**ouvrir la liste de suivi** proposée par Claude.
 
+## Itération 20 (2026-10-05)
+
+Guillaume demande pourquoi Claude fait souvent des erreurs de script, puis de mettre les règles proposées en réponse dans le **pool des améliorations potentielles du skill `maieutics`** de ce projet, avec les autres, pour les tester avant de les généraliser.
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)
