@@ -82,6 +82,10 @@ Guillaume demande si les trois contradictions entre les livrables sont notées d
 
 Guillaume demande pourquoi Claude fait souvent des erreurs de script, puis de mettre les règles proposées en réponse dans le **pool des améliorations potentielles du skill `maieutics`** de ce projet, avec les autres, pour les tester avant de les généraliser.
 
+## Itération 21 (2026-10-05)
+
+Guillaume trouve bizarre la façon d'écrire les « règles » du CLAUDE.md : il s'attendait à des instructions plutôt qu'à la description d'un problème. Il demande de **réécrire les onze** en instructions.
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)
