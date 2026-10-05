@@ -271,8 +271,7 @@
 
 ## Questions ouvertes
 
-- **Une application en Rust, à un moment** [ggim, décision 111] : simuler la mesure sur tous les différents indicateurs. Ni calendrier ni périmètre ; les scripts Python restent la référence en attendant.
-- **Exigence de cette application** [ggim, décision 113] : pouvoir changer les paramètres et les conditions en temps réel. Lecture confirmée par Guillaume le 10-04 [ggim] : les paramètres sont les valeurs, les conditions sont les règles et les variantes. **Cette application aura besoin de données** [ggim] ; elles restent à identifier.
+- **L'application de simulation en Rust** [ggim, décisions 111 et 113] est un chantier, rangé dans [chantiers.md](chantiers.md). Les scripts Python restent la référence en attendant.
 - Le taux d'indexation (2 %) est à confirmer par l'économiste (85). Le nombre de mois de dégressivité (6) et le paramètre des reprises d'emploi (600 000 par an) de la sortie progressive sont [Unverified], à faire confirmer par l'économiste (100). La dégressivité dans les douze mois (98) et la trajectoire de référence m ≤ 3 (84) sont des **hésitations** signalées au rapport de retour (104, 107).
 - Les étudiants et le patrimoine : des choix ouverts, réservés à Guillaume (décisions 70 et 71).
 

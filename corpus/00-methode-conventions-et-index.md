@@ -96,6 +96,7 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 - `glossaire.md` : les termes du projet et leur sens exact.
 - `journal-des-decisions.md` : le journal des décisions structurantes et des changements d'avis, **à tenir à jour à chaque décision**.
 - `rapport-de-retour.md` : le rapport de retour de la session metamaieutique (2026-10-04).
+- `chantiers.md` : les idées de Guillaume à faire plus tard, qui ne sont pas des décisions (depuis le 2026-10-05, décision 125).
 - `../archive/transcript-session-2026-10-01.md` : le transcript, arrêté le 2026-10-02 (fin des sauvegardes). Il est conservé comme archive.
 - Le dossier est versionné avec **git** depuis le 2026-10-02.
 - `../livrable/` : les livrables. L'exposé des motifs existe en **v0.2** (aligné sur l'architecture révisée, M10, décision 83) ; la v0.1, objet du fichier 17, est dans `../archive/`. Le **dispositif v0.1** (`loi-jevons-dispositif-v0.1.md`, M11, décision 87) contient le projet de loi ordinaire, le projet de loi organique et une annexe LFSS / loi de finances. L'**étude d'impact v0.1** (`loi-jevons-etude-d-impact-v0.1.md`, M12, décision 93) suit le plan de l'art. 8 de la LO n° 2009-403.

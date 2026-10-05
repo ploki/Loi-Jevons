@@ -86,6 +86,10 @@ Guillaume demande pourquoi Claude fait souvent des erreurs de script, puis de me
 
 Guillaume trouve bizarre la façon d'écrire les « règles » du CLAUDE.md : il s'attendait à des instructions plutôt qu'à la description d'un problème. Il demande de **réécrire les onze** en instructions.
 
+## Itération 22 (2026-10-05)
+
+Guillaume demande de **créer `chantiers.md` et d'y ranger ses chantiers**.
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)

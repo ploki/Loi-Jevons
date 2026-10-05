@@ -753,7 +753,7 @@ Tous les montants sont [C, À vérifier].
 
 ## Questions ouvertes
 
-- **Après M15 (10-04)** [ggim] : étudier l'effet de la mesure par la consommation (TVA, achats) **par tranche d'âge**, avec le cas des jeunes adultes en formation initiale chez leurs parents (décision 110). Aucune décision d'inclure les étudiants ; la question 50 reste réservée à lui. À traiter dans l'étude d'impact, avec les effets sur les foyers des parents et le multiplicateur.
+- **Après M15 (10-04)** [ggim] : l'effet de la mesure par la consommation, par tranche d'âge (décision 110) est un chantier, rangé dans [chantiers.md](chantiers.md). La question 50 (les étudiants) reste réservée à Guillaume.
 - **Après M14** [opus-5.5] : (1) le mécanisme de D11 bis (entrée en vigueur subordonnée à la décision de la Commission) : le valider, ou accepter un tarif réduit sans notification préalable au risque d'une récupération ; (2) la dégressivité dans les douze mois et la trajectoire m ≤ 3, **hésitations** à porter au rapport de retour (104, 107) ; (3) les paramètres [Unverified] de la sortie progressive et de la garantie familiale (100, 108), à faire confirmer par l'économiste ; (4) les propositions du dispositif non arrêtées (D13.2, D13.5, bornes des classes, seuil de volume).
 - **Après M9** [opus-5.5] : le taux d'indexation (2 %) [Unverified], à confirmer par l'économiste (85). **Réservées à Guillaume** : les étudiants (70) et le patrimoine (71).
 - **Les points à faire relire par un expert** (tirés de l'ancienne section F) :
