@@ -2,7 +2,7 @@
 
 - **Statut** : en discussion
 - **Créé le** : 2026-10-02
-- **Dernière mise à jour** : 2026-10-02
+- **Dernière mise à jour** : 2026-10-06 (le nom couvre la taxe et la redistribution ; un projet qui ne vise personne)
 
 > Ce fichier consigne **l'intention de Guillaume** : son but profond, ses convictions, ses états d'âme, tels qu'il les a exprimés ou que Claude les a observés pendant les sessions. **On n'y garde que ce qui est lié à l'idée du projet.** Il sert de boussole, notamment pour le mandat d'une session `metamaieutique`. Il se gère comme les autres notes : « En vigueur », historique, provenance. **[G]** : dit par Guillaume. **[C]** : observé ou interprété par Claude, à confirmer.
 
@@ -24,6 +24,7 @@
 
 ### Les principes
 - **[G]** Des mesures **drastiques mais justes**.
+- **[ggim]** Le texte couvre **la taxe et la redistribution** : « ce qu'on fait couvre et la taxe et la redistribution ». C'est pourquoi il reste la « Loi Jevons », et non la « Taxe Jevons » (décisions 117 et 118).
 - **[G]** On **taxe l'IA**, on l'assume : le stade de l'adoption est dépassé, du moins pour l'IA dans le cloud.
 - **[G]** On **ménage ce qui démarre** : l'IA locale et embarquée, plus proche du besoin, ne doit pas être freinée.
 - **[G]** On **épargne les particuliers** : seul l'usage professionnel est taxé.
@@ -32,6 +33,7 @@
 ### Ce qu'il refuse
 - **[G]** Se mettre en avant : pas de « Loi ggim », « j'ai pas envie de flex ». Le nom de Jevons est un hommage.
 - **[G]** Les attaques personnelles.
+- **[opus-5.5]** *Observé le 10-05, à confirmer* : avant de rendre le dépôt public, il en a retiré, historique compris, tout ce qui visait directement une personne nommée et les remarques négatives (décision 119). Le projet doit défendre une idée, pas viser quelqu'un.
 - **[G]** Le tarif douanier comme proposition sérieuse : il n'est qu'une boutade.
 
 ### La posture et le ton
@@ -60,6 +62,8 @@
 12. **10-02** : le souci de ne pas freiner l'IA locale et embarquée. **[G]**
 13. **10-02** : le projet est un point de départ, et les experts viendront ensuite. **[G]**
 14. **10-02** : l'association avec la taxe Zucman. **[G]**
+15. **10-05** : il envisage « Taxe Jevons », puis garde « Loi Jevons », « car ce qu'on fait couvre et la taxe et la redistribution ». **[ggim]**
+16. **10-05** : il prépare la publication du dépôt et fait retirer de l'historique ce qui visait une personne et les remarques négatives, puis « on arrête de réécrire ». **[ggim]**
 
 ## Liens
 

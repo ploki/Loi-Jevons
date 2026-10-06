@@ -90,6 +90,10 @@ Guillaume trouve bizarre la façon d'écrire les « règles » du CLAUDE.md : il
 
 Guillaume demande de **créer `chantiers.md` et d'y ranger ses chantiers**.
 
+## Itération 23 (2026-10-06)
+
+Guillaume demande s'il reste des choses à consigner.
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)
