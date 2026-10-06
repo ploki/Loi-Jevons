@@ -102,6 +102,13 @@ On ajoutera un type si le besoin apparaît, et on le reportera dans ce tableau.
 - `../livrable/` : les livrables. L'exposé des motifs existe en **v0.2** (aligné sur l'architecture révisée, M10, décision 83) ; la v0.1, objet du fichier 17, est dans `../archive/`. Le **dispositif v0.1** (`loi-jevons-dispositif-v0.1.md`, M11, décision 87) contient le projet de loi ordinaire, le projet de loi organique et une annexe LFSS / loi de finances. L'**étude d'impact v0.1** (`loi-jevons-etude-d-impact-v0.1.md`, M12, décision 93) suit le plan de l'art. 8 de la LO n° 2009-403.
 - `../outils/` : les scripts de simulation. `sim_v4.py` est la référence depuis M7 ; `etude_impact_v01.py` (M12) en tire les chiffres de l'étude d'impact ; `sim_v3.py` et la note 14 sont dans `../archive/`. Depuis M14, l'option `--avant-m14` rejoue les règles antérieures (non-régression).
 
+## Points à trancher
+
+> Les décisions que Guillaume a choisi de remettre à plus tard (2026-10-06). Quand l'une est tranchée, elle va au journal et sort d'ici.
+
+- **Le fichier d'intention dans le dépôt public** : il y est déjà, depuis le premier push ; [opus-5.5] avait supposé qu'il pouvait y rester tel quel, sans que Guillaume l'ait dit.
+- **L'observation [opus-5.5] de l'intention**, sous « Ce qu'il refuse » : le projet doit défendre une idée, sans viser personne. À confirmer ou à corriger.
+
 ## Index
 
 | Fichier | Type | Statut | En bref |

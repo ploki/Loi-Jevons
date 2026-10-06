@@ -94,6 +94,10 @@ Guillaume demande de **créer `chantiers.md` et d'y ranger ses chantiers**.
 
 Guillaume demande s'il reste des choses à consigner.
 
+## Itération 24 (2026-10-06)
+
+Guillaume demande de **consigner les points à trancher pour plus tard**.
+
 ---
 
 # Session metamaieutique « Rendre la Loi Jevons réalisable » (branche `metamaieutique/loi-jevons-faisabilite-2026-10-02`)
